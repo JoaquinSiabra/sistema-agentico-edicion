@@ -1,0 +1,14 @@
+# Entorno y credenciales
+.venv/
+.env
+__pycache__/
+*.pyc
+
+# Salidas de ejecuciones propias (no versionadas; solo el ejemplo de data/ejemplos/ sí lo está)
+data/exports/
+data/novelas/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store

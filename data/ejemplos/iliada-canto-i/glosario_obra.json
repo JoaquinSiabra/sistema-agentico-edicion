@@ -1,0 +1,241 @@
+[
+  {
+    "termino": "mirmidones",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Pueblo sobre el que Aquiles reina ('reina sobre los mirmidones'); referido como colectivo de pertenencia.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Centauros",
+    "categoria": "pueblo",
+    "variantes": [
+      "montaraces Centauros"
+    ],
+    "evidencia": "Colectivo con el que combatieron los héroes del pasado ('con los montaraces Centauros, á quienes exterminaron'); referidos como especie o pueblo mítico.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "montaraces Centauros"
+    ]
+  },
+  {
+    "termino": "troyanos",
+    "categoria": "pueblo",
+    "variantes": [
+      "teucros"
+    ],
+    "evidencia": "Colectivo enemigo referido en plural como pueblo ('los demás troyanos', 'favorecer á los teucros'); no tiene estructura jurídica sino étnica.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "teucros"
+    ]
+  },
+  {
+    "termino": "etíopes",
+    "categoria": "pueblo",
+    "variantes": [
+      "probos etíopes"
+    ],
+    "evidencia": "Pueblo anfitrión del banquete al que asiste Júpiter ('al país de los probos etíopes').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "probos etíopes"
+    ]
+  },
+  {
+    "termino": "sinties",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Pueblo de Lemnos que recogió a Vulcano al caer ('los sinties me recogieron'); referido como colectivo étnico local.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "ínfulas",
+    "categoria": "objeto",
+    "variantes": [],
+    "evidencia": "Llevadas por Crises pendiendo del cetro como signo de su condición de sacerdote; objeto ritual físico mencionado dos veces.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "aqueos",
+    "categoria": "pueblo",
+    "variantes": [
+      "aquivos",
+      "argivos",
+      "dánaos"
+    ],
+    "evidencia": "Colectivo étnico/militar al que se pertenece por origen; se habla de ellos en plural sin estructura contractual ('los magnánimos aqueos', 'los dánaos', 'los argivos'); los cuatro términos designan el mismo pueblo griego en el texto.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "aquivos",
+      "argivos",
+      "dánaos"
+    ]
+  },
+  {
+    "termino": "pilios",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Gentilicio de Néstor ('elocuente orador de los pilios'); colectivo de origen.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "cólera",
+    "categoria": "concepto_abstracto",
+    "variantes": [],
+    "evidencia": "Mencionada desde el primer verso como tema central ('la cólera del Pelida Aquiles'); se aplica a múltiples personajes como estado emocional narrativamente determinante.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Musas",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Referidas en plural como colectivo que canta en el banquete de los dioses ('las Musas que con linda voz cantaban alternando'); tratadas como grupo de seres divinos.",
+    "confianza": "media",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "cetro",
+    "categoria": "objeto",
+    "variantes": [
+      "cetro tachonado con clavos de oro",
+      "áureo cetro"
+    ],
+    "evidencia": "Crises lleva el cetro de Apolo como símbolo de su sacerdocio; Aquiles tira el cetro al suelo; objeto físico manejado.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": [
+      "cetro tachonado con clavos de oro",
+      "áureo cetro"
+    ]
+  },
+  {
+    "termino": "égida",
+    "categoria": "objeto",
+    "variantes": [],
+    "evidencia": "Atributo de Júpiter mencionado dos veces ('Júpiter, que lleva la égida'); objeto asociado a su poder.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "peste",
+    "categoria": "concepto_abstracto",
+    "variantes": [],
+    "evidencia": "Fenómeno enviado por Apolo que mata al ejército aqueo; aparece múltiples veces como causa del conflicto narrativo ('maligna peste', 'la abominable peste'); no es un objeto físico sino una calamidad abstracta/divina.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "peán",
+    "categoria": "concepto_abstracto",
+    "variantes": [],
+    "evidencia": "Canto ritual entonado en honor de Apolo ('entonando un hermoso peán al flechador Apolo'); práctica ritual nombrada.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  }
+]

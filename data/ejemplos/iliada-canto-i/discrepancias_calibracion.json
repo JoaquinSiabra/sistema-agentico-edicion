@@ -1,0 +1,20 @@
+[
+  {
+    "termino": "hecatombe",
+    "pasadas_totales": 3,
+    "pasadas_que_lo_mencionan": 2,
+    "motivo": "empate sin mayoría clara",
+    "categorias_propuestas": [
+      {
+        "categoria": "objeto",
+        "confianza": "alta",
+        "evidencia": "Se prepara, embarca, ofrece e inmola repetidamente a lo largo del canto; es un objeto ritual concreto (sacrificio de animales) que se posee y ejecuta."
+      },
+      {
+        "categoria": "concepto_abstracto",
+        "confianza": "alta",
+        "evidencia": "Se solicita, se prepara, se ofrece como sacrificio ritual; aparece en fórmulas religiosas repetidas ('ofrecer una sacra hecatombe', 'víctimas de la hecatombe')"
+      }
+    ]
+  }
+]

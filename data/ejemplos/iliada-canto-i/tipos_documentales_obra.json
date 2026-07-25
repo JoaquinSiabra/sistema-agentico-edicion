@@ -1,0 +1,59 @@
+{
+  "tipos_documentales": [
+    {
+      "nombre": "Epopeya traducida con numeración de versos y narrador épico en tercera persona",
+      "descripcion": "Texto narrativo en tercera persona que relata acciones, estados internos y parlamentos de personajes heroicos y divinos. Corresponde al cuerpo principal del poema épico (la Ilíada), presentado en traducción en prosa con numeración marginal de versos. El narrador es omnisciente y tiene acceso tanto al mundo humano como al divino. Incluye fórmulas épicas repetidas ('Aquiles, el de los pies ligeros', 'el que amontona las nubes', etc.) y transiciones narrativas convencionales ('Tal dijo.', 'Así se expresó el Pelida.', 'Dichas estas palabras partió...').",
+      "voz": "Narrador épico omnisciente en tercera persona, traducción de la voz de la Musa invocada al inicio; instancia narrativa no individualizada que funge como intermediario entre la fuente divina ('Canta, oh diosa') y el lector.",
+      "marcadores_formales": "Numeración marginal de versos (1, 8, 17, 22, 26…); fórmulas épicas recurrentes; transiciones del tipo 'Tal dijo.', 'Así dijo.', 'Respondióle…'; uso sistemático de la tercera persona gramatical para la narración base; paréntesis explicativos del narrador ('—cumplíase la voluntad de Júpiter—'); descripción de acción, desplazamiento y estado emocional de personajes.",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'Tal fué su plegaria. Oyóla Febo Apolo, é irritado en su corazón, descendió de las cumbres del Olimpo...' / 'El hijo de Peleo, no amainando en su ira, denostó nuevamente al Atrida con injuriosas voces' / 'Dijo el Saturnio, y bajó las negras cejas en señal de asentimiento'",
+      "confianza": "alta"
+    },
+    {
+      "nombre": "Encabezado estructural del canto épico",
+      "descripcion": "Rótulo organizativo que divide la obra en unidades mayores (cantos) y anuncia el contenido temático mediante palabras clave. Funciona como paratexto estructural de la obra épica, sin voz narrativa propia.",
+      "voz": "Instancia editorial o traductora, no un personaje ni el narrador épico; voz institucional de organización del texto.",
+      "marcadores_formales": "Texto en mayúsculas: 'CANTO PRIMERO'; subtítulo temático separado por punto y raya: 'PESTE.—CÓLERA'; posición inicial antes del primer verso numerado.",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'CANTO PRIMERO / PESTE.—CÓLERA' aparece antes del verso 1, sin número de verso asignado, cumpliendo función de título estructural.",
+      "confianza": "alta"
+    },
+    {
+      "nombre": "Invocación épica a la Musa (apóstrofe inicial)",
+      "descripcion": "Segmento de apertura del poema en que el narrador se dirige directamente a una divinidad ('oh diosa') para solicitar inspiración y enunciar el tema. Aunque formalmente integrado en la narración en tercera persona, su función pragmática es distinta: es un acto de habla performativo dirigido a una entidad sobrenatural que legitima la narración subsiguiente.",
+      "voz": "El aedo/poeta (voz implícita del narrador épico) dirigiéndose a la Musa en segunda persona del singular; única instancia en que el narrador habla en primera persona implícita ('Canta, oh diosa…').",
+      "marcadores_formales": "Apóstrofe en imperativo ('Canta, oh diosa'); segunda persona del singular dirigida a entidad divina; posición inicial absoluta del texto (verso 1); ausencia de etiqueta de hablante (es narración, no discurso referido).",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'Canta, oh diosa, la cólera del Pelida Aquiles; cólera funesta que causó infinitos males á los aqueos…'",
+      "confianza": "alta"
+    },
+    {
+      "nombre": "Discurso directo de personaje (parlamento épico)",
+      "descripcion": "Fragmentos de habla de personajes concretos (Crises, Agamenón, Aquiles, Calcas, Néstor, Minerva, Tetis, Júpiter, Juno, Vulcano, etc.) reproducidos en estilo directo dentro del marco narrativo épico. Formalmente se delimitan con comillas angulares o tipográficas y se introducen mediante verbos de decir del narrador. No constituyen un tipo documental autónomo sino un recurso interno al poema épico, pero su presencia formal es identificable y sistemática.",
+      "voz": "Cada personaje individual de la épica (héroe, dios, sacerdote, adivino) habla en primera persona; la voz narrativa introduce y cierra cada parlamento.",
+      "marcadores_formales": "Apertura con comillas y cierre con comillas: '«…»'; introducción por fórmulas del narrador ('dijo', 'exclamó', 'arengó diciendo', 'respondióle', 'contestó', 'replicó'); uso de primera y segunda persona gramaticales dentro del parlamento; cierre con fórmula del narrador ('Tal dijo.', 'Así dijo.', 'Dijo, y…').",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'«¡Atridas y demás aqueos de hermosas grebas! Los dioses, que poseen olímpicos palacios, os permitan destruir la ciudad de Príamo…»' / '«¡Borracho, que tienes cara de perro y corazón de ciervo!…»' / '«¡Padre Júpiter! Si alguna vez te fuí útil entre los inmortales…»'",
+      "confianza": "alta"
+    },
+    {
+      "nombre": "Pie de grabado o leyenda de ilustración",
+      "descripcion": "Breve texto descriptivo en cursiva intercalado en el cuerpo del texto, asociado a una imagen o ilustración que representaría una escena del poema. Funciona como epígrafe o leyenda visual, no como narración ni como discurso de personaje.",
+      "voz": "Instancia editorial o de diseño gráfico de la edición; voz impersonal descriptiva que remite al contenido de una imagen.",
+      "marcadores_formales": "Texto en cursiva intercalado entre paréntesis o de forma aislada entre dos bloques de texto numerado; referencia explícita a una escena visual ('Tetis oyó á Aquiles y emergió, como niebla, de las espumosas ondas…'); indicación de los versos correspondientes entre paréntesis ('(Canto I, versos 357 á 359.)').",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'Tetis oyó á Aquiles y emergió, como niebla, de las espumosas ondas... / (Canto I, versos 357 á 359.)' aparece entre el verso 345 y el verso 357, en posición de leyenda de ilustración, con tipografía diferenciada y referencia explícita al pasaje ilustrado.",
+      "confianza": "media"
+    }
+  ]
+}

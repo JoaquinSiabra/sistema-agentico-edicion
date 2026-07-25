@@ -1,0 +1,729 @@
+[
+  {
+    "termino": "Calcas Testórida",
+    "categoria": "persona",
+    "variantes": [
+      "Calcas",
+      "el eximio vate",
+      "el mejor de los augures"
+    ],
+    "evidencia": "Se le habla directamente ('¡Oh Aquiles, caro á Júpiter! Mándasme explicar...'); habla en primera persona; identificado como augur que guió las naves a Ilión.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Calcas",
+      "el eximio vate",
+      "el mejor de los augures"
+    ]
+  },
+  {
+    "termino": "Clitemnestra",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionada por Agamenón como su legítima esposa, con quien compara a Criseida.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Teseo Egida",
+    "categoria": "persona",
+    "variantes": [
+      "Teseo"
+    ],
+    "evidencia": "Mencionado por Néstor junto a otros héroes de generaciones pasadas; 'Teseo Egida, que parecía un inmortal'.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Teseo"
+    ]
+  },
+  {
+    "termino": "Euríbates",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Nombrado junto a Taltibio como heraldo de Agamenón, recibe orden directa.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Agamenón",
+    "categoria": "persona",
+    "variantes": [
+      "Agamenón Atrida",
+      "Atrida",
+      "Atrida Agamenón",
+      "hijo de Atreo",
+      "rey de hombres Agamenón"
+    ],
+    "evidencia": "Se le habla directamente, habla él mismo, recibe órdenes y las da; 'Atrida' es gentilicio-patronímico usado repetidamente como apelativo.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Agamenón Atrida",
+      "Atrida",
+      "Atrida Agamenón",
+      "hijo de Atreo",
+      "rey de hombres Agamenón"
+    ]
+  },
+  {
+    "termino": "Patroclo",
+    "categoria": "persona",
+    "variantes": [
+      "Patroclo de jovial linaje"
+    ],
+    "evidencia": "Recibe orden directa de Aquiles ('¡Ea, Patroclo de jovial linaje!'), obedece y actúa físicamente sacando a Briseida.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Patroclo de jovial linaje"
+    ]
+  },
+  {
+    "termino": "Briseida",
+    "categoria": "persona",
+    "variantes": [
+      "hija de Brises",
+      "la de hermosas mejillas",
+      "la mujer de bella cintura"
+    ],
+    "evidencia": "Es objeto de disputa, sacada físicamente de la tienda por Patroclo; referida varias veces como recompensa de Aquiles.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "hija de Brises",
+      "la de hermosas mejillas",
+      "la mujer de bella cintura"
+    ]
+  },
+  {
+    "termino": "Criseida",
+    "categoria": "persona",
+    "variantes": [
+      "hija de Crises",
+      "la de hermosas mejillas",
+      "la joven Criseida"
+    ],
+    "evidencia": "Hija de Crises, objeto del conflicto inicial; embarcada y devuelta; mencionada múltiples veces por nombre.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "hija de Crises",
+      "la de hermosas mejillas",
+      "la joven Criseida"
+    ]
+  },
+  {
+    "termino": "Idomeneo",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Citado por Agamenón entre los jefes posibles para capitanear la nave a Crisa.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Taltibio",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Nombrado junto a Euríbates como heraldo de Agamenón, recibe orden directa.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Polifemo",
+    "categoria": "persona",
+    "variantes": [
+      "Polifemo, igual á un dios"
+    ],
+    "evidencia": "Listado por Néstor entre los héroes del pasado ('igual á un dios').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Polifemo, igual á un dios"
+    ]
+  },
+  {
+    "termino": "Aquiles",
+    "categoria": "persona",
+    "variantes": [
+      "Pelida",
+      "Pelida Aquiles",
+      "el de los pies ligeros",
+      "hijo de Peleo"
+    ],
+    "evidencia": "Se le habla directamente ('¡Oh Aquiles, caro á Júpiter!'), habla él mismo, es vocativo frecuente y protagonista de la acción; 'Pelida' y 'hijo de Peleo' son aposiciones que lo identifican.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Pelida",
+      "Pelida Aquiles",
+      "el de los pies ligeros",
+      "hijo de Peleo"
+    ]
+  },
+  {
+    "termino": "Júpiter",
+    "categoria": "persona",
+    "variantes": [
+      "Jove",
+      "Jove Saturnio",
+      "Júpiter Olímpico",
+      "Júpiter que amontona las nubes",
+      "Saturnio",
+      "el Olímpico",
+      "el Olímpico fulminador",
+      "el Saturnio",
+      "fulminador",
+      "olímpico fulminador",
+      "padre de los hombres y de los dioses"
+    ],
+    "evidencia": "Se le habla directamente ('¡Padre Júpiter!'), habla él mismo, toma decisiones y asiente con la cabeza; 'Saturnio' y 'Jove' son formas alternativas del mismo referente.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Jove",
+      "Jove Saturnio",
+      "Júpiter Olímpico",
+      "Júpiter que amontona las nubes",
+      "Saturnio",
+      "el Olímpico",
+      "el Olímpico fulminador",
+      "el Saturnio",
+      "fulminador",
+      "olímpico fulminador",
+      "padre de los hombres y de los dioses"
+    ]
+  },
+  {
+    "termino": "Minerva",
+    "categoria": "persona",
+    "variantes": [
+      "Palas Minerva",
+      "diosa de los brillantes ojos",
+      "hija de Júpiter",
+      "la diosa de los brillantes ojos"
+    ],
+    "evidencia": "Se le habla directamente ('¿Por qué, hija de Júpiter... has venido?'), ella misma habla y actúa físicamente.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Palas Minerva",
+      "diosa de los brillantes ojos",
+      "hija de Júpiter",
+      "la diosa de los brillantes ojos"
+    ]
+  },
+  {
+    "termino": "Vulcano",
+    "categoria": "persona",
+    "variantes": [
+      "el ilustre artífice",
+      "el ilustre cojo de ambos pies",
+      "ilustre artífice",
+      "ilustre cojo de ambos pies"
+    ],
+    "evidencia": "Habla él mismo ante los dioses, ofrece copa a Juno, escancea néctar; identificado como hijo de Juno.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "el ilustre artífice",
+      "el ilustre cojo de ambos pies",
+      "ilustre artífice",
+      "ilustre cojo de ambos pies"
+    ]
+  },
+  {
+    "termino": "Menelao",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado por Aquiles como uno de los dos Atridas a quienes sirve ('para darte el gusto de vengaros de los troyanos á Menelao y á ti').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Neptuno",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado entre los dioses que quisieron atar a Júpiter ('Juno, Neptuno y Palas Minerva').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Briáreo",
+    "categoria": "persona",
+    "variantes": [
+      "Egeón"
+    ],
+    "evidencia": "El texto lo identifica explícitamente: 'al centímano á quien los dioses nombran Briáreo y todos los hombres Egeón'; dos nombres del mismo ser sobrenatural.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Egeón"
+    ]
+  },
+  {
+    "termino": "Pirítoo",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Listado por Néstor entre los héroes del pasado más esforzados.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Driante",
+    "categoria": "persona",
+    "variantes": [
+      "Driante pastor de pueblos"
+    ],
+    "evidencia": "Listado por Néstor entre los héroes del pasado ('Driante pastor de pueblos').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Driante pastor de pueblos"
+    ]
+  },
+  {
+    "termino": "Ulises",
+    "categoria": "persona",
+    "variantes": [
+      "el ingenioso Ulises",
+      "ingenioso Ulises"
+    ],
+    "evidencia": "Nombrado como posible capitán, actúa llevando a Criseida y hablando ante Crises; aparece varias veces con verbo de acción.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "el ingenioso Ulises",
+      "ingenioso Ulises"
+    ]
+  },
+  {
+    "termino": "Néstor",
+    "categoria": "persona",
+    "variantes": [
+      "elocuente orador de los pilios",
+      "suave en el hablar"
+    ],
+    "evidencia": "Se levanta en la asamblea y arenga a los presentes; identificado como orador de los pilios.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 4,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "elocuente orador de los pilios",
+      "suave en el hablar"
+    ]
+  },
+  {
+    "termino": "Crises",
+    "categoria": "persona",
+    "variantes": [
+      "el anciano",
+      "sacerdote Crises"
+    ],
+    "evidencia": "Actúa como personaje con agencia propia: se presenta con rescate, es despedido por Agamenón, ora a Apolo, recibe a su hija; se le habla indirectamente.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "el anciano",
+      "sacerdote Crises"
+    ]
+  },
+  {
+    "termino": "Héctor",
+    "categoria": "persona",
+    "variantes": [
+      "Héctor matador de hombres",
+      "Héctor, matador de hombres",
+      "matador de hombres"
+    ],
+    "evidencia": "Mencionado por Aquiles como amenaza futura para los aqueos ('perezcan á manos de Héctor, matador de hombres').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Héctor matador de hombres",
+      "Héctor, matador de hombres",
+      "matador de hombres"
+    ]
+  },
+  {
+    "termino": "Príamo",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado por Néstor como quien se alegraría de la disputa entre los aqueos; rey de Troya implícito.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Latona",
+    "categoria": "persona",
+    "variantes": [
+      "la de hermosa cabellera"
+    ],
+    "evidencia": "Identificada como madre de Apolo ('hijo de Júpiter y de Latona', 'hijo de Latona, la de hermosa cabellera').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "la de hermosa cabellera"
+    ]
+  },
+  {
+    "termino": "Eetión",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Referido en genitivo como poseedor de la ciudad Tebas ('la sagrada ciudad de Eetión'), lo que indica un personaje propietario o epónimo.",
+    "confianza": "media",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Exadio",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Listado por Néstor entre los héroes del pasado.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Aurora",
+    "categoria": "persona",
+    "variantes": [
+      "Aurora de rosados dedos",
+      "hija de la mañana",
+      "la Aurora de rosados dedos"
+    ],
+    "evidencia": "Referida como entidad personificada que aparece marcando el tiempo ('apareció la hija de la mañana, la Aurora de rosados dedos'); tratada como ser con identidad propia.",
+    "confianza": "media",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Aurora de rosados dedos",
+      "hija de la mañana",
+      "la Aurora de rosados dedos"
+    ]
+  },
+  {
+    "termino": "Apolo",
+    "categoria": "persona",
+    "variantes": [
+      "Esmintio",
+      "Febo Apolo",
+      "el Flechador",
+      "flechador Apolo",
+      "hijo de Júpiter y de Latona"
+    ],
+    "evidencia": "Recibe plegarias directas ('¡Óyeme, tú que llevas arco de plata!'), actúa, dispara flechas, es invocado por su nombre en vocativo.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Esmintio",
+      "Febo Apolo",
+      "el Flechador",
+      "flechador Apolo",
+      "hijo de Júpiter y de Latona"
+    ]
+  },
+  {
+    "termino": "Tetis",
+    "categoria": "persona",
+    "variantes": [
+      "Tetis de argentados pies",
+      "Tetis la de argentados pies",
+      "la de argentados pies",
+      "veneranda madre"
+    ],
+    "evidencia": "Oye a Aquiles, emerge del mar, habla con Júpiter, recibe vocativos implícitos ('Madre'); identificada como madre de Aquiles.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Tetis de argentados pies",
+      "Tetis la de argentados pies",
+      "la de argentados pies",
+      "veneranda madre"
+    ]
+  },
+  {
+    "termino": "Ceneo",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Listado por Néstor entre los héroes del pasado.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Juno",
+    "categoria": "persona",
+    "variantes": [
+      "Juno veneranda",
+      "diosa de los níveos brazos",
+      "la de los grandes ojos",
+      "la de áureo trono",
+      "la diosa de los níveos brazos"
+    ],
+    "evidencia": "Habla ella misma, se le dirige la palabra, actúa enviando a Minerva y disputando con Júpiter.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Juno veneranda",
+      "diosa de los níveos brazos",
+      "la de los grandes ojos",
+      "la de áureo trono",
+      "la diosa de los níveos brazos"
+    ]
+  },
+  {
+    "termino": "Ayax",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado por Agamenón como posible capitán y como alguien cuya recompensa podría tomar.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "termino": "Ténedos",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Citado en la plegaria como lugar donde Apolo impera ('imperas en Ténedos poderosamente').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Olimpo",
+    "categoria": "lugar",
+    "variantes": [
+      "el Olímpico",
+      "el dilatado Olimpo",
+      "el espacioso Olimpo",
+      "el nevado Olimpo",
+      "el resplandeciente Olimpo",
+      "espacioso Olimpo",
+      "nevado Olimpo",
+      "resplandeciente Olimpo"
+    ],
+    "evidencia": "Aparece repetidamente como ubicación de acción ('descendió de las cumbres del Olimpo', 'volvió al Olimpo', 'subió al gran cielo y al Olimpo'); morada de los dioses.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "el Olímpico",
+      "el dilatado Olimpo",
+      "el espacioso Olimpo",
+      "el nevado Olimpo",
+      "el resplandeciente Olimpo",
+      "espacioso Olimpo",
+      "nevado Olimpo",
+      "resplandeciente Olimpo"
+    ]
+  },
+  {
+    "termino": "Lemnos",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Lugar donde Vulcano cayó al ser arrojado por Júpiter ('caí en Lemnos').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Océano",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Destino de Júpiter para el banquete con los etíopes ('Fuése Júpiter al Océano, al país de los probos etíopes').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Troya",
+    "categoria": "lugar",
+    "variantes": [
+      "Ilión",
+      "la bien murada ciudad de Troya"
+    ],
+    "evidencia": "Meta de la guerra aquea ('tomar la bien murada ciudad de Troya'; 'guiado las naves aqueas hasta Ilión'); lugar hacia donde se dirige la expedición.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Ilión",
+      "la bien murada ciudad de Troya"
+    ]
+  },
+  {
+    "termino": "Argos",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionado como destino de vejez para Criseida, lejos de su patria ('en Argos, lejos de su patria').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Crisa",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Aparece como destino de la nave con Criseida y las hecatombes ('en Crisa una sacra hecatombe'; 'Ulises llegaba á Crisa'; 'proteges á Crisa'); también invocada en la plegaria de Crises.",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Pilos",
+    "categoria": "lugar",
+    "variantes": [
+      "divina Pilos",
+      "la divina Pilos"
+    ],
+    "evidencia": "Patria de Néstor, mencionada dos veces ('en la divina Pilos', 'desde Pilos, desde lejos').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "divina Pilos",
+      "la divina Pilos"
+    ]
+  },
+  {
+    "termino": "Tebas",
+    "categoria": "lugar",
+    "variantes": [
+      "la sagrada ciudad de Eetión"
+    ],
+    "evidencia": "Ciudad saqueada antes del comienzo de la acción ('Fuimos á Tebas, la sagrada ciudad de Eetión; la saqueamos').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "la sagrada ciudad de Eetión"
+    ]
+  },
+  {
+    "termino": "Ptía",
+    "categoria": "lugar",
+    "variantes": [
+      "fértil Ptía"
+    ],
+    "evidencia": "Referida dos veces como patria de Aquiles ('la fértil Ptía, criadora de hombres'; 'Ahora me iré á Ptía').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "fértil Ptía"
+    ]
+  },
+  {
+    "termino": "Cila",
+    "categoria": "lugar",
+    "variantes": [
+      "la divina Cila"
+    ],
+    "evidencia": "Mencionada junto a Crisa en la plegaria como lugar protegido por Apolo ('proteges á Crisa y á la divina Cila').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "la divina Cila"
+    ]
+  },
+  {
+    "termino": "Orco",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Referido como destino de las almas de los héroes muertos ('precipitó al Orco muchas almas valerosas').",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  }
+]
