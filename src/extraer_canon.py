@@ -59,9 +59,19 @@ no pasa nada: simplemente no se cachea esa llamada.
 No depende todavía de SQLite ni de chunking por escena.
 Solo: fragmento + config de la obra -> Claude -> JSON.
 
+--orden=N es OBLIGATORIO: la posición de lectura de este fragmento dentro
+de la obra. No se autodetecta contando ficheros en canon/ —eso abriría la
+puerta a condiciones de carrera o a que un reprocesado descuadre la
+numeración—, así que hay que pasarlo explícito. Con esto la salida deja de
+sobrescribir siempre data/exports/canon_fragmento.json: se escribe UN
+FICHERO POR FRAGMENTO bajo <directorio_config>/canon/{orden:04d}.json, con
+dos claves nuevas que la Fase 2 (almacén) necesita para reconstruir el
+orden de lectura y vectorizar el fragmento original: "orden_fragmento" y
+"ruta_fragmento_origen" (la ruta al .txt que se le pasó al modelo).
+
 Uso:
-    uv run python src/extraer_canon.py data/novelas/fragmento.txt
-    uv run python src/extraer_canon.py --config=otro/directorio data/novelas/fragmento.txt
+    uv run python src/extraer_canon.py --orden=1 data/novelas/fragmento.txt
+    uv run python src/extraer_canon.py --orden=1 --config=otro/directorio data/novelas/fragmento.txt
 """
 
 import json
@@ -285,28 +295,34 @@ def extraer_canon(fragmento: str, config: dict) -> dict:
         raise
 
 
-def parsear_args(args: list[str]) -> tuple[str, str]:
+def parsear_args(args: list[str]) -> tuple[str, int | None, str]:
     directorio_config = DIRECTORIO_CONFIG_DEFAULT
+    orden_fragmento = None
     ruta_fragmento = None
     for arg in args:
         if arg.startswith("--config="):
             directorio_config = arg.split("=", 1)[1]
+        elif arg.startswith("--orden="):
+            orden_fragmento = int(arg.split("=", 1)[1])
         else:
             ruta_fragmento = arg
-    return directorio_config, ruta_fragmento
+    return directorio_config, orden_fragmento, ruta_fragmento
 
 
 def main():
     if len(sys.argv) < 2:
         print(
             "Uso: uv run python src/extraer_canon.py [--config=data/exports] "
-            "<ruta_fragmento.txt>"
+            "--orden=N <ruta_fragmento.txt>"
         )
         sys.exit(1)
 
-    directorio_config, ruta_entrada = parsear_args(sys.argv[1:])
+    directorio_config, orden_fragmento, ruta_entrada = parsear_args(sys.argv[1:])
     if not ruta_entrada:
         print("No se ha indicado ningún fragmento.")
+        sys.exit(1)
+    if orden_fragmento is None:
+        print("Falta --orden=N: la posición de lectura de este fragmento en la obra.")
         sys.exit(1)
 
     fragmento = leer_fragmento(ruta_entrada)
@@ -324,9 +340,18 @@ def main():
     print("Llamando a Claude...")
     canon = extraer_canon(fragmento, config)
 
+    # Claves que necesita poblar_almacen.py (Fase 2) y que extraer_canon
+    # por sí solo no tiene forma de saber: dónde cae este fragmento en el
+    # orden de lectura de la obra, y qué .txt original hay que vectorizar.
+    canon["orden_fragmento"] = orden_fragmento
+    canon["ruta_fragmento_origen"] = str(Path(ruta_entrada).resolve())
+
     print(json.dumps(canon, indent=2, ensure_ascii=False))
 
-    ruta_salida = Path("data/exports/canon_fragmento.json")
+    # Un fichero POR FRAGMENTO, no uno que se sobreescribe: el Almacén
+    # necesita conservar el canon de todos los fragmentos ya procesados,
+    # no solo el último.
+    ruta_salida = Path(directorio_config) / "canon" / f"{orden_fragmento:04d}.json"
     ruta_salida.parent.mkdir(parents=True, exist_ok=True)
     ruta_salida.write_text(
         json.dumps(canon, indent=2, ensure_ascii=False), encoding="utf-8"

@@ -121,7 +121,8 @@ uv run python src/calibrar_taxonomia.py --n=1 data/novelas/fragmento.txt
 uv run python src/calibrar_glosario.py --n=3 data/novelas/fragmento.txt
 
 # Fase 1 — extracción con atribución (usa la config generada arriba)
-uv run python src/extraer_canon.py data/novelas/fragmento.txt
+# --orden=N es la posición de lectura de este fragmento en la obra
+uv run python src/extraer_canon.py --orden=1 data/novelas/fragmento.txt
 ```
 
 Cada fase escribe en `data/exports/`. Si `extraer_canon.py` no encuentra la
