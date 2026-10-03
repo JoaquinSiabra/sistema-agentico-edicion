@@ -66,7 +66,7 @@ Desde la raíz del repo:
 psql -U editor -d almacen -h localhost -f schema.sql
 ```
 
-Esto crea la extensión `vector`, las tablas del Almacén (`obras`, `entidades`, `fragmentos`, `hechos_canonicos`, y sus relaciones) y el índice HNSW para búsqueda semántica sobre `fragmentos.embedding`.
+Esto crea la extensión `vector`, las tablas del Almacén (`obras`, `entidades`, `fragmentos`, `pasajes`, `hechos_canonicos`, y sus relaciones) y el índice HNSW para búsqueda semántica sobre `pasajes.embedding` (cada fragmento se trocea en pasajes de ~400 tokens, porque el modelo de embeddings trunca a 512).
 
 ## 7. Arranque automático de Postgres (WSL2)
 
