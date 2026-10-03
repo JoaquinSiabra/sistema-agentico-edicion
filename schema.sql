@@ -66,7 +66,15 @@ CREATE TABLE hechos_canonicos (
                                             -- (trazabilidad/cita humana); NO es ordenable
                                             -- por sí sola, por eso existe posicion_global
     atribucion_tipo          TEXT NOT NULL
-        CHECK (atribucion_tipo IN ('narrador_documental', 'afirmacion_personaje')),
+        CHECK (atribucion_tipo IN (
+            'narrador_documental', 'afirmacion_personaje',
+            'testimonio_directo_narrador', 'afirmacion_interesada'
+        )),  -- 'afirmacion_personaje' es el valor que emite extraer_canon.py
+            -- hoy en este repo; los otros dos vienen de una revisión más
+            -- reciente del script (Fase 2, #1) que separa, dentro de lo que
+            -- afirma cualquiera (narrador incluido), si tiene algo en juego
+            -- en que se le crea. Se admiten ambos esquemas para no romper
+            -- datos ya cargados con el anterior.
     atribucion_personaje_id  INT REFERENCES entidades(id)  -- null si narrador_documental
 );
 
