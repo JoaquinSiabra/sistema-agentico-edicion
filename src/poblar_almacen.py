@@ -4,8 +4,10 @@ poblar_almacen.py
 Fase 2 del bootstrapping: cargar en el Almacén (Postgres + pgvector) la
 doble representación de la obra.
 
-  (a) PROSA VECTORIZADA: el texto de cada fragmento + su embedding, para
-      recuperación semántica ("qué pasajes hablan de X").
+  (a) PROSA VECTORIZADA: el texto de cada fragmento, troceado en pasajes
+      de ~400 tokens con un embedding cada uno, para recuperación
+      semántica ("qué pasajes hablan de X"). No se vectoriza el fragmento
+      entero: e5 trunca a 512 tokens y solo representaría su comienzo.
   (b) FICHAS CANÓNICAS: los hechos_canonicos ya extraídos en la Fase 1
       (extraer_canon.py), con su momento_canonico y atribución, para
       filtrado estructurado — la base del filtro anti-spoiler que usará
@@ -43,6 +45,7 @@ Uso:
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 import psycopg2
@@ -56,12 +59,87 @@ def cargar_modelo() -> SentenceTransformer:
     return SentenceTransformer(MODELO_EMBEDDING)
 
 
-def embed_pasaje(modelo: SentenceTransformer, texto: str) -> list[float]:
+def embed_pasajes(modelo: SentenceTransformer, textos: list[str]) -> list[list[float]]:
     # Convención e5: prefijo "passage: " para texto indexado. El futuro
     # retriever deberá usar "query: " para el texto de la consulta —
     # mezclar los dos prefijos es el error más común con esta familia
     # de modelos y degrada silenciosamente la similitud.
-    return modelo.encode(f"passage: {texto}", normalize_embeddings=True).tolist()
+    return modelo.encode(
+        [f"passage: {t}" for t in textos], normalize_embeddings=True, batch_size=16,
+    ).tolist()
+
+
+# Límite de e5 = 512 tokens, incluidos los especiales y el prefijo
+# "passage: ". 380 deja margen porque la suma de tokens por frase sueltas
+# aproxima (no iguala) los del pasaje unido.
+TOKENS_POR_PASAJE = 380
+TOKENS_SOLAPE = 60  # contexto compartido entre pasajes contiguos
+
+# Corte tras fin de frase (con comillas/paréntesis de cierre) o salto de línea.
+_FIN_DE_FRASE = re.compile(r"[.!?…][»\"”’)]*(?=\s)|\n")
+
+
+def _frases(texto: str) -> list[tuple[int, int]]:
+    """Spans (inicio, fin) de cada frase no vacía, sobre el texto original."""
+    spans, inicio = [], 0
+    for m in _FIN_DE_FRASE.finditer(texto):
+        spans.append((inicio, m.end()))
+        inicio = m.end()
+    spans.append((inicio, len(texto)))
+    resultado = []
+    for a, b in spans:
+        while a < b and texto[a].isspace():
+            a += 1
+        while b > a and texto[b - 1].isspace():
+            b -= 1
+        if a < b:
+            resultado.append((a, b))
+    return resultado
+
+
+def trocear(modelo: SentenceTransformer, texto: str) -> list[tuple[int, int]]:
+    """Agrupa frases en pasajes de ~TOKENS_POR_PASAJE tokens, con solape de
+    ~TOKENS_SOLAPE. Devuelve spans (inicio_char, fin_char) sobre `texto`.
+    Una frase que por sí sola excede el límite se corta por palabras."""
+    tokenizador = modelo.tokenizer
+
+    def n_tokens(a: int, b: int) -> int:
+        return len(tokenizador(texto[a:b], add_special_tokens=False)["input_ids"])
+
+    unidades = []  # (inicio, fin, tokens)
+    for a, b in _frases(texto):
+        t = n_tokens(a, b)
+        if t <= TOKENS_POR_PASAJE:
+            unidades.append((a, b, t))
+            continue
+        # Frase gigante: partir por palabras en trozos que quepan.
+        palabras = [m.span() for m in re.finditer(r"\S+", texto[a:b])]
+        inicio_trozo = 0
+        while inicio_trozo < len(palabras):
+            fin_trozo = inicio_trozo + 1
+            while (fin_trozo < len(palabras) and n_tokens(
+                    a + palabras[inicio_trozo][0], a + palabras[fin_trozo][1]) <= TOKENS_POR_PASAJE):
+                fin_trozo += 1
+            ia, ib = a + palabras[inicio_trozo][0], a + palabras[fin_trozo - 1][1]
+            unidades.append((ia, ib, n_tokens(ia, ib)))
+            inicio_trozo = fin_trozo
+
+    pasajes, actual = [], []
+    for unidad in unidades:
+        if actual and sum(u[2] for u in actual) + unidad[2] > TOKENS_POR_PASAJE:
+            pasajes.append((actual[0][0], actual[-1][1]))
+            # Arrastrar las últimas frases como solape, sin pasarse.
+            solape, tokens = [], 0
+            for u in reversed(actual):
+                if tokens + u[2] > TOKENS_SOLAPE:
+                    break
+                solape.insert(0, u)
+                tokens += u[2]
+            actual = solape
+        actual.append(unidad)
+    if actual:
+        pasajes.append((actual[0][0], actual[-1][1]))
+    return pasajes
 
 
 def obtener_o_crear_obra(cur, slug: str) -> int:
@@ -161,22 +239,35 @@ def cargar_fragmento(
             f"o no encontrada ({ruta_origen}). Sin el texto no se puede vectorizar."
         )
     texto = Path(ruta_origen).read_text(encoding="utf-8")
-    embedding = embed_pasaje(modelo, texto)
 
     cur.execute(
         """INSERT INTO fragmentos
-               (obra_id, orden_fragmento, tipo_documental, texto, embedding, ruta_origen)
-           VALUES (%s, %s, %s, %s, %s, %s)
+               (obra_id, orden_fragmento, tipo_documental, texto, ruta_origen)
+           VALUES (%s, %s, %s, %s, %s)
            ON CONFLICT (obra_id, orden_fragmento) DO UPDATE
                SET tipo_documental = EXCLUDED.tipo_documental,
                    texto           = EXCLUDED.texto,
-                   embedding       = EXCLUDED.embedding,
                    ruta_origen     = EXCLUDED.ruta_origen
            RETURNING id""",
         (obra_id, orden_fragmento, canon_json.get("tipo_documental"),
-         texto, embedding, ruta_origen),
+         texto, ruta_origen),
     )
     fragmento_id = cur.fetchone()[0]
+
+    # Idempotencia: el UPSERT de arriba conserva el id, así que el CASCADE
+    # no limpia los pasajes viejos — hay que borrarlos a mano.
+    cur.execute("DELETE FROM pasajes WHERE fragmento_id = %s", (fragmento_id,))
+    spans = trocear(modelo, texto)
+    embeddings = embed_pasajes(modelo, [texto[a:b] for a, b in spans])
+    for indice, ((a, b), embedding) in enumerate(zip(spans, embeddings)):
+        cur.execute(
+            """INSERT INTO pasajes
+                   (obra_id, fragmento_id, orden_en_fragmento, posicion_global,
+                    inicio_char, fin_char, texto, embedding)
+               VALUES (%s, %s, %s, %s, %s, %s, %s, %s)""",
+            (obra_id, fragmento_id, indice, orden_fragmento * 10000 + indice,
+             a, b, texto[a:b], embedding),
+        )
 
     menciones = (
         (canon_json.get("personajes") or [])
@@ -192,6 +283,9 @@ def cargar_fragmento(
 def cargar_hechos(
     cur, obra_id: int, fragmento_id: int, orden_fragmento: int, hechos: list[dict],
 ) -> None:
+    # Idempotencia: el script relee todo canon/*.json en cada ejecución, así
+    # que sin esto los hechos de fragmentos ya cargados se duplicarían.
+    cur.execute("DELETE FROM hechos_canonicos WHERE fragmento_id = %s", (fragmento_id,))
     for indice, hecho in enumerate(hechos):
         atribucion = hecho.get("atribucion", {})
         atribucion_tipo = atribucion.get("tipo")
@@ -263,7 +357,9 @@ def main() -> None:
                     cur, obra_id, fragmento_id, orden_fragmento,
                     canon_json.get("hechos_canonicos", []),
                 )
-                print(f"  fragmento {orden_fragmento}: {ruta.name} cargado.")
+                cur.execute("SELECT count(*) FROM pasajes WHERE fragmento_id = %s", (fragmento_id,))
+                print(f"  fragmento {orden_fragmento}: {ruta.name} cargado "
+                      f"({cur.fetchone()[0]} pasajes).")
 
         conexion.commit()
         print("Almacén poblado.")

@@ -34,21 +34,43 @@ CREATE TABLE entidades (
 );
 
 -- (a) PROSA VECTORIZADA
+-- El fragmento guarda el texto completo, pero NO se vectoriza entero:
+-- multilingual-e5-large trunca a 512 tokens, así que un vector por
+-- fragmento (un capítulo/canto de decenas de miles de caracteres) solo
+-- representaba su comienzo. Los vectores viven en `pasajes`.
 CREATE TABLE fragmentos (
     id               SERIAL PRIMARY KEY,
     obra_id          INT NOT NULL REFERENCES obras(id) ON DELETE CASCADE,
     orden_fragmento  INT NOT NULL,        -- posición secuencial de lectura en la obra
     tipo_documental  TEXT,                -- de la taxonomía calibrada en Fase 0a
     texto            TEXT NOT NULL,
-    embedding        VECTOR(1024) NOT NULL,  -- dim de multilingual-e5-large; si cambias de
-                                              -- modelo de embeddings, esta columna y el
-                                              -- índice hnsw hay que recrearlos
     ruta_origen      TEXT,                -- trazabilidad al .txt original
     UNIQUE (obra_id, orden_fragmento)
 );
 
-CREATE INDEX fragmentos_embedding_idx ON fragmentos
+-- Trozos de ~400 tokens de cada fragmento, cada uno con su embedding.
+-- posicion_global usa la misma fórmula que hechos_canonicos, así que el
+-- filtro anti-spoiler a nivel de fragmento es el mismo WHERE; DENTRO de un
+-- mismo fragmento, el índice de pasaje y el de hecho NO son comparables
+-- (miden cosas distintas) — para eso están inicio_char/fin_char.
+CREATE TABLE pasajes (
+    id                  SERIAL PRIMARY KEY,
+    obra_id             INT NOT NULL REFERENCES obras(id) ON DELETE CASCADE,
+    fragmento_id        INT NOT NULL REFERENCES fragmentos(id) ON DELETE CASCADE,
+    orden_en_fragmento  INT NOT NULL,
+    posicion_global     INT NOT NULL,  -- orden_fragmento * 10000 + orden_en_fragmento
+    inicio_char         INT NOT NULL,  -- desplazamiento en fragmentos.texto (cita exacta)
+    fin_char            INT NOT NULL,
+    texto               TEXT NOT NULL,
+    embedding           VECTOR(1024) NOT NULL,  -- dim de multilingual-e5-large; si cambias de
+                                                 -- modelo de embeddings, esta columna y el
+                                                 -- índice hnsw hay que recrearlos
+    UNIQUE (fragmento_id, orden_en_fragmento)
+);
+
+CREATE INDEX pasajes_embedding_idx ON pasajes
     USING hnsw (embedding vector_cosine_ops);
+CREATE INDEX pasajes_posicion_idx ON pasajes (obra_id, posicion_global);
 
 -- (b) FICHAS CANÓNICAS
 CREATE TABLE hechos_canonicos (
