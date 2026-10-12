@@ -1,0 +1,706 @@
+[
+  {
+    "termino": "mirmidones",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados como el pueblo sobre el que Aquiles reina ('reina sobre los mirmidones'); en el fragmento 2 como etnia junto a helenos y aqueos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "atenienses",
+    "categoria": "pueblo",
+    "variantes": [
+      "pueblo del magnánimo Erecteo"
+    ],
+    "evidencia": "Mencionados como pueblo de Atenas que ofrece sacrificios a Minerva y acuden a Troya bajo Menesteo, en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "pueblo del magnánimo Erecteo"
+    ]
+  },
+  {
+    "termino": "cefalenios",
+    "categoria": "pueblo",
+    "variantes": [
+      "magnánimos cefalenios"
+    ],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 como pueblo mandado por Ulises",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "magnánimos cefalenios"
+    ]
+  },
+  {
+    "termino": "paflagones",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Pilémenes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "locrenses",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 con Ayax de Oileo como caudillo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "cretenses",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 bajo el mando de Idomeneo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "dardanios",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo el mando de Eneas",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "halizones",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Odio y Epístrofo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Centauros",
+    "categoria": "pueblo",
+    "variantes": [
+      "hirsutos Centauros",
+      "montaraces Centauros"
+    ],
+    "evidencia": "Mencionados por Néstor como pueblo combatido por héroes del pasado (fragmento 1) y en el fragmento 2 como los echados del Pelión por Pirítoo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "hirsutos Centauros",
+      "montaraces Centauros"
+    ]
+  },
+  {
+    "termino": "hecatombe",
+    "categoria": "objeto",
+    "variantes": [
+      "sacra hecatombe"
+    ],
+    "evidencia": "Aparece reiteradamente en ambos fragmentos como ofrenda ritual de animales que se solicita, se prepara y se ofrece a los dioses",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [
+      {
+        "categoria": "concepto_abstracto",
+        "confianza": "alta"
+      }
+    ],
+    "alias": [
+      "sacra hecatombe"
+    ]
+  },
+  {
+    "termino": "focenses",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 con sus caudillos y naves",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "arcadios",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 como pueblo belicoso bajo Agapenor",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "pelasgos",
+    "categoria": "pueblo",
+    "variantes": [
+      "valerosos pelasgos"
+    ],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Hipótoo y Pileo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "valerosos pelasgos"
+    ]
+  },
+  {
+    "termino": "magnetes",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 bajo Protoo, viviendo a orillas del Peneo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Esmintio",
+    "categoria": "concepto_abstracto",
+    "variantes": [],
+    "evidencia": "Epíteto o advocación de Apolo usado en la plegaria de Crises ('¡Oh Esmintio!') en el fragmento 1; fórmula ritual fija sin verbo de habla propio",
+    "confianza": "media",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "troyanos",
+    "categoria": "pueblo",
+    "variantes": [
+      "teucros"
+    ],
+    "evidencia": "Mencionados repetidamente en ambos fragmentos como el pueblo enemigo; se habla de ellos en plural colectivo étnico",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "teucros"
+    ]
+  },
+  {
+    "termino": "beocios",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 como pueblo con caudillos y naves propias",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "abantes",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 como pueblo de Eubea con Elefenor como caudillo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "tracios",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Acamante y Píroo; Tamiris también es descrito como tracio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "cicones",
+    "categoria": "pueblo",
+    "variantes": [
+      "beligeros cicones"
+    ],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Eufemo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "beligeros cicones"
+    ]
+  },
+  {
+    "termino": "peonios",
+    "categoria": "pueblo",
+    "variantes": [
+      "peonios de corvos arcos"
+    ],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Pirecmes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "peonios de corvos arcos"
+    ]
+  },
+  {
+    "termino": "frigios",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Forcis y Ascanio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "meonios",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Mestles y Ántifo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "enienes",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 junto a los perebos bajo Guneo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "perebos",
+    "categoria": "pueblo",
+    "variantes": [
+      "intrépidos perebos"
+    ],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 junto a los enienes bajo Guneo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "intrépidos perebos"
+    ]
+  },
+  {
+    "termino": "helenos",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados junto a mirmidones y aqueos como los que se llamaban así en Ptía bajo el mando de Aquiles; también referidos como pueblo genérico en comparaciones",
+    "confianza": "media",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "sinties",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el fragmento 1 como los que recogieron a Vulcano cuando cayó en Lemnos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "etíopes",
+    "categoria": "pueblo",
+    "variantes": [
+      "probos etíopes"
+    ],
+    "evidencia": "Mencionados en el fragmento 1 como pueblo visitado por Júpiter en el Océano para un banquete",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "probos etíopes"
+    ]
+  },
+  {
+    "termino": "aqueos",
+    "categoria": "pueblo",
+    "variantes": [
+      "aqueos de broncíneas lorigas",
+      "aqueos de hermosas grebas",
+      "aqueos de larga cabellera",
+      "aquivos",
+      "argivos",
+      "dánaos"
+    ],
+    "evidencia": "Designación colectiva del pueblo griego que combate en Troya; se habla de ellos en plural como grupo étnico-militar; aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "aqueos de broncíneas lorigas",
+      "aqueos de hermosas grebas",
+      "aqueos de larga cabellera",
+      "aquivos",
+      "argivos",
+      "dánaos"
+    ]
+  },
+  {
+    "termino": "etolos",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 bajo el mando de Toante",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "rodios",
+    "categoria": "pueblo",
+    "variantes": [
+      "fieros rodios"
+    ],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 bajo el mando de Tlepólemo, divididos en tres pueblos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "fieros rodios"
+    ]
+  },
+  {
+    "termino": "licios",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados al final del fragmento 2 como pueblo de la remota Licia bajo Sarpedón y Glauco",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "misios",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Cromis y Énomo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "carios",
+    "categoria": "pueblo",
+    "variantes": [
+      "carios de bárbaro lenguaje"
+    ],
+    "evidencia": "Mencionados en el catálogo troyano del fragmento 2 bajo Nastes y Anfímaco, descritos como 'de bárbaro lenguaje'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "carios de bárbaro lenguaje"
+    ]
+  },
+  {
+    "termino": "néctar",
+    "categoria": "objeto",
+    "variantes": [],
+    "evidencia": "Mencionado en el fragmento 1 como bebida que Vulcano escancia a los dioses en el festín del Olimpo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Musas",
+    "categoria": "pueblo",
+    "variantes": [
+      "Musas olímpicas",
+      "hijas de Júpiter"
+    ],
+    "evidencia": "Invocadas en plural como colectivo divino ('Decidme ahora, Musas'); en el catálogo privan del canto a Tamiris; se habla DE ellas como grupo",
+    "confianza": "media",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [
+      {
+        "categoria": "persona",
+        "confianza": "alta"
+      }
+    ],
+    "alias": [
+      "Musas olímpicas",
+      "hijas de Júpiter"
+    ]
+  },
+  {
+    "termino": "epeos",
+    "categoria": "pueblo",
+    "variantes": [],
+    "evidencia": "Mencionados en el catálogo del fragmento 2 como pueblo de la Élide",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "égida",
+    "categoria": "objeto",
+    "variantes": [
+      "preciosa inmortal égida"
+    ],
+    "evidencia": "Aparece en ambos fragmentos como objeto portado por Júpiter y Minerva ('hija de Júpiter, que lleva la égida', 'llevando la preciosa inmortal égida')",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "preciosa inmortal égida"
+    ]
+  },
+  {
+    "termino": "cetro",
+    "categoria": "objeto",
+    "variantes": [
+      "argénteo cetro",
+      "imperecedero cetro",
+      "áureo cetro"
+    ],
+    "evidencia": "Aparece en ambos fragmentos como objeto que se porta, se jura sobre él, se transmite entre reyes; tiene genealogía propia en fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "argénteo cetro",
+      "imperecedero cetro",
+      "áureo cetro"
+    ]
+  }
+]

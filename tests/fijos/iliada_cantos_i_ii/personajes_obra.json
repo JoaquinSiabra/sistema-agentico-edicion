@@ -1,0 +1,1634 @@
+[
+  {
+    "termino": "Ayax Telamonio",
+    "categoria": "persona",
+    "variantes": [
+      "Ayax",
+      "Ayax de Salamina",
+      "Ayax de Telamón"
+    ],
+    "evidencia": "Mencionado como posible capitán en fragmento 1 y como el más valiente de los guerreros en fragmento 2; conduce naves desde Salamina",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Ayax",
+      "Ayax de Oileo",
+      "Ayax de Salamina",
+      "Ayax de Telamón"
+    ]
+  },
+  {
+    "termino": "Ayax de Oileo",
+    "categoria": "persona",
+    "variantes": [
+      "Ayax menor",
+      "ligero Ayax",
+      "menor Ayax"
+    ],
+    "evidencia": "Aparece como posible capitán en fragmento 1; acaudilla a los locrenses en el catálogo de fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Ayax menor",
+      "ligero Ayax",
+      "menor Ayax"
+    ]
+  },
+  {
+    "termino": "Clitemnestra",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionada en el fragmento 1 como esposa legítima de Agamenón ('Clitemnestra, mi legítima esposa')",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Filoctetes",
+    "categoria": "persona",
+    "variantes": [
+      "hábil arquero"
+    ],
+    "evidencia": "Mencionado como capitán de arqueros abandonado en Lemnos en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "hábil arquero"
+    ]
+  },
+  {
+    "termino": "Protesilao",
+    "categoria": "persona",
+    "variantes": [
+      "animoso Protesilao",
+      "el aguerrido Protesilao"
+    ],
+    "evidencia": "Descrito como caudillo muerto al saltar de la nave antes que los demás aqueos, en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "animoso Protesilao",
+      "el aguerrido Protesilao"
+    ]
+  },
+  {
+    "termino": "Tlepólemo",
+    "categoria": "persona",
+    "variantes": [
+      "Heraclida",
+      "Tlepólemo Heraclida",
+      "famoso por su lanza"
+    ],
+    "evidencia": "Descrito como caudillo de los rodios e hijo de Hércules en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Heraclida",
+      "Tlepólemo Heraclida",
+      "famoso por su lanza"
+    ]
+  },
+  {
+    "termino": "Euríbates",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado como heraldo de Agamenón (fragmento 1) y como heraldo de Ítaca que acompaña a Ulises (fragmento 2)",
+    "confianza": "media",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Polipetes",
+    "categoria": "persona",
+    "variantes": [
+      "hijo de Pirítoo",
+      "intrépido Polipetes"
+    ],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los de Argisa",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "hijo de Pirítoo",
+      "intrépido Polipetes"
+    ]
+  },
+  {
+    "termino": "Pilémenes",
+    "categoria": "persona",
+    "variantes": [
+      "de corazón varonil"
+    ],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los paflagones",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "de corazón varonil"
+    ]
+  },
+  {
+    "termino": "Podalirio",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como co-caudillo médico de los de Trica junto a Macaón",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Esculapio",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de Frag. 2 como padre de Podalirio y Macaón, excelentes médicos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Ésculo"
+    ]
+  },
+  {
+    "termino": "Agamenón",
+    "categoria": "persona",
+    "variantes": [
+      "Agamenón Atrida",
+      "Atrida",
+      "hijo de Atreo",
+      "rey de hombres Agamenón"
+    ],
+    "evidencia": "Habla y es interpelado directamente en múltiples ocasiones; identificado como rey y caudillo supremo de los aqueos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Agamenón Atrida",
+      "Atrida",
+      "hijo de Atreo",
+      "rey de hombres Agamenón"
+    ]
+  },
+  {
+    "termino": "Patroclo",
+    "categoria": "persona",
+    "variantes": [
+      "Patroclo de jovial linaje"
+    ],
+    "evidencia": "Es interpelado directamente por Aquiles ('¡Ea, Patroclo de jovial linaje!') y actúa sacando a Briseida de la tienda; aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Patroclo de jovial linaje"
+    ]
+  },
+  {
+    "termino": "Briseida",
+    "categoria": "persona",
+    "variantes": [
+      "Briseida de hermosas mejillas",
+      "hija de Brises",
+      "la de hermosas mejillas"
+    ],
+    "evidencia": "Mencionada como recompensa de Aquiles arrebatada por Agamenón; aparece en ambos fragmentos como objeto de la disputa",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Briseida de hermosas mejillas",
+      "hija de Brises",
+      "la de hermosas mejillas"
+    ]
+  },
+  {
+    "termino": "Criseida",
+    "categoria": "persona",
+    "variantes": [
+      "Criseida de hermosas mejillas",
+      "hija de Crises",
+      "joven Criseida",
+      "la de hermosas mejillas",
+      "moza de ojos vivos"
+    ],
+    "evidencia": "Mencionada como hija de Crises devuelta a su padre; aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Criseida de hermosas mejillas",
+      "hija de Crises",
+      "joven Criseida",
+      "la de hermosas mejillas",
+      "moza de ojos vivos"
+    ]
+  },
+  {
+    "termino": "Tersites",
+    "categoria": "persona",
+    "variantes": [
+      "Tersites parlero"
+    ],
+    "evidencia": "Habla directamente a Agamenón y es interpelado por Ulises; descrito físicamente y golpeado con el cetro en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Tersites parlero"
+    ]
+  },
+  {
+    "termino": "Diomedes",
+    "categoria": "persona",
+    "variantes": [
+      "Diomedes valiente en la pelea",
+      "hijo de Tideo",
+      "valiente en la pelea"
+    ],
+    "evidencia": "Mencionado como caudillo de los argivos en el fragmento 2; aparece en el catálogo de naves",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Diomedes valiente en la pelea",
+      "hijo de Tideo",
+      "valiente en la pelea"
+    ]
+  },
+  {
+    "termino": "Idomeneo",
+    "categoria": "persona",
+    "variantes": [
+      "Idomeneo famoso por su lanza",
+      "famoso por su lanza"
+    ],
+    "evidencia": "Mencionado como posible capitán de la nave en fragmento 1 y como caudillo de los cretenses en fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Idomeneo famoso por su lanza",
+      "famoso por su lanza"
+    ]
+  },
+  {
+    "termino": "Sarpedón",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado como caudillo de los licios junto a Glauco al final del fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Mercurio",
+    "categoria": "persona",
+    "variantes": [
+      "Argicida",
+      "mensajero Argicida"
+    ],
+    "evidencia": "Mencionado en la genealogía del cetro de Agamenón ('Mercurio lo regaló al excelente jinete Pélope') en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Argicida",
+      "mensajero Argicida"
+    ]
+  },
+  {
+    "termino": "Hércules",
+    "categoria": "persona",
+    "variantes": [
+      "el fornido Hércules",
+      "fornido Hércules"
+    ],
+    "evidencia": "Mencionado como padre de Tlepólemo en el fragmento 2; referenciado en genealogías heroicas",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "el fornido Hércules",
+      "fornido Hércules"
+    ]
+  },
+  {
+    "termino": "Taltibio",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado como heraldo de Agamenón junto a Euríbates en el fragmento 1",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Telémaco",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado por Ulises al amenazar a Tersites: 'no sea llamado padre de Telémaco' en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Meleagro",
+    "categoria": "persona",
+    "variantes": [
+      "rubio Meleagro"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como héroe etolo ya muerto, lo que llevó a dar el mando a Toante",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": [
+      "rubio Meleagro"
+    ]
+  },
+  {
+    "termino": "Menesteo",
+    "categoria": "persona",
+    "variantes": [
+      "hijo de Peteo"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como jefe de los atenienses, hijo de Peteo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "hijo de Peteo"
+    ]
+  },
+  {
+    "termino": "Meriones",
+    "categoria": "persona",
+    "variantes": [
+      "igual al homicida Marte"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como co-caudillo cretense junto a Idomeneo, 'igual al homicida Marte'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "igual al homicida Marte"
+    ]
+  },
+  {
+    "termino": "Ascálafo",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de Aspledón y Orcómeno, hijo de Marte",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Agapenor",
+    "categoria": "persona",
+    "variantes": [
+      "hijo de Anceo",
+      "rey Agapenor"
+    ],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los arcadios",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "hijo de Anceo",
+      "rey Agapenor"
+    ]
+  },
+  {
+    "termino": "Pirecmes",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los peonios desde Amidón",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Eurípilo",
+    "categoria": "persona",
+    "variantes": [
+      "hijo preclaro de Evemón"
+    ],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los de Ormenio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "hijo preclaro de Evemón"
+    ]
+  },
+  {
+    "termino": "Podarces",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo como sustituto de Protesilao al frente de sus hombres",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Aquiles",
+    "categoria": "persona",
+    "variantes": [
+      "Eácida",
+      "Pelida",
+      "Pelida Aquiles",
+      "el de los pies ligeros",
+      "hijo de Peleo"
+    ],
+    "evidencia": "Se le habla directamente ('¡Oh Aquiles, caro á Júpiter!'), habla él mismo, y se le describe como guerrero protagonista con epítetos recurrentes ('el de los pies ligeros')",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Eácida",
+      "Pelida",
+      "Pelida Aquiles",
+      "el de los pies ligeros",
+      "hijo de Peleo"
+    ]
+  },
+  {
+    "termino": "Júpiter",
+    "categoria": "persona",
+    "variantes": [
+      "Jove",
+      "Jove Saturnio",
+      "Júpiter Olímpico",
+      "Saturnio",
+      "el Olímpico",
+      "el Saturnio",
+      "longividente Saturnio",
+      "padre Júpiter"
+    ],
+    "evidencia": "Es invocado directamente, toma decisiones, habla y es interpelado por otros dioses; deidad suprema del panteón",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Jove",
+      "Jove Saturnio",
+      "Júpiter Olímpico",
+      "Saturnio",
+      "el Olímpico",
+      "el Saturnio",
+      "longividente Saturnio",
+      "padre Júpiter"
+    ]
+  },
+  {
+    "termino": "Minerva",
+    "categoria": "persona",
+    "variantes": [
+      "Palas Minerva",
+      "diosa de los brillantes ojos",
+      "hija de Júpiter",
+      "la de los brillantes ojos"
+    ],
+    "evidencia": "Habla directamente con Aquiles y con Ulises; actúa físicamente tirando del cabello de Aquiles y acompañando al ejército",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Palas Minerva",
+      "diosa de los brillantes ojos",
+      "hija de Júpiter",
+      "la de los brillantes ojos"
+    ]
+  },
+  {
+    "termino": "Menelao",
+    "categoria": "persona",
+    "variantes": [
+      "hermano de Agamenón",
+      "valiente en el combate",
+      "valiente en la pelea"
+    ],
+    "evidencia": "Mencionado como caudillo de Esparta y hermano de Agamenón en ambos fragmentos; en el fragmento 2 acude voluntariamente al sacrificio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "hermano de Agamenón",
+      "valiente en el combate",
+      "valiente en la pelea"
+    ]
+  },
+  {
+    "termino": "Vulcano",
+    "categoria": "persona",
+    "variantes": [
+      "el ilustre artífice",
+      "el ilustre cojo de ambos pies",
+      "ilustre artífice",
+      "ilustre cojo",
+      "ilustre cojo de ambos pies"
+    ],
+    "evidencia": "Habla directamente a los dioses en el festín; actúa como herrero y escanciador; aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "el ilustre artífice",
+      "el ilustre cojo de ambos pies",
+      "ilustre artífice",
+      "ilustre cojo",
+      "ilustre cojo de ambos pies"
+    ]
+  },
+  {
+    "termino": "Pándaro",
+    "categoria": "persona",
+    "variantes": [
+      "hijo ilustre de Licaón"
+    ],
+    "evidencia": "Descrito como caudillo de los teucros de Zelea a quien Apolo dio el arco, en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "hijo ilustre de Licaón"
+    ]
+  },
+  {
+    "termino": "Pirítoo",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado por Néstor en fragmento 1 como héroe del pasado; en fragmento 2 como padre de Polipetes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Neptuno",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado entre los dioses que quisieron atar a Júpiter (fragmento 1) y como dios cuyo bosque posee Onquesto (fragmento 2)",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Briáreo",
+    "categoria": "persona",
+    "variantes": [
+      "Egeón",
+      "centímano"
+    ],
+    "evidencia": "Mencionado por Aquiles al referirse a quien llamaron Tetis para liberar a Júpiter; 'los dioses nombran Briáreo y todos los hombres Egeón'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Egeón",
+      "centímano"
+    ]
+  },
+  {
+    "termino": "Tiestes",
+    "categoria": "persona",
+    "variantes": [
+      "rico en ganado"
+    ],
+    "evidencia": "Mencionado en la genealogía del cetro en el fragmento 2 como antecesor de Agamenón",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "rico en ganado"
+    ]
+  },
+  {
+    "termino": "Erecteo",
+    "categoria": "persona",
+    "variantes": [
+      "magnánimo Erecteo"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como ancestro del pueblo ateniense criado por Minerva",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "magnánimo Erecteo"
+    ]
+  },
+  {
+    "termino": "Polites",
+    "categoria": "persona",
+    "variantes": [
+      "hijo de Príamo"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como hijo de Príamo cuya figura adopta Iris para hablar a los troyanos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "hijo de Príamo"
+    ]
+  },
+  {
+    "termino": "Laertes",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado como padre de Ulises en el fragmento 2 ('Hijo de Laertes')",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Antenor",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el fragmento 2 como padre de Arquéloco y Acamante, co-caudillos dardanios",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Penéleo",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como uno de los caudillos beocios",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Hipótoo",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los pelasgos de Larisa",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Ulises",
+    "categoria": "persona",
+    "variantes": [
+      "Ulises fecundo en recursos",
+      "asolador de ciudades",
+      "el ingenioso",
+      "hijo de Laertes",
+      "igual á Júpiter en prudencia",
+      "ingenioso Ulises"
+    ],
+    "evidencia": "Habla y es interpelado directamente; actúa como caudillo en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Ulises fecundo en recursos",
+      "asolador de ciudades",
+      "el ingenioso",
+      "hijo de Laertes",
+      "igual á Júpiter en prudencia",
+      "ingenioso Ulises"
+    ]
+  },
+  {
+    "termino": "Néstor",
+    "categoria": "persona",
+    "variantes": [
+      "Néstor caballero gerenio",
+      "caballero gerenio",
+      "hijo de Neleo",
+      "rey de la arenosa Pilos"
+    ],
+    "evidencia": "Habla directamente y es descrito como orador entre los aqueos; aparece en ambos fragmentos como consejero",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Néstor caballero gerenio",
+      "caballero gerenio",
+      "hijo de Neleo",
+      "rey de la arenosa Pilos"
+    ]
+  },
+  {
+    "termino": "Héctor",
+    "categoria": "persona",
+    "variantes": [
+      "Héctor Priámida",
+      "de tremolante casco",
+      "matador de hombres"
+    ],
+    "evidencia": "Mencionado como caudillo troyano en ambos fragmentos; en el fragmento 2 recibe un mensaje de Iris y disuelve la junta",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Héctor Priámida",
+      "de tremolante casco",
+      "matador de hombres"
+    ]
+  },
+  {
+    "termino": "Calcas",
+    "categoria": "persona",
+    "variantes": [
+      "Calcas Testórida",
+      "el mejor de los augures",
+      "eximio vate"
+    ],
+    "evidencia": "Habla directamente, es interpelado por Aquiles y descrito como 'el mejor de los augures'; aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Calcas Testórida",
+      "el mejor de los augures",
+      "eximio vate"
+    ]
+  },
+  {
+    "termino": "Crises",
+    "categoria": "persona",
+    "variantes": [
+      "sacerdote Crises"
+    ],
+    "evidencia": "Habla directamente (plegarias a Apolo), actúa presentándose ante los aqueos; aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "sacerdote Crises"
+    ]
+  },
+  {
+    "termino": "Príamo",
+    "categoria": "persona",
+    "variantes": [
+      "palacio de Príamo",
+      "rey Príamo"
+    ],
+    "evidencia": "Mencionado como rey de Troya en ambos fragmentos; en el fragmento 2 los troyanos se reúnen en su palacio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "palacio de Príamo",
+      "rey Príamo"
+    ]
+  },
+  {
+    "termino": "Glauco",
+    "categoria": "persona",
+    "variantes": [
+      "el eximio Glauco",
+      "eximio Glauco"
+    ],
+    "evidencia": "Mencionado como caudillo de los licios junto a Sarpedón en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "el eximio Glauco",
+      "eximio Glauco"
+    ]
+  },
+  {
+    "termino": "Eumelo",
+    "categoria": "persona",
+    "variantes": [
+      "Feretíada",
+      "hijo querido de Admeto"
+    ],
+    "evidencia": "Mencionado como hijo de Admeto y caudillo en el fragmento 2; sus yeguas son elogiadas al final del catálogo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Feretíada",
+      "hijo querido de Admeto"
+    ]
+  },
+  {
+    "termino": "Latona",
+    "categoria": "persona",
+    "variantes": [
+      "Latona de hermosa cabellera",
+      "Latona la de hermosa cabellera",
+      "la de hermosa cabellera"
+    ],
+    "evidencia": "Mencionada como madre de Apolo en ambos fragmentos ('hijo de Júpiter y de Latona')",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Latona de hermosa cabellera",
+      "Latona la de hermosa cabellera",
+      "la de hermosa cabellera"
+    ]
+  },
+  {
+    "termino": "Helena",
+    "categoria": "persona",
+    "variantes": [
+      "argiva Helena"
+    ],
+    "evidencia": "Mencionada como causa de la guerra; Juno y Minerva preguntan si dejarán a Príamo 'la argiva Helena' como trofeo, en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "argiva Helena"
+    ]
+  },
+  {
+    "termino": "Aurora",
+    "categoria": "persona",
+    "variantes": [
+      "Aurora de rosados dedos",
+      "divinal Aurora",
+      "hija de la mañana",
+      "la de rosados dedos"
+    ],
+    "evidencia": "Mencionada como entidad que 'sube al Olimpo para anunciar el día' y como señal temporal recurrente en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 4,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Aurora de rosados dedos",
+      "divinal Aurora",
+      "hija de la mañana",
+      "la de rosados dedos"
+    ]
+  },
+  {
+    "termino": "Pélope",
+    "categoria": "persona",
+    "variantes": [
+      "excelente jinete Pélope"
+    ],
+    "evidencia": "Mencionado en la genealogía del cetro de Agamenón en el fragmento 2 ('excelente jinete Pélope')",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "excelente jinete Pélope"
+    ]
+  },
+  {
+    "termino": "Admeto",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el fragmento 2 como padre de Eumelo en el catálogo de naves",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Toante",
+    "categoria": "persona",
+    "variantes": [
+      "hijo de Andremón"
+    ],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los etolos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "hijo de Andremón"
+    ]
+  },
+  {
+    "termino": "Protoo",
+    "categoria": "persona",
+    "variantes": [
+      "hijo de Tentredón",
+      "ligero Protoo"
+    ],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los magnetes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "hijo de Tentredón",
+      "ligero Protoo"
+    ]
+  },
+  {
+    "termino": "Eufemo",
+    "categoria": "persona",
+    "variantes": [
+      "hijo de Treceno Céada"
+    ],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como capitán de los cicones",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "hijo de Treceno Céada"
+    ]
+  },
+  {
+    "termino": "Nastes",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los carios junto a Anfímaco",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Macaón",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como co-caudillo médico de los de Trica junto a Podalirio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Apolo",
+    "categoria": "persona",
+    "variantes": [
+      "Febo Apolo",
+      "el Flechador",
+      "flechador Apolo",
+      "hijo de Júpiter y de Latona"
+    ],
+    "evidencia": "Actúa (dispara flechas, oye plegarias), es invocado directamente ('¡Óyeme, tú que llevas arco de plata!') y recibe sacrificios",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Febo Apolo",
+      "el Flechador",
+      "flechador Apolo",
+      "hijo de Júpiter y de Latona"
+    ]
+  },
+  {
+    "termino": "Tetis",
+    "categoria": "persona",
+    "variantes": [
+      "Tetis de argentados pies",
+      "Tetis la de argentados pies",
+      "hija del anciano del mar",
+      "la de argentados pies",
+      "veneranda madre"
+    ],
+    "evidencia": "Habla directamente con Aquiles y con Júpiter; emerge del mar y sube al Olimpo; aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Tetis de argentados pies",
+      "Tetis la de argentados pies",
+      "hija del anciano del mar",
+      "la de argentados pies",
+      "veneranda madre"
+    ]
+  },
+  {
+    "termino": "Eneas",
+    "categoria": "persona",
+    "variantes": [
+      "valiente hijo de Anquises"
+    ],
+    "evidencia": "Descrito como caudillo dardanio hijo de Anquises y Venus en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 4,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "valiente hijo de Anquises"
+    ]
+  },
+  {
+    "termino": "Marte",
+    "categoria": "persona",
+    "variantes": [
+      "homicida Marte",
+      "horrendo Marte",
+      "vástago de Marte"
+    ],
+    "evidencia": "Mencionado como deidad guerrera ('ministros de Marte', 'hijos de Marte') en ambos fragmentos; referencia constante como padre de héroes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "homicida Marte",
+      "horrendo Marte",
+      "vástago de Marte"
+    ]
+  },
+  {
+    "termino": "Venus",
+    "categoria": "persona",
+    "variantes": [
+      "divina Venus"
+    ],
+    "evidencia": "Mencionada como madre de Eneas ('la divina Venus') en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "divina Venus"
+    ]
+  },
+  {
+    "termino": "Sueño",
+    "categoria": "persona",
+    "variantes": [
+      "Sueño divino",
+      "divino Sueño",
+      "pernicioso Sueño"
+    ],
+    "evidencia": "Júpiter le habla directamente ('Anda, pernicioso Sueño'); actúa como mensajero; se transfigura en Néstor y habla; aparece en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Sueño divino",
+      "divino Sueño",
+      "pernicioso Sueño"
+    ]
+  },
+  {
+    "termino": "Atreo",
+    "categoria": "persona",
+    "variantes": [
+      "Atreo pastor de hombres"
+    ],
+    "evidencia": "Mencionado como padre de Agamenón y Menelao ('hijo de Atreo', 'Atrida'); en fragmento 2 aparece en la genealogía del cetro",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "Atreo pastor de hombres"
+    ]
+  },
+  {
+    "termino": "Nireo",
+    "categoria": "persona",
+    "variantes": [
+      "el más hermoso de los dánaos"
+    ],
+    "evidencia": "Mencionado tres veces en el fragmento 2 como caudillo de tres naves de Sima, el más hermoso tras Aquiles",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "el más hermoso de los dánaos"
+    ]
+  },
+  {
+    "termino": "Leito",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como uno de los caudillos beocios",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Guneo",
+    "categoria": "persona",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los enienes y perebos desde Cifo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Meges",
+    "categoria": "persona",
+    "variantes": [
+      "Meges Filida",
+      "igual á Marte"
+    ],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los de Duliquio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "Meges Filida",
+      "igual á Marte"
+    ]
+  },
+  {
+    "termino": "Teseo",
+    "categoria": "persona",
+    "variantes": [
+      "Teseo Egida"
+    ],
+    "evidencia": "Mencionado por Néstor en su relato de héroes pasados como alguien que 'parecía un inmortal'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Teseo Egida"
+    ]
+  },
+  {
+    "termino": "Juno",
+    "categoria": "persona",
+    "variantes": [
+      "Juno veneranda",
+      "diosa de los níveos brazos",
+      "la de los grandes ojos",
+      "la de los níveos brazos",
+      "la de áureo trono"
+    ],
+    "evidencia": "Habla directamente con Minerva y con Júpiter; actúa enviando a Minerva y disputando con Júpiter",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Juno veneranda",
+      "diosa de los níveos brazos",
+      "la de los grandes ojos",
+      "la de los níveos brazos",
+      "la de áureo trono"
+    ]
+  },
+  {
+    "termino": "Iris",
+    "categoria": "persona",
+    "variantes": [
+      "Iris de los pies ligeros como el viento",
+      "Iris la de los pies ligeros",
+      "la de los pies ligeros como el viento"
+    ],
+    "evidencia": "Actúa como mensajera de Júpiter a los troyanos en el fragmento 2; habla directamente disfrazada de Polites",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Iris de los pies ligeros como el viento",
+      "Iris la de los pies ligeros",
+      "la de los pies ligeros como el viento"
+    ]
+  },
+  {
+    "termino": "Fama",
+    "categoria": "persona",
+    "variantes": [
+      "mensajera de Júpiter"
+    ],
+    "evidencia": "Aparece como 'mensajera de Júpiter' que enardece a los guerreros para que acudan a la junta en el fragmento 2",
+    "confianza": "media",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "mensajera de Júpiter"
+    ]
+  }
+]

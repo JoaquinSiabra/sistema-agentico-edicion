@@ -1,0 +1,70 @@
+{
+  "tipos_documentales": [
+    {
+      "nombre": "Narración épica en tercera persona con numeración de versos",
+      "descripcion": "Relato continuo en tercera persona que constituye el cuerpo principal del texto. Presenta acciones, estados de ánimo y desplazamientos de los personajes con voz omnisciente. Los segmentos están precedidos por un número de verso que funciona como referencia editorial externa a la diégesis.",
+      "voz": "Narrador omnisciente extradiegético en tercera persona; instancia impersonal de tradición épica que conoce tanto el plano humano como el divino.",
+      "marcadores_formales": "Números de verso en arábigo al inicio de cada párrafo (1, 8, 22, 33, 43, 53, etc.); prosa narrativa en tercera persona del singular ('Así dijo. El anciano sintió temor y obedeció el mandato.'); verbos de movimiento y emoción atribuidos a personajes sin mediación de ningún documento citado; ausencia de etiquetas de hablante.",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'Tal fué su plegaria. Oyóla Febo Apolo, é irritado en su corazón, descendió de las cumbres del Olimpo...' (v. 43); 'Acongojóse el Pelida, y dentro del velludo pecho su corazón discurrió dos cosas...' (v. 188). Patrón reiterado a lo largo de todo el fragmento.",
+      "confianza": "alta"
+    },
+    {
+      "nombre": "Invocación épica o proêmio",
+      "descripcion": "Fórmula de apertura del canto dirigida a una divinidad ('la diosa') en segunda persona del singular, solicitando el canto. Tiene función ritual-performativa distinta de la narración: es el poema hablando sobre sí mismo y legitimando su voz. Aparece únicamente al inicio del Canto Primero.",
+      "voz": "Voz del aedo o poeta-narrador que se dirige directamente a la Musa/diosa en segunda persona, sin ser un personaje de la historia.",
+      "marcadores_formales": "Verbo en imperativo dirigido a la diosa: 'Canta, oh diosa'; segunda persona del singular; mención explícita del tema ('la cólera del Pelida Aquiles'); fórmula de apertura sin número de verso independiente (el v. 1 coincide con el inicio absoluto del texto); estructura de subordinación temática ('desde que se separaron...').",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'Canta, oh diosa, la cólera del Pelida Aquiles; cólera funesta que causó infinitos males á los aqueos...' (v. 1). Segmento único que antecede el despliegue narrativo y se distingue por el imperativo en segunda persona dirigido a una instancia sobrehumana.",
+      "confianza": "alta"
+    },
+    {
+      "nombre": "Discurso directo de personaje (parlamentos dramáticos)",
+      "descripcion": "Intervenciones en primera persona atribuidas explícitamente a personajes concretos de la diégesis, delimitadas por comillas angulares o españolas y por fórmulas de introducción del estilo 'dijo/exclamó/respondió + nombre'. Incluyen súplicas, arengas, reproches, promesas y plegarias. Son el equivalente funcional de un diálogo teatral incrustado en la narración épica.",
+      "voz": "Personajes individuales de la ficción (Crises, Agamenón, Aquiles, Calcas, Néstor, Minerva, Tetis, Júpiter, Juno, Vulcano, etc.) hablando en primera persona.",
+      "marcadores_formales": "Comillas de apertura y cierre («» o '«...»'); fórmulas de introducción en tercera persona antes o después del parlamento ('exclamó', 'dijo', 'replicó', 'respondióle', 'contestó', 'arengó diciendo'); primera persona del singular o plural dentro del parlamento ('No he venido a pelear...', 'Yo aconsejo a mi madre...'); vocativos directos al interlocutor ('¡Atridas y demás aqueos!', '¡Oh Aquiles, caro á Júpiter!').",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'«¡Atridas y demás aqueos de hermosas grebas! Los dioses... os permitan destruir la ciudad de Príamo...»' (v. 17); '«¡Adivino de males! Jamás me has anunciado nada grato...»' (v. 106); '«¡Padre Júpiter! Si alguna vez te fuí útil...»' (v. 503). Patrón reiterado y sistemático a lo largo de todo el fragmento.",
+      "confianza": "alta"
+    },
+    {
+      "nombre": "Plegaria ritual (subtipo de discurso directo)",
+      "descripcion": "Subconjunto diferenciado dentro del discurso directo de personaje: intervenciones en primera persona dirigidas a una divinidad con estructura formulaica fija: (1) invocación con epítetos del dios, (2) recordatorio del servicio prestado al dios, (3) petición concreta. Se distingue del parlamento ordinario por su función ritual, por el uso de signos de exclamación acumulados y por el hecho de ser, en el universo de la obra, un acto de comunicación entre el plano humano y el divino.",
+      "voz": "Personaje humano o semidivino (Crises, Aquiles, Tetis) en primera persona, dirigiéndose a una deidad.",
+      "marcadores_formales": "Apertura con '¡Óyeme...' o '¡Padre Júpiter!' en vocativo; enumeración de epítetos divinos ('tú que llevas arco de plata, proteges á Crisa...'); condicional de servicio pasado ('Si alguna vez adorné tu gracioso templo...', 'Si alguna vez te fuí útil...'); petición en imperativo ('¡Paguen los dánaos mis lágrimas!', 'cúmpleme este voto'); delimitadas por comillas igual que los parlamentos, pero con estructura tripartita reconocible.",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'«¡Óyeme, tú que llevas arco de plata... ¡Oh Esmintio! Si alguna vez adorné tu gracioso templo ó quemé en tu honor pingües muslos... cúmpleme este voto: ¡Paguen los dánaos mis lágrimas con tus flechas!»' (v. 37-42); repetición casi literal en v. 451-456. La estructura tripartita y la función comunicativa transdivina la distinguen del parlamento dramático ordinario.",
+      "confianza": "media"
+    },
+    {
+      "nombre": "Nota o pie de ilustración editorial",
+      "descripcion": "Segmento breve en cursiva o entre paréntesis que describe el contenido de una imagen o ilustración intercalada en el texto impreso. No pertenece a la diégesis ni a la voz narrativa del poema: es una nota paratextual del editor o del responsable de la edición ilustrada, que remite al lector a una imagen y la glosa brevemente.",
+      "voz": "Instancia editorial externa a la narración (editor, pie de grabado); voz institucional sin autoría individual atribuible en el texto.",
+      "marcadores_formales": "Texto en cursiva o entre paréntesis inmediatamente después de la referencia al verso: 'Tetis oyó á Aquiles y emergió, como niebla, de las espumosas ondas... / (Canto I, versos 357 á 359.)'; referencia explícita al número de canto y de versos entre paréntesis; descripción en presente o pasado de la acción representada en la imagen.",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'Tetis oyó á Aquiles y emergió, como niebla, de las espumosas ondas... / (Canto I, versos 357 á 359.)' Aparece entre el v. 356 y el v. 357 de la narración, interrumpiendo el flujo narrativo y señalando la ubicación de una ilustración con su leyenda y referencia canónica de versos.",
+      "confianza": "alta"
+    },
+    {
+      "nombre": "Encabezado de canto con subtítulo temático",
+      "descripcion": "Paratexto estructural que abre el canto con número ordinal en mayúsculas y una o varias palabras clave que anuncian el contenido temático. Función puramente organizativa-editorial; no forma parte de la narración ni del discurso de ningún personaje.",
+      "voz": "Instancia editorial o traductora, sin voz individual; convención tipográfica de la tradición editorial de la épica griega.",
+      "marcadores_formales": "Texto en mayúsculas: 'CANTO PRIMERO'; subtítulo en mayúsculas separado por punto y raya: 'PESTE.—CÓLERA'; posición inicial absoluta antes del verso 1; ausencia de número de verso.",
+      "fragmentos_evidencia": [
+        1
+      ],
+      "evidencia": "'CANTO PRIMERO / PESTE.—CÓLERA' al inicio del fragmento, antes de cualquier verso numerado. Patrón reconocible como encabezado de división canónica de la Ilíada en ediciones impresas.",
+      "confianza": "alta"
+    }
+  ]
+}
