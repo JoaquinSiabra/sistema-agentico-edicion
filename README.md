@@ -24,9 +24,9 @@ todavía no:
 ![Arquitectura del sistema agéntico de evaluación editorial](docs/arquitectura.png)
 
 1. **Bootstrapping** (determinista, no agente): todo lo que correría una
-   sola vez sobre la obra completa. De esto, **solo el pipeline de
-   extracción está implementado** — el almacén y el retriever son diseño
-   todavía, no código:
+   sola vez sobre la obra (y después, fragmento a fragmento, a medida que
+   la obra crece). El pipeline de extracción, el almacén y la parte
+   semántica del retriever están implementados:
    - **Fase 0a — taxonomía documental** *(implementado)*: identifica qué
      tipos de documento contiene la obra (narración, diálogo, documentos
      insertados, paratexto editorial...), a partir de fragmentos reales de
@@ -34,20 +34,22 @@ todavía no:
    - **Fase 0b — glosario calibrado** *(implementado)*: identifica
      personajes, lugares, pueblos, objetos y conceptos, fusionando las
      distintas formas en que la obra nombra al mismo referente (epítetos,
-     patronímicos, apelativos).
+     patronímicos, apelativos). Es **incremental**: al añadir un fragmento
+     nuevo, conserva todos los términos ya fijados y solo añade lo nuevo.
    - **Fase 1 — extracción con atribución** *(implementado)*: usa esa
-     calibración como contexto y extrae hechos canónicos, marcando cada
-     uno como `narrador_documental` (lo establece el narrador o un
-     documento) o `afirmacion_personaje` (lo dice un personaje, sin
-     verificación independiente). Esta es la parte que documenta este repo.
-   - **Almacén — Postgres + pgvector** *(no construido)*: guardaría lo
-     anterior en dos formas — la prosa de la obra dividida por escena y
-     vectorizada (para recuperación semántica) y las fichas canónicas de
-     la Fase 1, cada una con su `momento_canonico` (para no dar por
-     conocido algo que en la obra todavía no se ha revelado).
-   - **Retriever híbrido** *(no construido)*: combinaría la búsqueda
-     semántica sobre la prosa con consultas estructuradas sobre las
-     fichas canónicas.
+     calibración como contexto y extrae hechos canónicos, marcando quién
+     respalda cada uno: `narrador_documental` (el narrador o un documento),
+     `testimonio_directo_narrador` (el narrador en primera persona, sin
+     nada en juego) o `afirmacion_interesada` (alguien con algo que ganar
+     en que se le crea, sin verificación independiente).
+   - **Almacén — Postgres + pgvector** *(implementado)*: guarda lo
+     anterior en dos formas — la prosa de la obra troceada en pasajes de
+     ~380 tokens y vectorizada (para recuperación semántica) y las fichas
+     canónicas de la Fase 1, ambas con su posición en el orden de lectura.
+   - **Retriever** *(implementado en parte)*: búsqueda semántica sobre los
+     pasajes y consulta de hechos canónicos por entidad, las dos con un
+     **filtro anti-spoiler**: dado un punto de lectura, nunca devuelve
+     nada posterior. Falta combinar ambas en una sola respuesta.
 2. **Runtime agéntico** *(no construido, en diseño)*: el grafo de agentes
    (LangGraph) que consultaría el retriever para producir el análisis
    editorial. Cuatro agentes especializados compartirían ese retriever pero
@@ -69,7 +71,7 @@ corresponde a un script:
 | Fase | Script | Detalle |
 |---|---|---|
 | 0a | `calibrar_taxonomia.py` | Una pasada suele bastar: los marcadores de tipo documental (mayúsculas, notas al pie, etiquetas de hablante) son explícitos. |
-| 0b | `calibrar_glosario.py` | Ejecuta N pasadas independientes (por defecto 3) y reconcilia por mayoría, registrando el disenso en vez de ocultarlo — la categoría de una entidad es más ambigua y el modelo no converge igual dos veces. |
+| 0b | `calibrar_glosario.py` | Ejecuta N pasadas independientes (por defecto 3) y reconcilia por mayoría, registrando el disenso en vez de ocultarlo — la categoría de una entidad es más ambigua y el modelo no converge igual dos veces. Si la obra ya tiene glosario, solo calibra los fragmentos nuevos y no toca lo ya fijado (`--desde-cero` para recalibrar todo). |
 | 1 | `extraer_canon.py` | Carga la calibración de 0a y 0b como contexto del prompt de sistema, con prompt caching para no volver a pagar ese contexto en cada fragmento. |
 
 ## Caso de estudio: Canto I de la Ilíada
@@ -102,10 +104,15 @@ src/
   calibrar_taxonomia.py   # Fase 0a
   calibrar_glosario.py    # Fase 0b
   extraer_canon.py        # Fase 1
+  poblar_almacen.py       # Fase 2: carga en Postgres + pgvector
+  recuperar.py            # Búsqueda con filtro anti-spoiler
+tests/
+  SPECS.md                # Qué debe cumplir cada fase y qué prueba lo comprueba
+  fijos/                  # Cantos I-III de la Ilíada y respuestas reales de Claude
 data/
   ejemplos/
     iliada-canto-i/       # Salida real de calibración sobre el Canto I
-  exports/                # (no versionado) salida de tus propias ejecuciones
+  <obra>/exports/         # (no versionado) salida de tus propias ejecuciones
 ```
 
 ## Uso
@@ -115,26 +122,55 @@ Requiere Python 3.11+, [`uv`](https://github.com/astral-sh/uv), y una
 
 ```bash
 # Fase 0a — taxonomía documental (una pasada suele bastar)
-uv run python src/calibrar_taxonomia.py --n=1 data/novelas/fragmento.txt
+uv run python src/calibrar_taxonomia.py --obra=mi_obra --n=1 data/novelas/fragmento.txt
 
-# Fase 0b — glosario calibrado (varias pasadas + reconciliación)
-uv run python src/calibrar_glosario.py --n=3 data/novelas/fragmento.txt
+# Fase 0b — glosario calibrado (varias pasadas + reconciliación).
+# La primera vez calibra desde cero; las siguientes, solo los fragmentos nuevos.
+uv run python src/calibrar_glosario.py --obra=mi_obra --n=3 data/novelas/fragmento.txt
 
 # Fase 1 — extracción con atribución (usa la config generada arriba)
 # --orden=N es la posición de lectura de este fragmento en la obra
-uv run python src/extraer_canon.py --orden=1 data/novelas/fragmento.txt
+uv run python src/extraer_canon.py --obra=mi_obra --orden=1 data/novelas/fragmento.txt
+
+# Fase 2 — carga en el Almacén (ver INSTALL.md)
+uv run python src/poblar_almacen.py --obra=mi_obra --exports=data/mi_obra/exports
+
+# Búsqueda: lo que se sabe hasta el final del fragmento 1, sin spoilers
+uv run python src/recuperar.py --obra=mi_obra --hasta-fragmento=1 "consulta"
 ```
 
-Cada fase escribe en `data/exports/`. Si `extraer_canon.py` no encuentra la
-config de la Fase 0, avisa por consola y extrae igualmente, sin esa ayuda.
+Cada obra escribe en su propia carpeta, `data/<obra>/exports/`. Si
+`extraer_canon.py` no encuentra la config de la Fase 0, avisa por consola y
+extrae igualmente, sin esa ayuda.
+
+## Pruebas
+
+Tres niveles, de más rápido a más caro (detalle en
+[`tests/SPECS.md`](tests/SPECS.md)):
+
+```bash
+uv pip install -r requirements-dev.txt
+
+# Rápido (segundos): sin base de datos ni API. Incluye las fases que
+# llaman a Claude, con respuestas reales grabadas en tests/fijos/.
+uv run pytest
+
+# Con base de datos (Postgres + pgvector): carga, recarga y filtro anti-spoiler.
+# Crea su propia base de datos, almacen_test; nunca toca almacen.
+uv run pytest --db
+
+# Contra la API real (con coste): las mismas specs sobre respuestas nuevas.
+uv run pytest --api tests/api
+```
 
 ## Estado del proyecto
 
 Exploratorio, documentado tal como es. El pipeline de extracción (Fases 0a,
-0b y 1) está implementado y probado — es lo que documenta este repo. Todo
-lo demás —almacén Postgres + pgvector, retriever híbrido, y el grafo de
-agentes de evaluación en runtime (continuidad, voz, estructura, crítica de
-conjunto)— está en diseño, no en código todavía.
+0b y 1), el almacén Postgres + pgvector y la búsqueda con filtro
+anti-spoiler están implementados y cubiertos por pruebas, comprobados con
+los Cantos I-III de la Ilíada. Falta combinar pasajes y hechos en un
+retriever híbrido y el grafo de agentes de evaluación en runtime
+(continuidad, voz, estructura, crítica de conjunto), que siguen en diseño.
 
 ## Licencia
 

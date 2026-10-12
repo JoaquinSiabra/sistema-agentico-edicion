@@ -1,6 +1,6 @@
 # Instalación
 
-Esta guía cubre dos cosas: el entorno Python para el pipeline de extracción (Fases 0a, 0b y 1, ya documentado en el [README](README.md)), y la puesta en marcha del **Almacén** (Fase 2: Postgres + pgvector), que guarda la prosa vectorizada y las fichas canónicas para que el futuro retriever híbrido pueda consultarlas.
+Esta guía cubre dos cosas: el entorno Python para el pipeline de extracción (Fases 0a, 0b y 1, ya documentado en el [README](README.md)), y la puesta en marcha del **Almacén** (Fase 2: Postgres + pgvector), que guarda la prosa vectorizada y las fichas canónicas para que el retriever (`src/recuperar.py`) pueda consultarlas.
 
 El Almacén corre sobre PostgreSQL + pgvector. En Windows, la vía recomendada es WSL2, porque el repositorio `universe` de Ubuntu no empaqueta pgvector de forma fiable.
 
@@ -18,7 +18,7 @@ cd sistema-agentico-edicion
 uv pip install -r requirements.txt
 ```
 
-Con esto ya puedes correr las Fases 0a, 0b y 1 como describe el README. Lo que sigue es solo para la Fase 2 (Almacén).
+Con esto ya puedes ejecutar las Fases 0a, 0b y 1 como describe el README. Lo que sigue es solo para la Fase 2 (Almacén).
 
 ## 3. Instalar WSL2 + Ubuntu (solo Windows)
 
@@ -91,11 +91,7 @@ Debe devolver `TcpTestSucceeded : True`. Con el reenvío de `localhost` de WSL2 
 
 ## 9. Poblar el Almacén
 
-`src/poblar_almacen.py` usa un modelo de embeddings local (`sentence-transformers`, `intfloat/multilingual-e5-large`, 1024 dimensiones) en vez de una API de pago, y necesita además el cliente de PostgreSQL. Ninguno de los dos está en `requirements.txt` todavía:
-
-```bash
-uv pip install psycopg2-binary sentence-transformers
-```
+`src/poblar_almacen.py` usa un modelo de embeddings local (`sentence-transformers`, `intfloat/multilingual-e5-large`, 1024 dimensiones) en vez de una API de pago, y necesita además el cliente de PostgreSQL. Los dos están en `requirements.txt`.
 
 Luego, para una obra ya procesada por las Fases 0 y 1:
 
@@ -103,4 +99,17 @@ Luego, para una obra ya procesada por las Fases 0 y 1:
 uv run python src/poblar_almacen.py --obra=<nombre_obra> --exports=data/<nombre_obra>/exports
 ```
 
-El script asume que `extraer_canon.py` escribe un fichero JSON por fragmento bajo `data/<obra>/exports/canon/{orden:04d}.json` con las claves `orden_fragmento` y `ruta_fragmento_origen` — ver el docstring de `poblar_almacen.py` para el detalle de ese prerrequisito.
+El script asume que `extraer_canon.py` escribe un fichero JSON por fragmento bajo `data/<obra>/exports/canon/{orden:04d}.json` con las claves `orden_fragmento` y `ruta_fragmento_origen` — ver el docstring de `poblar_almacen.py` para el detalle de ese prerrequisito. La ruta del texto se guarda tal como la escribió el sistema que ejecutó la extracción; si extraes en Windows y cargas desde WSL (o al revés), `poblar_almacen.py` la traduce sola.
+
+## 10. Buscar sin spoilers
+
+```bash
+uv run python src/recuperar.py --obra=<nombre_obra> --hasta-fragmento=2 "consulta"
+uv run python src/recuperar.py --obra=<nombre_obra> --hasta-fragmento=2 --hasta-char=5000 --entidad=<término> "consulta"
+```
+
+`--hasta-fragmento` (y opcionalmente `--hasta-char`) es el punto de lectura: nunca se devuelve nada posterior. Con `--entidad` lista además los hechos canónicos de esa entidad hasta ese punto.
+
+## 11. Pruebas con base de datos
+
+`uv run pytest --db` crea desde cero una base de datos aparte, `almacen_test` (nunca toca `almacen`), y carga en ella los Cantos I y II de la Ilíada de `tests/fijos/`. La primera ejecución calcula los embeddings (unos minutos en CPU) y los guarda en `.cache/`; las siguientes tardan segundos.
