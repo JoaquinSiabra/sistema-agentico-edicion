@@ -13,29 +13,29 @@ EMERGENTE que solo se ve por repetición de uso a través de varios fragmentos
 — un fragmento aislado no basta. Aquí el problema es distinto: el tipo
 documental de un fragmento normalmente se delata por marcadores OVERT
 dentro del propio fragmento (un encabezado en mayúsculas, una nota a pie,
-una etiqueta de hablante tipo "PRESIDENTE:", corchetes de dispositivo). Lo
+una etiqueta de hablante en un diálogo transcrito, una fecha de diario). Lo
 que SÍ exige ver varios fragmentos a la vez no es la detección en sí, sino
 la COBERTURA: para construir la taxonomía completa de la obra hace falta
 muestrear fragmentos de partes distintas de la obra, porque un tipo que
-solo aparece en una sección no es visible leyendo solo otra.
+solo aparece en la segunda mitad no es visible leyendo solo la primera.
 
 IMPORTANTE — un fragmento puede contener VARIOS tipos documentales
-anidados a la vez (ej.: una narración en primera persona incrustando una
-carta, que a su vez incrusta un fragmento de diálogo transcrito). El
+anidados a la vez (ej.: una narración en primera persona que incrusta una
+carta, que a su vez cita un diálogo). El
 prompt pide identificar TODOS los tipos presentes en el lote, no forzar
 un tipo único por fragmento.
 
 ESTABILIDAD — A DIFERENCIA DE 0b, AÚN NO SABEMOS SI HAY INESTABILIDAD:
 en 0b comprobamos empíricamente que el modelo no converge igual dos veces
-sobre términos ambiguos (ver data/exports/discrepancias_calibracion.json
-para un caso real). Aquí no lo hemos comprobado
-todavía, y es razonable esperar MÁS estabilidad porque los marcadores son
-formales y explícitos, no inferencias de uso. Por eso esta v1 NO reconcilia
-automáticamente: ejecuta N pasadas independientes (por defecto 1) y las
-guarda todas en bruto, sin fusionarlas. Si al comparar varias pasadas a
-mano aparece la misma inestabilidad que en 0b (nombres distintos para el
-mismo tipo, fronteras que se mueven), entonces — y solo entonces — se le
-añade aquí una reconciliación como la de calibrar_glosario.py. Pero ojo:
+(un mismo término cambió de categoría entre pasadas). Aquí no lo hemos
+comprobado todavía, y es razonable esperar MÁS estabilidad porque los
+marcadores son formales y explícitos, no inferencias de uso. Por eso esta
+v1 NO reconcilia automáticamente: ejecuta N pasadas independientes (por
+defecto 1) y las guarda todas en bruto, sin fusionarlas. Si al comparar
+varias pasadas a mano aparece la misma inestabilidad que en 0b (nombres
+distintos para el mismo tipo, fronteras que se mueven), entonces — y solo
+entonces — se le añade aquí una reconciliación como la de
+calibrar_glosario.py. Pero ojo:
 ahí la reconciliación fue posible porque "categoría de un término" es un
 voto sobre un conjunto CERRADO de opciones (persona/lugar/...). Aquí cada
 pasada propone un conjunto ABIERTO de nombres de tipo, así que fusionar
@@ -44,14 +44,18 @@ pasada de reconciliación que sea ELLA MISMA una llamada al modelo (agrupar
 semánticamente nombres distintos que designan el mismo tipo). No se
 implementa hasta confirmar que hace falta.
 
-SALIDA: data/exports/taxonomia_pasada_N.json (una por pasada, sin fusionar)
-y, si solo se pidió una pasada (--n=1, el valor por defecto), además
-data/exports/tipos_documentales_obra.json como copia directa de esa única
-pasada — ese es el fichero que en el futuro leerá extraer_canon.py en vez
-de su lista fija actual.
+SALIDA: data/<obra>/exports/taxonomia_pasada_N.json (una por pasada, sin
+fusionar) y, si solo se pidió una pasada (--n=1, el valor por defecto),
+además data/<obra>/exports/tipos_documentales_obra.json como copia directa
+de esa única pasada — ese es el fichero que en el futuro leerá
+extraer_canon.py en vez de su lista fija actual.
+
+--obra=<nombre> es OBLIGATORIO: cada obra calibra por separado y todas sus
+salidas quedan bajo data/<obra>/exports/, para que la taxonomía, el
+glosario y el canon de una novela nunca se mezclen con los de otra.
 
 Uso:
-    uv run python src/calibrar_taxonomia.py [--n=1] data/novelas/fragmento_1.txt data/novelas/fragmento_2.txt ...
+    uv run python src/calibrar_taxonomia.py --obra=nombre_obra [--n=1] data/novelas/fragmento_1.txt data/novelas/fragmento_2.txt ...
 """
 
 import json
@@ -64,8 +68,8 @@ MODELO = "claude-sonnet-4-6"
 
 PROMPT_SISTEMA = """Eres un analista de tipografía documental especializado en \
 textos de ficción con estructura narrativa compleja (manuscritos que incrustan \
-documentos de distinta naturaleza: transcripciones, actas, notas, anotaciones \
-de dispositivo, etc.). Vas a recibir varios fragmentos de UNA MISMA novela, \
+documentos de distinta naturaleza: cartas, diarios, transcripciones, notas, \
+recortes de prensa, etc.). Vas a recibir varios fragmentos de UNA MISMA novela, \
 separados por marcadores "=== FRAGMENTO N ===".
 
 Tu tarea: identificar TODOS los tipos documentales distintos que aparecen en \
@@ -73,14 +77,13 @@ el conjunto de fragmentos. Por "tipo documental" no nos referimos al GÉNERO \
 de la novela ni a su contenido temático, sino al MARCO FORMAL de cada \
 segmento de texto: qué clase de objeto textual es, en el universo de la \
 obra (¿transcripción de voz?, ¿acta de una reunión?, ¿nota de enciclopedia?, \
-¿anotación automática de un dispositivo?, ¿noticia retransmitida?, ¿narración \
+¿anotación al margen?, ¿noticia retransmitida?, ¿narración \
 convencional en tercera persona?, ¿monólogo en primera persona?).
 
 REGLAS:
 - Un mismo fragmento puede contener VARIOS tipos documentales anidados (por \
-ejemplo, una narración en primera persona puede incrustar un acta de \
-asamblea, que a su vez incrusta diálogo transcrito con etiquetas de \
-hablante). Identifica TODOS los tipos presentes, sin forzar un tipo único \
+ejemplo, una narración en primera persona puede incrustar una carta, que \
+a su vez cita un diálogo con etiquetas de hablante). Identifica TODOS los tipos presentes, sin forzar un tipo único \
 por fragmento.
 - NO distingas dos tipos solo porque el encabezado o el escenario concreto \
 cambia (p.ej. dos cartas de personajes distintos, con encabezados distintos, \
@@ -99,7 +102,7 @@ hablante, notas a pie de página, cambios de persona gramatical o de número \
 ("Tal dijo.", "tres días después...", etc.).
 - Para cada tipo, describe en "voz" quién o qué instancia "habla" ese texto: \
 un personaje concreto narrando en primera persona, una voz colectiva, un \
-dispositivo o sistema no humano, un narrador omnisciente en tercera persona, \
+máquina o sistema automático, un narrador omnisciente en tercera persona, \
 una institución (sin autor individual atribuible), etc.
 - Si la evidencia es insuficiente o el caso es dudoso, usa confianza "baja" \
 y explica la duda en vez de forzar una distinción.
@@ -135,6 +138,20 @@ def construir_entrada(rutas: list[str]) -> str:
     return "\n\n".join(partes)
 
 
+def mostrar_uso_cache(uso) -> None:
+    """Ver calibrar_glosario.py / extraer_canon.py: mismo criterio de
+    lectura. El bloque cacheado es la ENTRADA (fragmentos), porque
+    calibrar_n_veces() manda el mismo texto N veces en la misma ejecución
+    (n=1 por defecto aquí, así que solo se nota con --n>1)."""
+    creacion = getattr(uso, "cache_creation_input_tokens", 0) or 0
+    lectura = getattr(uso, "cache_read_input_tokens", 0) or 0
+    print(
+        f"  Tokens — nuevos: {uso.input_tokens} | "
+        f"caché escrito: {creacion} | caché leído: {lectura} | "
+        f"salida: {uso.output_tokens}"
+    )
+
+
 def calibrar(rutas: list[str]) -> dict:
     cliente = anthropic.Anthropic()
     entrada = construir_entrada(rutas)
@@ -145,8 +162,21 @@ def calibrar(rutas: list[str]) -> dict:
         model=MODELO,
         max_tokens=8000,
         system=PROMPT_SISTEMA,
-        messages=[{"role": "user", "content": entrada}],
+        messages=[
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": entrada,
+                        "cache_control": {"type": "ephemeral"},
+                    }
+                ],
+            }
+        ],
     )
+
+    mostrar_uso_cache(respuesta.usage)
 
     texto = respuesta.content[0].text.strip()
     texto = texto.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
@@ -191,44 +221,52 @@ def guardar(datos, ruta: Path) -> None:
     print(f"Guardado en {ruta} ({n} tipos documentales)")
 
 
-def parsear_args(args: list[str]) -> tuple[int, list[str]]:
+def parsear_args(args: list[str]) -> tuple[str | None, int, list[str]]:
+    obra = None
     n = 1
     rutas = []
     for arg in args:
-        if arg.startswith("--n="):
+        if arg.startswith("--obra="):
+            obra = arg.split("=", 1)[1]
+        elif arg.startswith("--n="):
             n = int(arg.split("=", 1)[1])
         else:
             rutas.append(arg)
-    return n, rutas
+    return obra, n, rutas
 
 
 def main():
     if len(sys.argv) < 2:
         print(
-            "Uso: uv run python src/calibrar_taxonomia.py [--n=1] "
-            "<fragmento1.txt> [fragmento2.txt ...]"
+            "Uso: uv run python src/calibrar_taxonomia.py --obra=nombre_obra "
+            "[--n=1] <fragmento1.txt> [fragmento2.txt ...]"
         )
         sys.exit(1)
 
-    n, rutas = parsear_args(sys.argv[1:])
+    obra, n, rutas = parsear_args(sys.argv[1:])
+    if not obra:
+        print("Falta --obra=nombre_obra (evita mezclar salidas entre novelas).")
+        sys.exit(1)
     if not rutas:
         print("No se ha indicado ningún fragmento.")
         sys.exit(1)
 
+    directorio_salida = Path("data") / obra / "exports"
+
     resultados = calibrar_n_veces(rutas, n)
 
     for i, resultado in enumerate(resultados, start=1):
-        guardar(resultado, Path(f"data/exports/taxonomia_pasada_{i}.json"))
+        guardar(resultado, directorio_salida / f"taxonomia_pasada_{i}.json")
 
     if len(resultados) == 1:
-        guardar(resultados[0], Path("data/exports/tipos_documentales_obra.json"))
+        guardar(resultados[0], directorio_salida / "tipos_documentales_obra.json")
         print(
             "\nUna sola pasada: copiada directamente a tipos_documentales_obra.json."
         )
     else:
         print(
             f"\n{len(resultados)} pasadas guardadas SIN reconciliar — "
-            "compáralas a mano en data/exports/taxonomia_pasada_*.json. "
+            f"compáralas a mano en {directorio_salida}/taxonomia_pasada_*.json. "
             "Si los nombres y fronteras coinciden razonablemente entre "
             "pasadas, copia la que prefieras como tipos_documentales_obra.json. "
             "Si hay inestabilidad real (como en 0b), avisa y añadimos "

@@ -39,23 +39,32 @@ red + coste por token — cambiar de modelo implica migrar la columna
 `embedding` (dimensión fija en schema.sql) y reindexar.
 
 Uso:
-    uv run python poblar_almacen.py --obra=nombre_obra \
+    uv run python src/poblar_almacen.py --obra=nombre_obra \
         --exports=data/nombre_obra/exports
 """
+
+from __future__ import annotations
 
 import argparse
 import json
 import re
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import psycopg2
-from sentence_transformers import SentenceTransformer
+
+if TYPE_CHECKING:
+    # Import diferido: sentence_transformers tarda ~10 s en cargar y
+    # solo hace falta para el modelo, no para trocear ni filtrar.
+    from sentence_transformers import SentenceTransformer
 
 MODELO_EMBEDDING = "intfloat/multilingual-e5-large"
 DSN_DEFAULT = "dbname=almacen user=editor password=editor_dev host=localhost port=5432"
 
 
 def cargar_modelo() -> SentenceTransformer:
+    from sentence_transformers import SentenceTransformer
+
     return SentenceTransformer(MODELO_EMBEDDING)
 
 
@@ -154,20 +163,22 @@ def obtener_o_crear_obra(cur, slug: str) -> int:
     return cur.fetchone()[0]
 
 
-def obtener_o_crear_entidad(
+def guardar_entidad(
     cur, obra_id: int, termino: str, categoria: str,
     alias=None, variantes=None, confianza=None,
 ) -> int:
-    cur.execute(
-        "SELECT id FROM entidades WHERE obra_id = %s AND termino = %s",
-        (obra_id, termino),
-    )
-    fila = cur.fetchone()
-    if fila:
-        return fila[0]
+    """Inserta la entidad o, si el término ya existe, la actualiza: la
+    calibración incremental añade alias y variantes a términos ya fijados,
+    y sin actualizar se quedarían fuera de la base de datos."""
     cur.execute(
         """INSERT INTO entidades (obra_id, termino, categoria, alias, variantes, confianza)
-           VALUES (%s, %s, %s, %s, %s, %s) RETURNING id""",
+           VALUES (%s, %s, %s, %s, %s, %s)
+           ON CONFLICT (obra_id, termino) DO UPDATE
+               SET categoria = EXCLUDED.categoria,
+                   alias     = EXCLUDED.alias,
+                   variantes = EXCLUDED.variantes,
+                   confianza = EXCLUDED.confianza
+           RETURNING id""",
         (obra_id, termino, categoria, alias or [], variantes or [], confianza),
     )
     return cur.fetchone()[0]
@@ -175,9 +186,9 @@ def obtener_o_crear_entidad(
 
 def cargar_glosario(cur, obra_id: int, directorio_exports: Path) -> None:
     """Carga personajes/lugares/glosario calibrados (Fase 0b) como
-    entidades. Idempotente: obtener_o_crear_entidad no duplica si el
-    término ya existe, así que este script se puede relanzar sin miedo
-    tras una nueva pasada de calibración."""
+    entidades. Idempotente: guardar_entidad no duplica si el término ya
+    existe, solo lo actualiza, así que este script se puede relanzar sin
+    miedo tras una nueva pasada de calibración."""
     ficheros = [
         ("personajes_obra.json", "persona"),
         ("lugares_obra.json", "lugar"),
@@ -192,7 +203,7 @@ def cargar_glosario(cur, obra_id: int, directorio_exports: Path) -> None:
         entradas = json.loads(ruta.read_text(encoding="utf-8"))
         for entrada in entradas:
             categoria = entrada.get("categoria") or categoria_por_defecto
-            obtener_o_crear_entidad(
+            guardar_entidad(
                 cur, obra_id,
                 termino=entrada["termino"],
                 categoria=categoria,
@@ -228,17 +239,35 @@ def indexar_menciones(
         )
 
 
+def resolver_ruta(ruta: str) -> Path:
+    """La ruta del texto se guarda absoluta, con el formato del sistema que
+    ejecutó extraer_canon.py. Si no existe tal cual, prueba su equivalente
+    entre Windows (C:\\...) y WSL (/mnt/c/...): la extracción se ejecuta en
+    Windows y la ingesta en WSL."""
+    if Path(ruta).exists():
+        return Path(ruta)
+    windows = re.match(r"^([A-Za-z]):[\\/](.*)$", ruta)
+    if windows:
+        unidad, resto = windows.groups()
+        return Path(f"/mnt/{unidad.lower()}/{resto.replace(chr(92), '/')}")
+    wsl = re.match(r"^/mnt/([a-z])/(.*)$", ruta)
+    if wsl:
+        unidad, resto = wsl.groups()
+        return Path(f"{unidad.upper()}:/{resto}")
+    return Path(ruta)
+
+
 def cargar_fragmento(
     cur, modelo: SentenceTransformer, obra_id: int,
     canon_json: dict, orden_fragmento: int,
 ) -> int:
     ruta_origen = canon_json.get("ruta_fragmento_origen")
-    if not ruta_origen or not Path(ruta_origen).exists():
+    if not ruta_origen or not resolver_ruta(ruta_origen).exists():
         raise FileNotFoundError(
             f"canon fragmento {orden_fragmento}: 'ruta_fragmento_origen' ausente "
             f"o no encontrada ({ruta_origen}). Sin el texto no se puede vectorizar."
         )
-    texto = Path(ruta_origen).read_text(encoding="utf-8")
+    texto = resolver_ruta(ruta_origen).read_text(encoding="utf-8")
 
     cur.execute(
         """INSERT INTO fragmentos
@@ -313,17 +342,9 @@ def cargar_hechos(
         )
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--obra", required=True, help="slug de la obra, p.ej. 'sp'")
-    parser.add_argument(
-        "--exports", required=True,
-        help="directorio data/<obra>/exports producido por la Fase 0/1",
-    )
-    parser.add_argument("--dsn", default=DSN_DEFAULT)
-    args = parser.parse_args()
-
-    directorio_exports = Path(args.exports)
+def poblar(conexion, modelo: SentenceTransformer, obra: str, directorio_exports: Path) -> None:
+    """Carga glosario, fragmentos, pasajes y hechos de una obra en una sola
+    transacción: o entra todo o no entra nada."""
     directorio_canon = directorio_exports / "canon"
     if not directorio_canon.exists():
         raise SystemExit(
@@ -332,14 +353,10 @@ def main() -> None:
             f"el canon_fragmento.json único que produce extraer_canon.py hoy."
         )
 
-    print("Cargando modelo de embeddings (puede tardar la primera vez)...")
-    modelo = cargar_modelo()
-
-    conexion = psycopg2.connect(args.dsn)
     conexion.autocommit = False
     try:
         with conexion.cursor() as cur:
-            obra_id = obtener_o_crear_obra(cur, args.obra)
+            obra_id = obtener_o_crear_obra(cur, obra)
 
             print("Cargando glosario calibrado (Fase 0b)...")
             cargar_glosario(cur, obra_id, directorio_exports)
@@ -366,6 +383,24 @@ def main() -> None:
     except Exception:
         conexion.rollback()
         raise
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--obra", required=True, help="slug de la obra, p.ej. 'iliada'")
+    parser.add_argument(
+        "--exports", required=True,
+        help="directorio data/<obra>/exports producido por la Fase 0/1",
+    )
+    parser.add_argument("--dsn", default=DSN_DEFAULT)
+    args = parser.parse_args()
+
+    print("Cargando modelo de embeddings (puede tardar la primera vez)...")
+    modelo = cargar_modelo()
+
+    conexion = psycopg2.connect(args.dsn)
+    try:
+        poblar(conexion, modelo, args.obra, Path(args.exports))
     finally:
         conexion.close()
 

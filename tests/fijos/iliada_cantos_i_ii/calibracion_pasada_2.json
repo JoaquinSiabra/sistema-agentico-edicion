@@ -1,0 +1,1347 @@
+{
+  "glosario": [
+    {
+      "termino": "Aquiles",
+      "categoria": "persona",
+      "variantes": [
+        "Pelida",
+        "Pelida Aquiles",
+        "hijo de Peleo",
+        "el de los pies ligeros",
+        "Eácida"
+      ],
+      "evidencia": "Se le habla directamente ('¡Oh Aquiles, caro á Júpiter!'), habla él mismo, es sujeto de acciones concretas en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Agamenón",
+      "categoria": "persona",
+      "variantes": [
+        "Atrida",
+        "Agamenón Atrida",
+        "rey de hombres Agamenón",
+        "hijo de Atreo"
+      ],
+      "evidencia": "Se le habla directamente, habla él mismo, realiza acciones en ambos fragmentos; descrito como rey supremo de los aqueos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Júpiter",
+      "categoria": "persona",
+      "variantes": [
+        "Jove",
+        "Saturnio",
+        "Jove Saturnio",
+        "Júpiter Olímpico",
+        "padre Júpiter",
+        "longividente Saturnio",
+        "el Olímpico"
+      ],
+      "evidencia": "Se le habla directamente ('¡Padre Júpiter!'), toma decisiones y acciones propias en ambos fragmentos; dios supremo del panteón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Juno",
+      "categoria": "persona",
+      "variantes": [
+        "Juno veneranda",
+        "la de los níveos brazos",
+        "la de los grandes ojos",
+        "la de áureo trono"
+      ],
+      "evidencia": "Habla directamente con Júpiter y Minerva, toma iniciativas propias en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Minerva",
+      "categoria": "persona",
+      "variantes": [
+        "Palas Minerva",
+        "la de los brillantes ojos",
+        "hija de Júpiter"
+      ],
+      "evidencia": "Habla directamente con Aquiles, recibe órdenes de Juno y las ejecuta en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Apolo",
+      "categoria": "persona",
+      "variantes": [
+        "Febo Apolo",
+        "el Flechador",
+        "hijo de Júpiter y de Latona",
+        "flechador Apolo"
+      ],
+      "evidencia": "Se le dirige plegaria directa ('¡Óyeme!'), actúa disparando flechas y causando la peste en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Tetis",
+      "categoria": "persona",
+      "variantes": [
+        "la de argentados pies",
+        "veneranda madre"
+      ],
+      "evidencia": "Habla con Aquiles y con Júpiter, sube al Olimpo a suplicar; aparece en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ulises",
+      "categoria": "persona",
+      "variantes": [
+        "hijo de Laertes",
+        "el ingenioso",
+        "igual á Júpiter en prudencia",
+        "asolador de ciudades"
+      ],
+      "evidencia": "Habla y actúa en ambos fragmentos; acaudilla a los cefalenios según el catálogo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Néstor",
+      "categoria": "persona",
+      "variantes": [
+        "caballero gerenio",
+        "rey de la arenosa Pilos",
+        "hijo de Neleo"
+      ],
+      "evidencia": "Habla directamente y es interlocutor en ambos fragmentos; el Sueño toma su figura",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Héctor",
+      "categoria": "persona",
+      "variantes": [
+        "Héctor Priámida",
+        "matador de hombres",
+        "de tremolante casco"
+      ],
+      "evidencia": "Mencionado como adversario en fragmento 1 ('perezcan á manos de Héctor'); actúa disolviendo la junta troyana en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Menelao",
+      "categoria": "persona",
+      "variantes": [
+        "hermano de Agamenón",
+        "valiente en la pelea",
+        "valiente en el combate"
+      ],
+      "evidencia": "Mencionado como cobeneficiario de la expedición en fragmento 1; aparece en el catálogo y en el sacrificio de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Calcas",
+      "categoria": "persona",
+      "variantes": [
+        "Calcas Testórida",
+        "el mejor de los augures",
+        "eximio vate"
+      ],
+      "evidencia": "Habla directamente y recibe interpelación ('¡Oh Calcas!') en fragmento 1; mencionado en fragmento 2 en relación al presagio de Áulide",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Patroclo",
+      "categoria": "persona",
+      "variantes": [
+        "Patroclo de jovial linaje"
+      ],
+      "evidencia": "Recibe orden directa de Aquiles ('¡Ea, Patroclo!') y ejecuta la acción de entregar a Briseida en fragmento 1; mencionado como compañero en fragmento 1",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Briseida",
+      "categoria": "persona",
+      "variantes": [
+        "la de hermosas mejillas",
+        "hija de Brises"
+      ],
+      "evidencia": "Personaje pasivo cuya entrega desencadena el conflicto; mencionada en ambos fragmentos como recompensa de Aquiles",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Criseida",
+      "categoria": "persona",
+      "variantes": [
+        "la de hermosas mejillas",
+        "joven Criseida"
+      ],
+      "evidencia": "Mencionada en ambos fragmentos como recompensa de Agamenón, devuelta a Crises",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Crises",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Habla directamente con Apolo en plegaria; interlocutor de Ulises en fragmento 1; sacerdote que recibe a su hija",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Príamo",
+      "categoria": "persona",
+      "variantes": [
+        "rey Príamo"
+      ],
+      "evidencia": "Mencionado como rey de Troya en ambos fragmentos; se reúne en su palacio con los troyanos en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Vulcano",
+      "categoria": "persona",
+      "variantes": [
+        "el ilustre artífice",
+        "el ilustre cojo de ambos pies"
+      ],
+      "evidencia": "Habla directamente en el banquete divino (fragmento 1); forjó el cetro según fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Iris",
+      "categoria": "persona",
+      "variantes": [
+        "la de los pies ligeros como el viento"
+      ],
+      "evidencia": "Enviada como mensajera a los teucros en fragmento 2, toma la figura de Polites y habla directamente",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Tersites",
+      "categoria": "persona",
+      "variantes": [
+        "Tersites parlero"
+      ],
+      "evidencia": "Habla en la junta y recibe respuesta directa de Ulises ('¡Tersites parlero!') en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ayax Telamonio",
+      "categoria": "persona",
+      "variantes": [
+        "Ayax",
+        "Ayax de Telamón"
+      ],
+      "evidencia": "Mencionado como posible capitán en fragmento 1 y como el más valiente de los guerreros en fragmento 2; conduce naves desde Salamina",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ayax de Oileo",
+      "categoria": "persona",
+      "variantes": [
+        "ligero Ayax",
+        "menor Ayax"
+      ],
+      "evidencia": "Aparece como posible capitán en fragmento 1; acaudilla a los locrenses en el catálogo de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Idomeneo",
+      "categoria": "persona",
+      "variantes": [
+        "famoso por su lanza"
+      ],
+      "evidencia": "Mencionado como posible capitán en fragmento 1; acaudilla a los cretenses en el catálogo de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Diomedes",
+      "categoria": "persona",
+      "variantes": [
+        "valiente en la pelea",
+        "hijo de Tideo"
+      ],
+      "evidencia": "Mencionado en el sacrificio de fragmento 2 y como caudillo de los argivos en el catálogo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Eneas",
+      "categoria": "persona",
+      "variantes": [
+        "valiente hijo de Anquises"
+      ],
+      "evidencia": "Presentado como caudillo de los dardanios en el catálogo de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Sarpedón",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado como caudillo de los licios junto a Glauco en el catálogo de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Glauco",
+      "categoria": "persona",
+      "variantes": [
+        "el eximio Glauco"
+      ],
+      "evidencia": "Mencionado como co-caudillo de los licios junto a Sarpedón en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Helena",
+      "categoria": "persona",
+      "variantes": [
+        "argiva Helena"
+      ],
+      "evidencia": "Mencionada en ambos fragmentos como causa de la expedición griega contra Troya",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pándaro",
+      "categoria": "persona",
+      "variantes": [
+        "hijo ilustre de Licaón"
+      ],
+      "evidencia": "Presentado como caudillo de los teucros de Zelea en el catálogo de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Sueño",
+      "categoria": "persona",
+      "variantes": [
+        "pernicioso Sueño",
+        "divino Sueño",
+        "Sueño divino"
+      ],
+      "evidencia": "Júpiter le habla directamente ('Anda, pernicioso Sueño'), actúa como mensajero y toma la figura de Néstor en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Latona",
+      "categoria": "persona",
+      "variantes": [
+        "la de hermosa cabellera"
+      ],
+      "evidencia": "Mencionada como madre de Apolo en fragmento 1 ('hijo de Júpiter y de Latona')",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Marte",
+      "categoria": "persona",
+      "variantes": [
+        "vástago de Marte",
+        "horrendo Marte",
+        "homicida Marte"
+      ],
+      "evidencia": "Dios referenciado repetidamente en ambos fragmentos como divinidad de la guerra; padre de varios héroes en el catálogo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Neptuno",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado entre los dioses que intentaron atar a Júpiter (fragmento 1) y como dios cuyo bosque está en Onquesto (fragmento 2)",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Mercurio",
+      "categoria": "persona",
+      "variantes": [
+        "mensajero Argicida"
+      ],
+      "evidencia": "Mencionado en la genealogía del cetro de Agamenón en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Troya",
+      "categoria": "lugar",
+      "variantes": [
+        "Ilión",
+        "la de anchas calles",
+        "ciudad de Príamo",
+        "bien murada Ilión",
+        "Troya la de anchas calles"
+      ],
+      "evidencia": "Aparece reiteradamente como destino de la expedición y ubicación de los troyanos ('tomar á Troya', 'en Troya, lejos de su patria') en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Olimpo",
+      "categoria": "lugar",
+      "variantes": [
+        "el dilatado Olimpo",
+        "nevado Olimpo",
+        "gran cielo y al Olimpo",
+        "resplandeciente Olimpo"
+      ],
+      "evidencia": "Aparece como ubicación de los dioses y destino de viajes ('descendió de las cumbres del Olimpo', 'volvió al Olimpo') en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Argos",
+      "categoria": "lugar",
+      "variantes": [
+        "Argólide",
+        "país de Argos"
+      ],
+      "evidencia": "Mencionado como destino de regreso y como tierra de procedencia de los aqueos en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ptía",
+      "categoria": "lugar",
+      "variantes": [
+        "Ptía criadora de hombres"
+      ],
+      "evidencia": "Mencionada como patria de Aquiles en fragmento 1 ('vuelvo á mis naves... no pienso permanecer'); referenciada en el catálogo de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pilos",
+      "categoria": "lugar",
+      "variantes": [
+        "divina Pilos",
+        "arenosa Pilos"
+      ],
+      "evidencia": "Aparece como ciudad de Néstor y tierra de origen en ambos fragmentos ('desde Pilos', 'rey de la arenosa Pilos')",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Crisa",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionada como ciudad protegida por Apolo y destino de la expedición para devolver a Criseida en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Lemnos",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionada como lugar donde cayó Vulcano en fragmento 1 y donde fue abandonado Filoctetes en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ítaca",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Patria de Ulises: su heraldo es 'de Ítaca' (fragmento 1); aparece en el catálogo como territorio de Ulises (fragmento 2)",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Salamina",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como origen de las naves de Ayax Telamonio",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Licia",
+      "categoria": "lugar",
+      "variantes": [
+        "remota Licia"
+      ],
+      "evidencia": "Aparece como tierra de procedencia de Sarpedón y Glauco en el catálogo de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ida",
+      "categoria": "lugar",
+      "variantes": [
+        "monte Ida"
+      ],
+      "evidencia": "Mencionado como bosque donde Venus se unió con Anquises (fragmento 2) y como residencia de Júpiter en contextos olímpicos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Orco",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionado en fragmento 1 como destino de las almas de los héroes muertos ('precipitó al Orco muchas almas')",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Océano",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionado en fragmento 1 como destino de Júpiter al ir al banquete de los etíopes",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Áulide",
+      "categoria": "lugar",
+      "variantes": [
+        "Áulide pétrea"
+      ],
+      "evidencia": "Mencionada en fragmento 2 como lugar donde se reunieron las naves y ocurrió el presagio del dragón; también en el catálogo de beocios",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Escamandro",
+      "categoria": "lugar",
+      "variantes": [
+        "llanura escamandria",
+        "el Escamandro"
+      ],
+      "evidencia": "Mencionado en fragmento 2 como llanura donde se reúnen las tropas aqueas ('la llanura escamandria')",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Rodas",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionada como lugar donde se estableció Tlepólemo con los rodios en el catálogo de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Creta",
+      "categoria": "lugar",
+      "variantes": [
+        "isla de Creta"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como isla de cien ciudades gobernada por Idomeneo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ténedos",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionada en la plegaria de Crises a Apolo en fragmento 1 ('imperas en Ténedos poderosamente')",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Dodona",
+      "categoria": "lugar",
+      "variantes": [
+        "fría Dodona"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como morada de los enienes",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Eubea",
+      "categoria": "lugar",
+      "variantes": [
+        "sagrada Eubea"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como isla de los abantes",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Micenas",
+      "categoria": "lugar",
+      "variantes": [
+        "bien construída ciudad de Micenas"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como ciudad principal bajo el mando de Agamenón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Esparta",
+      "categoria": "lugar",
+      "variantes": [
+        "Lacedemonia"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como territorio de Menelao",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Arcadia",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como región cuyos guerreros acaudilla Agapenor",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pelión",
+      "categoria": "lugar",
+      "variantes": [
+        "frondoso Pelión"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como lugar habitado por los magnetes y como lugar del que fueron expulsados los Centauros",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Helesponto",
+      "categoria": "lugar",
+      "variantes": [
+        "alborotado Helesponto"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como región de los tracios mandados por Acamante y Píroo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Peneo",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como río a orillas del cual habitan los magnetes, y como receptor de las aguas del Titaresio",
+      "confianza": "alta"
+    },
+    {
+      "termino": "aqueos",
+      "categoria": "pueblo",
+      "variantes": [
+        "aquivos",
+        "dánaos",
+        "argivos",
+        "aqueos de larga cabellera",
+        "aqueos de hermosas grebas",
+        "aqueos de broncíneas lorigas"
+      ],
+      "evidencia": "Se habla de ellos colectivamente como grupo étnico/guerrero, se mueren, combaten y embarcan; no tienen estructura jurídica de membresía sino pertenencia étnica/identitaria. Aparecen en ambos fragmentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "troyanos",
+      "categoria": "pueblo",
+      "variantes": [
+        "teucros"
+      ],
+      "evidencia": "Mencionados repetidamente en ambos fragmentos como el pueblo enemigo; se habla de ellos en plural colectivo étnico",
+      "confianza": "alta"
+    },
+    {
+      "termino": "mirmidones",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en fragmento 1 como el pueblo sobre el que reina Aquiles; en fragmento 2 como nombre de los habitantes del Argos pelásgico",
+      "confianza": "alta"
+    },
+    {
+      "termino": "beocios",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como primer grupo de contingentes aqueos con sus caudillos y ciudades",
+      "confianza": "alta"
+    },
+    {
+      "termino": "locrenses",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Ayax de Oileo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "focenses",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Esquedio y Epístrofo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "abantes",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo de Eubea acaudillado por Elefenor",
+      "confianza": "alta"
+    },
+    {
+      "termino": "atenienses",
+      "categoria": "pueblo",
+      "variantes": [
+        "pueblo del magnánimo Erecteo"
+      ],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo de Atenas acaudillado por Menesteo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "cretenses",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo de la isla de Creta acaudillado por Idomeneo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "rodios",
+      "categoria": "pueblo",
+      "variantes": [
+        "fieros rodios"
+      ],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo dividido en tres tribus acaudillado por Tlepólemo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "cefalenios",
+      "categoria": "pueblo",
+      "variantes": [
+        "magnánimos cefalenios"
+      ],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Ulises",
+      "confianza": "alta"
+    },
+    {
+      "termino": "etolos",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Toante",
+      "confianza": "alta"
+    },
+    {
+      "termino": "arcadios",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Agapenor",
+      "confianza": "alta"
+    },
+    {
+      "termino": "epeos",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo de la Élide en cuatro divisiones",
+      "confianza": "alta"
+    },
+    {
+      "termino": "dardanios",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Eneas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "licios",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Sarpedón y Glauco",
+      "confianza": "alta"
+    },
+    {
+      "termino": "tracios",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo del Helesponto acaudillado por Acamante y Píroo; Tamiris es descrito como 'el tracio' en el mismo fragmento",
+      "confianza": "alta"
+    },
+    {
+      "termino": "pelasgos",
+      "categoria": "pueblo",
+      "variantes": [
+        "valerosos pelasgos"
+      ],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo de Larisa acaudillado por Hipótoo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "paflagones",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Pilémenes",
+      "confianza": "alta"
+    },
+    {
+      "termino": "misios",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Cromis y Énomo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "frigios",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Forcis y Ascanio",
+      "confianza": "alta"
+    },
+    {
+      "termino": "meonios",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Mestles y Ántifo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "carios",
+      "categoria": "pueblo",
+      "variantes": [
+        "carios de bárbaro lenguaje"
+      ],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Nastes y Anfímaco",
+      "confianza": "alta"
+    },
+    {
+      "termino": "halizones",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Odio y Epístrofo, procedentes de Álibe",
+      "confianza": "alta"
+    },
+    {
+      "termino": "peonios",
+      "categoria": "pueblo",
+      "variantes": [
+        "peonios de corvos arcos"
+      ],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo conducido por Pirecmes desde Amidón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "cicones",
+      "categoria": "pueblo",
+      "variantes": [
+        "beligeros cicones"
+      ],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Eufemo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "enienes",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo conducido por Guneo desde Cifo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "perebos",
+      "categoria": "pueblo",
+      "variantes": [
+        "intrépidos perebos"
+      ],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 junto a los enienes bajo el mando de Guneo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "magnetes",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como pueblo acaudillado por Protoo a orillas del Peneo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "helenos",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados en el catálogo de fragmento 2 como uno de los nombres del pueblo de Aquiles en el Argos pelásgico",
+      "confianza": "alta"
+    },
+    {
+      "termino": "etíopes",
+      "categoria": "pueblo",
+      "variantes": [
+        "probos etíopes"
+      ],
+      "evidencia": "Mencionados en fragmento 1 como pueblo que celebra banquete al que asiste Júpiter",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Centauros",
+      "categoria": "pueblo",
+      "variantes": [
+        "montaraces Centauros",
+        "hirsutos Centauros"
+      ],
+      "evidencia": "Mencionados en fragmento 1 como adversarios exterminados por los héroes de la generación anterior; en fragmento 2 como seres expulsados del Pelión por Pirítoo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Musas",
+      "categoria": "pueblo",
+      "variantes": [
+        "Musas olímpicas",
+        "hijas de Júpiter"
+      ],
+      "evidencia": "Invocadas como colectivo en fragmento 2 ('Decidme ahora, Musas'); actúan colectivamente privando a Tamiris del canto; aparecen también en el festín de fragmento 1",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Parcas",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionadas colectivamente en fragmento 2 como agentes del destino mortal ('los que no habéis sido arrebatados por las Parcas')",
+      "confianza": "media"
+    },
+    {
+      "termino": "Atreo",
+      "categoria": "persona",
+      "variantes": [
+        "Atreo pastor de hombres"
+      ],
+      "evidencia": "Mencionado como padre de Agamenón y Menelao en ambos fragmentos; aparece en la genealogía del cetro en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pirítoo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en fragmento 1 como héroe de generación anterior; en fragmento 2 como padre de Polipetes y quien expulsó a los Centauros del Pelión",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Tlepólemo",
+      "categoria": "persona",
+      "variantes": [
+        "Tlepólemo Heraclida",
+        "famoso por su lanza"
+      ],
+      "evidencia": "Aparece como caudillo de los rodios en el catálogo de fragmento 2 con historia propia",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Filoctetes",
+      "categoria": "persona",
+      "variantes": [
+        "hábil arquero"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo herido abandonado en Lemnos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Protesilao",
+      "categoria": "persona",
+      "variantes": [
+        "el aguerrido Protesilao"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como primer caudillo caído de los de Fílace",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Eumelo",
+      "categoria": "persona",
+      "variantes": [
+        "hijo querido de Admeto",
+        "Feretíada"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los de Feras y como dueño de las mejores yeguas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Nísiro",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como una de las islas de los pueblos acaudillados por Fidipo y Ántifo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Janto",
+      "categoria": "lugar",
+      "variantes": [
+        "voraginoso Janto"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como río de la Licia, tierra de Sarpedón y Glauco",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Estigia",
+      "categoria": "lugar",
+      "variantes": [
+        "agua de la Estigia"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como fuente del río Titaresio, invocada en juramentos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Fama",
+      "categoria": "persona",
+      "variantes": [
+        "mensajera de Júpiter"
+      ],
+      "evidencia": "Aparece como agente activo enardeciendo a los guerreros para que acudan a la junta en fragmento 2",
+      "confianza": "media"
+    },
+    {
+      "termino": "Aurora",
+      "categoria": "persona",
+      "variantes": [
+        "la de rosados dedos",
+        "hija de la mañana",
+        "divinal Aurora"
+      ],
+      "evidencia": "Mencionada como agente del amanecer en ambos fragmentos; sube al Olimpo en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Briáreo",
+      "categoria": "persona",
+      "variantes": [
+        "Egeón",
+        "centímano"
+      ],
+      "evidencia": "Mencionado en fragmento 1 como ser convocado por Tetis para proteger a Júpiter; dos nombres explicitados en el texto",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Taltibio",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en fragmento 1 como heraldo de Agamenón enviado a buscar a Briseida",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Euríbates",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en fragmento 1 como heraldo de Agamenón y en fragmento 2 como heraldo de Ítaca que acompaña a Ulises",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Polites",
+      "categoria": "persona",
+      "variantes": [
+        "hijo de Príamo"
+      ],
+      "evidencia": "Mencionado en fragmento 2 como figura cuya apariencia toma Iris para hablar a los troyanos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Clitemnestra",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionada en fragmento 1 como esposa legítima de Agamenón con quien compara a Criseida",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Telémaco",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en fragmento 2 por Ulises como su hijo ('no sea llamado padre de Telémaco')",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Penéleo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como uno de los caudillos beocios",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Leito",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como uno de los caudillos beocios",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ascálafo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de Aspledón y Orcómeno, hijo de Marte",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Menesteo",
+      "categoria": "persona",
+      "variantes": [
+        "hijo de Peteo"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los atenienses",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Meriones",
+      "categoria": "persona",
+      "variantes": [
+        "igual al homicida Marte"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como co-caudillo de los cretenses junto a Idomeneo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Nireo",
+      "categoria": "persona",
+      "variantes": [
+        "el más hermoso de los dánaos"
+      ],
+      "evidencia": "Mencionado tres veces seguidas en el catálogo de fragmento 2 como caudillo de Sima",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Agapenor",
+      "categoria": "persona",
+      "variantes": [
+        "hijo de Anceo",
+        "rey Agapenor"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los arcadios",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Toante",
+      "categoria": "persona",
+      "variantes": [
+        "hijo de Andremón"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los etolos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Polipetes",
+      "categoria": "persona",
+      "variantes": [
+        "intrépido Polipetes",
+        "hijo de Pirítoo"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los de Argisa",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Guneo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los enienes y perebos desde Cifo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Protoo",
+      "categoria": "persona",
+      "variantes": [
+        "hijo de Tentredón",
+        "ligero Protoo"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los magnetes",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Hipótoo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los pelasgos de Larisa",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pilémenes",
+      "categoria": "persona",
+      "variantes": [
+        "de corazón varonil"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los paflagones",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pirecmes",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los peonios desde Amidón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Eufemo",
+      "categoria": "persona",
+      "variantes": [
+        "hijo de Treceno Céada"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como capitán de los cicones",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Nastes",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los carios junto a Anfímaco",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ésculo",
+      "categoria": "persona",
+      "variantes": [
+        "Esculapio"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como padre de los médicos Podalirio y Macaón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Macaón",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como co-caudillo médico de los de Trica junto a Podalirio",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Podalirio",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como co-caudillo médico de los de Trica junto a Macaón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Eurípilo",
+      "categoria": "persona",
+      "variantes": [
+        "hijo preclaro de Evemón"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los de Ormenio",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Meges",
+      "categoria": "persona",
+      "variantes": [
+        "Meges Filida",
+        "igual á Marte"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como caudillo de los de Duliquio",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Venus",
+      "categoria": "persona",
+      "variantes": [
+        "divina Venus"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como madre de Eneas tras unirse con Anquises en el Ida",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Hércules",
+      "categoria": "persona",
+      "variantes": [
+        "fornido Hércules"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como padre de Tlepólemo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pélope",
+      "categoria": "persona",
+      "variantes": [
+        "excelente jinete Pélope"
+      ],
+      "evidencia": "Mencionado en la genealogía del cetro en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Tiestes",
+      "categoria": "persona",
+      "variantes": [
+        "rico en ganado"
+      ],
+      "evidencia": "Mencionado en la genealogía del cetro en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Erecteo",
+      "categoria": "persona",
+      "variantes": [
+        "magnánimo Erecteo"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como antepasado mítico del pueblo ateniense",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Eneas",
+      "categoria": "persona",
+      "variantes": [
+        "valiente hijo de Anquises"
+      ],
+      "evidencia": "Presentado como caudillo de los dardanios en el catálogo de fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Atenas",
+      "categoria": "lugar",
+      "variantes": [
+        "bien edificada ciudad de Atenas"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como ciudad cuyos habitantes son el pueblo de Erecteo, acaudillados por Menesteo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Corinto",
+      "categoria": "lugar",
+      "variantes": [
+        "opulenta Corinto"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como ciudad bajo el mando de Agamenón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Duliquio",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como tierra de Meges Filida y como lugar de emigración del padre de Meges",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Larisa",
+      "categoria": "lugar",
+      "variantes": [
+        "fértil Larisa"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como tierra de los pelasgos acaudillados por Hipótoo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ascania",
+      "categoria": "lugar",
+      "variantes": [
+        "remota Ascania"
+      ],
+      "evidencia": "Mencionada en el catálogo de fragmento 2 como tierra de procedencia de los frigios acaudillados por Forcis y Ascanio",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Tmolo",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como monte al pie del cual nacieron los meonios",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Meandro",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como río en cuyas orillas viven algunos de los carios",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Batiea",
+      "categoria": "lugar",
+      "variantes": [
+        "tumba de la ágil Mirina"
+      ],
+      "evidencia": "Mencionada en fragmento 2 como colina frente a Troya donde los teucros se pusieron en orden de batalla; nota implícita sobre su doble nombre",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Esepo",
+      "categoria": "lugar",
+      "variantes": [
+        "caudaloso Esepo"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como río del que beben los teucros de Zelea gobernados por Pándaro",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Partenio",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como río a orillas del cual habitan los paflagones de Pilémenes",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Axio",
+      "categoria": "lugar",
+      "variantes": [
+        "anchuroso Axio"
+      ],
+      "evidencia": "Mencionado en el catálogo de fragmento 2 como río de Amidón, tierra de los peonios de Pirecmes",
+      "confianza": "alta"
+    },
+    {
+      "termino": "hecatombe",
+      "categoria": "objeto",
+      "variantes": [
+        "sacra hecatombe"
+      ],
+      "evidencia": "Aparece reiteradamente en ambos fragmentos como ofrenda ritual de animales que se solicita, se prepara y se ofrece a los dioses",
+      "confianza": "alta"
+    },
+    {
+      "termino": "cetro",
+      "categoria": "objeto",
+      "variantes": [
+        "áureo cetro",
+        "imperecedero cetro",
+        "argénteo cetro"
+      ],
+      "evidencia": "Aparece en ambos fragmentos como objeto que se porta, se jura sobre él, se transmite entre reyes; tiene genealogía propia en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "égida",
+      "categoria": "objeto",
+      "variantes": [
+        "preciosa inmortal égida"
+      ],
+      "evidencia": "Mencionada en ambos fragmentos como atributo de Júpiter y llevada por Minerva en fragmento 2",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Aurora",
+      "categoria": "persona",
+      "variantes": [
+        "la de rosados dedos",
+        "hija de la mañana"
+      ],
+      "evidencia": "Mencionada como agente del amanecer en ambos fragmentos",
+      "confianza": "alta"
+    }
+  ]
+}

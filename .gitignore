@@ -7,6 +7,10 @@ __pycache__/
 # Salidas de ejecuciones propias (no versionadas; solo el ejemplo de data/ejemplos/ sí lo está)
 data/exports/
 data/novelas/
+data/*/exports/
+
+# Caché de embeddings de las pruebas
+.cache/
 
 # Editor / OS
 .vscode/

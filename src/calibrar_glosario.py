@@ -30,30 +30,48 @@ que distintas pasadas extraigan formas distintas por azar, se le pide al
 modelo que AUTOREPORTE las variantes del mismo referente dentro de su
 propia pasada (campo "variantes"). Tras reconciliar, fusionar_alias() usa
 ese autoreporte — válido en cualquier categoría, porque es un juicio
-semántico del propio modelo — para consolidar entradas. Solo en personajes
-se añade además una subcadena de respaldo (nombre corto contenido en
-nombre completo): en otras categorías una subcadena suele señalar una
-entidad relacionada pero DISTINTA (p.ej. un lugar vs. una institución que
-lleva su nombre), así que ahí no se activa.
+semántico del propio modelo — para consolidar entradas. Solo en
+personajes se añade además una subcadena de respaldo (nombre corto
+contenido en nombre completo): en otras categorías una subcadena suele
+señalar una entidad relacionada pero DISTINTA (p.ej. un lugar y una
+institución que toma su nombre de ese lugar pero es un referente
+distinto), así que ahí no se activa.
 
 IMPORTANTE: no se le da al modelo ningún glosario humano preexistente.
 Tiene que inferir la categoría únicamente de cómo se usa el término en el
 propio texto (¿recibe trato personal? ¿aparece en fórmulas fijas? ¿alguna
 nota a pie de página lo define?).
 
-SALIDA: el resultado reconciliado se reparte en CUATRO ficheros:
-    data/exports/personajes_obra.json         (categoria == persona, con
-                                                alias fusionados)
-    data/exports/lugares_obra.json            (categoria == lugar)
-    data/exports/glosario_obra.json           (objeto, organizacion, pueblo,
-                                                concepto_abstracto, incierto)
-    data/exports/discrepancias_calibracion.json (términos en empate, sin
-                                                mayoría clara entre pasadas)
-Además guarda cada pasada en bruto en data/exports/calibracion_pasada_N.json
-por si hace falta auditar qué dijo cada una.
+SALIDA: el resultado reconciliado se reparte en CUATRO ficheros, todos bajo
+data/<obra>/exports/:
+    personajes_obra.json         (categoria == persona, con alias fusionados)
+    lugares_obra.json            (categoria == lugar)
+    glosario_obra.json           (objeto, organizacion, pueblo,
+                                   concepto_abstracto, incierto)
+    discrepancias_calibracion.json (términos en empate, sin mayoría clara
+                                   entre pasadas)
+Además guarda cada pasada en bruto en calibracion_pasada_N.json (misma
+carpeta) por si hace falta auditar qué dijo cada una.
+
+MODO INCREMENTAL (por defecto si la obra ya tiene glosario): recalibrar
+TODA la obra cada vez que llega un fragmento no escala — cada pasada
+devuelve un número de términos casi fijo (~140-145) sea cual sea el
+corpus, así que al crecer la obra se pierden términos en silencio, y
+además cambian formas canónicas que el canon ya extraído usa. En modo
+incremental solo se envían los fragmentos NUEVOS, junto con el glosario
+ya fijado, y se le pide al modelo que devuelva solo lo nuevo (términos
+nuevos, o formas nuevas de términos ya fijados). incorporar() lo añade
+sin tocar ningún término canónico ni categoría existentes: lo que choque
+con ellos va a discrepancias. Las pasadas en bruto se guardan como
+calibracion_<fragmentos>_pasada_N.json para no pisar las anteriores.
+--desde-cero fuerza la recalibración completa (y reescribe el glosario).
+
+--obra=<nombre> es OBLIGATORIO: cada obra calibra por separado y todas sus
+salidas quedan bajo data/<obra>/exports/, para que el glosario de una
+novela nunca se mezcle con el de otra.
 
 Uso:
-    uv run python src/calibrar_glosario.py [--n=3] data/novelas/fragmento_1.txt data/novelas/fragmento_2.txt ...
+    uv run python src/calibrar_glosario.py --obra=nombre_obra [--n=3] [--desde-cero] data/novelas/fragmento_1.txt data/novelas/fragmento_2.txt ...
 """
 
 import json
@@ -128,6 +146,25 @@ sin markdown:
 """
 
 
+PROMPT_INCREMENTAL = """GLOSARIO YA FIJADO DE ESTA OBRA (calibrado sobre \
+fragmentos anteriores). Estos términos ya tienen forma canónica y categoría \
+definitivas; los fragmentos que recibes ahora son NUEVOS. En tu respuesta:
+- NO devuelvas un término ya fijado, salvo que en estos fragmentos aparezca \
+con alguna forma que no esté ya en su lista. En ese caso devuélvelo con \
+"termino" EXACTAMENTE igual a la forma canónica de esta lista y pon en \
+"variantes" solo las formas nuevas.
+- Un nombre que ya figura como variante de un término fijado no es un \
+término nuevo: no lo devuelvas.
+- Todo lo demás que cumpla los criterios de arriba, devuélvelo como término \
+nuevo con normalidad. No hace falta que se repita en varios fragmentos: \
+basta con que se repita dentro de estos.
+- Clasifica cada término nuevo por cómo se usa en estos fragmentos; si la \
+evidencia contradice la categoría de un término ya fijado, devuélvelo con la \
+categoría que observas y explícalo en "evidencia".
+
+"""
+
+
 def leer_fragmento(ruta: str) -> str:
     return Path(ruta).read_text(encoding="utf-8")
 
@@ -140,7 +177,39 @@ def construir_entrada(rutas: list[str]) -> str:
     return "\n\n".join(partes)
 
 
-def calibrar(rutas: list[str]) -> dict:
+def mostrar_uso_cache(uso) -> None:
+    """Ver extraer_canon.py: mismo propósito, mismo criterio de lectura.
+    Aquí el bloque cacheado es la ENTRADA (fragmentos), no el sistema —
+    calibrar_n_veces() manda el mismo texto N veces en la misma ejecución,
+    así que la pasada 1 escribe el caché y las pasadas 2..N deberían leerlo."""
+    creacion = getattr(uso, "cache_creation_input_tokens", 0) or 0
+    lectura = getattr(uso, "cache_read_input_tokens", 0) or 0
+    print(
+        f"  Tokens — nuevos: {uso.input_tokens} | "
+        f"caché escrito: {creacion} | caché leído: {lectura} | "
+        f"salida: {uso.output_tokens}"
+    )
+
+
+def formatear_registros(registros: dict[str, list[dict]]) -> str:
+    lineas = []
+    for entradas in registros.values():
+        for e in entradas:
+            formas = sorted(set(e.get("variantes") or []) | set(e.get("alias") or []))
+            sufijo = f" (variantes: {', '.join(formas)})" if formas else ""
+            lineas.append(f'- {e["termino"]} [{e["categoria"]}]{sufijo}')
+    return PROMPT_INCREMENTAL + "\n".join(lineas)
+
+
+def construir_prompt_sistema(registros: dict[str, list[dict]] | None = None) -> str:
+    """Sin glosario previo, el prompt de siempre. Con él, se añade el
+    glosario fijado y las reglas del modo incremental."""
+    if not registros:
+        return PROMPT_SISTEMA
+    return PROMPT_SISTEMA + "\n" + formatear_registros(registros)
+
+
+def calibrar(rutas: list[str], registros: dict[str, list[dict]] | None = None) -> dict:
     cliente = anthropic.Anthropic()
     entrada = construir_entrada(rutas)
 
@@ -148,10 +217,23 @@ def calibrar(rutas: list[str]) -> dict:
 
     respuesta = cliente.messages.create(
         model=MODELO,
-        max_tokens=8000,
-        system=PROMPT_SISTEMA,
-        messages=[{"role": "user", "content": entrada}],
+        max_tokens=16000,
+        system=construir_prompt_sistema(registros),
+        messages=[
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": entrada,
+                        "cache_control": {"type": "ephemeral"},
+                    }
+                ],
+            }
+        ],
     )
+
+    mostrar_uso_cache(respuesta.usage)
 
     texto = respuesta.content[0].text.strip()
     texto = texto.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
@@ -165,7 +247,9 @@ def calibrar(rutas: list[str]) -> dict:
         raise
 
 
-def calibrar_n_veces(rutas: list[str], n: int) -> list[dict]:
+def calibrar_n_veces(
+    rutas: list[str], n: int, registros: dict[str, list[dict]] | None = None,
+) -> list[dict]:
     """Ejecuta calibrar() n veces de forma independiente sobre el mismo lote.
     Si una pasada falla (p.ej. JSON truncado), se descarta esa pasada sin
     perder las que ya se completaron — cada pasada es una llamada de pago,
@@ -174,7 +258,7 @@ def calibrar_n_veces(rutas: list[str], n: int) -> list[dict]:
     for i in range(n):
         print(f"\n--- Pasada {i + 1}/{n} ---")
         try:
-            resultados.append(calibrar(rutas))
+            resultados.append(calibrar(rutas, registros))
         except json.JSONDecodeError:
             print(f"Pasada {i + 1} descartada por error de parseo (detalle arriba).")
             continue
@@ -234,7 +318,7 @@ def reconciliar(resultados: list[dict]) -> tuple[dict[str, dict], list[dict]]:
             continue
 
         candidatas = [e for e in entradas if e.get("categoria") == categoria_mayoritaria]
-        entrada_elegida = min(
+        entrada_elegida = max(
             candidatas, key=lambda e: ORDEN_CONFIANZA.get(e.get("confianza"), 0)
         )
         disenso = [
@@ -287,15 +371,17 @@ def fusionar_alias(entradas: list[dict], permitir_substring: bool = False) -> li
 
     Señal principal: el campo "variantes" autoreportado por el modelo —
     fiable en cualquier categoría porque es un juicio semántico del propio
-    modelo sobre qué cuenta como "el mismo referente" (p.ej. un nombre
-    corto y su forma con patronímico/epíteto para la misma persona).
+    modelo sobre qué cuenta como "el mismo referente" (p.ej. el nombre
+    corto de una organización y su denominación completa, nombrados por
+    separado en el texto).
 
     Señal de respaldo (permitir_substring=True): si el término de una
     entrada aparece como palabra completa dentro del término de otra, se
     fusionan. Solo se activa para personajes por defecto — en otras
     categorías una subcadena suele señalar una entidad relacionada pero
-    DISTINTA (p.ej. un lugar vs. una institución que lleva su nombre),
-    así que ahí basta con las variantes autoreportadas."""
+    DISTINTA (p.ej. un lugar y una institución que toma su nombre de ese
+    lugar pero es un referente distinto), así que ahí basta con las
+    variantes autoreportadas."""
     pendientes = []
     for e in entradas:
         e = dict(e)
@@ -335,53 +421,214 @@ def fusionar_alias(entradas: list[dict], permitir_substring: bool = False) -> li
         else:
             fusionados.append(entrada)
 
+    # Un alias nunca puede ser otra entidad del registro: al unir alias de
+    # varias entradas se podía colar el término de una entidad distinta.
+    terminos = {f["termino"] for f in fusionados}
+    for f in fusionados:
+        f["alias"] = sorted(set(f["alias"]) - terminos)
+
     return fusionados
 
 
-def parsear_args(args: list[str]) -> tuple[int, list[str]]:
+def separar_ambiguos(entradas: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Aparta las entradas "paraguas": las que dan como variantes a dos o
+    más entidades distintas del mismo registro (p.ej. un "Ayax" con
+    variantes "Ayax Telamonio" y "Ayax de Oileo"). Fusionarla con
+    cualquiera de ellas confundiría a las dos, así que no entra en el
+    glosario y se devuelve como discrepancia para revisar a mano. Si otras
+    pasadas dieron ese nombre como variante de una sola entidad, ahí sigue."""
+    terminos = {e["termino"] for e in entradas}
+    limpias, ambiguas = [], []
+    for e in entradas:
+        nombradas = sorted({v for v in e.get("variantes") or []
+                            if v in terminos and v != e["termino"]})
+        if len(nombradas) < 2:
+            limpias.append(e)
+            continue
+        ambiguas.append({
+            "termino": e["termino"],
+            "pasadas_totales": e.get("pasadas_totales"),
+            "pasadas_que_lo_mencionan": e.get("pasadas_que_lo_mencionan"),
+            "motivo": "término ambiguo: sus variantes son entidades distintas",
+            "entidades": nombradas,
+        })
+    return limpias, ambiguas
+
+
+REGISTROS = {
+    "personajes": "personajes_obra.json",
+    "lugares": "lugares_obra.json",
+    "glosario": "glosario_obra.json",
+}
+
+
+def construir_registros(
+    estables: dict[str, dict],
+) -> tuple[dict[str, list[dict]], list[dict]]:
+    """Reparte los términos reconciliados en personajes/lugares/glosario,
+    aparta los ambiguos y fusiona alias dentro de cada registro."""
+    personajes, lugares, glosario = repartir({"glosario": list(estables.values())})
+    registros, ambiguas = {}, []
+    for nombre, entradas, substring in (
+        ("personajes", personajes, True),
+        ("lugares", lugares, False),
+        ("glosario", glosario, False),
+    ):
+        entradas, apartadas = separar_ambiguos(entradas)
+        ambiguas += apartadas
+        registros[nombre] = fusionar_alias(entradas, permitir_substring=substring)
+    return registros, ambiguas
+
+
+def incorporar(
+    existentes: dict[str, list[dict]], estables: dict[str, dict],
+) -> tuple[dict[str, list[dict]], list[dict]]:
+    """Añade al glosario ya fijado lo que trae una calibración incremental.
+
+    Garantías (ver tests/SPECS.md):
+      - ningún término existente desaparece ni cambia de forma canónica o
+        de categoría;
+      - una forma nueva de un término existente se le añade como variante,
+        salvo que ya pertenezca a otra entidad;
+      - lo que choca con lo fijado (otra categoría, un nombre que podría
+        ser de varias entidades) va a discrepancias, no al glosario.
+    """
+    registros = {k: [dict(e) for e in v] for k, v in existentes.items()}
+    por_termino = {e["termino"]: e for entradas in registros.values() for e in entradas}
+    duenos: dict[str, set[str]] = {}  # forma -> términos fijados que la usan
+    for e in por_termino.values():
+        for forma in [e["termino"], *(e.get("variantes") or []), *(e.get("alias") or [])]:
+            duenos.setdefault(forma, set()).add(e["termino"])
+
+    discrepancias: list[dict] = []
+    nuevos: dict[str, dict] = {}
+    for termino, entrada in estables.items():
+        formas = [termino, *(entrada.get("variantes") or [])]
+        # Es una entidad ya fijada si su nombre ya es una forma conocida, o
+        # si el modelo da como variante el término canónico de una. Compartir
+        # solo un epíteto ("la de los grandes ojos") NO la identifica: el
+        # mismo epíteto se aplica a personajes distintos.
+        if termino in por_termino:
+            candidatos = {termino}
+        elif termino in duenos:
+            candidatos = set(duenos[termino])
+        else:
+            candidatos = set()
+        candidatos |= {v for v in formas[1:] if v in por_termino}
+        if not candidatos:
+            # Entidad nueva: sin las formas que ya pertenecen a otras.
+            nuevos[termino] = {**entrada, "variantes": [
+                v for v in entrada.get("variantes") or [] if v not in duenos]}
+            continue
+        if len(candidatos) > 1:
+            discrepancias.append({
+                "termino": termino,
+                "motivo": "término ambiguo: sus formas pertenecen a varias entidades ya fijadas",
+                "entidades": sorted(candidatos),
+            })
+            continue
+
+        fijado = por_termino[candidatos.pop()]
+        if entrada.get("categoria") != fijado["categoria"]:
+            discrepancias.append({
+                "termino": fijado["termino"],
+                "motivo": "categoría distinta de la ya fijada",
+                "categoria_fijada": fijado["categoria"],
+                "categoria_propuesta": entrada.get("categoria"),
+                "evidencia": entrada.get("evidencia"),
+            })
+        formas_nuevas = {f for f in formas
+                         if f != fijado["termino"] and not duenos.get(f)}
+        if formas_nuevas:
+            for campo in ("variantes", "alias"):
+                fijado[campo] = sorted(set(fijado.get(campo) or []) | formas_nuevas)
+            for f in formas_nuevas:
+                duenos[f] = {fijado["termino"]}
+
+    nuevos_registros, ambiguas = construir_registros(nuevos)
+    for nombre, entradas in nuevos_registros.items():
+        registros.setdefault(nombre, []).extend(entradas)
+    return registros, discrepancias + ambiguas
+
+
+def cargar_registros(directorio: Path) -> dict[str, list[dict]] | None:
+    """El glosario ya fijado de la obra, o None si aún no se ha calibrado."""
+    if not all((directorio / f).exists() for f in REGISTROS.values()):
+        return None
+    return {k: json.loads((directorio / f).read_text(encoding="utf-8"))
+            for k, f in REGISTROS.items()}
+
+
+def parsear_args(args: list[str]) -> tuple[str | None, int, bool, list[str]]:
+    obra = None
     n = 3
+    desde_cero = False
     rutas = []
     for arg in args:
-        if arg.startswith("--n="):
+        if arg.startswith("--obra="):
+            obra = arg.split("=", 1)[1]
+        elif arg.startswith("--n="):
             n = int(arg.split("=", 1)[1])
+        elif arg == "--desde-cero":
+            desde_cero = True
         else:
             rutas.append(arg)
-    return n, rutas
+    return obra, n, desde_cero, rutas
 
 
 def main():
     if len(sys.argv) < 2:
         print(
-            "Uso: uv run python src/calibrar_glosario.py [--n=3] "
-            "<fragmento1.txt> [fragmento2.txt ...]"
+            "Uso: uv run python src/calibrar_glosario.py --obra=nombre_obra "
+            "[--n=3] [--desde-cero] <fragmento1.txt> [fragmento2.txt ...]"
         )
         sys.exit(1)
 
-    n, rutas = parsear_args(sys.argv[1:])
+    obra, n, desde_cero, rutas = parsear_args(sys.argv[1:])
+    if not obra:
+        print("Falta --obra=nombre_obra (evita mezclar salidas entre novelas).")
+        sys.exit(1)
     if not rutas:
         print("No se ha indicado ningún fragmento.")
         sys.exit(1)
 
-    resultados = calibrar_n_veces(rutas, n)
+    directorio_salida = Path("data") / obra / "exports"
+    existentes = None if desde_cero else cargar_registros(directorio_salida)
 
+    if existentes is None:
+        print("Calibración completa (sin glosario previo, o con --desde-cero).")
+        prefijo = "calibracion"
+    else:
+        total = sum(len(v) for v in existentes.values())
+        print(f"Calibración incremental sobre un glosario de {total} términos.")
+        prefijo = "calibracion_" + "+".join(Path(r).stem for r in rutas)
+
+    resultados = calibrar_n_veces(rutas, n, existentes)
     for i, resultado in enumerate(resultados, start=1):
-        guardar(resultado, Path(f"data/exports/calibracion_pasada_{i}.json"))
+        guardar(resultado, directorio_salida / f"{prefijo}_pasada_{i}.json")
 
     estables, discrepancias = reconciliar(resultados)
-    personajes, lugares, glosario = repartir({"glosario": list(estables.values())})
-    personajes = fusionar_alias(personajes, permitir_substring=True)
-    lugares = fusionar_alias(lugares, permitir_substring=False)
-    glosario = fusionar_alias(glosario, permitir_substring=False)
+    ruta_discrepancias = directorio_salida / "discrepancias_calibracion.json"
+    if existentes is None:
+        registros, otras = construir_registros(estables)
+        discrepancias += otras
+    else:
+        registros, otras = incorporar(existentes, estables)
+        lote = [Path(r).name for r in rutas]
+        discrepancias = [{**d, "lote": lote} for d in discrepancias + otras]
+        anteriores = (json.loads(ruta_discrepancias.read_text(encoding="utf-8"))
+                      if ruta_discrepancias.exists() else [])
+        discrepancias = anteriores + discrepancias
+        nuevos = {k: len(registros[k]) - len(existentes[k]) for k in REGISTROS}
+        print(f"\nTérminos nuevos: {nuevos}")
 
     print()
-    guardar(personajes, Path("data/exports/personajes_obra.json"))
-    guardar(lugares, Path("data/exports/lugares_obra.json"))
-    guardar(glosario, Path("data/exports/glosario_obra.json"))
-    guardar(discrepancias, Path("data/exports/discrepancias_calibracion.json"))
+    for nombre, fichero in REGISTROS.items():
+        guardar(registros[nombre], directorio_salida / fichero)
+    guardar(discrepancias, ruta_discrepancias)
 
     print(
-        f"\n{len(discrepancias)} término(s) con categoría inestable entre "
-        "pasadas — revisar discrepancias_calibracion.json"
+        f"\n{len(discrepancias)} discrepancia(s) — revisar discrepancias_calibracion.json"
     )
 
 

@@ -1,0 +1,906 @@
+{
+  "tipo_documental": "Narración épica en tercera persona con numeración de versos",
+  "personajes": [
+    "Júpiter",
+    "Sueño",
+    "Agamenón",
+    "Néstor",
+    "Juno",
+    "Minerva",
+    "Ulises",
+    "Tersites",
+    "Telémaco",
+    "Euríbates",
+    "Fama",
+    "Vulcano",
+    "Mercurio",
+    "Pélope",
+    "Atreo",
+    "Tiestes",
+    "Aquiles",
+    "Aurora",
+    "Calcas",
+    "Marte",
+    "Neptuno",
+    "Apolo",
+    "Iris",
+    "Héctor",
+    "Eneas",
+    "Venus",
+    "Antenor",
+    "Pándaro",
+    "Diomedes",
+    "Idomeneo",
+    "Meriones",
+    "Menelao",
+    "Menesteo",
+    "Ayax Telamonio",
+    "Ayax de Oileo",
+    "Protesilao",
+    "Podarces",
+    "Eumelo",
+    "Filoctetes",
+    "Podalirio",
+    "Macaón",
+    "Eurípilo",
+    "Polipetes",
+    "Pirítoo",
+    "Guneo",
+    "Protoo",
+    "Pilémenes",
+    "Pirecmes",
+    "Eufemo",
+    "Sarpedón",
+    "Glauco",
+    "Tlepólemo",
+    "Hércules",
+    "Nireo",
+    "Agapenor",
+    "Toante",
+    "Meleagro",
+    "Erecteo",
+    "Teseo",
+    "Ascálafo",
+    "Leito",
+    "Penéleo",
+    "Meges",
+    "Hipótoo",
+    "Polites"
+  ],
+  "lugares": [
+    "Troya",
+    "Argos",
+    "Olimpo",
+    "Lacedemonia",
+    "Escamandro",
+    "Helesponto",
+    "Áulide",
+    "Salamina",
+    "Ítaca",
+    "Lemnos",
+    "Pilos",
+    "Micenas",
+    "Corinto",
+    "Arcadia",
+    "Dodona",
+    "Pelión",
+    "Atenas",
+    "Creta",
+    "Rodas",
+    "Licia",
+    "Eubea",
+    "Tebas",
+    "Janto",
+    "Peneo",
+    "Esepo",
+    "Ptía",
+    "Larisa",
+    "Ida",
+    "Batiea",
+    "Ascania",
+    "Duliquio",
+    "Partenio",
+    "Nísiro",
+    "Lirneso",
+    "Axio",
+    "Estigia",
+    "Cefiso",
+    "Meandro",
+    "Tmolo",
+    "Orco",
+    "Ténedos"
+  ],
+  "organizaciones": [],
+  "objetos": [
+    "cetro",
+    "égida",
+    "hecatombe",
+    "néctar"
+  ],
+  "hechos_canonicos": [
+    {
+      "hecho": "Júpiter no durmió durante la noche porque buscaba el modo de honrar a Aquiles y causar gran matanza junto a las naves aqueas.",
+      "momento_canonico": "al inicio del fragmento (verso 1)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Júpiter decidió enviar un pernicioso Sueño a Agamenón.",
+      "momento_canonico": "al inicio del fragmento (verso 1)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Júpiter ordenó al Sueño que dijera a Agamenón que armara a los aqueos y los lanzara al ataque, pues ahora podría tomar Troya porque los inmortales ya no están discordes tras ser persuadidos por Juno.",
+      "momento_canonico": "discurso de Júpiter al Sueño (versos 8-15)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Júpiter"
+      }
+    },
+    {
+      "hecho": "El Sueño llegó en un instante a las naves aqueas, encontró dormido a Agamenón y se puso sobre su cabeza tomando la figura de Néstor, hijo de Neleo, que era el anciano a quien Agamenón más honraba.",
+      "momento_canonico": "narración tras el discurso de Júpiter (versos 16-22)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "El Sueño, transfigurado en Néstor, repitió a Agamenón el mensaje de Júpiter: que armara a los aqueos y los sacara al combate, pues podría tomar Troya porque los inmortales ya no están discordes por haberlos persuadido Juno.",
+      "momento_canonico": "discurso del Sueño a Agamenón (versos 23-34)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Sueño"
+      }
+    },
+    {
+      "hecho": "Agamenón, al despertar, creyó que iba a tomar la ciudad de Troya ese mismo día, sin saber lo que Júpiter tramaba.",
+      "momento_canonico": "narración tras el discurso del Sueño (versos 35-40)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Al despertar, Agamenón vistió una túnica fina, hermosa y nueva; se echó el gran manto, calzó bellas sandalias, colgó del hombro la espada tachonada con argénteos clavos y tomó el imperecedero cetro de su padre.",
+      "momento_canonico": "narración tras el despertar de Agamenón (versos 41-47)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Cuando la Aurora subía al Olimpo para anunciar el día, Agamenón ordenó que los heraldos convocaran a junta a los aqueos.",
+      "momento_canonico": "narración (versos 48-52)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Antes de la junta general se celebró un consejo de magnánimos próceres junto a la nave del rey Néstor, natural de Pilos.",
+      "momento_canonico": "narración (versos 53-55)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón refirió a los próceres el sueño que tuvo, describiendo que el Sueño divino era muy semejante al ilustre Néstor en forma, estatura y natural.",
+      "momento_canonico": "discurso de Agamenón en el consejo (versos 56-75)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón propuso probar a los aqueos aconsejándoles que huyeran en las naves, mientras los próceres del consejo debían hablarles por todos lados para detenerlos.",
+      "momento_canonico": "discurso de Agamenón en el consejo (versos 73-75)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Néstor se levantó tras Agamenón y avaló el sueño ante los próceres, argumentando que si lo hubiera referido otro lo creerían falso, pero lo dice quien se gloría de ser el más poderoso de los aqueos.",
+      "momento_canonico": "discurso de Néstor en el consejo (versos 79-83)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Néstor"
+      }
+    },
+    {
+      "hecho": "La Fama, mensajera de Júpiter, instigó a los guerreros a acudir a la junta.",
+      "momento_canonico": "narración de la convocatoria de la junta (versos 84-100)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón empuñaba el cetro que Vulcano fabricó para Júpiter Saturnio; éste lo dio a Mercurio, quien lo regaló al excelente jinete Pélope, quien lo entregó a Atreo, pastor de hombres; Atreo al morir lo legó a Tiestes, rico en ganado, y Tiestes lo dejó a Agamenón para que reinara en muchas islas y en todo el país de Argos.",
+      "momento_canonico": "narración de la junta general (versos 100-109)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón, en la junta general, afirmó que Júpiter le había prometido destruir Ilión pero que todo fue funesto engaño y ahora le ordena regresar a Argos sin gloria después de haber perdido muchos hombres.",
+      "momento_canonico": "discurso de Agamenón a los argivos (versos 110-141)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón afirmó que el ejército aqueo es numéricamente muy superior a los troyanos que moran en Ilión, pero que los aliados venidos de muchas ciudades se lo impiden.",
+      "momento_canonico": "discurso de Agamenón a los argivos (versos 119-130)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón afirmó que llevan ya nueve años de guerra, que los maderos de las naves se han podrido y las cuerdas están deshechas, y que las esposas e hijos aguardan en los palacios.",
+      "momento_canonico": "discurso de Agamenón a los argivos (versos 134-140)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Tras el discurso de Agamenón, la junta se agitó y los guerreros corrieron hacia los bajeles para botarlos al mar, disponiéndose a regresar a la patria.",
+      "momento_canonico": "narración tras el discurso de Agamenón (versos 142-154)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "El regreso de los argivos habría ocurrido antes de lo dispuesto por el destino si Juno no hubiera intervenido.",
+      "momento_canonico": "narración (verso 155-156)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Juno ordenó a Minerva que bajara al ejército y detuviera a los guerreros con suaves palabras para que no botaran al mar los corvos bajeles.",
+      "momento_canonico": "discurso de Juno a Minerva (versos 157-165)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva bajó del Olimpo, llegó a las naves aqueas y encontró a Ulises inmóvil junto a su nave negra, sin tocarla, porque el pesar le llegaba al corazón.",
+      "momento_canonico": "narración (versos 166-172)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva, poniéndose al lado de Ulises, le ordenó que fuera al ejército a detener con suaves palabras a cada guerrero y no permitir que botaran los bajeles al mar.",
+      "momento_canonico": "discurso de Minerva a Ulises (versos 173-181)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ulises reconoció la voz de Minerva, tiró su manto (que recogió el heraldo Euríbates de Ítaca, que le acompañaba), corrió hacia Agamenón para que le diera el imperecedero cetro paterno y con éste se dirigió a las naves.",
+      "momento_canonico": "narración (versos 182-187)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ulises detuvo a reyes y capitanes con suaves palabras, diciéndoles que Agamenón los estaba probando y que pronto castigaría a los que huyeran.",
+      "momento_canonico": "narración e intervenciones de Ulises (versos 188-197)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ulises golpeó con el cetro a los hombres del pueblo que encontraba gritando e increpó a los que querían marcharse, diciéndoles que no todos pueden ser reyes y que uno solo debe ser príncipe.",
+      "momento_canonico": "narración (versos 198-206)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Tersites era el hombre más feo que llegó a Troya: bizco, cojo de un pie, con hombros corcovados, cabeza puntiaguda y rala cabellera; Aquiles y Ulises le aborrecían especialmente.",
+      "momento_canonico": "descripción de Tersites en la junta (versos 211-224)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Tersites zahirió a Agamenón ante la junta, acusándole de acumular botín y mujeres, de causar males a los aqueos, y de haber ofendido a Aquiles arrebatándole su recompensa.",
+      "momento_canonico": "discurso de Tersites en la junta (versos 225-242)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Tersites"
+      }
+    },
+    {
+      "hecho": "Ulises se detuvo junto a Tersites, le increpó duramente y le amenazó con azotarle y expulsarle de la junta si volvía a zaherir a los reyes.",
+      "momento_canonico": "discurso de Ulises a Tersites (versos 246-264)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ulises golpeó a Tersites con el cetro en la espalda y los hombros; Tersites lloró y le apareció un cardenal en la espalda; los aqueos rieron.",
+      "momento_canonico": "narración tras el discurso de Ulises (versos 265-271)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva, transfigurada en heraldo y junto a Ulises, impuso silencio para que todos los aqueos oyeran el discurso de Ulises.",
+      "momento_canonico": "narración (versos 278-283)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ulises recordó ante los aqueos el prodigio ocurrido en Áulide: un dragón devoró ocho polluelos y a la madre (nueve en total) y luego fue transformado en piedra por Júpiter; Calcas vaticinó entonces que combatirían durante nueve años y al décimo tomarían Troya.",
+      "momento_canonico": "discurso de Ulises a los aqueos (versos 299-332)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Ulises"
+      }
+    },
+    {
+      "hecho": "Ulises afirmó que llevan ya nueve años en Troya y que todo lo vaticinado por Calcas se va cumpliendo, instando a los aqueos a quedarse hasta tomar la gran ciudad de Príamo.",
+      "momento_canonico": "discurso de Ulises a los aqueos (versos 328-332)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Ulises"
+      }
+    },
+    {
+      "hecho": "Néstor arengó a los argivos instando a Agamenón a mandar con firme decisión y a agrupar a los hombres por tribus y familias para conocer quiénes son cobardes y quiénes valerosos.",
+      "momento_canonico": "discurso de Néstor a los argivos (versos 337-368)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Néstor"
+      }
+    },
+    {
+      "hecho": "Néstor afirmó que el prepotente Saturnio se mostró propicio a los argivos relampagueando por el diestro lado el día en que se embarcaron para traer a los troyanos la muerte.",
+      "momento_canonico": "discurso de Néstor (versos 353-356)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Néstor"
+      }
+    },
+    {
+      "hecho": "Agamenón respondió a Néstor elogiando sus consejos y afirmando que Aquiles y él pelearon por una muchacha y que él fue el primero en irritarse.",
+      "momento_canonico": "discurso de Agamenón en respuesta a Néstor (versos 369-393)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón ordenó a los guerreros comer, afilar lanzas, preparar escudos, dar pasto a los caballos e inspeccionar los carros para la batalla, amenazando con dejar a los rezagados a los perros y las aves de rapiña.",
+      "momento_canonico": "discurso de Agamenón (versos 381-393)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón, rey de hombres, inmoló un pingüe buey de cinco años al prepotente Saturnio, reuniendo en su tienda a los principales caudillos: Néstor, Idomeneo, los dos Ayaces, Diomedes y Ulises; Menelao se presentó espontáneamente.",
+      "momento_canonico": "narración del sacrificio (versos 402-411)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón oró a Júpiter pidiendo destruir el palacio de Príamo antes de que se pusiera el sol, pegar fuego a las puertas, romper con su lanza la coraza de Héctor y ver a muchos de sus compañeros muertos.",
+      "momento_canonico": "plegaria de Agamenón (versos 412-418)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "El Saturnio no accedió a la plegaria de Agamenón y, aceptando los sacrificios, les preparó no envidiable labor.",
+      "momento_canonico": "narración tras la plegaria (verso 419)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Néstor instó a Agamenón a no entretenerse en hablar y a ordenar que los heraldos pregonaran la reunión del ejército cerca de los bajeles.",
+      "momento_canonico": "discurso de Néstor tras el festín (versos 434-440)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Néstor"
+      }
+    },
+    {
+      "hecho": "Agamenón dispuso que los heraldos llamaran a la batalla a los aqueos; Minerva, la de los brillantes ojos, acompañaba a los reyes llevando la preciosa inmortal égida, instigando a los aqueos a salir al campo y poniendo fortaleza en sus corazones.",
+      "momento_canonico": "narración de la reunión del ejército (versos 441-454)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "El poeta invoca a las Musas para que le digan cuáles eran los caudillos y príncipes de los dánaos, declarando que la muchedumbre no podría enumerarla aunque tuviera diez lenguas.",
+      "momento_canonico": "invocación a las Musas antes del catálogo (versos 484-493)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los beocios eran mandados por Penéleo, Leito, Arcesilao, Protoenor y Clonio, y llegaron en cincuenta naves con ciento veinte combatientes en cada una.",
+      "momento_canonico": "catálogo de las naves (versos 494-510)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Aspledón y Orcómeno Minieo eran caudillos Ascálafo y Yálmeno, hijos de Marte y de Astíoque; llegaron en treinta cóncavas naves.",
+      "momento_canonico": "catálogo de las naves (versos 511-516)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los focenses eran mandados por Esquedio y Epístrofo, hijos del magnánimo Ifito Naubólida; llegaron en cuarenta negras naves y combatían a la izquierda de los beocios.",
+      "momento_canonico": "catálogo de las naves (versos 517-526)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los locrenses eran acaudillados por Ayax de Oileo, menor y mucho menor que Ayax Telamonio; era bajo de cuerpo, llevaba coraza de lino y superaba a todos los helenos y aqueos en el manejo de la lanza. Llegaron en cuarenta negras naves.",
+      "momento_canonico": "catálogo de las naves (versos 527-535)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los abantes de Eubea eran capitaneados por el magnánimo Elefenor Calcodontíada; los abantes llevaban la cabellera crecida en la parte posterior de la cabeza. Llegaron en cuarenta negras naves.",
+      "momento_canonico": "catálogo de las naves (versos 536-545)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los atenienses, pueblo del magnánimo Erecteo criado por Minerva hija de Júpiter, tenían por jefe a Menesteo, hijo de Peteo; ningún hombre sabía como él ordenar en batalla a los combatientes en carros y los peones armados, excepto Néstor. Cincuenta negras naves le seguían.",
+      "momento_canonico": "catálogo de las naves (versos 546-556)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ayax Telamonio había partido de Salamina con doce naves, colocadas cerca de las falanges atenienses.",
+      "momento_canonico": "catálogo de las naves (verso 557-558)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Argos y sus ciudades aledañas eran acaudillados por Diomedes, valiente en la pelea, Esténelo y Euríalo; jefe supremo era Diomedes. Ochenta negras naves les seguían.",
+      "momento_canonico": "catálogo de las naves (versos 559-568)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Micenas, Corinto y sus ciudades llegaron en cien naves a las órdenes del rey Agamenón Atrida, quien condujo muchos y valientes varones.",
+      "momento_canonico": "catálogo de las naves (versos 569-580)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Lacedemonia y sus ciudades llegaron en sesenta naves al mando de Menelao, valiente en el combate, impulsado por su propio ardor y deseando vengar la huida y los gemidos de Helena.",
+      "momento_canonico": "catálogo de las naves (versos 581-590)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Pilos y sus ciudades eran mandados por Néstor, caballero gerenio, y habían llegado en noventa cóncavas naves.",
+      "momento_canonico": "catálogo de las naves (versos 591-602)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "En Dorio las Musas privaron del canto al tracio Tamiris cuando volvía de casa de Eurito el ecaleo, porque se jactó de que saldría vencedor aunque cantaran las propias Musas; ellas irritadas le cegaron, le privaron del canto y le hicieron olvidar el arte de pulsar la cítara.",
+      "momento_canonico": "catálogo de las naves, mención de Pilos (versos 594-600)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los arcadios llegaron al mando del rey Agapenor, hijo de Anceo, en sesenta naves; el mismo Agamenón les proporcionó las naves porque los arcadios no se cuidaban de las cosas del mar.",
+      "momento_canonico": "catálogo de las naves (versos 603-614)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Buprasio y la divina Élide tenían cuatro caudillos: Anfímaco, Talpio, Diores Amarincida y Polixeno; cada uno mandaba diez veleras naves tripuladas por muchos epeos.",
+      "momento_canonico": "catálogo de las naves (versos 615-624)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Duliquio y las sagradas islas Equinas eran mandados por Meges Filida, igual a Marte; cuarenta negras naves le seguían.",
+      "momento_canonico": "catálogo de las naves (versos 625-630)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ulises acaudillaba a los magnánimos cefalenios de Ítaca y otras islas y territorios; doce naves de rojas proas le seguían.",
+      "momento_canonico": "catálogo de las naves (versos 631-637)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Toante, hijo de Andremón, regía a los etolos; el rubio Meleagro ya había muerto y también el magnánimo Eneo; diéronse a Toante todos los poderes para que reinara sobre los etolos. Cuarenta negras naves le seguían.",
+      "momento_canonico": "catálogo de las naves (versos 638-644)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Idomeneo, famoso por su lanza, mandaba a los cretenses junto con Meriones, igual al homicida Marte; seguíanle ochenta negras naves.",
+      "momento_canonico": "catálogo de las naves (versos 645-652)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Tlepólemo Heraclida condujo en nueve buques a los fieros rodios; era hijo de Hércules y Astioquía. Mató al anciano tío materno de su padre, Licimnio, y huyó por mar hasta Rodas, donde se estableció con los suyos formando tres tribus. Júpiter les dio abundante riqueza.",
+      "momento_canonico": "catálogo de las naves (versos 653-670)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Nireo condujo desde Sima tres naves bien proporcionadas; era el más hermoso de los dánaos que fueron a Troya, exceptuando al eximio Pelida, pero era tímido y poca la gente que mandaba.",
+      "momento_canonico": "catálogo de las naves (versos 671-675)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Nísiro, Crápato, Caso, Cos y las islas Calidnas tenían por jefes a Fidipo y Ántifo, hijos del rey Tésalo Heraclida; treinta cóncavas naves les seguían.",
+      "momento_canonico": "catálogo de las naves (versos 676-680)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los mirmidones, helenos y aqueos del Argos pelásgico, Ptía y la Hélade tenían por capitán a Aquiles y habían llegado en cincuenta naves; pero no combatían porque Aquiles permanecía en las naves enojado a causa de Briseida.",
+      "momento_canonico": "catálogo de las naves (versos 681-694)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles hizo cautiva a Briseida en Lirneso, cuando destruyó esa ciudad y las murallas de Tebas, dando muerte a los belicosos Mines y Epístrofo, hijos del rey Eveno Selepíada.",
+      "momento_canonico": "catálogo de las naves, mención de Aquiles (versos 688-693)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Protesilao acaudilló a los de Fílace y sus ciudades, pero ya estaba muerto cuando se describe el catálogo; fue muerto por un dárdano al saltar de la nave antes que los demás aqueos. En Fílace quedaron su desolada esposa y la casa a medio acabar.",
+      "momento_canonico": "catálogo de las naves (versos 695-710)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Tras la muerte de Protesilao, los ordenaba para el combate Podarces, vástago de Marte, hermano menor del animoso Protesilao e hijo del opulento Ificles Filácida. Cuarenta negras naves les seguían.",
+      "momento_canonico": "catálogo de las naves (versos 704-710)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Eumelo, hijo querido de Admeto y de Alcestes, condujo en once naves a los de Feras y sus ciudades; Alcestes era la más hermosa de las hijas de Pelias.",
+      "momento_canonico": "catálogo de las naves (versos 711-715)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Filoctetes, hábil arquero, era capitán de los de Metona y sus ciudades; llegaron en siete naves con cincuenta remeros expertos en el arco en cada una. Pero Filoctetes se hallaba en la isla de Lemnos, donde los aqueos lo dejaron al ser mordido por un reptil ponzoñoso. Lo ordenaba para el combate Medonte, hijo bastardo de Oileo, de quien lo tuvo Rena.",
+      "momento_canonico": "catálogo de las naves (versos 716-728)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "De los de Trica, Itoma y Ecalia eran capitanes Podalirio y Macaón, hijos de Esculapio y excelentes médicos; treinta cóncavas naves les seguían.",
+      "momento_canonico": "catálogo de las naves (versos 729-733)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Eurípilo, hijo preclaro de Evemón, mandaba a los de Ormenio y sus ciudades; cuarenta negras naves le seguían.",
+      "momento_canonico": "catálogo de las naves (versos 734-737)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Polipetes, hijo de Pirítoo y nieto de Júpiter, era caudillo de los de Argisa y sus ciudades; compartía el mando con Leonteo. Cuarenta negras naves les seguían. Pirítoo engendró a Polipetes el mismo día en que castigó a los hirsutos Centauros, los echó del Pelión y los obligó a retirarse.",
+      "momento_canonico": "catálogo de las naves (versos 738-747)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Guneo condujo desde Cifo en veintidós naves a los enienes e intrépidos perebos; los enienes moraban en la fría Dodona y los perebos cultivaban los campos a orillas del Titaresio, que vierte sus aguas en el Peneo pero no se mezcla con él sino que sobrenada como aceite por ser un arroyo del agua de la Estigia.",
+      "momento_canonico": "catálogo de las naves (versos 748-755)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Protoo, hijo de Tentredón, gobernaba a los magnetes que habitaban a orillas del Peneo y en el frondoso Pelión; cuarenta negras naves le seguían.",
+      "momento_canonico": "catálogo de las naves (versos 756-759)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Entre los caballos de los dánaos sobresalían las yeguas de Eumelo, criadas por Apolo el del arco de plata en Perea; entre los guerreros el más valiente fue Ayax Telamonio mientras duró la cólera de Aquiles, pues éste le superaba mucho.",
+      "momento_canonico": "cierre del catálogo (versos 760-779)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles permanecía en las corvas naves irritado contra Agamenón Atrida; su gente se solazaba en la playa tirando discos, venablos o flechas; los corceles comían loto y apio palustre.",
+      "momento_canonico": "cierre del catálogo (versos 771-779)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Júpiter envió a Iris, la de los pies ligeros, como mensajera a los teucros para darles la triste noticia del avance aqueo.",
+      "momento_canonico": "narración tras el catálogo aqueo (versos 786-795)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los teucros, jóvenes y viejos, se habían reunido en los pórticos del palacio de Príamo y deliberaban cuando llegó Iris.",
+      "momento_canonico": "narración (versos 788-790)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Iris se presentó a los troyanos tomando la figura y voz de Polites, hijo de Príamo, que servía como atalaya en la cima del túmulo del antiguo Esietes.",
+      "momento_canonico": "narración (versos 791-795)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Iris, transfigurada en Polites, advirtió a los troyanos que el ejército aqueo que avanzaba era inmenso y recomendó a Héctor que cada caudillo mandara a los suyos en su propia lengua.",
+      "momento_canonico": "discurso de Iris transfigurada a los troyanos (versos 796-806)",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Iris"
+      }
+    },
+    {
+      "hecho": "Héctor, conociendo la voz de la diosa, disolvió la junta; los troyanos se armaron, abrieron todas las puertas y salió el ejército.",
+      "momento_canonico": "narración (versos 807-810)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los troyanos y sus auxiliares se pusieron en orden de batalla en la llanura frente a la ciudad, en una excelsa colina llamada Batiea por los hombres y tumba de la ágil Mirina por los inmortales.",
+      "momento_canonico": "narración (versos 811-815)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "A los troyanos los mandaba el gran Héctor Priámida, de tremolante casco, con las tropas más copiosas y valientes.",
+      "momento_canonico": "catálogo troyano (versos 816-818)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Eneas, valiente hijo de Anquises y Venus, era caudillo de los dardanios; compartían el mando Arquéloco y Acamante, hijos de Antenor.",
+      "momento_canonico": "catálogo troyano (versos 819-823)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Pándaro, hijo ilustre de Licaón, a quien Apolo en persona diera el arco, gobernaba a los ricos teucros de Zelea al pie del Ida que bebían el agua del caudaloso Esepo.",
+      "momento_canonico": "catálogo troyano (versos 824-827)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Adrastea, Apeso, Pitiea y el alto monte de Terea estaban a las órdenes de Adrasto y Anfio, hijos de Mérope percosio. Su padre conocía el arte adivinatoria y no quería que sus hijos fueran a la guerra, pero ellos no le obedecieron.",
+      "momento_canonico": "catálogo troyano (versos 828-834)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los de Percote, Practio, Sesto, Abido y la divina Arisbe eran mandados por Asio Hirtácida, a quien fogosos corceles condujeron desde Arisbe.",
+      "momento_canonico": "catálogo troyano (versos 835-839)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Hipótoo acaudillaba a los valerosos pelasgos de la fértil Larisa; los mandaban él y Pileo, hijos del pelasgo Leto Teutámida.",
+      "momento_canonico": "catálogo troyano (versos 840-843)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "A los tracios que viven a orillas del alborotado Helesponto los regían Acamante y el héroe Píroo.",
+      "momento_canonico": "catálogo troyano (versos 844-845)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Eufemo, hijo de Treceno Céada, alumno de Júpiter, era capitán de los belicosos cicones.",
+      "momento_canonico": "catálogo troyano (versos 846-847)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Pirecmes condujo a los peonios de corvos arcos desde la lejana Amidón, a orillas del anchuroso Axio.",
+      "momento_canonico": "catálogo troyano (versos 848-850)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Pilémenes, de corazón varonil, mandaba a los paflagones de los énetos, que poseían Citoro, Sésamo y habitaban a orillas del Partenio.",
+      "momento_canonico": "catálogo troyano (versos 851-855)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los halizones eran gobernados por Odio y Epístrofo y procedían de Álibe, donde hay yacimientos de plata.",
+      "momento_canonico": "catálogo troyano (versos 856-857)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "A los misios los regían Cromis y el augur Énomo; Énomo sucumbió a manos del Eácida en el río.",
+      "momento_canonico": "catálogo troyano (versos 858-861)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Forcis y el deiforme Ascanio acaudillaban a los frigios llegados de la remota Ascania.",
+      "momento_canonico": "catálogo troyano (versos 862-863)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "A los meonios los gobernaban Mestles y Ántifo, hijos de Talémenes, nacidos al pie del Tmolo.",
+      "momento_canonico": "catálogo troyano (versos 864-866)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Nastes y Anfímaco, hijos de Nomión, eran caudillos de los carios de bárbaro lenguaje. Anfímaco iba al combate cubierto de oro; sucumbió en el río a manos de Aquiles, el de los pies ligeros, quien se apoderó del oro.",
+      "momento_canonico": "catálogo troyano (versos 867-875)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Sarpedón y el eximio Glauco mandaban a los que procedían de la remota Licia, a orillas del voraginoso Janto.",
+      "momento_canonico": "catálogo troyano (verso 876)",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    }
+  ]
+}

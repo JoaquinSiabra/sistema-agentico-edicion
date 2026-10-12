@@ -9,10 +9,10 @@ primer intento.
 YA NO USA listas fijas inventadas a mano. Antes de ejecutar este script hay
 que haber ejecutado la Fase 0:
 
-    Fase 0a -> calibrar_taxonomia.py -> data/exports/tipos_documentales_obra.json
-    Fase 0b -> calibrar_glosario.py  -> data/exports/personajes_obra.json
-                                         data/exports/lugares_obra.json
-                                         data/exports/glosario_obra.json
+    Fase 0a -> calibrar_taxonomia.py -> data/<obra>/exports/tipos_documentales_obra.json
+    Fase 0b -> calibrar_glosario.py  -> data/<obra>/exports/personajes_obra.json
+                                         data/<obra>/exports/lugares_obra.json
+                                         data/<obra>/exports/glosario_obra.json
 
 extraer_canon.py carga esos cuatro ficheros como CONFIG DE LA OBRA (no son
 agentes, son el resultado ya reconciliado de la calibración previa) y se
@@ -34,14 +34,27 @@ fase), el script sigue funcionando: avisa por consola y el modelo extrae
 ese fragmento sin la ayuda de esa calibración, igual que hacía antes.
 
 ATRIBUCIÓN — el motivo de fondo de este campo: en una extracción anterior,
-la jactancia de un personaje sobre un hecho no verificado se reprodujo
-como hecho objetivo, indistinguible de algo afirmado por el narrador o
-por un documento certificado. Si esa mezcla llega tal cual al canon
-estructurado, cualquier reconciliación posterior entre fragmentos puede
-acabar tratando una mentira o una fanfarronada de un personaje como canon
-verificado. Por eso cada hecho_canonico ahora declara también quién
-respalda esa afirmación: narrador/documento, o un personaje concreto sin
-verificación independiente.
+lo que un personaje alegaba en su propio beneficio se reprodujo como hecho
+objetivo, indistinguible de algo afirmado por el narrador o por un
+documento fiable. Si esa mezcla llega tal cual al canon estructurado, cualquier
+reconciliación posterior entre fragmentos puede acabar tratando una
+mentira o una fanfarronada de un personaje como canon verificado. Por eso
+cada hecho_canonico ahora declara también quién respalda esa afirmación.
+
+TRES categorías, no dos — motivo empírico: con el esquema binario original
+(narrador_documental / afirmacion_personaje), un fragmento narrado en
+primera persona por su propio protagonista salía con un 70-80% de
+"afirmacion_personaje", porque el narrador es él mismo. Eso diluía la
+señal del campo: mezclaba "el narrador cuenta adónde fue" (percepción
+directa, sin nada en juego) con "el narrador defiende una decisión suya
+ante sus críticos" (discurso interesado, con tanta parcialidad como el de
+cualquier otro personaje). El eje
+correcto no es "¿quién habla?" sino "¿tiene esta afirmación algo que
+ganar o perder en que se le crea?" — de ahí "testimonio_directo_narrador"
+(narración propia sin interés en juego) vs "afirmacion_interesada"
+(cualquiera, narrador incluido, con parte interesada). Confirmado con dos
+fragmentos independientes del mismo narrador antes de hacer el cambio: no
+fue una corazonada de una sola lectura.
 
 CACHÉ DE PROMPT — el bloque de sistema (reglas fijas + taxonomía de tipos
 documentales + glosario calibrado) es IDÉNTICO entre fragmentos mientras no
@@ -59,19 +72,28 @@ no pasa nada: simplemente no se cachea esa llamada.
 No depende todavía de SQLite ni de chunking por escena.
 Solo: fragmento + config de la obra -> Claude -> JSON.
 
+--obra=<nombre> es OBLIGATORIO: fija tanto de dónde se carga la config de
+Fase 0 (data/<obra>/exports/) como dónde se guarda el canon extraído, para
+que dos novelas nunca lean o escriban en la misma carpeta. --config=
+sigue existiendo como escape hatch para el caso raro de querer apuntar a
+una carpeta de calibración distinta de la que --obra= implicaría; si se
+usa, la salida también se guarda ahí.
+
 --orden=N es OBLIGATORIO: la posición de lectura de este fragmento dentro
 de la obra. No se autodetecta contando ficheros en canon/ —eso abriría la
 puerta a condiciones de carrera o a que un reprocesado descuadre la
-numeración—, así que hay que pasarlo explícito. Con esto la salida deja de
-sobrescribir siempre data/exports/canon_fragmento.json: se escribe UN
-FICHERO POR FRAGMENTO bajo <directorio_config>/canon/{orden:04d}.json, con
-dos claves nuevas que la Fase 2 (almacén) necesita para reconstruir el
-orden de lectura y vectorizar el fragmento original: "orden_fragmento" y
-"ruta_fragmento_origen" (la ruta al .txt que se le pasó al modelo).
+numeración—, así que hay que pasarlo explícito, igual que --obra=. La
+Fase 2 (poblar_almacen.py) necesita ese orden para reconstruir la
+secuencia de lectura de la obra, así que la salida ya no se nombra a
+partir del fragmento de entrada: se escribe UN FICHERO POR FRAGMENTO bajo
+data/<obra>/exports/canon/{orden:04d}.json, e incluye además
+"orden_fragmento" y "ruta_fragmento_origen" (la ruta al .txt que se le
+pasó al modelo), que es justo lo que poblar_almacen.py espera encontrar
+ahí.
 
 Uso:
-    uv run python src/extraer_canon.py --orden=1 data/novelas/fragmento.txt
-    uv run python src/extraer_canon.py --orden=1 --config=otro/directorio data/novelas/fragmento.txt
+    uv run python src/extraer_canon.py --obra=nombre_obra --orden=1 data/novelas/fragmento.txt
+    uv run python src/extraer_canon.py --obra=nombre_obra --orden=1 --config=otro/directorio data/novelas/fragmento.txt
 """
 
 import json
@@ -82,8 +104,6 @@ import anthropic
 
 MODELO = "claude-sonnet-4-6"
 
-DIRECTORIO_CONFIG_DEFAULT = "data/exports"
-
 PROMPT_SISTEMA_BASE = """Eres un asistente de extracción de canon narrativo. \
 Tu trabajo es leer un fragmento de una novela y extraer entidades y hechos \
 de forma estructurada, SIN interpretar ni añadir nada que no esté en el texto.
@@ -93,24 +113,45 @@ Reglas importantes:
 en el fragmento, no lo incluyas.
 - Para cada hecho_canonico, indica en "momento_canonico" en qué punto del \
 fragmento se revela o establece ese hecho (usa una referencia textual breve, \
-como "al inicio del fragmento" o "tras el diálogo entre los dos personajes"; \
-NO inventes números de capítulo si no aparecen en el texto).
+como "al inicio del fragmento" o "tras el diálogo entre los dos personajes"; NO \
+inventes números de capítulo si no aparecen en el texto).
 - Para cada hecho_canonico, indica también "atribucion": quién respalda \
-que ese hecho sea verdadero.
-  - "tipo": "narrador_documental" si lo establece el narrador externo o un \
-documento citado dentro del texto (carta, informe, entrada de diario) como \
-verdad dentro de su propio marco — es decir, nadie dentro de la ficción lo \
-está poniendo en duda en ese fragmento.
-  - "tipo": "afirmacion_personaje" si el hecho es lo que un personaje DICE, \
-jacta, alega o cree, sin que el narrador ni ningún documento lo confirmen \
-de forma independiente. Esto incluye jactancias, excusas, versiones \
-interesadas y mentiras: extrae lo que el personaje afirma, pero etiquétalo \
-como afirmación suya, NUNCA como hecho objetivo.
-  - Si "tipo" es "afirmacion_personaje", indica en "personaje" el nombre \
-de quien lo afirma. Si "tipo" es "narrador_documental", "personaje" va \
-como null.
-  - Ante la duda entre los dos, elige "afirmacion_personaje": es preferible \
-marcar de más que dejar pasar una jactancia como canon objetivo.
+que ese hecho sea verdadero, y con qué grado de interés propio en el \
+resultado. Tres valores posibles para "tipo":
+  - "narrador_documental": lo establece el narrador externo o un documento \
+citado dentro del texto (carta, informe, entrada de diario), como verdad \
+dentro de su propio marco — nadie dentro \
+de la ficción lo está poniendo en duda en ese fragmento.
+  - "testimonio_directo_narrador": lo dice el personaje que ejerce de \
+narrador de ESTE texto (p.ej. quien escribe un diario o cuenta en primera \
+persona su propio viaje), describiendo su propia \
+percepción o acción directa, SIN que tenga nada que ganar o perder en \
+que se crea. Ejemplos: qué vio, adónde fue, cuánto tardó, qué encontró. \
+No uses este valor para personajes citados por el narrador — quien habla \
+dentro de una carta o de un diálogo no es el narrador del texto aunque \
+hable en primera persona.
+  - "afirmacion_interesada": el hecho es lo que alguien DICE, jacta, \
+alega o cree, teniendo algo que ganar o perder en que se le crea — sea \
+el propio narrador (p.ej. las virtudes de su propio \
+plan, una acusación contra un rival, una sospecha sin fundamento \
+sobre un tercero) o cualquier otro personaje (jactancias, excusas, \
+versiones interesadas, mentiras, defensas de una decisión propia). \
+Ningún documento ni narrador externo lo confirma de forma independiente. \
+Extrae lo que se afirma, pero etiquétalo como afirmación interesada, \
+NUNCA como hecho objetivo.
+  - El criterio que separa "testimonio_directo_narrador" de \
+"afirmacion_interesada" NO es quién habla, es si tiene algo en juego en \
+esa afirmación concreta: el mismo narrador puede narrar sin interés en \
+un momento (dónde estuvo) y afirmar con interés en otro (por qué su \
+decisión fue mejor que la de un rival).
+  - Si "tipo" es "afirmacion_interesada" o "testimonio_directo_narrador", \
+indica en "personaje" el nombre de quien lo afirma/narra. Si "tipo" es \
+"narrador_documental", "personaje" va como null.
+  - Ante la duda entre "testimonio_directo_narrador" y \
+"afirmacion_interesada", elige "afirmacion_interesada": es preferible \
+marcar de más que dejar pasar una versión interesada como testimonio \
+neutro. Ante la duda entre cualquiera de los dos y "narrador_documental", \
+elige el que no sea "narrador_documental".
 - "tipo_documental" describe qué clase de texto es el fragmento en sí.
 - Devuelve EXCLUSIVAMENTE el JSON, sin texto antes ni después, sin \
 markdown ni bloques de código.
@@ -145,7 +186,7 @@ def leer_fragmento(ruta: str) -> str:
     return Path(ruta).read_text(encoding="utf-8")
 
 
-def cargar_config_obra(directorio: str = DIRECTORIO_CONFIG_DEFAULT) -> dict:
+def cargar_config_obra(directorio: str) -> dict:
     """Carga los cuatro ficheros que produce la Fase 0 (calibrar_taxonomia.py
     y calibrar_glosario.py) y que este script usa como CONFIG de la obra,
     no como agentes ni como golden set: son el resultado ya reconciliado
@@ -257,13 +298,13 @@ def mostrar_uso_cache(uso) -> None:
     )
 
 
-def extraer_canon(fragmento: str, config: dict) -> dict:
+def extraer_canon(fragmento: str, config: dict, directorio_debug: str = ".") -> dict:
     cliente = anthropic.Anthropic()
     prompt_sistema = construir_prompt_sistema(config)
 
     respuesta = cliente.messages.create(
         model=MODELO,
-        max_tokens=3000,
+        max_tokens=16000,
         system=[
             {
                 "type": "text",
@@ -289,41 +330,63 @@ def extraer_canon(fragmento: str, config: dict) -> dict:
     try:
         return json.loads(texto)
     except json.JSONDecodeError as e:
+        ruta_debug = Path(directorio_debug) / "_ultimo_error_respuesta_cruda.txt"
+        ruta_debug.parent.mkdir(parents=True, exist_ok=True)
+        ruta_debug.write_text(texto, encoding="utf-8")
+
+        inicio = max(0, e.pos - 200)
+        fin = min(len(texto), e.pos + 200)
+
         print(f"\n--- ERROR AL PARSEAR JSON: {e} ---")
         print(f"stop_reason: {respuesta.stop_reason}")
-        print(texto)
+        print(f"Respuesta completa guardada en: {ruta_debug}")
+        print(f"\nContexto alrededor del error (carácter {e.pos}):")
+        print("..." + texto[inicio:fin] + "...")
         raise
 
 
-def parsear_args(args: list[str]) -> tuple[str, int | None, str]:
-    directorio_config = DIRECTORIO_CONFIG_DEFAULT
+def parsear_args(
+    args: list[str],
+) -> tuple[str | None, str | None, int | None, str | None]:
+    obra = None
+    directorio_config = None
     orden_fragmento = None
     ruta_fragmento = None
     for arg in args:
-        if arg.startswith("--config="):
+        if arg.startswith("--obra="):
+            obra = arg.split("=", 1)[1]
+        elif arg.startswith("--config="):
             directorio_config = arg.split("=", 1)[1]
         elif arg.startswith("--orden="):
             orden_fragmento = int(arg.split("=", 1)[1])
         else:
             ruta_fragmento = arg
-    return directorio_config, orden_fragmento, ruta_fragmento
+    return obra, directorio_config, orden_fragmento, ruta_fragmento
 
 
 def main():
     if len(sys.argv) < 2:
         print(
-            "Uso: uv run python src/extraer_canon.py [--config=data/exports] "
-            "--orden=N <ruta_fragmento.txt>"
+            "Uso: uv run python src/extraer_canon.py --obra=nombre_obra "
+            "--orden=N [--config=otro/directorio] <ruta_fragmento.txt>"
         )
         sys.exit(1)
 
-    directorio_config, orden_fragmento, ruta_entrada = parsear_args(sys.argv[1:])
-    if not ruta_entrada:
-        print("No se ha indicado ningún fragmento.")
+    obra, directorio_config, orden_fragmento, ruta_entrada = parsear_args(
+        sys.argv[1:]
+    )
+    if not obra:
+        print("Falta --obra=nombre_obra (evita mezclar salidas entre novelas).")
         sys.exit(1)
     if orden_fragmento is None:
         print("Falta --orden=N: la posición de lectura de este fragmento en la obra.")
         sys.exit(1)
+    if not ruta_entrada:
+        print("No se ha indicado ningún fragmento.")
+        sys.exit(1)
+
+    if not directorio_config:
+        directorio_config = str(Path("data") / obra / "exports")
 
     fragmento = leer_fragmento(ruta_entrada)
     print(f"Fragmento leído: {len(fragmento)} caracteres")
@@ -338,19 +401,16 @@ def main():
     )
 
     print("Llamando a Claude...")
-    canon = extraer_canon(fragmento, config)
+    canon = extraer_canon(fragmento, config, directorio_debug=directorio_config)
 
-    # Claves que necesita poblar_almacen.py (Fase 2) y que extraer_canon
-    # por sí solo no tiene forma de saber: dónde cae este fragmento en el
-    # orden de lectura de la obra, y qué .txt original hay que vectorizar.
+    # Claves que necesita poblar_almacen.py (Fase 2) y que extraer_canon por
+    # sí solo no tiene forma de saber: dónde cae este fragmento en el orden
+    # de lectura de la obra, y qué .txt original hay que vectorizar.
     canon["orden_fragmento"] = orden_fragmento
     canon["ruta_fragmento_origen"] = str(Path(ruta_entrada).resolve())
 
     print(json.dumps(canon, indent=2, ensure_ascii=False))
 
-    # Un fichero POR FRAGMENTO, no uno que se sobreescribe: el Almacén
-    # necesita conservar el canon de todos los fragmentos ya procesados,
-    # no solo el último.
     ruta_salida = Path(directorio_config) / "canon" / f"{orden_fragmento:04d}.json"
     ruta_salida.parent.mkdir(parents=True, exist_ok=True)
     ruta_salida.write_text(

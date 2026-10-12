@@ -1,0 +1,767 @@
+{
+  "tipo_documental": "Narración épica en tercera persona con numeración de versos",
+  "personajes": [
+    "Aquiles",
+    "Agamenón",
+    "Crises",
+    "Criseida",
+    "Apolo",
+    "Calcas",
+    "Néstor",
+    "Ulises",
+    "Briseida",
+    "Patroclo",
+    "Taltibio",
+    "Euríbates",
+    "Tetis",
+    "Júpiter",
+    "Juno",
+    "Minerva",
+    "Vulcano",
+    "Héctor",
+    "Menelao",
+    "Ayax Telamonio",
+    "Idomeneo",
+    "Pirítoo",
+    "Teseo",
+    "Briáreo",
+    "Neptuno",
+    "Latona",
+    "Aurora"
+  ],
+  "lugares": [
+    "Troya",
+    "Argos",
+    "Olimpo",
+    "Crisa",
+    "Cila",
+    "Ténedos",
+    "Ptía",
+    "Lemnos",
+    "Pilos",
+    "Océano",
+    "Tebas"
+  ],
+  "organizaciones": [
+    "aqueos",
+    "troyanos",
+    "mirmidones",
+    "Musas"
+  ],
+  "objetos": [
+    "cetro",
+    "arco de plata",
+    "carcaj",
+    "hecatombe",
+    "égida",
+    "néctar",
+    "copa doble",
+    "cítara"
+  ],
+  "hechos_canonicos": [
+    {
+      "hecho": "La cólera de Aquiles causó infinitos males a los aqueos y precipitó al Orco muchas almas valerosas de héroes.",
+      "momento_canonico": "verso 1, al inicio del fragmento",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "La disputa entre el Atrida Agamenón y el divino Aquiles fue el punto de inicio de la cólera de Aquiles.",
+      "momento_canonico": "verso 1, al inicio del fragmento",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Apolo, hijo de Júpiter y de Latona, airado con el rey Agamenón, suscitó una maligna peste en el ejército aqueo.",
+      "momento_canonico": "verso 8",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Apolo causó la peste a causa del ultraje que Agamenón infiriera al sacerdote Crises.",
+      "momento_canonico": "verso 8",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Crises se presentó en las naves aqueas con un inmenso rescate y las ínfulas del flechador Apolo pendiendo de un áureo cetro para redimir a su hija Criseida.",
+      "momento_canonico": "verso 8",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Crises suplicó a todos los aqueos y particularmente a los dos Atridas que liberaran a su hija y admitieran el rescate.",
+      "momento_canonico": "verso 17, parlamento de Crises",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Todos los aqueos aprobaron en voz alta respetar al sacerdote y admitir el rescate.",
+      "momento_canonico": "verso 22",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón rechazó el rescate de Crises y lo despidió con amenazador lenguaje.",
+      "momento_canonico": "verso 22 y parlamento de Agamenón en versos 26-32",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón declaró que Criseida envejecería en su casa en Argos, lejos de su patria, trabajando en el telar y compartiendo su lecho.",
+      "momento_canonico": "verso 26, parlamento de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Crises sintió temor, obedeció el mandato de Agamenón y se fue en silencio por la orilla del mar.",
+      "momento_canonico": "verso 33",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Crises dirigió una plegaria al soberano Apolo, hijo de Latona, pidiéndole que los dánaos pagaran sus lágrimas con sus flechas.",
+      "momento_canonico": "verso 37, plegaria de Crises",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Apolo escuchó la plegaria de Crises, descendió del Olimpo con el arco y el carcaj y disparó flechas mortíferas contra los aqueos, primero contra mulos y perros, luego contra hombres.",
+      "momento_canonico": "verso 43",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Durante nueve días volaron por el ejército las flechas de Apolo.",
+      "momento_canonico": "verso 53",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "En el décimo día, Juno puso en el corazón de Aquiles la idea de convocar al pueblo a junta, porque se interesaba por los dánaos a quienes veía morir.",
+      "momento_canonico": "verso 53",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles se levantó en la junta y propuso consultar a un adivino, sacerdote o intérprete de sueños para averiguar por qué Apolo se había irritado.",
+      "momento_canonico": "verso 59, parlamento de Aquiles",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Calcas era el mejor de los augures, conocía lo presente, lo futuro y lo pasado, y había guiado las naves aqueas hasta Ilión mediante el arte adivinatoria que le diera Apolo.",
+      "momento_canonico": "verso 68",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Calcas solicitó protección a Aquiles antes de revelar la causa de la ira de Apolo, alegando que temía irritar a un varón de gran poder entre los argivos.",
+      "momento_canonico": "verso 74, parlamento de Calcas",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Calcas"
+      }
+    },
+    {
+      "hecho": "Aquiles prometió proteger a Calcas con juramento por Apolo, afirmando que nadie le pondría las manos encima mientras él viviera, aunque hablara de Agamenón.",
+      "momento_canonico": "verso 84, parlamento de Aquiles",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Aquiles"
+      }
+    },
+    {
+      "hecho": "Calcas reveló que Apolo estaba irritado porque Agamenón había ultrajado al sacerdote Crises, no devolviendo a su hija ni admitiendo el rescate.",
+      "momento_canonico": "verso 92, parlamento de Calcas",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Calcas"
+      }
+    },
+    {
+      "hecho": "Calcas declaró que Apolo no liberaría a los dánaos de la peste hasta que Criseida fuera restituida a su padre sin premio ni rescate y se inmolara una hecatombe en Crisa.",
+      "momento_canonico": "verso 92, parlamento de Calcas",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Calcas"
+      }
+    },
+    {
+      "hecho": "Agamenón se levantó afligido y con las negras entrañas llenas de cólera tras las palabras de Calcas.",
+      "momento_canonico": "verso 101",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón afirmó preferir a Criseida sobre Clitemnestra, su legítima esposa, porque no le era inferior ni en talle, ni en natural, ni en inteligencia, ni en destreza.",
+      "momento_canonico": "verso 106, parlamento de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón aceptó devolver a Criseida si los aqueos le preparaban otra recompensa, alegando que no podía quedarse sin la suya.",
+      "momento_canonico": "verso 106, parlamento de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Aquiles respondió que los aqueos no tenían cosas comunes porque el botín de las ciudades ya estaba repartido, y propuso que Agamenón devolviera a la joven y fuera recompensado el triple o cuádruple si se tomaba Troya.",
+      "momento_canonico": "verso 121, parlamento de Aquiles",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Aquiles"
+      }
+    },
+    {
+      "hecho": "Agamenón amenazó con apropiarse de la recompensa de Aquiles, de Ayax o de Ulises si los aqueos no le daban otra recompensa equivalente.",
+      "momento_canonico": "verso 130, parlamento de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón ordenó botar una nave al mar, reunir remeros, embarcar víctimas para una hecatombe y a Criseida, con Ayax, Idomeneo, Ulises o Aquiles como capitán.",
+      "momento_canonico": "verso 130, parlamento de Agamenón",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles declaró que no había venido a pelear por los troyanos, pues los teucros nunca le habían causado daño personal, sino que seguía a Agamenón para vengar a Menelao y a él.",
+      "momento_canonico": "verso 148, parlamento de Aquiles",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Aquiles"
+      }
+    },
+    {
+      "hecho": "Aquiles amenazó con regresar a Ptía en sus naves cóncavas, negándose a permanecer sin honra para proporcionarle ganancia y riqueza a Agamenón.",
+      "momento_canonico": "verso 148, parlamento de Aquiles",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Aquiles"
+      }
+    },
+    {
+      "hecho": "Agamenón respondió que Aquiles podía irse, que le era más odioso que ningún otro rey, y le amenazó con enviar su nave con amigos a llevarse a Briseida de la tienda de Aquiles.",
+      "momento_canonico": "verso 172, parlamento de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "El corazón de Aquiles discurrió entre dos opciones: matar al Atrida o calmar su cólera.",
+      "momento_canonico": "verso 188",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Mientras Aquiles sacaba la espada de la vaina, Minerva bajó del cielo enviada por Juno, que amaba cordialmente a ambos héroes.",
+      "momento_canonico": "verso 188",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva se apareció solo a Aquiles, tirándole de la blonda cabellera; ninguno de los demás la veía.",
+      "momento_canonico": "verso 188",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva dijo a Aquiles que venía a apaciguar su cólera enviada por Juno, y que por el ultraje se le ofrecerían un día triples y espléndidos presentes.",
+      "momento_canonico": "verso 206, parlamento de Minerva",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Minerva"
+      }
+    },
+    {
+      "hecho": "Aquiles obedeció a Minerva, envainó la espada y no desobedeció su orden.",
+      "momento_canonico": "verso 219",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva regresó al Olimpo, al palacio donde mora Júpiter, entre las demás deidades.",
+      "momento_canonico": "verso 219",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles denostó a Agamenón llamándole borracho, cara de perro y corazón de ciervo, y prestó juramento por el cetro de que los aqueos echarían de menos a Aquiles cuando Héctor los hiciera sucumbir.",
+      "momento_canonico": "verso 223, parlamento de Aquiles",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Aquiles"
+      }
+    },
+    {
+      "hecho": "Aquiles tiró a tierra el cetro tachonado con clavos de oro y tomó asiento.",
+      "momento_canonico": "verso 245",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Néstor se levantó para hablar; era el orador de los pilios y había visto perecer dos generaciones de hombres nacidos y criados con él en la divina Pilos, reinando sobre la tercera.",
+      "momento_canonico": "verso 245",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Néstor afirmó haber tratado en otro tiempo con hombres más esforzados que Aquiles y Agamenón: Pirítoo, Driante, Ceneo, Exadio, Polifemo y Teseo, y haber combatido junto a ellos contra los Centauros.",
+      "momento_canonico": "verso 254, parlamento de Néstor",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Néstor"
+      }
+    },
+    {
+      "hecho": "Néstor pidió a Agamenón que no quitara la moza a Aquiles y a Aquiles que no altercase de igual a igual con el rey, argumentando que Agamenón es más poderoso por reinar sobre mayor número de hombres y que Aquiles es más esforzado porque una diosa lo parió.",
+      "momento_canonico": "verso 254, parlamento de Néstor",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Néstor"
+      }
+    },
+    {
+      "hecho": "Agamenón respondió a Néstor que Aquiles quería sobreponerse a todos y dar órdenes, y cuestionó si los dioses le permitían proferir injurias por haberle hecho belicoso.",
+      "momento_canonico": "verso 285, parlamento de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Aquiles declaró que no combatiría con sus manos por la moza ni con Agamenón ni con otro alguno, y advirtió que si alguien intentaba llevarse lo que tenía junto a su nave, su sangre correría en torno de su lanza.",
+      "momento_canonico": "verso 292, parlamento de Aquiles",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Aquiles"
+      }
+    },
+    {
+      "hecho": "Se levantaron y disolvieron la junta cerca de las naves aqueas.",
+      "momento_canonico": "verso 304",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "El hijo de Peleo se fue hacia sus tiendas y bajeles con Patroclo y otros amigos.",
+      "momento_canonico": "verso 304",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón botó al mar una velera nave, escogió veinte remeros, cargó las víctimas de la hecatombe, embarcó a Criseida y puso como capitán al ingenioso Ulises.",
+      "momento_canonico": "verso 304",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "El Atrida mandó que los hombres se purificaran; hicieron lustraciones echando impurezas al mar y sacrificaron hecatombes de toros y cabras en honor de Apolo en la playa.",
+      "momento_canonico": "verso 312",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón envió a sus heraldos Taltibio y Euríbates a la tienda de Aquiles a traer a Briseida.",
+      "momento_canonico": "verso 318",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los heraldos llegaron a las tiendas y naves de los mirmidones y hallaron al rey Aquiles cerca de su tienda y de su negra nave.",
+      "momento_canonico": "verso 326",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles al ver a los heraldos no se alegró; los heraldos se turbaron y se pararon sin decir nada.",
+      "momento_canonico": "verso 326",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles dijo a los heraldos que no eran ellos los culpables sino Agamenón, y ordenó a Patroclo que sacara a Briseida y la entregara.",
+      "momento_canonico": "verso 334, parlamento de Aquiles",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Patroclo sacó a Briseida de la tienda y la entregó a los heraldos.",
+      "momento_canonico": "verso 345",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Briseida fue con los heraldos de mala gana.",
+      "momento_canonico": "verso 345",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles rompió en llanto, se alejó de los compañeros y sentándose a orillas del mar dirigió ruegos a su madre Tetis.",
+      "momento_canonico": "verso 345",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles relató a Tetis que fueron a Tebas, la sagrada ciudad de Eetión, la saquearon y el botín fue distribuido por los aqueos, separando a Criseida para el Atrida.",
+      "momento_canonico": "verso 364, parlamento de Aquiles a Tetis",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Aquiles"
+      }
+    },
+    {
+      "hecho": "Aquiles pidió a Tetis que fuera al Olimpo a rogar a Júpiter que honrara a su hijo concediendo la victoria a los teucros hasta que los aqueos dieran satisfacción a Aquiles.",
+      "momento_canonico": "verso 364, parlamento de Aquiles a Tetis",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Aquiles"
+      }
+    },
+    {
+      "hecho": "Aquiles afirmó que Tetis había evitado, ella sola entre los inmortales, una afrentosa desgracia al Saturnio cuando otros dioses olímpicos —Juno, Neptuno y Palas Minerva— quisieron atarle, llamando al espacioso Olimpo al centímano Briáreo.",
+      "momento_canonico": "verso 364, parlamento de Aquiles a Tetis",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Aquiles"
+      }
+    },
+    {
+      "hecho": "Tetis respondió a Aquiles lamentando haberle parido de corta vida, y le dijo que iría al nevado Olimpo a hablar con Júpiter.",
+      "momento_canonico": "verso 413, parlamento de Tetis",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Tetis"
+      }
+    },
+    {
+      "hecho": "Tetis informó a Aquiles de que Júpiter había ido al Océano al país de los probos etíopes para asistir a un banquete y todos los dioses le siguieron, y que volvería al Olimpo en doce días.",
+      "momento_canonico": "verso 413, parlamento de Tetis",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Tetis"
+      }
+    },
+    {
+      "hecho": "Tetis aconsejó a Aquiles que se quedara en las naves, conservara la cólera contra los aqueos y se abstuviera de combatir.",
+      "momento_canonico": "verso 413, parlamento de Tetis",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Tetis"
+      }
+    },
+    {
+      "hecho": "Tetis partió dejando a Aquiles con el corazón irritado a causa de la mujer que le habían arrebatado violentamente.",
+      "momento_canonico": "verso 428",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ulises llegó a Crisa con las víctimas para la hecatombe, amainaron velas, abatieron el mástil, llevaron el buque a remos al fondeadero, echaron anclas, ataron amarras y desembarcaron.",
+      "momento_canonico": "verso 430",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Criseida salió de la nave y el ingenioso Ulises la llevó al altar y la puso en manos de su padre Crises.",
+      "momento_canonico": "verso 430",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ulises dijo a Crises que Agamenón le enviaba a traerle la hija y a ofrecer una sacra hecatombe a Apolo en favor de los dánaos.",
+      "momento_canonico": "verso 442, parlamento de Ulises",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Crises recibió a su hija con alegría, ordenaron la hecatombe, la degollaron y realizaron el ritual completo del sacrificio.",
+      "momento_canonico": "verso 446",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Crises dirigió una segunda plegaria a Apolo pidiendo que alejara la abominable peste de los dánaos.",
+      "momento_canonico": "verso 451, plegaria de Crises",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Febo Apolo escuchó la segunda plegaria de Crises.",
+      "momento_canonico": "verso 457",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Durante el día los aqueos aplacaron a Apolo con el canto entonando un peán, y Apolo los oía con el corazón complacido.",
+      "momento_canonico": "verso 457",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "A la mañana siguiente los aqueos se hicieron a la mar para volver al campamento y Apolo les envió próspero viento.",
+      "momento_canonico": "verso 475",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Al llegar al campamento aqueo, sacaron la negra nave a tierra firme y luego se dispersaron por las tiendas y bajeles.",
+      "momento_canonico": "verso 475",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Aquiles seguía irritado en las veleras naves, no frecuentaba las juntas ni cooperaba a la guerra, sino que consumía su corazón en los bajeles echando de menos la gritería y el combate.",
+      "momento_canonico": "verso 488",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Cuando apareció la duodécima aurora, los sempiternos dioses volvieron al Olimpo con Júpiter a la cabeza.",
+      "momento_canonico": "verso 493",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Tetis salió del mar y subió al Olimpo, halló al longividente Saturnio sentado aparte en la más alta cumbre del monte, abrazó sus rodillas con la mano izquierda y le tocó la barba con la diestra.",
+      "momento_canonico": "verso 493",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Tetis suplicó a Júpiter que honrara a su hijo concediendo la victoria a los teucros hasta que los aqueos dieran satisfacción a Aquiles y le colmaran de honores.",
+      "momento_canonico": "verso 503, parlamento de Tetis",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Tetis"
+      }
+    },
+    {
+      "hecho": "Júpiter guardó silencio un buen rato sin responder a Tetis.",
+      "momento_canonico": "verso 511",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Júpiter respondió afligidísimo que acceder a la petición de Tetis haría que Juno le malquisiera y le zahiriera con injuriosas palabras.",
+      "momento_canonico": "verso 517, parlamento de Júpiter",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Júpiter"
+      }
+    },
+    {
+      "hecho": "Júpiter prometió a Tetis su asentimiento con la cabeza, declarando que ese signo es el más seguro, irrevocable y veraz para los inmortales.",
+      "momento_canonico": "verso 517, parlamento de Júpiter",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "El Saturnio bajó las negras cejas en señal de asentimiento y los divinos cabellos se agitaron en su cabeza, estremeciendo el dilatado Olimpo.",
+      "momento_canonico": "verso 528",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Tetis saltó al profundo mar desde el Olimpo y Júpiter volvió a su palacio.",
+      "momento_canonico": "verso 531",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Juno, que había visto que Tetis departió con Júpiter, dirigió injuriosas palabras a Jove Saturnio.",
+      "momento_canonico": "verso 531",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Juno sospechó que Tetis había pedido a Júpiter que honrara a Aquiles y causara gran matanza junto a las naves aqueas.",
+      "momento_canonico": "verso 551, parlamento de Juno",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Juno"
+      }
+    },
+    {
+      "hecho": "Júpiter ordenó a Juno que se sentara en silencio y obedeciese, amenazando con ponerle las invictas manos encima si se acercaba.",
+      "momento_canonico": "verso 560, parlamento de Júpiter",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Júpiter"
+      }
+    },
+    {
+      "hecho": "Juno temió y refrenando su coraje, se sentó en silencio; los dioses celestiales se indignaron en el palacio de Jove.",
+      "momento_canonico": "verso 568",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Vulcano comenzó a arengar a los dioses para consolar a su madre Juno, aconsejándole que obsequiara al padre Júpiter para no turbar el festín.",
+      "momento_canonico": "verso 568, parlamento de Vulcano",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Vulcano afirmó que en otra ocasión que quiso defender a Juno, Júpiter le asió por el pie y le arrojó de los divinos umbrales; que rodó todo el día y a la puesta del sol cayó en Lemnos, donde los sinties le recogieron.",
+      "momento_canonico": "verso 584, parlamento de Vulcano",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Vulcano"
+      }
+    },
+    {
+      "hecho": "Juno se sonrió y tomó la copa doble que su hijo Vulcano le presentaba.",
+      "momento_canonico": "verso 595",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Vulcano escancó dulce néctar para las demás deidades sacándolo de la cratera, y una risa inextinguible se alzó entre los bienaventurados dioses.",
+      "momento_canonico": "verso 595",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los dioses celebraron el festín todo el día hasta la puesta del sol; Apolo tañía la cítara y las Musas cantaban alternando.",
+      "momento_canonico": "verso 601",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Cuando el sol se puso, los dioses fueron a recogerse a sus palacios construidos por Vulcano. Júpiter se encaminó al lecho donde acostumbraba dormir y a su lado descansó Juno de áureo trono.",
+      "momento_canonico": "verso 605",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    }
+  ]
+}
