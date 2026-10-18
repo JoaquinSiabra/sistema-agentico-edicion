@@ -189,6 +189,17 @@ def test_epiteto_conocido_no_vuelve_como_variante(fijado):
     assert buscar(registros, "Hebe")[1]["alias"] == []
 
 
+def test_forma_nueva_dada_tambien_como_termino_no_crea_otra_entidad(fijado):
+    # Caso real del Canto IV: una pasada da "Minerva alalcomenia" como
+    # término y otra como variante de Minerva. Llega primero el término.
+    registros, discrepancias = incorporar(fijado, {
+        "Minerva alalcomenia": estable("Minerva alalcomenia"),
+        "Minerva": estable("Minerva", variantes=["Minerva alalcomenia"])})
+    assert "Minerva alalcomenia" not in terminos(registros)
+    assert "Minerva alalcomenia" in buscar(registros, "Minerva")[1]["alias"]
+    assert discrepancias == []
+
+
 def test_forma_de_otra_entidad_no_se_reasigna(fijado):
     # "Pelida" es de Aquiles: no pasa a Agamenón. Como ahora la reclaman dos,
     # no se queda en ninguna y va a revisión (no gana la primera en reclamarla).
