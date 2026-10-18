@@ -343,12 +343,14 @@ def reconciliar(resultados: list[dict]) -> tuple[dict[str, dict], list[dict]]:
         # Si una pasada da una forma como variante y otra como epíteto,
         # gana epíteto: tratar como nombre propio algo que no lo es cuesta
         # más (atribuye hechos ajenos) que perder una forma de búsqueda.
+        # Sin distinguir mayúsculas, como la búsqueda de hechos (ILIKE).
         epitetos_unidos = sorted(
             {v for e in entradas for v in (e.get("epitetos") or []) if v and v != termino}
         )
+        es_epiteto = {v.casefold() for v in epitetos_unidos}
         variantes_unidas = sorted(
-            {v for e in entradas for v in (e.get("variantes") or []) if v and v != termino}
-            - set(epitetos_unidos)
+            {v for e in entradas for v in (e.get("variantes") or [])
+             if v and v != termino and v.casefold() not in es_epiteto}
         )
 
         estables[termino] = {
@@ -407,7 +409,10 @@ def fusionar_alias(entradas: list[dict], permitir_substring: bool = False) -> li
     pendientes = []
     for e in entradas:
         e = dict(e)
-        propias = {v for v in (e.get("variantes") or []) if v and v != e["termino"]}
+        # Un epíteto nunca es alias, tampoco con otras mayúsculas.
+        es_epiteto = {v.casefold() for v in e.get("epitetos") or []}
+        propias = {v for v in (e.get("variantes") or [])
+                   if v and v != e["termino"] and v.casefold() not in es_epiteto}
         e["alias"] = sorted(propias)
         pendientes.append(e)
 
@@ -667,8 +672,11 @@ def incorporar(
                 "categoria_propuesta": entrada.get("categoria"),
                 "evidencia": entrada.get("evidencia"),
             })
+        es_epiteto = {v.casefold() for v in [*(fijado.get("epitetos") or []),
+                                             *(entrada.get("epitetos") or [])]}
         formas_nuevas = {f for f in formas
-                         if f != fijado["termino"] and fijado["termino"] not in duenos.get(f, ())}
+                         if f != fijado["termino"] and fijado["termino"] not in duenos.get(f, ())
+                         and f.casefold() not in es_epiteto}
         if formas_nuevas:
             for campo in ("variantes", "alias"):
                 fijado[campo] = sorted(set(fijado.get(campo) or []) | formas_nuevas)

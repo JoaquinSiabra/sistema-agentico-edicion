@@ -207,6 +207,17 @@ def test_epitetos_se_unen_y_ganan_a_variante():
     assert aquiles["epitetos"] == ["divino", "el de los pies ligeros"]
 
 
+def test_epiteto_gana_a_variante_aunque_cambien_las_mayusculas():
+    # Una pasada lo da como variante a principio de frase, otra como epíteto.
+    estables, _ = reconciliar([
+        pasada(entrada("Cástor", variantes=["Domador de caballos"])),
+        pasada(entrada("Cástor", epitetos=["domador de caballos"])),
+    ])
+    assert estables["Cástor"]["variantes"] == []
+    registros, _ = construir_registros(estables)
+    assert registros["personajes"][0]["alias"] == []
+
+
 def test_epitetos_no_intervienen_en_la_fusion():
     estables, _ = reconciliar([pasada(
         entrada("Héctor", epitetos=["domador de caballos"]),

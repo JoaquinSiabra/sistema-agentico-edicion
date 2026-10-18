@@ -58,7 +58,7 @@ fusión, en la identificación de entidades fijadas ni en la búsqueda de hechos
 | Spec | Prueba |
 |---|---|
 | Una respuesta sin el campo `epitetos` vale como `[]` (siguen valiendo las respuestas grabadas) | R, S |
-| Los epítetos de todas las pasadas se unen; si una pasada da una forma como variante y otra como epíteto, gana epíteto | R |
+| Los epítetos de todas las pasadas se unen; si una pasada da una forma como variante y otra como epíteto (aunque cambien las mayúsculas), gana epíteto; un epíteto nunca acaba como alias | R |
 | Dos entidades que comparten un epíteto no se fusionan ni lo tienen como alias | R |
 | Una calibración real separa al menos un epíteto conocido del Canto I, sin repetirlo como variante | A |
 
@@ -86,7 +86,7 @@ fusión, en la identificación de entidades fijadas ni en la búsqueda de hechos
 | Compartir solo un epíteto con una entidad fijada no la identifica (caso Climene / Juno): el epíteto pasa a forma compartida y no se queda en ninguna | R |
 | Una entidad nueva que trae un epíteto ya usado no se fusiona con la existente | R |
 | Una forma que ya pertenece a otra entidad no se reasigna: si la reclaman dos, va a discrepancias como forma compartida (no gana la primera) | R |
-| Los epítetos nuevos de un término fijado se le añaden, sin identificarlo | R |
+| Los epítetos nuevos de un término fijado se le añaden, sin identificarlo, y no vuelven como variante con otras mayúsculas | R |
 | Una categoría distinta de la fijada, o un nombre de varias entidades, va a discrepancias | R |
 | Las pasadas en bruto y las discrepancias anteriores no se pierden | S |
 

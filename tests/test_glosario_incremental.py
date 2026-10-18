@@ -174,6 +174,21 @@ def test_epitetos_se_guardan_y_no_identifican(fijado):
     assert "la de los grandes ojos" in buscar(registros, "Juno")[1]["alias"]
 
 
+def test_epiteto_conocido_no_vuelve_como_variante(fijado):
+    # Con otra capitalización, sigue siendo el mismo epíteto.
+    juno = buscar(fijado, "Juno")[1]
+    juno["epitetos"] = ["hija de Saturno"]
+    registros, _ = incorporar(fijado, {
+        "Juno": estable("Juno", variantes=["Hija de Saturno", "Juno argiva"],
+                        epitetos=["la de áureo trono"]),
+        "Hebe": estable("Hebe", variantes=["Ojos de lechuza"],
+                           epitetos=["ojos de lechuza"])})
+    juno = buscar(registros, "Juno")[1]
+    assert "Hija de Saturno" not in juno["alias"] + juno["variantes"]
+    assert "Juno argiva" in juno["alias"]
+    assert buscar(registros, "Hebe")[1]["alias"] == []
+
+
 def test_forma_de_otra_entidad_no_se_reasigna(fijado):
     # "Pelida" es de Aquiles: no pasa a Agamenón. Como ahora la reclaman dos,
     # no se queda en ninguna y va a revisión (no gana la primera en reclamarla).
