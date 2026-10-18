@@ -5,12 +5,17 @@ recuperar.hechos_hasta y, sin modelo ni coste, la cobertura del contexto
 en el banco: en cada caso con contradicción, ¿llegó algún hecho esperado,
 y por qué vía? La cobertura es informativa (sin umbral en v1): se escribe
 en .cache/continuidad/cobertura.json y se imprime (ver con -s).
+
+Buscador híbrido (docs/buscador_hibrido.md): las vías de entorno y léxica
+sobre S11, y el informe del buscador que compara combinaciones de vías y
+tope (.cache/continuidad/buscador.txt).
 """
 
 import pytest
 
-from banco import (CON_CONTRADICCION, OBRA, cargar_casos, cobertura, construir_caso,
-                   escribir, obra_del_banco, resumen_cobertura)
+from banco import (CON_CONTRADICCION, COMBINACIONES, OBRA, SALIDA, cargar_casos, cobertura,
+                   construir_caso, escribir, medir_buscador, obra_del_banco,
+                   resumen_cobertura, tabla_buscador)
 from continuidad import reunir_contexto, texto_fragmento
 from recuperar import hechos_hasta
 
@@ -104,3 +109,57 @@ def test_cobertura_del_contexto_en_el_banco(cur):
     print("\n" + resumen_cobertura(filas) + f"\n(detalle en {ruta})")
     assert len(filas) == 16
     assert all(f["llegaron"] or f["motivo"] for f in filas)
+
+
+# --- Buscador híbrido ---------------------------------------------------------
+
+def caso(identificador):
+    return next(c for c in cargar_casos() if c["id"] == identificador)
+
+
+def contexto_del_caso(cur, c, **opciones):
+    pasaje, char = construir_caso(c, texto_fragmento(cur, OBRA, c["orden"]))
+    return contexto(cur, pasaje, c["orden"], char, **opciones)
+
+
+def test_la_via_lexica_encuentra_la_espada_rota_para_s11(cur):
+    ctx = contexto_del_caso(cur, caso("S11"), vias=("lexica",))
+    espada = ctx.hecho(30045)
+    assert espada is not None and espada.origen == ["lexica"]
+    assert 0 < ctx.candidatos["lexica"] <= 30
+
+
+def test_la_via_de_entorno_detecta_a_menelao_para_s11(cur):
+    ctx = contexto_del_caso(cur, caso("S11"), vias=("entidades", "entorno"))
+    assert "entorno: Menelao" in ctx.candidatos
+    # El pasaje no nombra a nadie: el sujeto está en el párrafo anterior.
+    assert not [o for o in ctx.candidatos if o.startswith("entidad: ")]
+    assert ctx.hecho(30045) is not None
+
+
+def test_la_via_de_entorno_no_repite_lo_que_nombra_el_pasaje(cur):
+    ctx = contexto_del_caso(cur, caso("S02"), vias=("entidades", "entorno"))
+    assert "entidad: Menelao" in ctx.candidatos and "entorno: Menelao" not in ctx.candidatos
+
+
+def test_un_pasaje_solo_de_palabras_vacias_no_trae_hechos_lexicos(cur):
+    ctx = contexto(cur, "y de la que en el", vias=("lexica",))
+    assert ctx.hechos == []
+
+
+def test_informe_del_buscador(cur):
+    casos = cargar_casos()
+    medidas = {nombre: {} for nombre in COMBINACIONES}
+    for c in casos:
+        for nombre, (vias, tope) in COMBINACIONES.items():
+            medidas[nombre][c["id"]] = medir_buscador(
+                c, contexto_del_caso(cur, c, vias=vias, tope=tope))
+    escribir("buscador.json", medidas)
+    tabla = tabla_buscador(medidas, casos)
+    (SALIDA / "buscador.txt").write_text(tabla + "\n", encoding="utf-8")
+    print("\n" + tabla + f"\n(en {SALIDA / 'buscador.txt'})")
+    assert all(len(m) == len(casos) for m in medidas.values())
+    # La combinación actual reproduce la medida del banco (15/16, falla S11).
+    con = [c for c in casos if c["categoria"] in CON_CONTRADICCION]
+    assert [c["id"] for c in con if not medidas["actual"][c["id"]]["llega"]] == ["S11"]
+

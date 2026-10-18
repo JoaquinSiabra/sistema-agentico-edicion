@@ -9,6 +9,10 @@ El informe y las respuestas en bruto se escriben en NOVELA_SALIDA_CONTINUIDAD
 (por defecto .cache/continuidad/, fuera de git). Las respuestas grabadas
 de la suite rápida se leen de tests/fijos/continuidad/respuestas/: para
 fijarlas, se copian ahí a mano las de una ejecución revisada.
+
+Con NOVELA_BANCO_SOLO_CAMBIADOS=1, un caso cuyo contexto tiene los mismos
+hechos que su respuesta grabada reutiliza esa respuesta en vez de llamar
+al modelo (docs/buscador_hibrido.md, «Comprobación final con la API»).
 """
 
 from __future__ import annotations
@@ -21,7 +25,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from almacen_prueba import FIJOS, FIJOS_III_IV, exports_de_prueba, obra_aparte
-from continuidad import Contexto, Informe, normalizar
+from continuidad import Contexto, Informe, consultar_modelo, normalizar
 
 RAIZ = Path(__file__).resolve().parents[2]
 CASOS = RAIZ / "tests" / "fijos" / "continuidad" / "casos.json"
@@ -36,6 +40,19 @@ MAXIMO_AVISOS_EN_LIMPIOS = 1
 
 CON_CONTRADICCION = {"sembrado", "direccion"}
 SIN_CONTRADICCION = {"control", "trampa"}
+
+SOLO_CAMBIADOS = os.environ.get("NOVELA_BANCO_SOLO_CAMBIADOS") == "1"
+
+# Combinaciones de vías y tope que compara el informe del buscador
+# (docs/buscador_hibrido.md, «Cómo se mide»).
+COMBINACIONES = {
+    "actual": (("entidades",), 200),
+    "+entorno": (("entidades", "entorno"), 200),
+    "+lexica": (("entidades", "lexica"), 200),
+    "híbrido": (("entidades", "entorno", "lexica"), 200),
+    "híbrido-60": (("entidades", "entorno", "lexica"), 60),
+}
+PUESTO_MAXIMO = 60
 
 
 @contextmanager
@@ -180,6 +197,28 @@ def escribir(nombre: str, datos) -> Path:
     return ruta
 
 
+def respuesta_grabada(caso_id: str, contexto: Contexto, grabadas: Path = GRABADAS) -> dict | None:
+    """La respuesta grabada del caso si su contexto tenía los mismos hechos."""
+    ruta = grabadas / f"{caso_id}.json"
+    if not ruta.exists():
+        return None
+    grabado = json.loads(ruta.read_text(encoding="utf-8"))
+    if {h["id"] for h in grabado["contexto"]["hechos"]} != {h.id for h in contexto.hechos}:
+        return None
+    return grabado["respuesta"]
+
+
+def obtener_respuesta(caso_id: str, contexto: Contexto, pasaje: str,
+                      solo_cambiados: bool = SOLO_CAMBIADOS,
+                      grabadas: Path = GRABADAS) -> tuple[dict, bool]:
+    """(respuesta, si se llamó al modelo)."""
+    if solo_cambiados:
+        respuesta = respuesta_grabada(caso_id, contexto, grabadas)
+        if respuesta is not None:
+            return respuesta, False
+    return consultar_modelo(contexto, pasaje), True
+
+
 def grabar_respuesta(caso: dict, pasaje: str, contexto: Contexto, respuesta: dict,
                      informe: Informe) -> None:
     """Lo necesario para reproducir el informe sin base de datos ni API."""
@@ -216,6 +255,9 @@ def resumen_banco(resultados: list[dict]) -> str:
         f"{sum(bool(r['resultado'].get('direccion_correcta')) for r in detectados)}"
         f"/{len(detectados)}.",
         f"Avisos descartados por la validación: {sum(r['descartados'] for r in resultados)}.",
+        f"Llamadas a la API: {sum(r.get('llamada', False) for r in resultados)} "
+        f"de {len(resultados)}" + (" (solo los casos con contexto cambiado)."
+                                   if SOLO_CAMBIADOS else "."),
         "Fallos:",
     ]
     for r in resultados:
@@ -229,3 +271,69 @@ def resumen_banco(resultados: list[dict]) -> str:
             lineas.append(f"  {r['id']}: {r['resultado']['avisos']} avisos en un "
                           f"{r['categoria']}")
     return "\n".join(lineas)
+
+
+# --- Informe del buscador (sin modelo) --------------------------------------
+
+def medir_buscador(caso: dict, contexto: Contexto) -> dict:
+    """Por caso y combinación: si llega algún hecho esperado, en qué puesto
+    del ranking fusionado queda el mejor, y cuántos hechos tiene el contexto."""
+    puestos = [h.puesto for h in contexto.hechos if h.id in esperados(caso)]
+    return {"llega": bool(puestos), "puesto": min(puestos) if puestos else None,
+            "hechos": len(contexto.hechos)}
+
+
+def tabla_buscador(medidas: dict[str, dict[str, dict]], casos: list[dict]) -> str:
+    """medidas[combinación][caso] -> medir_buscador. Tabla de texto con una
+    fila por caso y una columna por combinación, y el resumen."""
+    nombres = list(medidas)
+    con = [c for c in casos if c["categoria"] in CON_CONTRADICCION]
+    sin = [c for c in casos if c["categoria"] in SIN_CONTRADICCION]
+
+    def celda(m: dict, caso: dict) -> str:
+        if caso["categoria"] in SIN_CONTRADICCION:
+            return f"{m['hechos']} h"
+        return (f"#{m['puesto']} / {m['hechos']} h" if m["llega"]
+                else f"NO / {m['hechos']} h")
+
+    def media(nombre: str, grupo: list[dict]) -> str:
+        return f"{sum(medidas[nombre][c['id']]['hechos'] for c in grupo) / len(grupo):.1f}"
+
+    filas = [["caso", *nombres]]
+    filas += [[c["id"], *(celda(medidas[n][c["id"]], c) for n in nombres)] for c in casos]
+    filas.append(["cobertura", *(f"{sum(medidas[n][c['id']]['llega'] for c in con)}/{len(con)}"
+                                 for n in nombres)])
+    filas.append(["peor puesto", *(str(max((medidas[n][c["id"]]["puesto"] or 0) for c in con))
+                                   for n in nombres)])
+    filas.append(["contexto medio", *(media(n, casos) for n in nombres)])
+    filas.append(["medio con contradicción", *(media(n, con) for n in nombres)])
+    filas.append(["medio controles y trampas", *(media(n, sin) for n in nombres)])
+    anchos = [max(len(f[i]) for f in filas) for i in range(len(filas[0]))]
+    lineas = ["  ".join(x.ljust(a) for x, a in zip(f, anchos)).rstrip() for f in filas]
+    lineas.insert(1, "  ".join("-" * a for a in anchos))
+    lineas.append("")
+    lineas.append("Celdas: #puesto del mejor hecho esperado en el ranking fusionado / "
+                  "hechos en el contexto; NO = no llega ninguno.")
+    if {"actual", "híbrido", "híbrido-60"} <= set(medidas):
+        lineas.append(criterio_hibrido_60(medidas, casos))
+    return "\n".join(lineas)
+
+
+def criterio_hibrido_60(medidas: dict[str, dict[str, dict]], casos: list[dict]) -> str:
+    """Criterio para cambiar el valor por defecto a híbrido-60: cobertura
+    16/16, ningún hecho esperado por debajo del puesto 60 (en el ranking
+    híbrido, con tope 200) y contexto medio menor que el actual."""
+    con = [c for c in casos if c["categoria"] in CON_CONTRADICCION]
+    cobertura_total = all(medidas["híbrido-60"][c["id"]]["llega"] for c in con)
+    puestos = [medidas["híbrido"][c["id"]]["puesto"] for c in con]
+    en_puesto = all(p is not None and p <= PUESTO_MAXIMO for p in puestos)
+
+    def media(nombre):
+        return sum(m["hechos"] for m in medidas[nombre].values()) / len(medidas[nombre])
+    menor = media("híbrido-60") < media("actual")
+    cumple = cobertura_total and en_puesto and menor
+    return (f"Criterio híbrido-60: cobertura completa {'sí' if cobertura_total else 'no'}; "
+            f"todos en el puesto {PUESTO_MAXIMO} o antes {'sí' if en_puesto else 'no'}; "
+            f"contexto medio menor que el actual {'sí' if menor else 'no'} -> "
+            f"{'CUMPLE' if cumple else 'no cumple'}.")
+

@@ -16,9 +16,15 @@ Tres pasos:
      lo que no se sostiene y devuelve el Informe.
 
 VÍAS DE RECUPERACIÓN — reunir_contexto recibe qué vías usar para traer
-hechos (en v1, solo "entidades"), y cada hecho del contexto guarda por qué
-vía o vías llegó (`entidad: <término>`). Así se pueden comparar
-combinaciones de vías sobre el mismo banco sin tocar el resto del agente.
+hechos, y cada hecho del contexto guarda por qué vía o vías llegó. Así se
+pueden comparar combinaciones de vías sobre el mismo banco sin tocar el
+resto del agente. Buscador híbrido (docs/buscador_hibrido.md):
+  - "entidades": las entidades que nombra el pasaje (`entidad: <término>`);
+  - "entorno": las que nombra el párrafo anterior al punto de inserción y
+    no el pasaje (`entorno: <término>`), para el sujeto implícito;
+  - "lexica": texto completo de Postgres sobre los hechos (`lexica`).
+Cada vía da una lista ordenada por origen; las listas se fusionan por rango
+recíproco (RRF) y el tope se aplica después. Por defecto, solo "entidades".
 
 ATRIBUCIÓN — solo un hecho del narrador (`narrador_documental`) puede
 fundar un aviso. Lo que afirma un personaje puede ser falso: como mucho da
@@ -34,6 +40,7 @@ import argparse
 import json
 import re
 from dataclasses import asdict, dataclass, field
+from fractions import Fraction
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -48,6 +55,8 @@ if TYPE_CHECKING:
     from sentence_transformers import SentenceTransformer
 
 TOPE_HECHOS = 200
+RRF_K = 60
+MAXIMO_LEXICA = 30
 PASAJES_PARECIDOS = 5
 CARACTERES_ENTORNO = 1500
 NARRADOR = "narrador_documental"
@@ -119,6 +128,7 @@ class HechoContexto:
     atribuido_a: str | None
     direccion: str            # anterior | posterior | mismo_fragmento
     origen: list[str]         # vías que lo trajeron, p.ej. ["entidad: Menelao"]
+    puesto: int | None = None  # en el ranking fusionado (1 = el mejor)
 
     @property
     def del_narrador(self) -> bool:
@@ -231,19 +241,88 @@ def hechos_de_entidad(cur, obra: str, entidad: str) -> list[Hecho]:
     return [Hecho(*fila) for fila in cur.fetchall()]
 
 
-def via_entidades(cur, obra: str, pasaje: str) -> dict[str, list[Hecho]]:
-    detectadas = detectar_entidades(pasaje, entidades_de_obra(cur, obra))
-    return {f"entidad: {t}": hechos_de_entidad(cur, obra, t) for t in detectadas}
-
-
-# Cada vía: (cur, obra, pasaje) -> {origen: hechos}. Las siguientes
-# (léxica, semántica sobre hechos...) se añaden aquí.
-VIAS = {"entidades": via_entidades}
-VIAS_V1 = ("entidades",)
-
-
 def posicion_global(hecho: Hecho) -> int:
     return hecho.orden_fragmento * 10000 + hecho.orden_en_fragmento
+
+
+def ordenar_por_cercania(hechos: list[Hecho], orden: int) -> list[Hecho]:
+    """Del más cercano al punto de inserción al más lejano, por distancia en
+    posicion_global, tomando como punto el comienzo del fragmento de
+    inserción (los hechos no tienen posición en caracteres)."""
+    punto = orden * 10000
+    return sorted(hechos, key=lambda h: (abs(posicion_global(h) - punto), posicion_global(h)))
+
+
+def hechos_de_entidades(cur, obra: str, terminos: list[str], prefijo: str,
+                        orden: int) -> dict[str, list[Hecho]]:
+    return {f"{prefijo}: {t}": ordenar_por_cercania(hechos_de_entidad(cur, obra, t), orden)
+            for t in terminos}
+
+
+def parrafo_anterior(texto: str, char: int) -> str:
+    """El párrafo (bloque separado por línea en blanco) que acaba antes del
+    punto de inserción: si el punto está a mitad de párrafo, su parte ya
+    escrita; si está al comienzo de uno, el párrafo de antes. Si antes del
+    punto no hay ninguna línea en blanco, los CARACTERES_ENTORNO anteriores."""
+    antes = texto[:char].rstrip()
+    separadores = list(re.finditer(r"\n[ \t]*\n", antes))
+    if not separadores:
+        return antes[-CARACTERES_ENTORNO:]
+    return antes[separadores[-1].end():].strip()
+
+
+def consulta_lexica(pasaje: str) -> str | None:
+    """Las palabras del pasaje, sin repetir, unidas con OR para
+    to_tsquery('spanish', ...). Las vacías las descarta la propia
+    configuración `spanish` de Postgres. Solo letras: ningún operador de
+    tsquery llega a la consulta. None si el pasaje no tiene palabras."""
+    palabras = list(dict.fromkeys(p.lower() for p in re.findall(r"[^\W\d_]+", pasaje)))
+    return " | ".join(palabras) or None
+
+
+def via_entidades(cur, obra: str, pasaje: str, orden: int, texto: str,
+                  char: int) -> dict[str, list[Hecho]]:
+    detectadas = detectar_entidades(pasaje, entidades_de_obra(cur, obra))
+    return hechos_de_entidades(cur, obra, detectadas, "entidad", orden)
+
+
+def via_entorno(cur, obra: str, pasaje: str, orden: int, texto: str,
+                char: int) -> dict[str, list[Hecho]]:
+    """Entidades del párrafo anterior que el pasaje no nombra: el sujeto
+    implícito («Y blandía la espada…» tras un párrafo sobre Menelao)."""
+    entidades = entidades_de_obra(cur, obra)
+    en_pasaje = set(detectar_entidades(pasaje, entidades))
+    en_entorno = [t for t in detectar_entidades(parrafo_anterior(texto, char), entidades)
+                  if t not in en_pasaje]
+    return hechos_de_entidades(cur, obra, en_entorno, "entorno", orden)
+
+
+def via_lexica(cur, obra: str, pasaje: str, orden: int, texto: str,
+               char: int) -> dict[str, list[Hecho]]:
+    consulta = consulta_lexica(pasaje)
+    if consulta is None:
+        return {}
+    # Misma expresión que el índice GIN de schema.sql (hechos_texto_idx).
+    cur.execute(
+        """SELECT f.orden_fragmento, h.orden_en_fragmento, h.hecho,
+                  h.momento_canonico, h.atribucion_tipo, a.termino
+           FROM hechos_canonicos h
+           JOIN fragmentos f ON f.id = h.fragmento_id
+           JOIN obras o ON o.id = h.obra_id
+           LEFT JOIN entidades a ON a.id = h.atribucion_personaje_id,
+                to_tsquery('spanish', %s) AS q
+           WHERE o.slug = %s AND to_tsvector('spanish', h.hecho) @@ q
+           ORDER BY ts_rank_cd(to_tsvector('spanish', h.hecho), q) DESC, h.posicion_global
+           LIMIT %s""",
+        (consulta, obra, MAXIMO_LEXICA),
+    )
+    return {"lexica": [Hecho(*fila) for fila in cur.fetchall()]}
+
+
+# Cada vía: (cur, obra, pasaje, orden, texto del fragmento, char) ->
+# {origen: hechos, en orden de relevancia}.
+VIAS = {"entidades": via_entidades, "entorno": via_entorno, "lexica": via_lexica}
+VIAS_V1 = ("entidades",)
 
 
 def direccion(orden_hecho: int, orden: int) -> str:
@@ -254,13 +333,29 @@ def direccion(orden_hecho: int, orden: int) -> str:
     return "mismo_fragmento"
 
 
+def fusionar(por_origen: dict[str, list[Hecho]]) -> list[int]:
+    """Fusión por rango recíproco: cada hecho suma 1 / (RRF_K + puesto) por
+    cada lista en que aparece (puesto 1 = el primero). Devuelve los
+    identificadores de mayor a menor puntuación; a igualdad, en orden de
+    lectura."""
+    puntos: dict[int, Fraction] = {}
+    for hechos in por_origen.values():
+        vistos: set[int] = set()
+        for h in hechos:
+            if posicion_global(h) in vistos:
+                continue
+            vistos.add(posicion_global(h))
+            puntos[posicion_global(h)] = puntos.get(posicion_global(h), Fraction(0)) \
+                + Fraction(1, RRF_K + len(vistos))
+    return sorted(puntos, key=lambda i: (-puntos[i], i))
+
+
 def combinar(
     por_origen: dict[str, list[Hecho]], orden: int, tope: int = TOPE_HECHOS,
 ) -> tuple[list[HechoContexto], int]:
-    """Une los hechos de todas las vías, sin repetir, con su dirección y su
-    origen. Si pasan del tope, entran primero los de los orígenes con menos
-    hechos (las entidades más específicas) hasta llenarlo. Devuelve los
-    hechos, en orden de lectura, y cuántos se omitieron."""
+    """Une los hechos de todas las vías, sin repetir, con su dirección, su
+    origen y su puesto en la fusión. Entran los `tope` mejores de la fusión.
+    Devuelve los hechos, en orden de lectura, y cuántos se omitieron."""
     origenes: dict[int, list[str]] = {}
     unicos: dict[int, Hecho] = {}
     for origen, hechos in por_origen.items():
@@ -270,25 +365,19 @@ def combinar(
             if origen not in origenes[posicion_global(h)]:
                 origenes[posicion_global(h)].append(origen)
 
-    elegidos: list[int] = []
-    for origen in sorted(por_origen, key=lambda o: (len(por_origen[o]), o)):
-        for h in sorted(por_origen[origen], key=posicion_global):
-            if len(elegidos) >= tope:
-                break
-            if posicion_global(h) not in elegidos:
-                elegidos.append(posicion_global(h))
-
+    ranking = fusionar(por_origen)
+    puestos = {i: n for n, i in enumerate(ranking, start=1)}
     hechos = [
         HechoContexto(
             id=i, orden_fragmento=unicos[i].orden_fragmento, hecho=unicos[i].hecho,
             momento_canonico=unicos[i].momento_canonico,
             atribucion_tipo=unicos[i].atribucion_tipo, atribuido_a=unicos[i].atribuido_a,
             direccion=direccion(unicos[i].orden_fragmento, orden),
-            origen=sorted(origenes[i]),
+            origen=sorted(origenes[i]), puesto=puestos[i],
         )
-        for i in sorted(elegidos)
+        for i in sorted(ranking[:tope])
     ]
-    return hechos, len(unicos) - len(elegidos)
+    return hechos, len(unicos) - len(hechos)
 
 
 def texto_fragmento(cur, obra: str, orden: int) -> str:
@@ -333,7 +422,7 @@ def reunir_contexto(
 
     por_origen: dict[str, list[Hecho]] = {}
     for via in vias:
-        por_origen.update(VIAS[via](cur, obra, pasaje))
+        por_origen.update(VIAS[via](cur, obra, pasaje, orden, texto, char))
     hechos, omitidos = combinar(por_origen, orden, tope)
 
     pasajes = []
@@ -480,14 +569,15 @@ def evaluar(
     modelo_embeddings: SentenceTransformer | None = None,
     cliente=None,
     vias: tuple[str, ...] = VIAS_V1,
+    tope: int = TOPE_HECHOS,
 ) -> Informe:
-    contexto = reunir_contexto(cur, obra, pasaje, orden, char, modelo_embeddings, vias)
+    contexto = reunir_contexto(cur, obra, pasaje, orden, char, modelo_embeddings, vias, tope)
     return validar(consultar_modelo(contexto, pasaje, cliente), contexto, pasaje)
 
 
 # --- Línea de comandos -------------------------------------------------------
 
-def imprimir(informe: Informe) -> None:
+def imprimir(informe: Informe, tope: int = TOPE_HECHOS) -> None:
     if not informe.avisos:
         print("Sin avisos.")
     for a in informe.avisos:
@@ -499,7 +589,7 @@ def imprimir(informe: Informe) -> None:
         quien = f" ({n.afirmado_por})" if n.afirmado_por else ""
         print(f"NOTA [{n.hecho}]{quien}: «{n.cita}» — {n.explicacion}")
     print(f"\n{len(informe.descartados)} avisos descartados por la validación; "
-          f"{informe.hechos_omitidos} hechos omitidos por el tope de {TOPE_HECHOS}.")
+          f"{informe.hechos_omitidos} hechos omitidos por el tope de {tope}.")
 
 
 def main() -> None:
@@ -510,6 +600,10 @@ def main() -> None:
     parser.add_argument("--char", type=int, required=True,
                         help="carácter de inserción dentro de ese fragmento")
     parser.add_argument("--fichero", required=True, help="texto del pasaje nuevo")
+    parser.add_argument("--vias", default=",".join(VIAS_V1),
+                        help=f"vías de recuperación, separadas por comas ({', '.join(VIAS)})")
+    parser.add_argument("--tope", type=int, default=TOPE_HECHOS,
+                        help="máximo de hechos en el contexto")
     parser.add_argument("--json", action="store_true", help="imprimir el informe en JSON")
     parser.add_argument("--dsn", default=DSN_DEFAULT)
     args = parser.parse_args()
@@ -517,11 +611,12 @@ def main() -> None:
     pasaje = Path(args.fichero).read_text(encoding="utf-8")
     modelo = cargar_modelo()
     with psycopg2.connect(args.dsn) as con, con.cursor() as cur:
-        informe = evaluar(cur, args.obra, pasaje, args.orden, args.char, modelo)
+        informe = evaluar(cur, args.obra, pasaje, args.orden, args.char, modelo,
+                          vias=tuple(args.vias.split(",")), tope=args.tope)
     if args.json:
         print(json.dumps(asdict(informe), ensure_ascii=False, indent=2))
     else:
-        imprimir(informe)
+        imprimir(informe, args.tope)
 
 
 if __name__ == "__main__":
