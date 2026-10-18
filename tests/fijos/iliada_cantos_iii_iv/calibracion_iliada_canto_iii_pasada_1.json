@@ -1,0 +1,213 @@
+{
+  "glosario": [
+    {
+      "termino": "Alejandro",
+      "categoria": "persona",
+      "variantes": [
+        "Paris",
+        "Priámida",
+        "deiforme Alejandro",
+        "divino Alejandro"
+      ],
+      "evidencia": "Se le habla directamente ('¡Miserable Paris!'), habla él mismo, y actúa como combatiente individual; es el mismo referente que Paris, hijo de Príamo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Laódice",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Iris toma la figura de Laódice, descrita como 'mujer del rey Helicaón Antenórida' e 'hija de Príamo'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Helicaón",
+      "categoria": "persona",
+      "variantes": [
+        "rey Helicaón Antenórida"
+      ],
+      "evidencia": "Mencionado como 'rey Helicaón Antenórida', esposo de Laódice",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Etra",
+      "categoria": "persona",
+      "variantes": [
+        "Etra hija de Piteo"
+      ],
+      "evidencia": "Nombrada como doncella que acompaña a Helena: 'Etra, hija de Piteo'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Climene",
+      "categoria": "persona",
+      "variantes": [
+        "Climene la de los grandes ojos"
+      ],
+      "evidencia": "Nombrada junto a Etra como doncella que acompaña a Helena",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pántoo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos del pueblo en la torre junto a Príamo: 'Príamo, Pántoo, Timetes...'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Timetes",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos del pueblo en la torre",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Lampo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos del pueblo en la torre",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Clitio",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos del pueblo en la torre",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Hicetaón",
+      "categoria": "persona",
+      "variantes": [
+        "Hicetaón vástago de Marte"
+      ],
+      "evidencia": "Listado entre los ancianos del pueblo en la torre, descrito como 'vástago de Marte'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ucalegonte",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los 'prudentes' ancianos del pueblo en la torre",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ideo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Heraldo que lleva la cratera y copas de oro y se dirige a Príamo: 'el heraldo Ideo llevaba además una reluciente cratera'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Laomedonte",
+      "categoria": "persona",
+      "variantes": [
+        "hijo de Laomedonte"
+      ],
+      "evidencia": "Referido en vocativo como padre de Príamo: '¡Levántate, hijo de Laomedonte!'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Cástor",
+      "categoria": "persona",
+      "variantes": [
+        "Cástor domador de caballos"
+      ],
+      "evidencia": "Nombrado por Helena como hermano suyo ausente: 'no veo á dos caudillos de hombres, Cástor, domador de caballos, y Pólux'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pólux",
+      "categoria": "persona",
+      "variantes": [
+        "Pólux excelente púgil"
+      ],
+      "evidencia": "Nombrado junto a Cástor por Helena como hermano suyo ausente: 'Pólux, excelente púgil'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Plutón",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado en oración: 'muera y descienda á la morada de Plutón'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Licaón",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado como hermano de Alejandro cuya coraza viste este: 'la coraza de su hermano Licaón'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Otreo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado por Príamo como caudillo frigio: 'los pueblos de Otreo y de Migdón'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Migdón",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado por Príamo como caudillo frigio 'igual á un dios': 'los pueblos de Otreo y de Migdón, igual á un dios'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Sangario",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Río junto a cuyas orillas acampaban los frigios: 'acampaban á orillas del Sangario'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Cránae",
+      "categoria": "lugar",
+      "variantes": [
+        "isla de Cránae"
+      ],
+      "evidencia": "Lugar donde Paris y Helena se unieron al huir de Lacedemonia: 'llegamos á la isla de Cránae, donde me unió contigo amoroso consorcio'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Meonia",
+      "categoria": "lugar",
+      "variantes": [
+        "Meonia amena"
+      ],
+      "evidencia": "Mencionada como posible destino al que Venus podría llevar a Helena: 'á cualquier populosa ciudad de la Frigia ó de la Meonia amena'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "puertas Esceas",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Lugar de la ciudad de Troya donde se sitúa la acción: 'Pronto llegaron á las puertas Esceas'; 'guiaron los ligeros corceles hacia la llanura por las puertas Esceas'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "amazonas",
+      "categoria": "pueblo",
+      "variantes": [
+        "varoniles amazonas"
+      ],
+      "evidencia": "Referidas como colectivo guerrero que llegó a la Frigia: 'el día en que llegaron las varoniles amazonas'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "pigmeos",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Referidos como pueblo al que las grullas 'llevan la ruina y la muerte': 'llevan la ruina y la muerte á los pigmeos'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Acaya",
+      "categoria": "lugar",
+      "variantes": [
+        "Acaya de lindas mujeres"
+      ],
+      "evidencia": "Mencionada como territorio al que los aqueos habrían de volver: 'volverán á Argos, criador de caballos, y á la Acaya de lindas mujeres'",
+      "confianza": "alta"
+    }
+  ]
+}

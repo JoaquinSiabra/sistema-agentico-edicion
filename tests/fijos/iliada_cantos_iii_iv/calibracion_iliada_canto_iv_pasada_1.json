@@ -1,0 +1,307 @@
+{
+  "glosario": [
+    {
+      "termino": "Hebe",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«La venerable Hebe escanciaba néctar» — actúa como sujeto de una acción, personaje divino que sirve el néctar en el consejo de los dioses",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Tritogenia",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«la hija de Júpiter, la gloriosísima Tritogenia, recorría el ejército aqueo» — epíteto de Minerva usado como nombre propio en este pasaje; aparece como sujeto de acción",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Discordia",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [
+        "insaciable en sus furores",
+        "hermana y compañera del homicida Marte"
+      ],
+      "evidencia": "«la Discordia, penetrando por la muchedumbre, arrojó en medio de ella el combate funesto» — actúa como agente personificado con verbos de acción; «al principio aparece pequeña y luego toca con la cabeza el cielo»",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Terror",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«á entrambos pueblos, el Terror, la Fuga y la Discordia» — listado como entidad personificada junto a Fuga y Discordia que actúan sobre los ejércitos",
+      "confianza": "media"
+    },
+    {
+      "termino": "Fuga",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«el Terror, la Fuga y la Discordia» — entidad personificada listada junto a Terror y Discordia como fuerzas que actúan sobre los ejércitos",
+      "confianza": "media"
+    },
+    {
+      "termino": "Zelea",
+      "categoria": "lugar",
+      "variantes": [],
+      "epitetos": [
+        "sagrada ciudad de Zelea"
+      ],
+      "evidencia": "«cuando vuelvas á tu patria, la sagrada ciudad de Zelea» — aparece dos veces como ubicación de destino, patria de Pándaro",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Trica",
+      "categoria": "lugar",
+      "variantes": [],
+      "epitetos": [
+        "Trica criadora de caballos"
+      ],
+      "evidencia": "«le halló en medio de las fuertes filas de hombres escudados que le habían seguido desde Trica, criadora de caballos» — lugar de origen de las tropas de Macaón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Símois",
+      "categoria": "lugar",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«Su madre habíale parido á orillas del Símois» — río mencionado como ubicación de un nacimiento",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pérgamo",
+      "categoria": "lugar",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«Apolo, que desde Pérgamo lo presenciaba» — lugar desde el que Apolo observa la batalla, referencia a la ciudadela de Troya",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Abido",
+      "categoria": "lugar",
+      "variantes": [],
+      "epitetos": [
+        "país de corredoras yeguas"
+      ],
+      "evidencia": "«Democoonte, hijo bastardo de Príamo, que había venido de Abido, país de corredoras yeguas» — lugar de procedencia de un guerrero",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Eno",
+      "categoria": "lugar",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«Píroo Imbrásida, caudillo de los tracios, que había llegado de Eno» — lugar de origen del caudillo tracio",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Asopo",
+      "categoria": "lugar",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«llegaron al Asopo, cuyas orillas pueblan juncales y prados» — río mencionado como ubicación geográfica en la narración sobre Tideo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Esténelo",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«á su lado á Esténelo, hijo de Capaneo» — personaje nombrado junto a Diomedes; hijo de Capaneo; interviene en el diálogo con Agamenón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Eurimedonte",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«Eurimedonte, hijo de Ptolomeo Piraída, se quedó á cierta distancia con los fogosos corceles» — auriga de Agamenón nombrado como personaje",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Antíloco",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«Fué Antíloco quien primeramente mató á un teucro» — personaje nombrado como agente de la primera muerte del combate",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Laódoco",
+      "categoria": "persona",
+      "variantes": [
+        "Laódoco Antenórida"
+      ],
+      "epitetos": [
+        "esforzado combatiente"
+      ],
+      "evidencia": "«transfigurada en varón—parecíase á Laódoco Antenórida, esforzado combatiente» — personaje en cuya apariencia se disfraza Minerva",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Agenor",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [
+        "magnánimo Agenor"
+      ],
+      "evidencia": "«Le vió el magnánimo Agenor é hiriéndole con la broncínea lanza en el costado» — guerrero troyano que actúa como agente en el combate",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Quirón",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«drogas calmantes que á su padre había dado Quirón en prueba de amistad» — personaje que había dado a Esculapio conocimientos médicos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Elefenor",
+      "categoria": "persona",
+      "variantes": [
+        "Elefenor Calcodontíada"
+      ],
+      "epitetos": [
+        "caudillo de los bravos abantes"
+      ],
+      "evidencia": "«asióle de un pie el rey Elefenor Calcodontíada, caudillo de los bravos abantes» — caudillo aqueo que muere en el combate",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Diores",
+      "categoria": "persona",
+      "variantes": [
+        "Diores Amarincida"
+      ],
+      "epitetos": [],
+      "evidencia": "«el hado echó los lazos de la muerte á Diores Amarincida» — guerrero que muere herido por Píroo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Píroo",
+      "categoria": "persona",
+      "variantes": [
+        "Píroo Imbrásida"
+      ],
+      "epitetos": [
+        "caudillo de los tracios"
+      ],
+      "evidencia": "«Píroo Imbrásida, caudillo de los tracios, que había llegado de Eno» — guerrero tracio que hiere a Diores y es luego matado por Toante",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Saturno",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [
+        "el artero Saturno"
+      ],
+      "evidencia": "«el artero Saturno engendróme la más venerable» — mencionado como padre de Juno; también «hijo del artero Saturno» referido a Júpiter",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Eteocles",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [
+        "el fuerte Eteocles"
+      ],
+      "evidencia": "«En el palacio del fuerte Eteocles encontrábanse muchos cadmeos reunidos en banquete» — personaje en cuyo palacio se desarrolla la escena narrada sobre Tideo en Tebas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Polínice",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [
+        "el divino Polínice"
+      ],
+      "evidencia": "«junto con el divino Polínice, cuando ambos reclutaban tropas para atacar los sagrados muros de Tebas» — personaje mencionado como compañero de Tideo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Meón",
+      "categoria": "persona",
+      "variantes": [
+        "Meón Hemónida"
+      ],
+      "epitetos": [
+        "parecía un inmortal"
+      ],
+      "evidencia": "«Meón Hemónida, que parecía un inmortal» — uno de los dos jefes de la emboscada contra Tideo; el único superviviente",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Polifonte",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [
+        "intrépido hijo de Autófono"
+      ],
+      "evidencia": "«Polifonte, intrépido hijo de Autófono» — segundo jefe de la emboscada contra Tideo, mencionado junto a Meón",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Simoísio",
+      "categoria": "persona",
+      "variantes": [
+        "Simoísio Antémida"
+      ],
+      "epitetos": [
+        "hijo de Antemión"
+      ],
+      "evidencia": "«Ayax Telamonio tiróle un bote de lanza á Simoísio, hijo de Antemión» — guerrero troyano muerto por Ayax Telamonio; se narra su origen y nombre",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Democoonte",
+      "categoria": "persona",
+      "variantes": [],
+      "epitetos": [
+        "hijo bastardo de Príamo"
+      ],
+      "evidencia": "«la broncínea lanza perforó las sienes á Democoonte, hijo bastardo de Príamo» — guerrero troyano muerto por Ulises",
+      "confianza": "alta"
+    },
+    {
+      "termino": "cadmeos",
+      "categoria": "pueblo",
+      "variantes": [],
+      "epitetos": [
+        "cadmeos aguijadores de caballos"
+      ],
+      "evidencia": "«muchos cadmeos reunidos en banquete» y «los cadmeos, aguijadores de caballos, pusieron en emboscada á cincuenta jóvenes» — colectivo étnico de Tebas mencionado en plural como pueblo",
+      "confianza": "alta"
+    },
+    {
+      "termino": "epeos",
+      "categoria": "pueblo",
+      "variantes": [],
+      "epitetos": [
+        "epeos de broncíneas lorigas"
+      ],
+      "evidencia": "«el de los epeos, de broncíneas lorigas» — pueblo mencionado como colectivo del que procede Diores, en oposición a los tracios",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Céfiro",
+      "categoria": "concepto_abstracto",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«las olas impelidas por el Céfiro» y «el nubarrón, impelido por el céfiro» — viento personificado usado en dos símiles del mismo canto; aparece con y sin mayúscula",
+      "confianza": "media"
+    },
+    {
+      "termino": "Parcas",
+      "categoria": "concepto_abstracto",
+      "variantes": [],
+      "epitetos": [],
+      "evidencia": "«la risueña Venus acompaña constantemente al otro y le libra de las Parcas» — entidades que representan el destino mortal, mencionadas como concepto del que se puede librar a alguien",
+      "confianza": "media"
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "tipo_documental": "Narración épica en tercera persona con numeración de versos",
+  "personajes": [
+    "Alejandro",
+    "Menelao",
+    "Héctor",
+    "Agamenón",
+    "Ulises",
+    "Ayax Telamonio",
+    "Idomeneo",
+    "Príamo",
+    "Antenor",
+    "Helena",
+    "Iris",
+    "Venus",
+    "Júpiter",
+    "Minerva",
+    "Laódice",
+    "Etra",
+    "Climene",
+    "Taltibio",
+    "Ideo",
+    "Pántoo",
+    "Timetes",
+    "Lampo",
+    "Clitio",
+    "Hicetaón",
+    "Ucalegonte",
+    "Cástor",
+    "Pólux",
+    "Licaón",
+    "Otreo",
+    "Migdón"
+  ],
+  "lugares": [
+    "Troya",
+    "Argos",
+    "Acaya",
+    "Lacedemonia",
+    "Ítaca",
+    "Creta",
+    "Frigia",
+    "Meonia",
+    "Olimpo",
+    "Sangario",
+    "Cránae",
+    "Ida",
+    "puertas Esceas",
+    "Océano",
+    "Plutón"
+  ],
+  "organizaciones": [],
+  "objetos": [
+    "cetro",
+    "égida",
+    "casco de bronce",
+    "coraza",
+    "grebas",
+    "escudo",
+    "espada",
+    "lanza",
+    "cratera",
+    "copas de oro",
+    "odre de piel de cabra",
+    "corderos",
+    "carro"
+  ],
+  "hechos_canonicos": [
+    {
+      "hecho": "Los teucros avanzaban chillando y gritando, mientras los aqueos marchaban en silencio respirando valor.",
+      "momento_canonico": "al inicio del fragmento, versos 1-9",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Alejandro apareció en la primera fila de los teucros con una piel de leopardo en los hombros, el corvo arco, la espada y dos lanzas de broncínea punta, desafiando a los argivos al combate singular.",
+      "momento_canonico": "versos 15-20",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Menelao se alegró al ver a Alejandro y saltó del carro al suelo sin dejar las armas para enfrentarle.",
+      "momento_canonico": "versos 21-29",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Alejandro, al distinguir a Menelao entre los combatientes, retrocedió atemorizado y desapareció entre los teucros.",
+      "momento_canonico": "versos 30-37",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Héctor reprendió a Alejandro con palabras injuriosas por su cobardía y por haber traído a Helena causando males a Troya.",
+      "momento_canonico": "versos 38-57",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Alejandro propuso un combate singular entre él y Menelao por Helena y sus riquezas, con el vencedor llevándose mujer y bienes, y con los demás jurando paz y amistad.",
+      "momento_canonico": "versos 58-75",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Alejandro"
+      }
+    },
+    {
+      "hecho": "Héctor corrió al centro de ambos ejércitos, cogió la lanza por el medio y detuvo las falanges troyanas.",
+      "momento_canonico": "versos 76-81",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón ordenó a los argivos que detuvieran el combate porque Héctor quería hablarles.",
+      "momento_canonico": "versos 82-83",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Héctor transmitió a ambos ejércitos la propuesta de Alejandro de combate singular por Helena y sus riquezas, con juramento de paz.",
+      "momento_canonico": "versos 86-94",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Menelao propuso traer un cordero blanco y una cordera negra para la Tierra y el Sol, y otro para Júpiter, y convocar a Príamo para que sancionara los juramentos en persona.",
+      "momento_canonico": "versos 97-110",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Menelao"
+      }
+    },
+    {
+      "hecho": "Menelao expresó desconfianza en los hijos de Príamo por ser soberbios y fementidos, temiendo que quebraran los juramentos.",
+      "momento_canonico": "versos 105-108",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Menelao"
+      }
+    },
+    {
+      "hecho": "Aqueos y teucros se alegraron con la esperanza de que iba a terminar la guerra, detuvieron los corceles, bajaron de los carros y dejaron la armadura en el suelo.",
+      "momento_canonico": "versos 111-115",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Héctor despachó dos heraldos a la ciudad para traer las víctimas y llamar a Príamo.",
+      "momento_canonico": "verso 116",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón mandó a Taltibio que fuera a las naves por un cordero, y el heraldo obedeció.",
+      "momento_canonico": "versos 118-120",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Iris fue en busca de Helena tomando la figura de Laódice, mujer del rey Helicaón Antenórida, que era la más hermosa de las hijas de Príamo.",
+      "momento_canonico": "versos 121-124",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Helena estaba en el palacio tejiendo una gran tela doble purpúrea en la que entretejía los trabajos que teucros y aqueos habían padecido por ella.",
+      "momento_canonico": "versos 125-128",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Iris dijo a Helena que Alejandro y Menelao combatirían por ella con ingentes lanzas y que el vencedor la llamaría su amada esposa.",
+      "momento_canonico": "versos 130-138",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Iris"
+      }
+    },
+    {
+      "hecho": "Iris infundió en el corazón de Helena dulce deseo de su anterior marido, de su ciudad y de sus padres.",
+      "momento_canonico": "verso 139",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Helena salió al momento cubierta con blanco velo y derramando tiernas lágrimas, acompañada de dos doncellas: Etra, hija de Piteo, y Climene, la de los grandes ojos.",
+      "momento_canonico": "versos 141-144",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "En las puertas Esceas estaban Príamo, Pántoo, Timetes, Lampo, Clitio, Hicetaón, Ucalegonte y Antenor, ancianos del pueblo que no combatían por su vejez pero eran buenos arengadores.",
+      "momento_canonico": "versos 146-153",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los ancianos troyanos en la torre dijeron entre sí que Helena era tan hermosa como una diosa y que no era reprensible que aqueos y troyanos sufrieran males por ella, pero que sería mejor que se fuera en las naves antes de convertirse en una plaga.",
+      "momento_canonico": "versos 156-160",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Príamo"
+      }
+    },
+    {
+      "hecho": "Príamo llamó a Helena para que se sentara a su lado, declaró que no la consideraba culpable sino a los dioses que promovieron la guerra, y le pidió que le dijera quién era el gran aqueo que veía.",
+      "momento_canonico": "versos 161-170",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Helena identificó a Agamenón como el poderosísimo Agamenón Atrida, buen rey y esforzado combatiente, y dijo que fue cuñado de ella.",
+      "momento_canonico": "versos 178-180",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Helena"
+      }
+    },
+    {
+      "hecho": "Príamo declaró haber estado en Frigia y haber visto los pueblos de Otreo y de Migdón acampados a orillas del Sangario, y hallarse entre ellos como aliado cuando llegaron las varoniles amazonas, pero que no eran tantos como los aqueos.",
+      "momento_canonico": "versos 184-189",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Príamo"
+      }
+    },
+    {
+      "hecho": "Helena identificó al aqueo de menor estatura pero más espacioso de espaldas y pecho que recorría las filas como un carnero como el hijo de Laertes, el ingenioso Ulises, criado en la áspera Ítaca, hábil en urdir engaños y dar prudentes consejos.",
+      "momento_canonico": "versos 199-202",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Helena"
+      }
+    },
+    {
+      "hecho": "Antenor confirmó que Ulises vino como embajador con Menelao por Helena, y que los hospedó en su palacio.",
+      "momento_canonico": "versos 203-205",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Antenor"
+      }
+    },
+    {
+      "hecho": "Antenor describió que en las reuniones Menelao hablaba de prisa y poco pero claramente, sin apartarse del asunto, mientras Ulises al levantarse permanecía con la vista baja y el cetro inmóvil, pareciendo un ignorante, pero cuando hablaba sus palabras eran tan poderosas que ningún mortal le disputaba.",
+      "momento_canonico": "versos 209-224",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Antenor"
+      }
+    },
+    {
+      "hecho": "Helena identificó al aqueo alto que descollaba entre los argivos por su cabeza y anchas espaldas como el ingente Ayax Telamonio, antemural de los aqueos.",
+      "momento_canonico": "versos 228-229",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Helena"
+      }
+    },
+    {
+      "hecho": "Helena señaló a Idomeneo entre los cretenses rodeado de los capitanes de sus tropas, e indicó que Menelao le hospedó muchas veces en su palacio cuando venía de Creta.",
+      "momento_canonico": "versos 230-233",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Helena"
+      }
+    },
+    {
+      "hecho": "Helena no veía a Cástor, domador de caballos, ni a Pólux, excelente púgil, hermanos carnales suyos nacidos de su madre, y especuló con que no habrían venido o no querían entrar en combate para no hacerse partícipes de su deshonra.",
+      "momento_canonico": "versos 236-242",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Helena"
+      }
+    },
+    {
+      "hecho": "Cástor y Pólux ya estaban muertos y la fértil tierra los tenía en su seno en Lacedemonia, en su misma patria.",
+      "momento_canonico": "verso 243-244",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los heraldos atravesaban la ciudad con los dos corderos y el vino en un odre de piel de cabra; el heraldo Ideo llevaba además una reluciente cratera y copas de oro.",
+      "momento_canonico": "versos 245-249",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "El heraldo Ideo invitó a Príamo a bajar a la llanura para sancionar los fieles juramentos del combate singular entre Alejandro y Menelao.",
+      "momento_canonico": "versos 250-258",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Príamo subió al carro con Antenor a su lado y guiaron los corceles hacia la llanura por las puertas Esceas.",
+      "momento_canonico": "versos 259-263",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón y Ulises se levantaron, los heraldos juntaron las víctimas, mezclaron vinos en la cratera y dieron aguamanos a los reyes. El Atrida cortó pelo de la cabeza de los corderos con la daga y los heraldos lo repartieron a los próceres teucros y aquivos.",
+      "momento_canonico": "versos 264-275",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón oró en voz alta invocando a Júpiter, al Sol, a los ríos, a la Tierra y a los dioses del inframundo como testigos del juramento: si Alejandro mata a Menelao, Helena y las riquezas serían suyas y los aqueos volverían; si Menelao mata a Alejandro, los troyanos devolverán a Helena y las riquezas y pagarán indemnización; si Príamo y sus hijos se niegan, Agamenón seguirá combatiendo.",
+      "momento_canonico": "versos 276-291",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón cortó el cuello a los corderos y los puso en el suelo; llenaron las copas en la cratera y derramaron el vino orando a los dioses.",
+      "momento_canonico": "versos 292-297",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Júpiter no ratificó el voto de aqueos y teucros.",
+      "momento_canonico": "verso 302",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Príamo declaró que regresaría a Ilión porque no podía ver a su hijo combatir con Menelao, y que Júpiter y los dioses saben para cuál de ellos tiene el destino preparada la muerte.",
+      "momento_canonico": "versos 304-309",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Príamo"
+      }
+    },
+    {
+      "hecho": "Príamo y Antenor volvieron a Ilión en el carro.",
+      "momento_canonico": "versos 310-313",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Héctor y Ulises midieron el campo y echaron dos suertes en un casco de bronce para decidir quién arrojaría primero la lanza; saltó la suerte de Paris.",
+      "momento_canonico": "versos 314-325",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Alejandro se armó con grebas ajustadas con broches de plata, la coraza de su hermano Licaón, espada de bronce con clavos de plata, escudo grande y fuerte, casco con penacho de crines de caballo y una lanza.",
+      "momento_canonico": "versos 330-338",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Alejandro arrojó primero la luenga lanza y dio en el escudo de Menelao sin romperlo; la punta se torció.",
+      "momento_canonico": "versos 346-349",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Menelao oró a Júpiter para que le permitiera castigar a Alejandro que le ofendió primero.",
+      "momento_canonico": "versos 351-354",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Menelao"
+      }
+    },
+    {
+      "hecho": "La lanza de Menelao atravesó el escudo y la coraza de Alejandro y rasgó la túnica; Alejandro se inclinó y evitó la muerte.",
+      "momento_canonico": "versos 355-360",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Menelao desenvainó la espada y la golpeó contra la cimera del casco de Alejandro, pero la espada se rompió en tres o cuatro pedazos.",
+      "momento_canonico": "versos 361-364",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Menelao cogió a Paris por el casco y lo arrastró hacia los aqueos; Venus rompió la correa del casco y arrebató a Alejandro envolviéndolo en densa niebla, llevándolo a su tálamo.",
+      "momento_canonico": "versos 369-382",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Venus fue a buscar a Helena tomando la figura de una anciana cardadora de Lacedemonia que le preparaba hermosas lanas y era muy querida de Helena.",
+      "momento_canonico": "versos 383-388",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Venus dijo a Helena que Alejandro la llamaba para que volviera a casa, que se hallaba en el torneado lecho de la cámara nupcial.",
+      "momento_canonico": "versos 390-394",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Venus"
+      }
+    },
+    {
+      "hecho": "Helena reconoció a Venus por su hermosísimo cuello, sus lindos pechos y sus refulgentes ojos, y se negó a ir con ella, acusándola de venir con engaños porque Menelao había vencido a Alejandro.",
+      "momento_canonico": "versos 395-412",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Helena"
+      }
+    },
+    {
+      "hecho": "Venus amenazó a Helena con abandonarla, aborrecerla y poner funestos odios entre teucros y dánaos si no obedecía.",
+      "momento_canonico": "versos 413-417",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Venus"
+      }
+    },
+    {
+      "hecho": "Helena tuvo miedo y siguió a Venus en silencio sin que ninguna de las troyanas lo advirtiera.",
+      "momento_canonico": "versos 418-420",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Venus colocó una silla delante de Alejandro; Helena se sentó y, apartando la vista de su esposo, le reprendió por haber huido del combate en lugar de haber perecido a manos de Menelao.",
+      "momento_canonico": "versos 421-436",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Paris afirmó que Menelao venció ese día con el auxilio de Minerva, pero que otro día él le vencería porque también tienen dioses que los protegen.",
+      "momento_canonico": "versos 437-440",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Alejandro"
+      }
+    },
+    {
+      "hecho": "Paris declaró que jamás la pasión se había apoderado de su espíritu como en ese momento, ni cuando partieron de Lacedemonia en las naves y llegaron a la isla de Cránae donde se unió a Helena en amoroso consorcio.",
+      "momento_canonico": "versos 441-446",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Alejandro"
+      }
+    },
+    {
+      "hecho": "Paris y Helena se acostaron juntos en el torneado lecho.",
+      "momento_canonico": "versos 447-448",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Menelao se revolvía entre la muchedumbre buscando a Alejandro, pero ningún troyano ni aliado pudo mostrárselo, no por amistad sino porque a todos se les había hecho odioso como la negra muerte.",
+      "momento_canonico": "versos 449-455",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón declaró ante troyanos, dardanios y aliados que la victoria había quedado por Menelao y exigió que le entregaran a Helena con sus riquezas y pagaran una indemnización justa.",
+      "momento_canonico": "versos 456-460",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Los demás aqueos aplaudieron las palabras de Agamenón.",
+      "momento_canonico": "verso 461",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    }
+  ]
+}

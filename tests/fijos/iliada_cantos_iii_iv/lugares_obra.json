@@ -1,0 +1,1052 @@
+[
+  {
+    "termino": "Lacedemonia",
+    "categoria": "lugar",
+    "variantes": [
+      "Esparta"
+    ],
+    "evidencia": "Mencionada en el catálogo como el territorio de los hombres mandados por Menelao; Esparta aparece como ciudad dentro de ella",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Esparta"
+    ]
+  },
+  {
+    "termino": "Escamandro",
+    "categoria": "lugar",
+    "variantes": [
+      "el Escamandro",
+      "llanura escamandria"
+    ],
+    "evidencia": "Mencionado como río y llanura donde se reúnen las huestes aqueas en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "el Escamandro",
+      "llanura escamandria"
+    ]
+  },
+  {
+    "termino": "Helesponto",
+    "categoria": "lugar",
+    "variantes": [
+      "alborotado Helesponto"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como lugar donde viven los tracios bajo Acamante y Píroo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "alborotado Helesponto"
+    ]
+  },
+  {
+    "termino": "Salamina",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionada como origen de las naves de Ayax en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Duliquio",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como tierra de Meges Filida y como lugar de emigración del padre de Meges",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Partenio",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como río a orillas del cual habitan los paflagones de Pilémenes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Ténedos",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionada en la plegaria de Crises como lugar donde Apolo impera ('imperas en Ténedos poderosamente'); aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Micenas",
+    "categoria": "lugar",
+    "variantes": [
+      "bien construída ciudad de Micenas"
+    ],
+    "evidencia": "Mencionada en el fragmento 2 como ciudad bien construida bajo el mando de Agamenón",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "bien construída ciudad de Micenas"
+    ]
+  },
+  {
+    "termino": "Estigia",
+    "categoria": "lugar",
+    "variantes": [
+      "agua de la Estigia"
+    ],
+    "evidencia": "Mencionada en el fragmento 2 como fuente del río Titaresio que se invoca en los terribles juramentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [
+      {
+        "categoria": "concepto_abstracto",
+        "confianza": "media"
+      }
+    ],
+    "alias": [
+      "agua de la Estigia"
+    ]
+  },
+  {
+    "termino": "Lirneso",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionada en el fragmento 2 como ciudad destruida por Aquiles donde cautivó a Briseida",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Arcadia",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionada en el catálogo de fragmento 2 como región cuyos guerreros acaudilla Agapenor",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Corinto",
+    "categoria": "lugar",
+    "variantes": [
+      "opulenta Corinto"
+    ],
+    "evidencia": "Mencionada en el catálogo de fragmento 2 como ciudad bajo el mando de Agamenón",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "opulenta Corinto"
+    ]
+  },
+  {
+    "termino": "Ascania",
+    "categoria": "lugar",
+    "variantes": [
+      "remota Ascania"
+    ],
+    "evidencia": "Mencionada en el catálogo de fragmento 2 como tierra de procedencia de los frigios acaudillados por Forcis y Ascanio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "remota Ascania"
+    ]
+  },
+  {
+    "termino": "Meandro",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como río en cuyas orillas viven algunos de los carios",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Olimpo",
+    "categoria": "lugar",
+    "variantes": [
+      "el Olimpo",
+      "el dilatado Olimpo",
+      "el nevado Olimpo",
+      "el resplandeciente Olimpo",
+      "gran cielo y al Olimpo",
+      "nevado Olimpo",
+      "olímpico",
+      "resplandeciente Olimpo"
+    ],
+    "evidencia": "Usado como ubicación de acciones ('descendió de las cumbres del Olimpo', 'regresó al Olimpo'); aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "el Olimpo",
+      "el dilatado Olimpo",
+      "el nevado Olimpo",
+      "el resplandeciente Olimpo",
+      "gran cielo y al Olimpo",
+      "nevado Olimpo",
+      "olímpico",
+      "resplandeciente Olimpo"
+    ]
+  },
+  {
+    "termino": "Lemnos",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionada como lugar donde cayó Vulcano (fragmento 1) y donde fue abandonado Filoctetes (fragmento 2)",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Áulide",
+    "categoria": "lugar",
+    "variantes": [
+      "Áulide pétrea"
+    ],
+    "evidencia": "Mencionada como lugar de reunión de las naves en el presagio de Calcas (fragmento 2) y en el catálogo de ciudades beocias",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Áulide pétrea"
+    ]
+  },
+  {
+    "termino": "Dodona",
+    "categoria": "lugar",
+    "variantes": [
+      "fría Dodona"
+    ],
+    "evidencia": "Mencionada como lugar de residencia de los enienes en el catálogo del fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "fría Dodona"
+    ]
+  },
+  {
+    "termino": "Pelión",
+    "categoria": "lugar",
+    "variantes": [
+      "frondoso Pelión"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como el monte del que Pirítoo echó a los Centauros; también como región de los magnetes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "frondoso Pelión"
+    ]
+  },
+  {
+    "termino": "Atenas",
+    "categoria": "lugar",
+    "variantes": [
+      "bien edificada ciudad de Atenas"
+    ],
+    "evidencia": "Mencionada en el fragmento 2 como ciudad donde Minerva tiene su rico templo y como pueblo del que provienen los guerreros bajo Menesteo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "bien edificada ciudad de Atenas"
+    ]
+  },
+  {
+    "termino": "Océano",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionado en el fragmento 1 como lugar a donde fue Júpiter para el banquete con los etíopes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Batiea",
+    "categoria": "lugar",
+    "variantes": [
+      "tumba de la ágil Mirina"
+    ],
+    "evidencia": "Descrita en el fragmento 2 como colina frente a Troya: 'á la cual los hombres llaman Batiea y los inmortales tumba de la ágil Mirina'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "tumba de la ágil Mirina"
+    ]
+  },
+  {
+    "termino": "Cefiso",
+    "categoria": "lugar",
+    "variantes": [
+      "divino Cefiso"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 en el catálogo como río de la región de los focenses",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": [
+      "divino Cefiso"
+    ]
+  },
+  {
+    "termino": "Nísiro",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionada en el catálogo de fragmento 2 como una de las islas de los pueblos acaudillados por Fidipo y Ántifo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Larisa",
+    "categoria": "lugar",
+    "variantes": [
+      "fértil Larisa"
+    ],
+    "evidencia": "Mencionada en el catálogo de fragmento 2 como tierra de los pelasgos acaudillados por Hipótoo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "fértil Larisa"
+    ]
+  },
+  {
+    "termino": "Troya",
+    "categoria": "lugar",
+    "variantes": [
+      "Ilión",
+      "Troya la de anchas calles",
+      "bien murada Ilión",
+      "ciudad de Príamo"
+    ],
+    "evidencia": "Referida como destino bélico ('tomar a Troya'), ubicación de acciones ('en Troya, lejos de su patria'); aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Ilión",
+      "Troya la de anchas calles",
+      "bien murada Ilión",
+      "ciudad de Príamo"
+    ],
+    "epitetos": [
+      "ciudad de anchas calles",
+      "la de anchas calles"
+    ]
+  },
+  {
+    "termino": "Argos",
+    "categoria": "lugar",
+    "variantes": [
+      "Argólide",
+      "país de Argos"
+    ],
+    "evidencia": "Mencionado como destino de regreso y lugar de residencia ('en Argos, lejos de su patria'); aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Argólide",
+      "país de Argos"
+    ]
+  },
+  {
+    "termino": "Crisa",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionada como ciudad protegida por Apolo e invocada en la plegaria de Crises; destino de la nave con Criseida; aparece en ambos fragmentos",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Pilos",
+    "categoria": "lugar",
+    "variantes": [
+      "Pilos arenosa",
+      "arenosa Pilos",
+      "divina Pilos"
+    ],
+    "evidencia": "Mencionada como patria de Néstor en ambos fragmentos; usada como ubicación ('habiendo acudido desde Pilos')",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Pilos arenosa",
+      "arenosa Pilos",
+      "divina Pilos"
+    ]
+  },
+  {
+    "termino": "Ítaca",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionada como origen del heraldo Euríbates (fragmento 2) y como parte del territorio de Ulises en el catálogo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Rodas",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionada como lugar donde se estableció Tlepólemo con los rodios en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Licia",
+    "categoria": "lugar",
+    "variantes": [
+      "remota Licia"
+    ],
+    "evidencia": "Mencionada como lugar de origen de Sarpedón y Glauco ('procedían de la remota Licia') en el fragmento 2",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "remota Licia"
+    ]
+  },
+  {
+    "termino": "Eubea",
+    "categoria": "lugar",
+    "variantes": [
+      "sagrada Eubea"
+    ],
+    "evidencia": "Mencionada en el fragmento 2 como región de los locrenses y de los abantes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "sagrada Eubea"
+    ]
+  },
+  {
+    "termino": "Tebas",
+    "categoria": "lugar",
+    "variantes": [
+      "Tebas sagrada ciudad de Eetión"
+    ],
+    "evidencia": "Mencionada en el fragmento 1 como ciudad saqueada de donde vino el botín; en fragmento 2 como lugar donde murieron Mines y Epístrofo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1
+    ],
+    "disenso": [],
+    "alias": [
+      "Tebas sagrada ciudad de Eetión"
+    ]
+  },
+  {
+    "termino": "Janto",
+    "categoria": "lugar",
+    "variantes": [
+      "voraginoso Janto"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como río de Licia, lugar de origen de Sarpedón y Glauco",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "voraginoso Janto"
+    ]
+  },
+  {
+    "termino": "Peneo",
+    "categoria": "lugar",
+    "variantes": [
+      "Peneo de argénteos vórtices"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como río a cuyas orillas viven los magnetes y donde desemboca el Titaresio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Peneo de argénteos vórtices"
+    ]
+  },
+  {
+    "termino": "Esepo",
+    "categoria": "lugar",
+    "variantes": [
+      "caudaloso Esepo"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como río cuya agua beben los teucros de Zelea",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "caudaloso Esepo"
+    ]
+  },
+  {
+    "termino": "Creta",
+    "categoria": "lugar",
+    "variantes": [
+      "isla de Creta"
+    ],
+    "evidencia": "Mencionada en el catálogo de fragmento 2 como isla de cien ciudades gobernada por Idomeneo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "isla de Creta"
+    ]
+  },
+  {
+    "termino": "Tmolo",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como monte al pie del cual nacieron los meonios",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Ptía",
+    "categoria": "lugar",
+    "variantes": [
+      "Ftía",
+      "Ptía criadora de hombres"
+    ],
+    "evidencia": "Mencionada como patria de Aquiles a la que amenaza con regresar en el fragmento 1; en el fragmento 2 como región del catálogo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Ftía",
+      "Ptía criadora de hombres"
+    ]
+  },
+  {
+    "termino": "Orco",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Mencionado como destino de las almas de los héroes muertos ('precipitó al Orco muchas almas') en el fragmento 1",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Cila",
+    "categoria": "lugar",
+    "variantes": [
+      "divina Cila"
+    ],
+    "evidencia": "Mencionada en la plegaria de Crises como lugar protegido por Apolo; aparece en ambos fragmentos en idéntica fórmula ritual",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "divina Cila"
+    ]
+  },
+  {
+    "termino": "Axio",
+    "categoria": "lugar",
+    "variantes": [
+      "anchuroso Axio"
+    ],
+    "evidencia": "Mencionado en el catálogo de fragmento 2 como río de Amidón, tierra de los peonios de Pirecmes",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 1,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "anchuroso Axio"
+    ]
+  },
+  {
+    "termino": "Ida",
+    "categoria": "lugar",
+    "variantes": [
+      "monte Ida"
+    ],
+    "evidencia": "Mencionado en el fragmento 2 como monte donde Venus se unió con Anquises y donde viven los teucros de Zelea",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "monte Ida"
+    ]
+  },
+  {
+    "termino": "puertas Esceas",
+    "categoria": "lugar",
+    "variantes": [
+      "Esceas"
+    ],
+    "evidencia": "Lugar de la ciudad de Troya donde se sitúa la acción: 'Pronto llegaron á las puertas Esceas'; 'guiaron los ligeros corceles hacia la llanura por las puertas Esceas'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Esceas"
+    ]
+  },
+  {
+    "termino": "Sangario",
+    "categoria": "lugar",
+    "variantes": [],
+    "evidencia": "Río junto a cuyas orillas acampaban los frigios: 'acampaban á orillas del Sangario'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Cránae",
+    "categoria": "lugar",
+    "variantes": [
+      "isla de Cránae"
+    ],
+    "evidencia": "Lugar donde Paris y Helena se unieron al huir de Lacedemonia: 'llegamos á la isla de Cránae, donde me unió contigo amoroso consorcio'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "isla de Cránae"
+    ]
+  },
+  {
+    "termino": "Meonia",
+    "categoria": "lugar",
+    "variantes": [
+      "Meonia amena"
+    ],
+    "evidencia": "Mencionada como posible destino al que Venus podría llevar a Helena: 'á cualquier populosa ciudad de la Frigia ó de la Meonia amena'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": [
+      "Meonia amena"
+    ]
+  },
+  {
+    "termino": "Acaya",
+    "categoria": "lugar",
+    "variantes": [
+      "Acaya de lindas mujeres"
+    ],
+    "evidencia": "Mencionada como territorio al que los aqueos habrían de volver: 'volverán á Argos, criador de caballos, y á la Acaya de lindas mujeres'",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2
+    ],
+    "disenso": [],
+    "alias": [
+      "Acaya de lindas mujeres"
+    ]
+  },
+  {
+    "termino": "Pérgamo",
+    "categoria": "lugar",
+    "variantes": [],
+    "epitetos": [],
+    "evidencia": "«Apolo, que desde Pérgamo lo presenciaba» — lugar desde el que Apolo observa la batalla, referencia a la ciudadela de Troya",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Símois",
+    "categoria": "lugar",
+    "variantes": [],
+    "epitetos": [],
+    "evidencia": "«Su madre habíale parido á orillas del Símois» — río mencionado como ubicación de un nacimiento",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Zelea",
+    "categoria": "lugar",
+    "variantes": [],
+    "epitetos": [
+      "sagrada ciudad de Zelea"
+    ],
+    "evidencia": "«cuando vuelvas á tu patria, la sagrada ciudad de Zelea» — aparece dos veces como ubicación de destino, patria de Pándaro",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Trica",
+    "categoria": "lugar",
+    "variantes": [],
+    "epitetos": [
+      "Trica criadora de caballos"
+    ],
+    "evidencia": "«le halló en medio de las fuertes filas de hombres escudados que le habían seguido desde Trica, criadora de caballos» — lugar de origen de las tropas de Macaón",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 2,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Abido",
+    "categoria": "lugar",
+    "variantes": [],
+    "epitetos": [
+      "país de corredoras yeguas"
+    ],
+    "evidencia": "«Democoonte, hijo bastardo de Príamo, que había venido de Abido, país de corredoras yeguas» — lugar de procedencia de un guerrero",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Asopo",
+    "categoria": "lugar",
+    "variantes": [],
+    "epitetos": [],
+    "evidencia": "«llegaron al Asopo, cuyas orillas pueblan juncales y prados» — río mencionado como ubicación geográfica en la narración sobre Tideo",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  },
+  {
+    "termino": "Eno",
+    "categoria": "lugar",
+    "variantes": [],
+    "epitetos": [],
+    "evidencia": "«Píroo Imbrásida, caudillo de los tracios, que había llegado de Eno» — lugar de origen del caudillo tracio",
+    "confianza": "alta",
+    "pasadas_que_lo_mencionan": 3,
+    "pasadas_totales": 3,
+    "pasadas_indices": [
+      1,
+      2,
+      3
+    ],
+    "disenso": [],
+    "alias": []
+  }
+]
