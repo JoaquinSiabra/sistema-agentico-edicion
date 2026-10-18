@@ -11,6 +11,7 @@ a Claude no dan siempre la misma salida, así que sus specs son
 | Rápido | `uv run pytest` | segundos | nada |
 | Base de datos | `pytest --db` (desde WSL) | ~20 s (4-5 min la 1ª vez) | Postgres + pgvector |
 | API real | `uv run pytest --api tests/api` | ~1-2 min | `ANTHROPIC_API_KEY`; 3 llamadas, con coste |
+| Banco de Continuidad | `pytest --db --api tests/continuidad` (desde WSL, con `WSLENV=ANTHROPIC_API_KEY`) | minutos | Postgres + pgvector y `ANTHROPIC_API_KEY`; 27 llamadas, con coste |
 
 Leyenda de la columna «Prueba»: **R** rápido · **D** base de datos ·
 **A** API real · **S** API simulada con respuestas grabadas (también rápido) ·
@@ -131,3 +132,36 @@ Entrada: un fragmento, su `--orden` y la calibración de la obra. Salida:
 | Los hechos de una entidad no incluyen los que solo coinciden por un epíteto («domador de caballos» de Héctor; «valiente en la pelea» de Diomedes no sale como hecho de Menelao) | D |
 | Un epíteto no sirve para identificar a una entidad en la búsqueda | D |
 | Cada consulta de referencia de la Ilíada encuentra su canto, con la palabra clave entre los 5 primeros | D |
+
+## Agente de Continuidad — continuidad.py
+
+Especificación completa en [`docs/agente_continuidad.md`](../docs/agente_continuidad.md).
+Entrada: un pasaje nuevo y su posición (fragmento y carácter). Salida: un
+`Informe` con avisos (solo apoyados en hechos del narrador), notas,
+descartados por la validación y hechos omitidos por el tope.
+
+| Spec | Prueba | Dónde |
+|---|---|---|
+| Las entidades del pasaje se detectan por término, alias o variante, como palabra completa y sin distinguir mayúsculas | R | [test_continuidad.py](test_continuidad.py) |
+| Un epíteto o una forma compartida no trae entidades | R, D | [test_continuidad.py](test_continuidad.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| El contexto incluye hechos posteriores al punto de inserción, con su dirección; entre fragmentos, la dirección es correcta | D | [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| Los hechos de cada entidad siguen el mismo criterio que `recuperar.hechos_hasta(entidad=...)`, sin límite de posición | D | [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| El prompt lleva cada hecho con su identificador, su atribución y su dirección | R | [test_continuidad.py](test_continuidad.py) |
+| Un aviso con cita no literal o con un hecho fuera del contexto se descarta | R | [test_continuidad.py](test_continuidad.py) |
+| Un aviso apoyado en un hecho de personaje pasa a notas | R | [test_continuidad.py](test_continuidad.py) |
+| Entre fragmentos, la dirección la fija el código | R | [test_continuidad.py](test_continuidad.py) |
+| Valores de `tipo`, `gravedad` o `direccion` no permitidos descartan el aviso, y todo lo descartado se cuenta | R | [test_continuidad.py](test_continuidad.py) |
+| Con más hechos que el tope, se omiten los de las entidades más generales y se informa | R, D | [test_continuidad.py](test_continuidad.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| La consulta es una sola llamada, con el modelo del resto de fases, y acepta el JSON envuelto en ```` ```json ```` | S | [test_continuidad.py](test_continuidad.py) |
+| Cada hecho del contexto indica por qué vía llegó | R, D | [test_continuidad.py](test_continuidad.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| Cada caso del banco se construye sobre el texto de su fragmento, y sus hechos esperados existen y son del narrador | R | [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py) |
+| Con respuestas grabadas del banco, el informe se reproduce igual | S (se salta mientras no haya respuestas grabadas en `tests/fijos/continuidad/respuestas/`) | [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py) |
+| Cobertura del contexto en el banco (informativa, sin umbral en v1), con el motivo de cada hecho que no llega | D | [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| Banco: ≥ 13/16 detectados, ≤ 1 aviso en controles y trampas; cada fallo clasificado como del buscador o del agente | A + D | [continuidad/test_banco_api.py](continuidad/test_banco_api.py) (puntuación y clasificación también en R: [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py)) |
+| El 100 % de los avisos que llegan al informe cumplen las garantías de *Validar* | A + D | [continuidad/test_banco_api.py](continuidad/test_banco_api.py) |
+
+El banco escribe su informe (`banco.json`, `banco.txt`, `cobertura.json`)
+y las respuestas en bruto de cada caso (`respuestas/<caso>.json`) en
+`.cache/continuidad/` (o en `NOVELA_SALIDA_CONTINUIDAD`). Para que la
+suite rápida las reproduzca, se copian a mano a
+`tests/fijos/continuidad/respuestas/` tras revisarlas.
