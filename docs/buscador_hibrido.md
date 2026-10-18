@@ -70,6 +70,24 @@ informe sale como tabla en `.cache/continuidad/buscador.txt`.
 16/16, ningún hecho esperado por debajo del puesto 60, y contexto medio
 menor que el actual.
 
+## Resultado de la medida (2026-10-18)
+
+| Combinación | Cobertura | Peor puesto | Contexto medio |
+|---|---|---|---|
+| actual (entidades, 200) | 15/16 | 24 | 68.6 |
+| +entorno | 16/16 | 52 | 142.9 |
+| **+lexica** | **16/16** | **13** | **81.1** |
+| híbrido (las tres, 200) | 16/16 | 23 | 151.3 |
+| híbrido-60 | 16/16 | 23 | 59.5 |
+
+La vía léxica sola resuelve S11 (la espada rota, puesto 5) y mejora el
+puesto del hecho esperado en casi todos los casos. La de entorno también
+resuelve S11, pero duplica el contexto y hunde los hechos buenos (S02:
+del puesto 6 al 38). **Decisión: por defecto, entidades + léxica con tope
+60** (peor puesto 13, así que el tope no deja fuera ningún caso). La vía de
+entorno queda disponible, sin usar por defecto. Pendiente: la comprobación
+con la API de la sección siguiente.
+
 ## Comprobación final con la API (mínima)
 
 El banco con API (`pytest --db --api tests/continuidad`) solo se repite

@@ -54,7 +54,7 @@ from recuperar import Hecho, Pasaje, _filtro_entidad, buscar_pasajes, cargar_mod
 if TYPE_CHECKING:
     from sentence_transformers import SentenceTransformer
 
-TOPE_HECHOS = 200
+TOPE_HECHOS = 60   # medido en el banco (docs/buscador_hibrido.md): v1 usaba 200
 RRF_K = 60
 MAXIMO_LEXICA = 30
 PASAJES_PARECIDOS = 5
@@ -322,7 +322,10 @@ def via_lexica(cur, obra: str, pasaje: str, orden: int, texto: str,
 # Cada vía: (cur, obra, pasaje, orden, texto del fragmento, char) ->
 # {origen: hechos, en orden de relevancia}.
 VIAS = {"entidades": via_entidades, "entorno": via_entorno, "lexica": via_lexica}
-VIAS_V1 = ("entidades",)
+# Por defecto, entidades + léxica: en el banco cubre 16/16 con el hecho
+# esperado como mucho en el puesto 13; la vía de entorno mete ruido
+# (docs/buscador_hibrido.md, «Resultado de la medida»).
+VIAS_V1 = ("entidades", "lexica")
 
 
 def direccion(orden_hecho: int, orden: int) -> str:
