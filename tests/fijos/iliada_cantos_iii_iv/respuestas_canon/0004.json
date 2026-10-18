@@ -1,0 +1,708 @@
+{
+  "tipo_documental": "Narración épica en tercera persona con numeración de versos",
+  "personajes": [
+    "Júpiter",
+    "Juno",
+    "Minerva",
+    "Hebe",
+    "Venus",
+    "Apolo",
+    "Marte",
+    "Saturno",
+    "Menelao",
+    "Agamenón",
+    "Pándaro",
+    "Macaón",
+    "Esculapio",
+    "Taltibio",
+    "Quirón",
+    "Idomeneo",
+    "Meriones",
+    "Néstor",
+    "Pelagonte",
+    "Alástor",
+    "Cromio",
+    "Hemón",
+    "Biante",
+    "Menesteo",
+    "Ulises",
+    "Diomedes",
+    "Esténelo",
+    "Antíloco",
+    "Ayax Telamonio",
+    "Agenor",
+    "Elefenor Calcodontíada",
+    "Simoísio",
+    "Ántifo Priámida",
+    "Leuco",
+    "Democoonte",
+    "Héctor",
+    "Diores Amarincida",
+    "Píroo Imbrásida",
+    "Toante",
+    "Aquiles",
+    "Tetis",
+    "Telémaco",
+    "Eurimedonte",
+    "Equépolo Talisíada",
+    "Meón Hemónida",
+    "Polifonte",
+    "Laódoco Antenórida",
+    "Discordia",
+    "Terror",
+    "Fuga",
+    "Tritogenia",
+    "Eteocles",
+    "Polínice",
+    "Ereutalión",
+    "Tideo",
+    "Príamo"
+  ],
+  "lugares": [
+    "Olimpo",
+    "Troya",
+    "Argos",
+    "Lacedemonia",
+    "Micenas",
+    "Zelea",
+    "Esepo",
+    "Trica",
+    "Símois",
+    "Pérgamo",
+    "Abido",
+    "Tebas",
+    "Asopo",
+    "Eno",
+    "Ida"
+  ],
+  "organizaciones": [
+    "aqueos",
+    "troyanos",
+    "cretenses",
+    "atenienses",
+    "cefalenios",
+    "abantes",
+    "tracios",
+    "epeos",
+    "cadmeos",
+    "dardanios",
+    "peonios"
+  ],
+  "objetos": [
+    "néctar",
+    "copa de oro",
+    "arco de cuernos de buco montés",
+    "flecha",
+    "carcaj",
+    "cinturón",
+    "coraza",
+    "chapa",
+    "égida",
+    "lanza",
+    "escudo",
+    "carro de broncíneos adornos",
+    "hecatombe"
+  ],
+  "hechos_canonicos": [
+    {
+      "hecho": "Los dioses celebraban consejo sentados en el áureo pavimento a la vera de Júpiter, mientras Hebe escanciaba néctar y ellos contemplaban la ciudad de Troya.",
+      "momento_canonico": "al inicio del fragmento, verso 1",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Júpiter intentó zaherir a Juno con mordaces palabras fingidas, señalando que Juno y Minerva solo miraban a Menelao desde lejos, mientras Venus acompañaba constantemente a Alejandro y le libró de las Parcas.",
+      "momento_canonico": "verso 7, discurso de Júpiter",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Júpiter"
+      }
+    },
+    {
+      "hecho": "Júpiter propuso deliberar sobre si promover nuevamente el combate o reconciliar a ambos pueblos, sugiriendo que si agradara a todos, Troya continuaría poblada y Menelao se llevaría a Helena.",
+      "momento_canonico": "verso 7, discurso de Júpiter",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Júpiter"
+      }
+    },
+    {
+      "hecho": "Minerva y Juno tenían asientos contiguos y pensaban en causar daño a los teucros; Minerva guardó silencio pese a su cólera, pero Juno no pudo contener la ira.",
+      "momento_canonico": "verso 20",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Juno reclamó a Júpiter que no hiciera inútil su trabajo y el sudor que le costó reunir el ejército contra Príamo y sus hijos.",
+      "momento_canonico": "verso 25, discurso de Juno",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Juno"
+      }
+    },
+    {
+      "hecho": "Júpiter declaró que la sagrada Troya era la ciudad más preferida de su corazón entre todas las que habitan los hombres, y que su altar nunca careció de libaciones y víctimas.",
+      "momento_canonico": "verso 30, discurso de Júpiter",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Júpiter"
+      }
+    },
+    {
+      "hecho": "Júpiter concedió a Juno dejar que Troya fuera destruida, a cambio de que Juno no obstaculizara cuando él desee destruir ciudades protegidas por ella.",
+      "momento_canonico": "verso 30, discurso de Júpiter",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Júpiter"
+      }
+    },
+    {
+      "hecho": "Juno declaró que las tres ciudades que más quiere son Argos, Esparta y Micenas, y que no las defenderá si Júpiter las destruye.",
+      "momento_canonico": "verso 50, discurso de Juno",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Juno"
+      }
+    },
+    {
+      "hecho": "Juno se reconoció engendrada por Saturno como la más venerable por su abolengo y por ser esposa de Júpiter.",
+      "momento_canonico": "verso 50, discurso de Juno",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Juno"
+      }
+    },
+    {
+      "hecho": "Juno pidió a Júpiter que enviara a Minerva al campo de batalla para procurar que los teucros fueran los primeros en violar los juramentos atacando a los aqueos.",
+      "momento_canonico": "verso 50, discurso de Juno",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Juno"
+      }
+    },
+    {
+      "hecho": "Júpiter ordenó a Minerva que fuera al campo de los teucros y los aqueos y procurara que los teucros empezaran a ofender, contra lo jurado, a los aqueos.",
+      "momento_canonico": "verso 68-70",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva bajó del Olimpo en raudo vuelo y cayó en medio del campo como una fúlgida estrella que despide numerosas chispas.",
+      "momento_canonico": "verso 73-79",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Al ver a Minerva descender, teucros y aqueos se asombraron y algunos comentaron que o empezaría de nuevo el combate o Júpiter pondría amistad entre ambos pueblos.",
+      "momento_canonico": "verso 79-84",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva se transfiguró en el varón Laódoco Antenórida, esforzado combatiente, y penetró por el ejército teucro buscando a Pándaro.",
+      "momento_canonico": "verso 85-88",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva halló a Pándaro, hijo de Licaón, en medio de las filas de hombres valientes que con él llegaran de las orillas del Esepo.",
+      "momento_canonico": "verso 88-91",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva (disfrazada de Laódoco) persuadió a Pándaro para que disparara una flecha contra Menelao, prometiéndole gloria entre los teucros y espléndidos presentes de Alejandro.",
+      "momento_canonico": "verso 93-103, discurso de Minerva disfrazada",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Minerva"
+      }
+    },
+    {
+      "hecho": "Minerva (disfrazada) pidió a Pándaro que votara sacrificar a Apolo Licio una hecatombe perfecta de corderos primogénitos al volver a su patria, la sagrada ciudad de Zelea.",
+      "momento_canonico": "verso 93-103, discurso de Minerva disfrazada",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Minerva"
+      }
+    },
+    {
+      "hecho": "Pándaro se dejó persuadir y asió el pulido arco hecho con las astas de un buco montés al que él mismo había acechado e hirido en el pecho; los cuernos medían dieciséis palmos y fueron adornados con anillos de oro por un artífice.",
+      "momento_canonico": "verso 104-111",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Los compañeros de Pándaro le cubrieron con los escudos mientras él tendía el arco, para protegerle de los aqueos hasta que disparara.",
+      "momento_canonico": "verso 113-115",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Pándaro votó a Apolo Licio sacrificarle una hecatombe perfecta de corderos primogénitos al volver a Zelea, y luego disparó la flecha contra Menelao.",
+      "momento_canonico": "verso 116-126",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Minerva desvió la flecha de Pándaro antes de que hiriera a Menelao mortalmente, apartándola del cuerpo como una madre ahuyenta una mosca de su niño dormido, dirigiéndola a donde los anillos de oro sujetaban el cinturón.",
+      "momento_canonico": "verso 127-138",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "La flecha atravesó el cinturón, se clavó en la coraza, rompió la chapa protectora y rasguñó la piel de Menelao, brotando sangre negra de la herida.",
+      "momento_canonico": "verso 134-140",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "La sangre de Menelao tiñó sus muslos, piernas y tobillos, comparada a la púrpura con que una mujer meonia o caria tiñe el marfil que adorna el freno de un caballo.",
+      "momento_canonico": "verso 141-147",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón se estremeció al ver la sangre de la herida de Menelao; también Menelao se estremeció, pero recobró el ánimo al advertir que el nervio y las plumas de la flecha quedaban fuera.",
+      "momento_canonico": "verso 148-154",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón lamentó haber puesto a Menelao a luchar solo con los troyanos en el jurado convenio y le reprochó que los troyanos pisotearon los juramentos al herirle.",
+      "momento_canonico": "verso 155-182, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón afirmó que el Olímpico castigará a los troyanos por violar los juramentos, que perecerán la sagrada Ilión, Príamo y su pueblo, y que Jove agitará su égida contra ellos.",
+      "momento_canonico": "verso 155-182, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón temió que si Menelao moría, los aqueos abandonarían la empresa, dejarían a Helena en poder de Príamo y los troyanos, y sus huesos se pudrirían en Troya.",
+      "momento_canonico": "verso 155-182, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Menelao tranquilizó a Agamenón asegurando que la flecha no le hirió mortalmente porque le protegió el cinturón labrado, la faja y la chapa forjada por el broncista.",
+      "momento_canonico": "verso 183-187, discurso de Menelao",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Menelao"
+      }
+    },
+    {
+      "hecho": "Agamenón ordenó al heraldo Taltibio que llamara a Macaón, hijo de Esculapio, para que reconociera la herida de Menelao.",
+      "momento_canonico": "verso 192-197",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Taltibio encontró a Macaón en medio de las filas de hombres que le habían seguido desde Trica, criadora de caballos.",
+      "momento_canonico": "verso 198-203",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Macaón arrancó la flecha del cíngulo de Menelao, desató el cinturón, quitó la faja y la chapa, chupó la sangre y aplicó drogas calmantes que Quirón había dado a su padre en prueba de amistad.",
+      "momento_canonico": "verso 207-219",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Quirón dio drogas calmantes al padre de Macaón (Esculapio) en prueba de amistad.",
+      "momento_canonico": "verso 219",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón dejó los caballos y el carro a cargo de Eurimedonte, hijo de Ptolomeo Piraída, y recorrió a pie las hileras de guerreros para animarlos o increpanrlos antes de la batalla.",
+      "momento_canonico": "verso 223-250",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón animó a los argivos prometiéndoles que Júpiter no protegerá a los pérfidos teucros que violaron los juramentos, y que tomarán la ciudad llevándose esposas e hijos.",
+      "momento_canonico": "verso 234-239, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón encontró a Idomeneo en las primeras filas, semejante a un jabalí por su braveza, y a Meriones enardeciendo a los soldados de las últimas falanges.",
+      "momento_canonico": "verso 250-256",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón declaró a Idomeneo que le honraba de modo especial entre los dánaos tanto en la guerra como en el banquete, donde siempre tenía la copa llena como él mismo.",
+      "momento_canonico": "verso 257-264, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Idomeneo se declaró amigo fiel de Agamenón y exhortó a pelear cuanto antes con los teucros, señalando que la muerte y las calamidades les aguardan por haber roto los pactos.",
+      "momento_canonico": "verso 265-271, discurso de Idomeneo",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Idomeneo"
+      }
+    },
+    {
+      "hecho": "Agamenón encontró a los dos Ayaces armándose, seguidos de una nube de infantes, y los elogió sin necesidad de exhortarles, deseando que todos tuvieran su mismo ánimo para tomar la ciudad de Príamo.",
+      "momento_canonico": "verso 272-291",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón encontró a Néstor ordenando y animando a los suyos junto con Pelagonte, Alástor, Cromio, Hemón y Biante.",
+      "momento_canonico": "verso 292-302",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Néstor disponía a los que combatían desde carros en vanguardia, a los valientes peones como muro detrás, y a los cobardes en el medio para que tuvieran que combatir.",
+      "momento_canonico": "verso 297-302",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Néstor instruyó a sus hombres a no combatir fuera de las filas individualmente ni retroceder, y a luchar con la lanza desde el carro si caían del propio, enseñando que así los antiguos destruyeron ciudades.",
+      "momento_canonico": "verso 303-309, discurso de Néstor",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Néstor"
+      }
+    },
+    {
+      "hecho": "Agamenón lamentó que Néstor no tuviera las rodillas ágiles de la juventud, siendo su ánimo el mismo, y que la vejez le agobiara.",
+      "momento_canonico": "verso 313-316, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Néstor declaró que habría querido ser como cuando mató al divino Ereutalión, pero que los dioses nunca dieron todo a un mismo tiempo a los hombres, y que siendo joven entonces, ya le llegó la senectud.",
+      "momento_canonico": "verso 317-325, discurso de Néstor",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Néstor"
+      }
+    },
+    {
+      "hecho": "Agamenón encontró a Menesteo, hijo de Peteo, entre los atenienses, y cerca de ellos a Ulises con las huestes de los cefalenios, que esperaban sin avanzar porque no habían oído el grito de guerra.",
+      "momento_canonico": "verso 326-337",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón increpó a Menesteo y Ulises por abstenerse de pelear y esperar que otros tomaran la ofensiva, recordándoles que eran los primeros en ser invitados a los banquetes.",
+      "momento_canonico": "verso 338-348, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Ulises respondió con irritación que no eran remisos y prometió que el padre amado de Telémaco penetraría por las primeras filas de los teucros cuando los aqueos excitaran a Marte.",
+      "momento_canonico": "verso 349-355, discurso de Ulises",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Ulises"
+      }
+    },
+    {
+      "hecho": "Agamenón, al ver que Ulises se irritaba, sonrió, se retractó y declaró que no fue su propósito reprenderle en demasía ni darle órdenes, reconociendo que el modo de pensar de Ulises coincide con el suyo.",
+      "momento_canonico": "verso 356-363, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón encontró a Diomedes de pie entre los corceles y los carros, con Esténelo, hijo de Capaneo, a su lado, y le reprendió por parecer temblar.",
+      "momento_canonico": "verso 364-369",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Agamenón afirmó que Tideo no solía temblar sino que se adelantaba a sus compañeros y peleaba con el enemigo, según refieren quienes le vieron combatir, pues él mismo no lo presenció.",
+      "momento_canonico": "verso 370-374, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón relató que Tideo estuvo en Micenas como huésped junto con Polínice para reclutar tropas contra los sagrados muros de Tebas, que los ciudadanos querían conceder auxiliares pero Júpiter con funestas señales les hizo cambiar de opinión.",
+      "momento_canonico": "verso 376-381, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón relató que los aqueos nombraron embajador a Tideo para ir a Tebas; en el palacio de Eteocles se hallaban muchos cadmeos en banquete, y Tideo solo los desafió y venció en toda clase de luchas, siendo protegido por Minerva.",
+      "momento_canonico": "verso 381-390, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón relató que al retirarse Tideo, los cadmeos pusieron una emboscada de cincuenta jóvenes mandados por Meón Hemónida y Polifonte, hijo de Autófono; Tideo mató a todos menos a Meón, al que perdonó acatando indicaciones divinas.",
+      "momento_canonico": "verso 391-398, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Agamenón concluyó que Tideo fue superior al hijo que engendró (Diomedes) en el combate, aunque Diomedes le supere en las juntas.",
+      "momento_canonico": "verso 399-400, discurso de Agamenón",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Agamenón"
+      }
+    },
+    {
+      "hecho": "Esténelo, hijo de Capaneo, replicó a Agamenón afirmando que él y Diomedes son más valientes que sus padres, pues tomaron Tebas de las siete puertas confiando en indicaciones divinas y el auxilio de Júpiter, mientras que los padres perecieron por sus locuras.",
+      "momento_canonico": "verso 404-410, discurso de Esténelo",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Esténelo"
+      }
+    },
+    {
+      "hecho": "Diomedes mandó callar a Esténelo y declaró que no se enfadaba con Agamenón por animar a los aqueos antes del combate, y que la gloria de la victoria o el pesar de la derrota corresponde al rey.",
+      "momento_canonico": "verso 411-418, discurso de Diomedes",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Diomedes"
+      }
+    },
+    {
+      "hecho": "Diomedes saltó del carro al suelo sin soltar las armas; el resonar del bronce sobre su pecho fue tan terrible que hubiera causado pavor hasta a un hombre muy esforzado.",
+      "momento_canonico": "verso 419-421",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Las falanges de los dánaos avanzaban calladas y temerosas de sus jefes, con las armas relucientes. Los teucros avanzaban con confuso vocerío, mezclando lenguas de diferentes países.",
+      "momento_canonico": "verso 422-438",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "A los aqueos les excitaba Minerva; a los teucros, Marte; y a ambos pueblos, el Terror, la Fuga y la Discordia, hermana y compañera del homicida Marte, que al principio aparece pequeña y luego toca con la cabeza el cielo.",
+      "momento_canonico": "verso 438-445",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Cuando los ejércitos chocaron, se oyeron simultáneamente lamentos de moribundos y gritos de matadores, y la tierra manaba sangre.",
+      "momento_canonico": "verso 446-456",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Antíloco fue el primero en matar a un teucro: hirió a Equépolo Talisíada en la cimera del casco con una lanza broncínea que atravesó el hueso de la frente, y éste cayó como una torre.",
+      "momento_canonico": "verso 457-462",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Elefenor Calcodontíada, caudillo de los abantes, asió a Equépolo por un pie para arrastrarlo y quitarle la armadura, pero Agenor le hirió con una lanza en el costado que quedó en descubierto al inclinarse, matándole.",
+      "momento_canonico": "verso 463-469",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Sobre el cuerpo de Elefenor trabaron enconada pelea teucros y aqueos.",
+      "momento_canonico": "verso 470-472",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ayax Telamonio lanzó una lanza a Simoísio Antémida, hijo de Antemión, joven en flor de la juventud. Su madre le había parido a orillas del Símois cuando bajó del Ida con los padres para ver las ovejas, y por eso le llamaron Simoísio.",
+      "momento_canonico": "verso 473-479",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ayax Telamonio hirió a Simoísio en el pecho junto a la tetilla derecha cuando éste acometía; la punta broncínea salió por la espalda y Simoísio cayó en el polvo.",
+      "momento_canonico": "verso 479-489",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ántifo Priámida lanzó su dardo contra Ayax pero no le tocó; en cambio hirió en la ingle a Leuco, compañero de Ulises, mientras arrastraba un cadáver, y Leuco cayó muerto junto al cadáver.",
+      "momento_canonico": "verso 489-493",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Ulises, muy irritado por la muerte de Leuco, atravesó las primeras filas y lanzó su broncínea lanza que perforó las sienes a Democoonte, hijo bastardo de Príamo, que había venido de Abido.",
+      "momento_canonico": "verso 494-503",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Tras la muerte de Democoonte, los combatientes delanteros y Héctor retrocedieron; los argivos dieron voces, retiraron los muertos y avanzaron.",
+      "momento_canonico": "verso 504-508",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Apolo, presenciando la retirada desde Pérgamo, se indignó y exhortó a los teucros a que no cedieran, señalando que los argivos no son de piedra ni de hierro, y que Aquiles, hijo de Tetis, se había quedado en las naves rumiando su cólera.",
+      "momento_canonico": "verso 509-513, discurso de Apolo",
+      "atribucion": {
+        "tipo": "afirmacion_interesada",
+        "personaje": "Apolo"
+      }
+    },
+    {
+      "hecho": "Tritogenia (Minerva) recorrió el ejército aqueo animando a los remisos.",
+      "momento_canonico": "verso 514-516",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "El hado echó los lazos de la muerte a Diores Amarincida: Píroo Imbrásida, caudillo de los tracios llegado de Eno, le hirió con una piedra puntiaguda en el tobillo derecho, rompiéndole ambos tendones y el hueso.",
+      "momento_canonico": "verso 517-523",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Mientras Diores expiraba tendiendo los brazos a sus camaradas, Píroo le envasó la lanza en el ombligo; se derramaron los intestinos y murió.",
+      "momento_canonico": "verso 523-526",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Toante el etolo alanceó a Píroo en el pecho por cima de una tetilla, atravesándole el pulmón; luego le arrancó la lanza, le hundió la espada en el vientre y le quitó la vida.",
+      "momento_canonico": "verso 527-531",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Toante no pudo despojar a Píroo de la armadura porque los tracios de larga cabellera le rodearon con sus largas picas y le rechazaron pese a su corpulencia.",
+      "momento_canonico": "verso 531-535",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "El caudillo de los tracios (Píroo) y el de los epeos (Diores), de broncíneas lorigas, cayeron juntos en el polvo, y a su alrededor murieron otros muchos más.",
+      "momento_canonico": "verso 536-538",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    },
+    {
+      "hecho": "Quien hubiera recorrido el campo sin estar herido, protegido por Palas Minerva, no habría reprochado los hechos de armas, pues gran número de teucros y aqueos cayeron juntos ese día.",
+      "momento_canonico": "verso 539-542",
+      "atribucion": {
+        "tipo": "narrador_documental",
+        "personaje": null
+      }
+    }
+  ]
+}

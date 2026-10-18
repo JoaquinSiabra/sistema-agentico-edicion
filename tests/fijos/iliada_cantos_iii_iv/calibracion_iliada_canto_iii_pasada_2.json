@@ -1,0 +1,214 @@
+{
+  "glosario": [
+    {
+      "termino": "Alejandro",
+      "categoria": "persona",
+      "variantes": [
+        "Paris",
+        "deiforme Alejandro",
+        "divino Alejandro",
+        "el Priámida"
+      ],
+      "evidencia": "Se le habla directamente ('¡Miserable Paris!'), habla él mismo, combate con Menelao; 'Paris' se usa como nombre alternativo explícito ('saltó la de Paris', 'dijo Paris')",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Laódice",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Iris toma su figura: 'tomando la figura de su cuñada Laódice, mujer del rey Helicaón Antenórida, que era la más hermosa de las hijas de Príamo'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Helicaón",
+      "categoria": "persona",
+      "variantes": [
+        "Helicaón Antenórida"
+      ],
+      "evidencia": "Mencionado como 'rey Helicaón Antenórida', marido de Laódice",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Etra",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "'la acompañaban dos doncellas, Etra, hija de Piteo, y Climene'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Climene",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "'la acompañaban dos doncellas, Etra, hija de Piteo, y Climene, la de los grandes ojos'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pántoo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos del pueblo en las puertas Esceas junto a Príamo: 'Príamo, Pántoo, Timetes, Lampo...'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Timetes",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos del pueblo en las puertas Esceas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Lampo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos del pueblo en las puertas Esceas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Clitio",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos del pueblo en las puertas Esceas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Hicetaón",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos: 'Hicetaón, vástago de Marte'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ucalegonte",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre 'los prudentes Ucalegonte y Antenor, ancianos del pueblo'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Cástor",
+      "categoria": "persona",
+      "variantes": [
+        "domador de caballos"
+      ],
+      "evidencia": "Helena busca con la vista a 'Cástor, domador de caballos, y Pólux, excelente púgil, hermanos carnales que me dió mi madre'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pólux",
+      "categoria": "persona",
+      "variantes": [
+        "excelente púgil"
+      ],
+      "evidencia": "Hermano de Cástor y Helena: 'Pólux, excelente púgil'; ambos están muertos ('la fértil tierra los tenía ya en su seno')",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ideo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "'El heraldo Ideo llevaba además una reluciente cratera y copas de oro; y acercándose al anciano, invitóle diciendo'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Licaón",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Alejandro 'protegió el pecho con la coraza de su hermano Licaón'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Otreo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Príamo menciona 'los pueblos de Otreo y de Migdón' en el contexto de su visita a la Frigia",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Migdón",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado junto a Otreo como jefe de pueblos frigios: 'los pueblos de Otreo y de Migdón, igual á un dios'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Plutón",
+      "categoria": "lugar",
+      "variantes": [
+        "morada de Plutón"
+      ],
+      "evidencia": "Aparece en expresión de lugar: 'muera y descienda á la morada de Plutón'",
+      "confianza": "media"
+    },
+    {
+      "termino": "Sangario",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Ubicación de acción: 'acampaban á orillas del Sangario'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Cránae",
+      "categoria": "lugar",
+      "variantes": [
+        "isla de Cránae"
+      ],
+      "evidencia": "Lugar donde Paris y Helena se unieron: 'llegamos á la isla de Cránae, donde me unió contigo amoroso consorcio'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Acaya",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Lugar de destino propuesto para los aqueos: 'vuelvan aquéllos á la Argólide... y á la Acaya, de lindas mujeres'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Meonia",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Helena menciona 'cualquier populosa ciudad de la Frigia ó de la Meonia amena'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "puertas Esceas",
+      "categoria": "lugar",
+      "variantes": [
+        "Esceas"
+      ],
+      "evidencia": "Ubicación de acción repetida: 'pronto llegaron á las puertas Esceas'; 'guiaron los ligeros corceles hacia la llanura por las puertas Esceas'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "amazonas",
+      "categoria": "pueblo",
+      "variantes": [
+        "varoniles amazonas"
+      ],
+      "evidencia": "Colectivo étnico/guerrero mencionado en plural: 'llegaron las varoniles amazonas'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "pigmeos",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Colectivo mencionado como víctimas de las grullas: 'llevan la ruina y la muerte á los pigmeos'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Noto",
+      "categoria": "concepto_abstracto",
+      "variantes": [],
+      "evidencia": "Usado en símil atmosférico: 'el Noto derrama en las cumbres de un monte la niebla'; viento personificado sin verbo de habla ni trato personal directo",
+      "confianza": "media"
+    },
+    {
+      "termino": "dardanios",
+      "categoria": "pueblo",
+      "variantes": [
+        "dárdanos"
+      ],
+      "evidencia": "Ya fijado como 'dardanios'; en este fragmento aparece la variante 'dárdanos': 'troyanos, dárdanos y aliados'",
+      "confianza": "alta"
+    }
+  ]
+}

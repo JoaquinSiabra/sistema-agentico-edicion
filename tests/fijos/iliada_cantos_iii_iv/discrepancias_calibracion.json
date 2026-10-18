@@ -1,0 +1,71 @@
+[
+  {
+    "termino": "Parcas",
+    "pasadas_totales": 3,
+    "pasadas_que_lo_mencionan": 3,
+    "motivo": "empate sin mayoría clara",
+    "categorias_propuestas": [
+      {
+        "categoria": "persona",
+        "confianza": "media",
+        "evidencia": "Mencionadas en el fragmento 2 como entidades que arrebatan a los hombres ('los que no habéis sido arrebatados por las Parcas')"
+      },
+      {
+        "categoria": "pueblo",
+        "confianza": "media",
+        "evidencia": "Mencionadas colectivamente en fragmento 2 como agentes del destino mortal ('los que no habéis sido arrebatados por las Parcas')"
+      },
+      {
+        "categoria": "concepto_abstracto",
+        "confianza": "media",
+        "evidencia": "Mencionadas en Frag. 2 como entidad que arrebata a hombres ('los que no habéis sido arrebatados por las Parcas'); sin estructura jurídica ni diálogo directo"
+      }
+    ]
+  },
+  {
+    "termino": "Ayax",
+    "pasadas_totales": 3,
+    "pasadas_que_lo_mencionan": 1,
+    "motivo": "término ambiguo: sus variantes son entidades distintas",
+    "entidades": [
+      "Ayax Telamonio",
+      "Ayax de Oileo"
+    ]
+  },
+  {
+    "termino": "el Olímpico",
+    "motivo": "forma compartida",
+    "entidades": [
+      "Júpiter",
+      "Olimpo"
+    ],
+    "lote": "saneado"
+  },
+  {
+    "termino": "famoso por su lanza",
+    "motivo": "forma compartida",
+    "entidades": [
+      "Idomeneo",
+      "Tlepólemo"
+    ],
+    "lote": "saneado"
+  },
+  {
+    "termino": "la de hermosas mejillas",
+    "motivo": "forma compartida",
+    "entidades": [
+      "Briseida",
+      "Criseida"
+    ],
+    "lote": "saneado"
+  },
+  {
+    "termino": "valiente en la pelea",
+    "motivo": "forma compartida",
+    "entidades": [
+      "Diomedes",
+      "Menelao"
+    ],
+    "lote": "saneado"
+  }
+]

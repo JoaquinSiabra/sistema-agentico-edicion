@@ -1,0 +1,201 @@
+{
+  "glosario": [
+    {
+      "termino": "Alejandro",
+      "categoria": "persona",
+      "variantes": [
+        "Paris",
+        "deiforme Alejandro",
+        "divino Alejandro",
+        "Priámida"
+      ],
+      "evidencia": "Se le habla directamente en vocativo ('¡Miserable Paris!'), habla él mismo, es desafiado y combate contra Menelao; también referido como 'el deiforme Alejandro', 'Paris' y 'Priámida'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Laódice",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionada como cuñada de Helena y mujer del rey Helicaón Antenórida, cuya figura toma Iris para acercarse a Helena",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Helicaón",
+      "categoria": "persona",
+      "variantes": [
+        "Helicaón Antenórida"
+      ],
+      "evidencia": "Mencionado como 'rey Helicaón Antenórida', esposo de Laódice",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Etra",
+      "categoria": "persona",
+      "variantes": [
+        "hija de Piteo"
+      ],
+      "evidencia": "Mencionada como doncella que acompaña a Helena: 'Etra, hija de Piteo'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Climene",
+      "categoria": "persona",
+      "variantes": [
+        "la de los grandes ojos"
+      ],
+      "evidencia": "Mencionada junto a Etra como doncella que acompaña a Helena: 'Climene, la de los grandes ojos'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pántoo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos troyanos en las puertas Esceas junto a Príamo y otros próceres",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Timetes",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos troyanos en las puertas Esceas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Lampo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos troyanos en las puertas Esceas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Clitio",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los ancianos troyanos en las puertas Esceas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Hicetaón",
+      "categoria": "persona",
+      "variantes": [
+        "vástago de Marte"
+      ],
+      "evidencia": "Listado entre los ancianos troyanos: 'Hicetaón, vástago de Marte'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ucalegonte",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Listado entre los prudentes ancianos troyanos en las puertas Esceas",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Cástor",
+      "categoria": "persona",
+      "variantes": [
+        "domador de caballos"
+      ],
+      "evidencia": "Helena lo menciona como hermano suyo: 'Cástor, domador de caballos', buscándolo entre los aqueos",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Pólux",
+      "categoria": "persona",
+      "variantes": [
+        "excelente púgil"
+      ],
+      "evidencia": "Helena lo menciona como hermano suyo junto a Cástor: 'Pólux, excelente púgil'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Ideo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado como heraldo que lleva la cratera y las copas de oro e invita a Príamo a bajar a la llanura",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Licaón",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Mencionado como hermano de Alejandro/Paris, cuya coraza usa éste en el combate singular",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Otreo",
+      "categoria": "persona",
+      "variantes": [],
+      "evidencia": "Príamo menciona haber visto 'los pueblos de Otreo y de Migdón' en la Frigia; referenciado como caudillo o rey de un pueblo",
+      "confianza": "media"
+    },
+    {
+      "termino": "Migdón",
+      "categoria": "persona",
+      "variantes": [
+        "igual á un dios"
+      ],
+      "evidencia": "Mencionado junto a Otreo como caudillo de pueblos frigios que acampaban a orillas del Sangario",
+      "confianza": "media"
+    },
+    {
+      "termino": "Plutón",
+      "categoria": "persona",
+      "variantes": [
+        "morada de Plutón"
+      ],
+      "evidencia": "Referenciado como deidad del inframundo: 'descienda á la morada de Plutón'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Esceas",
+      "categoria": "lugar",
+      "variantes": [
+        "puertas Esceas"
+      ],
+      "evidencia": "Lugar de acción: Helena llega a 'las puertas Esceas'; Príamo sale por 'las puertas Esceas'",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Sangario",
+      "categoria": "lugar",
+      "variantes": [],
+      "evidencia": "Príamo menciona que los frigios 'acampaban á orillas del Sangario'; usado como ubicación",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Cránae",
+      "categoria": "lugar",
+      "variantes": [
+        "isla de Cránae"
+      ],
+      "evidencia": "Paris menciona 'la isla de Cránae' como lugar donde se unió a Helena al partir de Lacedemonia",
+      "confianza": "alta"
+    },
+    {
+      "termino": "Meonia",
+      "categoria": "lugar",
+      "variantes": [
+        "Meonia amena"
+      ],
+      "evidencia": "Helena menciona 'cualquier populosa ciudad de la Frigia ó de la Meonia amena' como posibles destinos; usado como ubicación geográfica",
+      "confianza": "alta"
+    },
+    {
+      "termino": "amazonas",
+      "categoria": "pueblo",
+      "variantes": [
+        "varoniles amazonas"
+      ],
+      "evidencia": "Príamo menciona 'las varoniles amazonas' como pueblo que llegó a la Frigia; tratadas como colectivo étnico/guerrero",
+      "confianza": "alta"
+    },
+    {
+      "termino": "pigmeos",
+      "categoria": "pueblo",
+      "variantes": [],
+      "evidencia": "Mencionados como pueblo al que las grullas 'llevan la ruina y la muerte'; tratados como colectivo étnico",
+      "confianza": "alta"
+    }
+  ]
+}
