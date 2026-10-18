@@ -68,6 +68,12 @@ psql -U editor -d almacen -h localhost -f schema.sql
 
 Esto crea la extensión `vector`, las tablas del Almacén (`obras`, `entidades`, `fragmentos`, `pasajes`, `hechos_canonicos`, y sus relaciones) y el índice HNSW para búsqueda semántica sobre `pasajes.embedding` (cada fragmento se trocea en pasajes de ~400 tokens, porque el modelo de embeddings trunca a 512).
 
+Si la base ya existía antes del buscador híbrido, basta con crear el índice de texto completo sobre los hechos (no cambia ninguna tabla):
+
+```bash
+psql -U editor -d almacen -h localhost -c "CREATE INDEX IF NOT EXISTS hechos_texto_idx ON hechos_canonicos USING gin (to_tsvector('spanish', hecho));"
+```
+
 ## 7. Arranque automático de Postgres (WSL2)
 
 WSL2 no mantiene servicios vivos entre sesiones salvo que tengas `systemd` activo. Comprueba `/etc/wsl.conf`:

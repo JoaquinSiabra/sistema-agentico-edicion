@@ -151,11 +151,11 @@ descartados por la validación y hechos omitidos por el tope.
 | Un aviso apoyado en un hecho de personaje pasa a notas | R | [test_continuidad.py](test_continuidad.py) |
 | Entre fragmentos, la dirección la fija el código | R | [test_continuidad.py](test_continuidad.py) |
 | Valores de `tipo`, `gravedad` o `direccion` no permitidos descartan el aviso, y todo lo descartado se cuenta | R | [test_continuidad.py](test_continuidad.py) |
-| Con más hechos que el tope, se omiten los de las entidades más generales y se informa | R, D | [test_continuidad.py](test_continuidad.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| Con más hechos que el tope, se omiten los peor situados en la fusión (los del fondo de las listas largas, como las de los colectivos) y se informa | R, D | [test_continuidad.py](test_continuidad.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
 | La consulta es una sola llamada, con el modelo del resto de fases, y acepta el JSON envuelto en ```` ```json ```` | S | [test_continuidad.py](test_continuidad.py) |
 | Cada hecho del contexto indica por qué vía llegó | R, D | [test_continuidad.py](test_continuidad.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
 | Cada caso del banco se construye sobre el texto de su fragmento, y sus hechos esperados existen y son del narrador | R | [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py) |
-| Con respuestas grabadas del banco, el informe se reproduce igual | S (se salta mientras no haya respuestas grabadas en `tests/fijos/continuidad/respuestas/`) | [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py) |
+| Con respuestas grabadas del banco, el informe se reproduce igual | S | [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py) |
 | Cobertura del contexto en el banco (informativa, sin umbral en v1), con el motivo de cada hecho que no llega | D | [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
 | Banco: ≥ 13/16 detectados, ≤ 1 aviso en controles y trampas; cada fallo clasificado como del buscador o del agente | A + D | [continuidad/test_banco_api.py](continuidad/test_banco_api.py) (puntuación y clasificación también en R: [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py)) |
 | El 100 % de los avisos que llegan al informe cumplen las garantías de *Validar* | A + D | [continuidad/test_banco_api.py](continuidad/test_banco_api.py) |
@@ -165,3 +165,26 @@ y las respuestas en bruto de cada caso (`respuestas/<caso>.json`) en
 `.cache/continuidad/` (o en `NOVELA_SALIDA_CONTINUIDAD`). Para que la
 suite rápida las reproduzca, se copian a mano a
 `tests/fijos/continuidad/respuestas/` tras revisarlas.
+
+### Buscador híbrido
+
+Especificación en [`docs/buscador_hibrido.md`](../docs/buscador_hibrido.md).
+Vías nuevas de `reunir_contexto`: `entorno` (entidades del párrafo anterior
+al punto de inserción que el pasaje no nombra) y `lexica` (texto completo
+de Postgres sobre los hechos). Las listas de cada vía se fusionan por
+rango recíproco y el tope se aplica después. Por defecto siguen solo la
+vía de entidades y el tope de 200.
+
+| Spec | Prueba | Dónde |
+|---|---|---|
+| El párrafo anterior al punto de inserción se extrae bien (con y sin líneas en blanco, al principio del fragmento) | R | [test_continuidad.py](test_continuidad.py) |
+| La vía de entorno no repite entidades que ya nombra el pasaje | R, D | [test_continuidad.py](test_continuidad.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| La consulta léxica se construye con las palabras del pasaje unidas con OR; un pasaje sin palabras con contenido no consulta nada | R, D | [test_continuidad.py](test_continuidad.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| El índice GIN de `schema.sql` usa la misma expresión que la consulta léxica | R | [test_continuidad.py](test_continuidad.py) |
+| RRF: un hecho en varias listas puntúa más; el tope se aplica después de fusionar; el resultado sale en orden de lectura | R | [test_continuidad.py](test_continuidad.py) |
+| Las listas de entidades se ordenan por cercanía al punto de inserción | R | [test_continuidad.py](test_continuidad.py) |
+| La vía léxica encuentra el hecho de la espada rota (3.45) para S11 | D | [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| La vía de entorno detecta a Menelao para S11 | D | [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| Informe del buscador: cobertura, puesto y tamaño por caso y combinación (`.cache/continuidad/buscador.txt`), con el criterio para pasar a híbrido-60 | R (tabla), D | [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
+| Con `NOVELA_BANCO_SOLO_CAMBIADOS=1`, un caso con el mismo contexto no llama a la API | R (con el cliente falso) | [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py) |
+
