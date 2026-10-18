@@ -16,6 +16,7 @@ from pathlib import Path
 import pytest
 
 import calibrar_glosario
+from calibrar_glosario import REGISTROS, retirar_formas_compartidas
 import calibrar_taxonomia
 import extraer_canon
 
@@ -85,13 +86,17 @@ def test_glosario_de_principio_a_fin_reproduce_lo_grabado(api, monkeypatch, tmp_
     salida = tmp_path / "data" / "iliada" / "exports"
     for i in (1, 2, 3):
         assert leer(salida / f"calibracion_pasada_{i}.json") == leer(FIJOS / f"calibracion_pasada_{i}.json")
-    for nombre in ("personajes_obra.json", "lugares_obra.json", "glosario_obra.json"):
-        esperado = leer(FIJOS / nombre)
-        if nombre == "personajes_obra.json":
-            esperado = corregir_ayax(esperado)
-        assert sin_texto_libre(leer(salida / nombre)) == sin_texto_libre(esperado), nombre
+    esperado = {clave: leer(FIJOS / fichero) for clave, fichero in REGISTROS.items()}
+    esperado["personajes"] = corregir_ayax(esperado["personajes"])
+    esperado, retiradas = retirar_formas_compartidas(esperado)
+    for clave, fichero in REGISTROS.items():
+        assert sin_texto_libre(leer(salida / fichero)) == sin_texto_libre(esperado[clave]), fichero
     assert ([d["termino"] for d in leer(salida / "discrepancias_calibracion.json")]
-            == [d["termino"] for d in leer(FIJOS / "discrepancias_calibracion.json")] + ["Ayax"])
+            == [d["termino"] for d in leer(FIJOS / "discrepancias_calibracion.json")] + ["Ayax"]
+            + [d["termino"] for d in retiradas])
+    # Lo grabado tenía epítetos repetidos como alias de dos entidades.
+    assert {d["termino"] for d in retiradas} == {
+        "el Olímpico", "famoso por su lanza", "la de hermosas mejillas", "valiente en la pelea"}
 
 
 def corregir_ayax(personajes):
@@ -99,7 +104,8 @@ def corregir_ayax(personajes):
     test_glosario.py): "Ayax de Oileo" figuraba como alias de Telamonio.
     Hoy el genérico "Ayax" va a discrepancias, ese alias desaparece y
     Telamonio deja de heredar la pasada 1 (que solo dio el genérico); todo
-    lo demás debe seguir idéntico."""
+    lo demás debe seguir idéntico (salvo las formas compartidas, que
+    retira después retirar_formas_compartidas)."""
     for e in personajes:
         if e["termino"] == "Ayax Telamonio":
             e["alias"] = [a for a in e["alias"] if a != "Ayax de Oileo"]

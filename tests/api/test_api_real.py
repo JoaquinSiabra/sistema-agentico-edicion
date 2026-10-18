@@ -72,6 +72,8 @@ def test_glosario_entradas_bien_formadas(glosario):
         assert e["confianza"] in {"alta", "media", "baja"}, e
         assert e["evidencia"].strip()
         assert e["termino"] not in e["variantes"], e
+        assert isinstance(e.get("epitetos", []), list), e
+        assert not set(e["variantes"]) & set(e.get("epitetos", [])), e
 
 
 def test_glosario_terminos_aparecen_en_el_texto(glosario):
@@ -86,6 +88,19 @@ def test_glosario_encuentra_a_los_protagonistas(glosario):
                 for f in [e["termino"], *e["variantes"]]}
     for nombre in ("Aquiles", "Agamenón", "Crises", "Briseida", "Calcas"):
         assert any(re.search(rf"\b{nombre}\b", f) for f in personas), nombre
+
+
+# Fórmulas del Canto I que se aplican a más de un personaje en la obra.
+EPITETOS_CANTO_I = ("pies ligeros", "níveos brazos", "grandes ojos", "que amontona las nubes")
+
+
+def test_glosario_separa_epitetos_de_variantes(glosario):
+    # Al menos un epíteto conocido va a "epitetos" y no a "variantes".
+    epitetos = [f for e in glosario for f in e.get("epitetos", [])]
+    variantes = [f for e in glosario for f in e["variantes"]]
+    separados = [x for x in EPITETOS_CANTO_I
+                 if any(x in f for f in epitetos) and not any(x in f for f in variantes)]
+    assert separados, f"epítetos: {epitetos}"
 
 
 # --- Fase 0a ---------------------------------------------------------------
