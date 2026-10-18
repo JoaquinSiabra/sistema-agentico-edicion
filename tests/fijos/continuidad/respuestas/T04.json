@@ -1,0 +1,862 @@
+{
+  "id": "T04",
+  "pasaje": "Y Helena dijo á sus doncellas: «Alejandro ha vencido hoy á Menelao en singular combate.»",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 3,
+    "char": 21574,
+    "hechos": [
+      {
+        "id": 10026,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles declaró que no había venido a pelear por los troyanos, pues los teucros nunca le habían causado daño personal, sino que seguía a Agamenón para vengar a Menelao y a él.",
+        "momento_canonico": "verso 148, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 20036,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón, rey de hombres, inmoló un pingüe buey de cinco años al prepotente Saturnio, reuniendo en su tienda a los principales caudillos: Néstor, Idomeneo, los dos Ayaces, Diomedes y Ulises; Menelao se presentó espontáneamente.",
+        "momento_canonico": "narración del sacrificio (versos 402-411)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 20051,
+        "orden_fragmento": 2,
+        "hecho": "Los de Lacedemonia y sus ciudades llegaron en sesenta naves al mando de Menelao, valiente en el combate, impulsado por su propio ardor y deseando vengar la huida y los gemidos de Helena.",
+        "momento_canonico": "catálogo de las naves (versos 581-590)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 20082,
+        "orden_fragmento": 2,
+        "hecho": "A los troyanos los mandaba el gran Héctor Priámida, de tremolante casco, con las tropas más copiosas y valientes.",
+        "momento_canonico": "catálogo troyano (versos 816-818)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Alejandro"
+        ]
+      },
+      {
+        "id": 30001,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro apareció en la primera fila de los teucros con una piel de leopardo en los hombros, el corvo arco, la espada y dos lanzas de broncínea punta, desafiando a los argivos al combate singular.",
+        "momento_canonico": "versos 15-20",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro"
+        ]
+      },
+      {
+        "id": 30002,
+        "orden_fragmento": 3,
+        "hecho": "Menelao se alegró al ver a Alejandro y saltó del carro al suelo sin dejar las armas para enfrentarle.",
+        "momento_canonico": "versos 21-29",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30003,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro, al distinguir a Menelao entre los combatientes, retrocedió atemorizado y desapareció entre los teucros.",
+        "momento_canonico": "versos 30-37",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30004,
+        "orden_fragmento": 3,
+        "hecho": "Héctor reprendió a Alejandro con palabras injuriosas por su cobardía y por haber traído a Helena causando males a Troya.",
+        "momento_canonico": "versos 38-57",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30005,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro propuso un combate singular entre él y Menelao por Helena y sus riquezas, con el vencedor llevándose mujer y bienes, y con los demás jurando paz y amistad.",
+        "momento_canonico": "versos 58-75",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Alejandro",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30008,
+        "orden_fragmento": 3,
+        "hecho": "Héctor transmitió a ambos ejércitos la propuesta de Alejandro de combate singular por Helena y sus riquezas, con juramento de paz.",
+        "momento_canonico": "versos 86-94",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30009,
+        "orden_fragmento": 3,
+        "hecho": "Menelao propuso traer un cordero blanco y una cordera negra para la Tierra y el Sol, y otro para Júpiter, y convocar a Príamo para que sancionara los juramentos en persona.",
+        "momento_canonico": "versos 97-110",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30010,
+        "orden_fragmento": 3,
+        "hecho": "Menelao expresó desconfianza en los hijos de Príamo por ser soberbios y fementidos, temiendo que quebraran los juramentos.",
+        "momento_canonico": "versos 105-108",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30014,
+        "orden_fragmento": 3,
+        "hecho": "Iris fue en busca de Helena tomando la figura de Laódice, mujer del rey Helicaón Antenórida, que era la más hermosa de las hijas de Príamo.",
+        "momento_canonico": "versos 121-124",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30015,
+        "orden_fragmento": 3,
+        "hecho": "Helena estaba en el palacio tejiendo una gran tela doble purpúrea en la que entretejía los trabajos que teucros y aqueos habían padecido por ella.",
+        "momento_canonico": "versos 125-128",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30016,
+        "orden_fragmento": 3,
+        "hecho": "Iris dijo a Helena que Alejandro y Menelao combatirían por ella con ingentes lanzas y que el vencedor la llamaría su amada esposa.",
+        "momento_canonico": "versos 130-138",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Iris",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30017,
+        "orden_fragmento": 3,
+        "hecho": "Iris infundió en el corazón de Helena dulce deseo de su anterior marido, de su ciudad y de sus padres.",
+        "momento_canonico": "verso 139",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30018,
+        "orden_fragmento": 3,
+        "hecho": "Helena salió al momento cubierta con blanco velo y derramando tiernas lágrimas, acompañada de dos doncellas: Etra, hija de Piteo, y Climene, la de los grandes ojos.",
+        "momento_canonico": "versos 141-144",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30020,
+        "orden_fragmento": 3,
+        "hecho": "Los ancianos troyanos en la torre dijeron entre sí que Helena era tan hermosa como una diosa y que no era reprensible que aqueos y troyanos sufrieran males por ella, pero que sería mejor que se fuera en las naves antes de convertirse en una plaga.",
+        "momento_canonico": "versos 156-160",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Príamo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30021,
+        "orden_fragmento": 3,
+        "hecho": "Príamo llamó a Helena para que se sentara a su lado, declaró que no la consideraba culpable sino a los dioses que promovieron la guerra, y le pidió que le dijera quién era el gran aqueo que veía.",
+        "momento_canonico": "versos 161-170",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30022,
+        "orden_fragmento": 3,
+        "hecho": "Helena identificó a Agamenón como el poderosísimo Agamenón Atrida, buen rey y esforzado combatiente, y dijo que fue cuñado de ella.",
+        "momento_canonico": "versos 178-180",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30024,
+        "orden_fragmento": 3,
+        "hecho": "Helena identificó al aqueo de menor estatura pero más espacioso de espaldas y pecho que recorría las filas como un carnero como el hijo de Laertes, el ingenioso Ulises, criado en la áspera Ítaca, hábil en urdir engaños y dar prudentes consejos.",
+        "momento_canonico": "versos 199-202",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30025,
+        "orden_fragmento": 3,
+        "hecho": "Antenor confirmó que Ulises vino como embajador con Menelao por Helena, y que los hospedó en su palacio.",
+        "momento_canonico": "versos 203-205",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30026,
+        "orden_fragmento": 3,
+        "hecho": "Antenor describió que en las reuniones Menelao hablaba de prisa y poco pero claramente, sin apartarse del asunto, mientras Ulises al levantarse permanecía con la vista baja y el cetro inmóvil, pareciendo un ignorante, pero cuando hablaba sus palabras eran tan poderosas que ningún mortal le disputaba.",
+        "momento_canonico": "versos 209-224",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30027,
+        "orden_fragmento": 3,
+        "hecho": "Helena identificó al aqueo alto que descollaba entre los argivos por su cabeza y anchas espaldas como el ingente Ayax Telamonio, antemural de los aqueos.",
+        "momento_canonico": "versos 228-229",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30028,
+        "orden_fragmento": 3,
+        "hecho": "Helena señaló a Idomeneo entre los cretenses rodeado de los capitanes de sus tropas, e indicó que Menelao le hospedó muchas veces en su palacio cuando venía de Creta.",
+        "momento_canonico": "versos 230-233",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30029,
+        "orden_fragmento": 3,
+        "hecho": "Helena no veía a Cástor, domador de caballos, ni a Pólux, excelente púgil, hermanos carnales suyos nacidos de su madre, y especuló con que no habrían venido o no querían entrar en combate para no hacerse partícipes de su deshonra.",
+        "momento_canonico": "versos 236-242",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30032,
+        "orden_fragmento": 3,
+        "hecho": "El heraldo Ideo invitó a Príamo a bajar a la llanura para sancionar los fieles juramentos del combate singular entre Alejandro y Menelao.",
+        "momento_canonico": "versos 250-258",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30035,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón oró en voz alta invocando a Júpiter, al Sol, a los ríos, a la Tierra y a los dioses del inframundo como testigos del juramento: si Alejandro mata a Menelao, Helena y las riquezas serían suyas y los aqueos volverían; si Menelao mata a Alejandro, los troyanos devolverán a Helena y las riquezas y pagarán indemnización; si Príamo y sus hijos se niegan, Agamenón seguirá combatiendo.",
+        "momento_canonico": "versos 276-291",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30038,
+        "orden_fragmento": 3,
+        "hecho": "Príamo declaró que regresaría a Ilión porque no podía ver a su hijo combatir con Menelao, y que Júpiter y los dioses saben para cuál de ellos tiene el destino preparada la muerte.",
+        "momento_canonico": "versos 304-309",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Príamo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30040,
+        "orden_fragmento": 3,
+        "hecho": "Héctor y Ulises midieron el campo y echaron dos suertes en un casco de bronce para decidir quién arrojaría primero la lanza; saltó la suerte de Paris.",
+        "momento_canonico": "versos 314-325",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro"
+        ]
+      },
+      {
+        "id": 30041,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro se armó con grebas ajustadas con broches de plata, la coraza de su hermano Licaón, espada de bronce con clavos de plata, escudo grande y fuerte, casco con penacho de crines de caballo y una lanza.",
+        "momento_canonico": "versos 330-338",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro"
+        ]
+      },
+      {
+        "id": 30042,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro arrojó primero la luenga lanza y dio en el escudo de Menelao sin romperlo; la punta se torció.",
+        "momento_canonico": "versos 346-349",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30043,
+        "orden_fragmento": 3,
+        "hecho": "Menelao oró a Júpiter para que le permitiera castigar a Alejandro que le ofendió primero.",
+        "momento_canonico": "versos 351-354",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30044,
+        "orden_fragmento": 3,
+        "hecho": "La lanza de Menelao atravesó el escudo y la coraza de Alejandro y rasgó la túnica; Alejandro se inclinó y evitó la muerte.",
+        "momento_canonico": "versos 355-360",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30045,
+        "orden_fragmento": 3,
+        "hecho": "Menelao desenvainó la espada y la golpeó contra la cimera del casco de Alejandro, pero la espada se rompió en tres o cuatro pedazos.",
+        "momento_canonico": "versos 361-364",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30046,
+        "orden_fragmento": 3,
+        "hecho": "Menelao cogió a Paris por el casco y lo arrastró hacia los aqueos; Venus rompió la correa del casco y arrebató a Alejandro envolviéndolo en densa niebla, llevándolo a su tálamo.",
+        "momento_canonico": "versos 369-382",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30047,
+        "orden_fragmento": 3,
+        "hecho": "Venus fue a buscar a Helena tomando la figura de una anciana cardadora de Lacedemonia que le preparaba hermosas lanas y era muy querida de Helena.",
+        "momento_canonico": "versos 383-388",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30048,
+        "orden_fragmento": 3,
+        "hecho": "Venus dijo a Helena que Alejandro la llamaba para que volviera a casa, que se hallaba en el torneado lecho de la cámara nupcial.",
+        "momento_canonico": "versos 390-394",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Venus",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30049,
+        "orden_fragmento": 3,
+        "hecho": "Helena reconoció a Venus por su hermosísimo cuello, sus lindos pechos y sus refulgentes ojos, y se negó a ir con ella, acusándola de venir con engaños porque Menelao había vencido a Alejandro.",
+        "momento_canonico": "versos 395-412",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30050,
+        "orden_fragmento": 3,
+        "hecho": "Venus amenazó a Helena con abandonarla, aborrecerla y poner funestos odios entre teucros y dánaos si no obedecía.",
+        "momento_canonico": "versos 413-417",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Venus",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30051,
+        "orden_fragmento": 3,
+        "hecho": "Helena tuvo miedo y siguió a Venus en silencio sin que ninguna de las troyanas lo advirtiera.",
+        "momento_canonico": "versos 418-420",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30052,
+        "orden_fragmento": 3,
+        "hecho": "Venus colocó una silla delante de Alejandro; Helena se sentó y, apartando la vista de su esposo, le reprendió por haber huido del combate en lugar de haber perecido a manos de Menelao.",
+        "momento_canonico": "versos 421-436",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30053,
+        "orden_fragmento": 3,
+        "hecho": "Paris afirmó que Menelao venció ese día con el auxilio de Minerva, pero que otro día él le vencería porque también tienen dioses que los protegen.",
+        "momento_canonico": "versos 437-440",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Alejandro",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30054,
+        "orden_fragmento": 3,
+        "hecho": "Paris declaró que jamás la pasión se había apoderado de su espíritu como en ese momento, ni cuando partieron de Lacedemonia en las naves y llegaron a la isla de Cránae donde se unió a Helena en amoroso consorcio.",
+        "momento_canonico": "versos 441-446",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Alejandro",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30055,
+        "orden_fragmento": 3,
+        "hecho": "Paris y Helena se acostaron juntos en el torneado lecho.",
+        "momento_canonico": "versos 447-448",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30056,
+        "orden_fragmento": 3,
+        "hecho": "Menelao se revolvía entre la muchedumbre buscando a Alejandro, pero ningún troyano ni aliado pudo mostrárselo, no por amistad sino porque a todos se les había hecho odioso como la negra muerte.",
+        "momento_canonico": "versos 449-455",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30057,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón declaró ante troyanos, dardanios y aliados que la victoria había quedado por Menelao y exigió que le entregaran a Helena con sus riquezas y pagaran una indemnización justa.",
+        "momento_canonico": "versos 456-460",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40001,
+        "orden_fragmento": 4,
+        "hecho": "Júpiter intentó zaherir a Juno con mordaces palabras fingidas, señalando que Juno y Minerva solo miraban a Menelao desde lejos, mientras Venus acompañaba constantemente a Alejandro y le libró de las Parcas.",
+        "momento_canonico": "verso 7, discurso de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40002,
+        "orden_fragmento": 4,
+        "hecho": "Júpiter propuso deliberar sobre si promover nuevamente el combate o reconciliar a ambos pueblos, sugiriendo que si agradara a todos, Troya continuaría poblada y Menelao se llevaría a Helena.",
+        "momento_canonico": "verso 7, discurso de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40015,
+        "orden_fragmento": 4,
+        "hecho": "Minerva (disfrazada de Laódoco) persuadió a Pándaro para que disparara una flecha contra Menelao, prometiéndole gloria entre los teucros y espléndidos presentes de Alejandro.",
+        "momento_canonico": "verso 93-103, discurso de Minerva disfrazada",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Minerva",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40019,
+        "orden_fragmento": 4,
+        "hecho": "Pándaro votó a Apolo Licio sacrificarle una hecatombe perfecta de corderos primogénitos al volver a Zelea, y luego disparó la flecha contra Menelao.",
+        "momento_canonico": "verso 116-126",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40020,
+        "orden_fragmento": 4,
+        "hecho": "Minerva desvió la flecha de Pándaro antes de que hiriera a Menelao mortalmente, apartándola del cuerpo como una madre ahuyenta una mosca de su niño dormido, dirigiéndola a donde los anillos de oro sujetaban el cinturón.",
+        "momento_canonico": "verso 127-138",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40021,
+        "orden_fragmento": 4,
+        "hecho": "La flecha atravesó el cinturón, se clavó en la coraza, rompió la chapa protectora y rasguñó la piel de Menelao, brotando sangre negra de la herida.",
+        "momento_canonico": "verso 134-140",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40022,
+        "orden_fragmento": 4,
+        "hecho": "La sangre de Menelao tiñó sus muslos, piernas y tobillos, comparada a la púrpura con que una mujer meonia o caria tiñe el marfil que adorna el freno de un caballo.",
+        "momento_canonico": "verso 141-147",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40023,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón se estremeció al ver la sangre de la herida de Menelao; también Menelao se estremeció, pero recobró el ánimo al advertir que el nervio y las plumas de la flecha quedaban fuera.",
+        "momento_canonico": "verso 148-154",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40024,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón lamentó haber puesto a Menelao a luchar solo con los troyanos en el jurado convenio y le reprochó que los troyanos pisotearon los juramentos al herirle.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40026,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón temió que si Menelao moría, los aqueos abandonarían la empresa, dejarían a Helena en poder de Príamo y los troyanos, y sus huesos se pudrirían en Troya.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40027,
+        "orden_fragmento": 4,
+        "hecho": "Menelao tranquilizó a Agamenón asegurando que la flecha no le hirió mortalmente porque le protegió el cinturón labrado, la faja y la chapa forjada por el broncista.",
+        "momento_canonico": "verso 183-187, discurso de Menelao",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40028,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón ordenó al heraldo Taltibio que llamara a Macaón, hijo de Esculapio, para que reconociera la herida de Menelao.",
+        "momento_canonico": "verso 192-197",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40030,
+        "orden_fragmento": 4,
+        "hecho": "Macaón arrancó la flecha del cíngulo de Menelao, desató el cinturón, quitó la faja y la chapa, chupó la sangre y aplicó drogas calmantes que Quirón había dado a su padre en prueba de amistad.",
+        "momento_canonico": "verso 207-219",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40064,
+        "orden_fragmento": 4,
+        "hecho": "Ántifo Priámida lanzó su dardo contra Ayax pero no le tocó; en cambio hirió en la ingle a Leuco, compañero de Ulises, mientras arrastraba un cadáver, y Leuco cayó muerto junto al cadáver.",
+        "momento_canonico": "verso 489-493",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Alejandro"
+        ]
+      }
+    ],
+    "candidatos": {
+      "entidad: Alejandro": 27,
+      "entidad: Helena": 29,
+      "entidad: Menelao": 38
+    },
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 19,
+        "inicio_char": 21221,
+        "fin_char": 22536,
+        "texto": "No sea que, enojándome, te abandone; te aborrezca de modo tan extraordinario como hasta aquí te amé; ponga funestos odios entre teucros y dánaos, y tú perezcas de mala muerte.»\n\n418 Así habló. Helena, hija de Júpiter, tuvo miedo; y echándose el blanco y espléndido velo, salió en silencio tras de la diosa, sin que ninguna de las troyanas lo advirtiera.\n\n421 Tan pronto como llegaron al magnífico palacio de Alejandro, las esclavas volvieron á sus labores, y la divina entre las mujeres se fué derecha á la cámara nupcial de elevado techo. La risueña Venus colocó una silla delante de Alejandro; sentóse Helena, hija de Júpiter, que lleva la égida, y apartando la vista de su esposo, le increpó con estas palabras:\n\n428 «¡Vienes de la lucha... y hubieras debido perecer á manos del esforzado varón que fué mi anterior marido! Blasonabas de ser superior á Menelao, caro á Marte, en fuerza, en puños y en el manejo de la lanza; pues provócale de nuevo á singular combate. Pero no: te aconsejo que desistas, y no quieras pelear ni contender temerariamente con el rubio Menelao; no sea que en seguida sucumbas, herido por su lanza.»\n\n437 Contestó Paris: «Mujer, no me zahieras con amargos reproches. Hoy ha vencido Menelao con el auxilio de Minerva; otro día le venceré yo, pues también tenemos dioses que nos protegen.",
+        "similitud": 0.8638443946838379
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 4,
+        "inicio_char": 4525,
+        "fin_char": 5875,
+        "texto": "Y Héctor, colocándose entre unos y otros, dijo:\n\n86 «Oíd de mis labios, teucros y aqueos, de hermosas grebas, el ofrecimiento de Alejandro por quien se suscitó la contienda. Propone que teucros y aqueos dejemos las bellas armas en el fértil suelo, y él y Menelao, caro á Marte, peleen en medio por Helena y sus riquezas todas: el que venza, por ser más valiente, llevará á su casa mujer y riquezas, y los demás juraremos paz y amistad.»\n\n95 Así dijo. Todos enmudecieron y quedaron silenciosos. Y Menelao, valiente en la pelea, les habló de este modo:\n\n97 «Ahora, oídme también á mí. Tengo el corazón traspasado de dolor, y creo que ya, argivos y teucros, debéis separaros, pues padecisteis muchos males por mi contienda que Alejandro originó. Aquél de nosotros para quien se hallen aparejados el destino y la muerte, perezca; y los demás separaos cuanto antes. Traed un cordero blanco y una cordera negra para la Tierra y el Sol; nosotros traeremos otro para Júpiter. Conducid acá á Príamo para que en persona sancione los juramentos, pues sus hijos son soberbios y fementidos: no sea que alguien cometa una transgresión y quebrante los juramentos prestados invocando á Júpiter. El alma de los jóvenes es voluble, y el viejo, cuando interviene en algo, tiene en cuenta lo pasado y lo futuro á fin de que se haga lo más conveniente para ambas partes.»",
+        "similitud": 0.8497223347590978
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 20,
+        "inicio_char": 22351,
+        "fin_char": 23624,
+        "texto": "437 Contestó Paris: «Mujer, no me zahieras con amargos reproches. Hoy ha vencido Menelao con el auxilio de Minerva; otro día le venceré yo, pues también tenemos dioses que nos protegen. Mas, ea, acostémonos y volvamos á ser amigos. Jamás la pasión se apoderó de mi espíritu como ahora; ni cuando, después de robarte, partimos de la amena Lacedemonia en las naves que atraviesan el ponto y llegamos á la isla de Cránae, donde me unió contigo amoroso consorcio: con tal ansia te amo en este momento y tan dulce es el deseo que de mí se apodera.»\n\n447 Dijo, y se encaminó al tálamo; la esposa le siguió, y ambos se acostaron en el torneado lecho.\n\n449 El Atrida se revolvía entre la muchedumbre, como una fiera, buscando al deiforme Alejandro. Pero ningún troyano ni aliado ilustre pudo mostrárselo á Menelao, caro á Marte; que no por amistad le hubiesen ocultado, pues á todos se les había hecho tan odioso como la negra muerte. Y Agamenón, rey de hombres, les dijo:\n\n456 «¡Oíd, troyanos, dárdanos y aliados! Es evidente que la victoria quedó por Menelao, caro á Marte; entregadnos la argiva Helena con sus riquezas y pagad una indemnización, la que sea justa, para que llegue á conocimiento de los hombres venideros.»\n\n461 Así dijo el Atrida, y los demás aqueos aplaudieron.",
+        "similitud": 0.8488009662150776
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 0,
+        "inicio_char": 0,
+        "fin_char": 1176,
+        "texto": "CANTO III\nJURAMENTOS.—DESDE LA MURALLA.—COMBATE SINGULAR DE\nALEJANDRO Y MENELAO\n\n1 Puestos en orden de batalla con sus respectivos jefes, los teucros avanzaban chillando y gritando como aves—así profieren sus voces las grullas en el cielo, cuando, para huir del frío y de las lluvias torrenciales, vuelan gruyendo sobre la corriente del Océano y llevan la ruina y la muerte á los pigmeos, moviéndoles desde el aire cruda guerra—y los aqueos marchaban silenciosos, respirando valor y dispuestos á ayudarse mutuamente.\n\n10 Así como el Noto derrama en las cumbres de un monte la niebla tan poco grata al pastor y más favorable que la noche para el ladrón, y sólo se ve el espacio á que alcanza un tiro de piedra; así también, una densa polvareda se levantaba bajo los pies de los que se ponían en marcha y atravesaban con gran presteza la llanura.\n\n15 Cuando ambos ejércitos se hubieron acercado el uno al otro, apareció en la primera fila de los teucros Alejandro, semejante á un dios, con una piel de leopardo en los hombros, el corvo arco y la espada; y blandiendo dos lanzas de broncínea punta, desafiaba á los más valientes argivos á que con él sostuvieran terrible combate.",
+        "similitud": 0.8439761996269226
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 1,
+        "inicio_char": 1178,
+        "fin_char": 2514,
+        "texto": "21 Menelao, caro á Marte, vióle venir con arrogante paso al frente de la tropa, y como el león hambriento que ha encontrado un gran cuerpo de cornígero ciervo ó de cabra montés, se alegra y lo devora, aunque lo persigan ágiles perros y robustos mozos; así Menelao se holgó de ver con sus propios ojos al deiforme Alejandro—figuróse que podría castigar al culpable—y al momento saltó del carro al suelo sin dejar las armas.\n\n30 Pero Alejandro, semejante á un dios, apenas distinguió á Menelao entre los combatientes delanteros, sintió que se le cubría el corazón, y para librarse de la muerte, retrocedió al grupo de sus amigos. Como el que descubre un dragón en la espesura de un monte, se echa con prontitud hacia atrás, tiémblanle las carnes y se aleja con la palidez pintada en sus mejillas; así el deiforme Alejandro, temiendo al hijo de Atreo, desapareció en la turba de los altivos teucros.\n\n38 Advirtiólo Héctor y le reprendió con injuriosas palabras: «¡Miserable Paris, el de más hermosa figura, mujeriego, seductor! Ojalá no te contaras en el número de los nacidos ó hubieses muerto célibe. Yo así lo quisiera y te valdría más que no ser la vergüenza y el oprobio de los tuyos. Los aqueos de larga cabellera se ríen de haberte considerado como un bravo campeón por tu bella figura, cuando no hay en tu pecho ni fuerza ni valor.",
+        "similitud": 0.8418237661228334
+      }
+    ],
+    "entorno_antes": "querida de ésta, dijo la diosa Venus:\n\n390 «Ven. Te llama Alejandro para que vuelvas á tu casa. Hállase, esplendente por su belleza y sus vestidos, en el torneado lecho de la cámara nupcial. No dirías que viene de combatir, sino que va al baile ó que reposa de reciente danza.»\n\n395 En tales términos habló. Helena sintió que en el pecho le palpitaba el corazón; pero al ver el hermosísimo cuello, los lindos pechos y los refulgentes ojos de la diosa, se asombró y dijo:\n\n399 «¡Cruel! ¿Por qué quieres engañarme? ¿Me llevarás acaso más allá, á cualquier populosa ciudad de la Frigia ó de la Meonia amena donde algún hombre dotado de palabra te sea querido? ¿Vienes con engaños porque Menelao ha vencido á Alejandro, y quiere que yo, la odiosa, vuelva á su casa? Ve, siéntate al lado de Paris, deja el camino de las diosas, no te conduzcan tus pies al Olimpo; y llora, y vela por él, hasta que te haga su esposa ó su esclava. No iré allá, ¡vergonzoso fuera!, á compartir su lecho; todas las troyanas me lo vituperarían, y ya son muchos los pesares que conturban mi corazón.»\n\n413 La diosa Venus le respondió colérica: «¡No me irrites, desgraciada! No sea que, enojándome, te abandone; te aborrezca de modo tan extraordinario como hasta aquí te amé; ponga funestos odios entre teucros y dánaos, y tú perezcas de mala muerte.»\n\n418 Así habló. Helena, hija de Júpiter, tuvo miedo; y echándose el blanco y espléndido velo, salió en silencio tras de la diosa, sin que ninguna de las troyanas lo advirtiera.",
+    "entorno_despues": "\n\n421 Tan pronto como llegaron al magnífico palacio de Alejandro, las esclavas volvieron á sus labores, y la divina entre las mujeres se fué derecha á la cámara nupcial de elevado techo. La risueña Venus colocó una silla delante de Alejandro; sentóse Helena, hija de Júpiter, que lleva la égida, y apartando la vista de su esposo, le increpó con estas palabras:\n\n428 «¡Vienes de la lucha... y hubieras debido perecer á manos del esforzado varón que fué mi anterior marido! Blasonabas de ser superior á Menelao, caro á Marte, en fuerza, en puños y en el manejo de la lanza; pues provócale de nuevo á singular combate. Pero no: te aconsejo que desistas, y no quieras pelear ni contender temerariamente con el rubio Menelao; no sea que en seguida sucumbas, herido por su lanza.»\n\n437 Contestó Paris: «Mujer, no me zahieras con amargos reproches. Hoy ha vencido Menelao con el auxilio de Minerva; otro día le venceré yo, pues también tenemos dioses que nos protegen. Mas, ea, acostémonos y volvamos á ser amigos. Jamás la pasión se apoderó de mi espíritu como ahora; ni cuando, después de robarte, partimos de la amena Lacedemonia en las naves que atraviesan el ponto y llegamos á la isla de Cránae, donde me unió contigo amoroso consorcio: con tal ansia te amo en este momento y tan dulce es el deseo que de mí se apodera.»\n\n447 Dijo, y se encaminó al tálamo; la esposa le siguió, y ambos se acostaron en el torneado lecho.\n\n449 El Atrida se revolvía entre la muchedumbre, como una fiera, buscando al de"
+  },
+  "respuesta": {
+    "avisos": [],
+    "notas": [
+      {
+        "cita": "Alejandro ha vencido hoy á Menelao en singular combate.",
+        "hecho": 30049,
+        "explicacion": "Helena, en el canon, reconoce abiertamente que Menelao venció a Alejandro ('vienes con engaños porque Menelao ha vencido á Alejandro'). En el pasaje nuevo Helena afirma lo contrario ante sus doncellas, lo cual podría ser una mentira o una distorsión interesada de su parte; al ser palabras de un personaje y no del narrador, no constituye contradicción verificable, pero la discrepancia es notable."
+      },
+      {
+        "cita": "Alejandro ha vencido hoy á Menelao en singular combate.",
+        "hecho": 30057,
+        "explicacion": "Agamenón declara públicamente ante ambos ejércitos que la victoria quedó por Menelao; que Helena afirme lo contrario ante sus doncellas es una falsedad del personaje, posiblemente interesada, no una contradicción narrativa objetiva."
+      }
+    ]
+  },
+  "informe": {
+    "avisos": [],
+    "notas": [
+      {
+        "cita": "Alejandro ha vencido hoy á Menelao en singular combate.",
+        "hecho": 30049,
+        "texto_hecho": "Helena reconoció a Venus por su hermosísimo cuello, sus lindos pechos y sus refulgentes ojos, y se negó a ir con ella, acusándola de venir con engaños porque Menelao había vencido a Alejandro.",
+        "afirmado_por": "Helena",
+        "explicacion": "Helena, en el canon, reconoce abiertamente que Menelao venció a Alejandro ('vienes con engaños porque Menelao ha vencido á Alejandro'). En el pasaje nuevo Helena afirma lo contrario ante sus doncellas, lo cual podría ser una mentira o una distorsión interesada de su parte; al ser palabras de un personaje y no del narrador, no constituye contradicción verificable, pero la discrepancia es notable."
+      },
+      {
+        "cita": "Alejandro ha vencido hoy á Menelao en singular combate.",
+        "hecho": 30057,
+        "texto_hecho": "Agamenón declaró ante troyanos, dardanios y aliados que la victoria había quedado por Menelao y exigió que le entregaran a Helena con sus riquezas y pagaran una indemnización justa.",
+        "afirmado_por": "Agamenón",
+        "explicacion": "Agamenón declara públicamente ante ambos ejércitos que la victoria quedó por Menelao; que Helena afirme lo contrario ante sus doncellas es una falsedad del personaje, posiblemente interesada, no una contradicción narrativa objetiva."
+      }
+    ],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}

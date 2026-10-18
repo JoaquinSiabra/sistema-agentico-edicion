@@ -1,0 +1,376 @@
+{
+  "id": "C01",
+  "pasaje": "259 Así dijo. Estremecióse el anciano y mandó á los amigos que engancharan los caballos. Obedeciéronle solícitos. Subió Príamo y cogió las riendas; á su lado, en el magnífico carro, se puso Antenor. É inmediatamente guiaron los ligeros corceles hacia la llanura por las puertas Esceas.",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 3,
+    "char": 13495,
+    "hechos": [
+      {
+        "id": 20031,
+        "orden_fragmento": 2,
+        "hecho": "Ulises afirmó que llevan ya nueve años en Troya y que todo lo vaticinado por Calcas se va cumpliendo, instando a los aqueos a quedarse hasta tomar la gran ciudad de Príamo.",
+        "momento_canonico": "discurso de Ulises a los aqueos (versos 328-332)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Ulises",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 20037,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón oró a Júpiter pidiendo destruir el palacio de Príamo antes de que se pusiera el sol, pegar fuego a las puertas, romper con su lanza la coraza de Héctor y ver a muchos de sus compañeros muertos.",
+        "momento_canonico": "plegaria de Agamenón (versos 412-418)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 20077,
+        "orden_fragmento": 2,
+        "hecho": "Los teucros, jóvenes y viejos, se habían reunido en los pórticos del palacio de Príamo y deliberaban cuando llegó Iris.",
+        "momento_canonico": "narración (versos 788-790)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 20078,
+        "orden_fragmento": 2,
+        "hecho": "Iris se presentó a los troyanos tomando la figura y voz de Polites, hijo de Príamo, que servía como atalaya en la cima del túmulo del antiguo Esietes.",
+        "momento_canonico": "narración (versos 791-795)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 20083,
+        "orden_fragmento": 2,
+        "hecho": "Eneas, valiente hijo de Anquises y Venus, era caudillo de los dardanios; compartían el mando Arquéloco y Acamante, hijos de Antenor.",
+        "momento_canonico": "catálogo troyano (versos 819-823)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Antenor"
+        ]
+      },
+      {
+        "id": 30009,
+        "orden_fragmento": 3,
+        "hecho": "Menelao propuso traer un cordero blanco y una cordera negra para la Tierra y el Sol, y otro para Júpiter, y convocar a Príamo para que sancionara los juramentos en persona.",
+        "momento_canonico": "versos 97-110",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30010,
+        "orden_fragmento": 3,
+        "hecho": "Menelao expresó desconfianza en los hijos de Príamo por ser soberbios y fementidos, temiendo que quebraran los juramentos.",
+        "momento_canonico": "versos 105-108",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30012,
+        "orden_fragmento": 3,
+        "hecho": "Héctor despachó dos heraldos a la ciudad para traer las víctimas y llamar a Príamo.",
+        "momento_canonico": "verso 116",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30014,
+        "orden_fragmento": 3,
+        "hecho": "Iris fue en busca de Helena tomando la figura de Laódice, mujer del rey Helicaón Antenórida, que era la más hermosa de las hijas de Príamo.",
+        "momento_canonico": "versos 121-124",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30019,
+        "orden_fragmento": 3,
+        "hecho": "En las puertas Esceas estaban Príamo, Pántoo, Timetes, Lampo, Clitio, Hicetaón, Ucalegonte y Antenor, ancianos del pueblo que no combatían por su vejez pero eran buenos arengadores.",
+        "momento_canonico": "versos 146-153",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Antenor",
+          "entidad: Príamo",
+          "entidad: puertas Esceas"
+        ]
+      },
+      {
+        "id": 30020,
+        "orden_fragmento": 3,
+        "hecho": "Los ancianos troyanos en la torre dijeron entre sí que Helena era tan hermosa como una diosa y que no era reprensible que aqueos y troyanos sufrieran males por ella, pero que sería mejor que se fuera en las naves antes de convertirse en una plaga.",
+        "momento_canonico": "versos 156-160",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Príamo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30021,
+        "orden_fragmento": 3,
+        "hecho": "Príamo llamó a Helena para que se sentara a su lado, declaró que no la consideraba culpable sino a los dioses que promovieron la guerra, y le pidió que le dijera quién era el gran aqueo que veía.",
+        "momento_canonico": "versos 161-170",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30023,
+        "orden_fragmento": 3,
+        "hecho": "Príamo declaró haber estado en Frigia y haber visto los pueblos de Otreo y de Migdón acampados a orillas del Sangario, y hallarse entre ellos como aliado cuando llegaron las varoniles amazonas, pero que no eran tantos como los aqueos.",
+        "momento_canonico": "versos 184-189",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Príamo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30025,
+        "orden_fragmento": 3,
+        "hecho": "Antenor confirmó que Ulises vino como embajador con Menelao por Helena, y que los hospedó en su palacio.",
+        "momento_canonico": "versos 203-205",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Antenor"
+        ]
+      },
+      {
+        "id": 30026,
+        "orden_fragmento": 3,
+        "hecho": "Antenor describió que en las reuniones Menelao hablaba de prisa y poco pero claramente, sin apartarse del asunto, mientras Ulises al levantarse permanecía con la vista baja y el cetro inmóvil, pareciendo un ignorante, pero cuando hablaba sus palabras eran tan poderosas que ningún mortal le disputaba.",
+        "momento_canonico": "versos 209-224",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Antenor"
+        ]
+      },
+      {
+        "id": 30032,
+        "orden_fragmento": 3,
+        "hecho": "El heraldo Ideo invitó a Príamo a bajar a la llanura para sancionar los fieles juramentos del combate singular entre Alejandro y Menelao.",
+        "momento_canonico": "versos 250-258",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30033,
+        "orden_fragmento": 3,
+        "hecho": "Príamo subió al carro con Antenor a su lado y guiaron los corceles hacia la llanura por las puertas Esceas.",
+        "momento_canonico": "versos 259-263",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Antenor",
+          "entidad: Príamo",
+          "entidad: puertas Esceas"
+        ]
+      },
+      {
+        "id": 30035,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón oró en voz alta invocando a Júpiter, al Sol, a los ríos, a la Tierra y a los dioses del inframundo como testigos del juramento: si Alejandro mata a Menelao, Helena y las riquezas serían suyas y los aqueos volverían; si Menelao mata a Alejandro, los troyanos devolverán a Helena y las riquezas y pagarán indemnización; si Príamo y sus hijos se niegan, Agamenón seguirá combatiendo.",
+        "momento_canonico": "versos 276-291",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30038,
+        "orden_fragmento": 3,
+        "hecho": "Príamo declaró que regresaría a Ilión porque no podía ver a su hijo combatir con Menelao, y que Júpiter y los dioses saben para cuál de ellos tiene el destino preparada la muerte.",
+        "momento_canonico": "versos 304-309",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Príamo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 30039,
+        "orden_fragmento": 3,
+        "hecho": "Príamo y Antenor volvieron a Ilión en el carro.",
+        "momento_canonico": "versos 310-313",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Antenor",
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 40004,
+        "orden_fragmento": 4,
+        "hecho": "Juno reclamó a Júpiter que no hiciera inútil su trabajo y el sudor que le costó reunir el ejército contra Príamo y sus hijos.",
+        "momento_canonico": "verso 25, discurso de Juno",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Juno",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 40025,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón afirmó que el Olímpico castigará a los troyanos por violar los juramentos, que perecerán la sagrada Ilión, Príamo y su pueblo, y que Jove agitará su égida contra ellos.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 40026,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón temió que si Menelao moría, los aqueos abandonarían la empresa, dejarían a Helena en poder de Príamo y los troyanos, y sus huesos se pudrirían en Troya.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 40037,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón encontró a los dos Ayaces armándose, seguidos de una nube de infantes, y los elogió sin necesidad de exhortarles, deseando que todos tuvieran su mismo ánimo para tomar la ciudad de Príamo.",
+        "momento_canonico": "verso 272-291",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      },
+      {
+        "id": 40065,
+        "orden_fragmento": 4,
+        "hecho": "Ulises, muy irritado por la muerte de Leuco, atravesó las primeras filas y lanzó su broncínea lanza que perforó las sienes a Democoonte, hijo bastardo de Príamo, que había venido de Abido.",
+        "momento_canonico": "verso 494-503",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Príamo"
+        ]
+      }
+    ],
+    "candidatos": {
+      "entidad: Antenor": 6,
+      "entidad: Príamo": 22,
+      "entidad: puertas Esceas": 2
+    },
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 11,
+        "inicio_char": 12582,
+        "fin_char": 13780,
+        "texto": "243 De este modo habló. Á ellos la fértil tierra los tenía ya en su seno, en Lacedemonia, en su misma patria.\n\n245 Los heraldos atravesaban la ciudad con las víctimas para los divinos juramentos, los dos corderos, y el regocijador vino, fruto de la tierra, encerrado en un odre de piel de cabra. El heraldo Ideo llevaba además una reluciente cratera y copas de oro; y acercándose al anciano, invitóle diciendo:\n\n250 «¡Levántate, hijo de Laomedonte! Los próceres de los teucros, domadores de caballos, y de los aqueos, de broncíneas lorigas, te piden que bajes á la llanura y sanciones los fieles juramentos; pues Alejandro y Menelao, caro á Marte, combatirán con luengas lanzas por la esposa: mujer y riquezas serán del que venza, y después de pactar amistad con fieles juramentos, nosotros seguiremos habitando la fértil Troya, y aquéllos volverán á Argos, criador de caballos, y á la Acaya de lindas mujeres.»\n\n259 Así dijo. Estremecióse el anciano y mandó á los amigos que engancharan los caballos. Obedeciéronle solícitos. Subió Príamo y cogió las riendas; á su lado, en el magnífico carro, se puso Antenor. É inmediatamente guiaron los ligeros corceles hacia la llanura por las puertas Esceas.",
+        "similitud": 0.8854093815508305
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 12,
+        "inicio_char": 13584,
+        "fin_char": 14619,
+        "texto": "Obedeciéronle solícitos. Subió Príamo y cogió las riendas; á su lado, en el magnífico carro, se puso Antenor. É inmediatamente guiaron los ligeros corceles hacia la llanura por las puertas Esceas.\n\n264 Cuando hubieron llegado al campo, descendieron del carro al almo suelo y se encaminaron al espacio que mediaba entre los teucros y los aqueos. Levantóse al punto el rey de hombres Agamenón, levantóse también el ingenioso Ulises; y los heraldos conspicuos juntaron las víctimas que debían inmolarse para los sagrados juramentos, mezclaron vinos en la cratera y dieron aguamanos á los reyes. El Atrida, con la daga que llevaba junto á la espada, cortó pelo de la cabeza de los corderos, y los heraldos lo repartieron á los próceres teucros y aquivos. Y, colocándose el Atrida en medio de todos, oró en alta voz con las manos levantadas:\n\n276 «¡Padre Júpiter, que reinas desde el Ida, gloriosísimo, máximo! ¡Sol, que todo lo ves y todo lo oyes! ¡Ríos! ¡Tierra! ¡Y vosotros que en lo profundo castigáis á los muertos que fueron perjuros!",
+        "similitud": 0.8735480568870326
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 14,
+        "inicio_char": 15636,
+        "fin_char": 16945,
+        "texto": "302 De esta manera hablaban, pero el Saturnio no ratificó el voto. Y Príamo Dardánida les dijo:\n\n304 «¡Oídme, teucros y aqueos, de hermosas grebas! Yo regresaré á la ventosa Ilión, pues no podría ver con estos ojos á mi hijo combatiendo con Menelao, caro á Marte. Júpiter y los demás dioses inmortales saben para cuál de ellos tiene el destino preparada la muerte.»\n\n310 Dijo, y el varón igual á un dios colocó los corderos en el carro, subió al mismo y tomó las riendas; á su lado, en el magnífico carro, se puso Antenor. Y al instante volvieron á Ilión.\n\n314 Héctor, hijo de Príamo, y el divino Ulises midieron el campo, y echando dos suertes en un casco de bronce, lo meneaban para decidir quién sería el primero en arrojar la broncínea lanza. Los hombres oraban y levantaban las manos á los dioses. Y algunos de los aqueos y de los teucros exclamaron:\n\n320 «¡Padre Júpiter, que reinas desde el Ida, gloriosísimo, máximo! Concede que quien tantos males nos causó á unos y á otros, muera y descienda á la morada de Plutón, y nosotros disfrutemos de la jurada amistad.»\n\n324 Así decían. El gran Héctor, de tremolante casco, agitaba las suertes volviendo el rostro atrás: pronto saltó la de Paris. Sentáronse los guerreros, sin romper las filas, donde cada uno tenía los briosos corceles y las labradas armas.",
+        "similitud": 0.8483055486770141
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 13,
+        "inicio_char": 14520,
+        "fin_char": 15828,
+        "texto": "Al verlos, el rey Agamenón se regocijó, y dijo estas aladas palabras:\n\n285 «¡Ayaces, príncipes de los argivos de broncíneas lorigas! Á vosotros—inoportuno fuera exhortaros—nada os encargo, porque ya instigáis al ejército á que pelee valerosamente. Ojalá, ¡padre Júpiter, Minerva, Apolo!, hubiese el mismo ánimo en todos los pechos, pues pronto la ciudad del rey Príamo sería tomada y destruída por nuestras manos.»\n\n292 Cuando así hubo hablado, los dejó y fué hacia otros. Halló á Néstor, elocuente orador de los pilios, ordenando á los suyos y animándolos á pelear, junto con el gran Pelagonte, Alástor, Cromio, el poderoso Hemón y Biante, pastor de hombres. Ponía delante, con los respectivos carros y corceles, á los que desde aquéllos combatían; detrás, á gran copia de valientes peones que en la batalla formaban como un muro, y en medio, á los cobardes para que mal de su grado tuviesen que combatir. Y dando instrucciones á los primeros, les encargaba que sujetaran los caballos y no promoviesen confusión entre la muchedumbre:\n\n303 «Que nadie, confiando en su pericia ecuestre ó en su valor, quiera luchar solo y fuera de las filas con los teucros; que asimismo nadie retroceda; pues con mayor facilidad seríais vencidos. El que caiga del carro y suba al de otro, pelee con la lanza, que es lo mejor.",
+        "similitud": 0.8446622146565386
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 19,
+        "inicio_char": 21222,
+        "fin_char": 22284,
+        "texto": "411 Mirándole con torva faz, le contestó el fuerte Diomedes: «Calla, amigo; obedece mi consejo. Yo no me enfado porque Agamenón, pastor de hombres, anime á los aqueos, de hermosas grebas, antes del combate. Suya será la gloria, si los aqueos rinden á los teucros y toman la sagrada Ilión; suyo el gran pesar, si los aqueos son vencidos. Ea, pensemos tan sólo en mostrar nuestro impetuoso valor.»\n\n419 Dijo, saltó del carro al suelo sin dejar las armas, y tan terrible fué el resonar del bronce sobre su pecho, que hubiera sentido pavor hasta un hombre muy esforzado.\n\n422 Como las olas impelidas por el Céfiro se suceden en la ribera sonora, y primero se levantan en alta mar, braman después al romperse en la playa y en los promontorios, suben combándose á lo alto y escupen la espuma; así las falanges de los dánaos marchaban sucesivamente y sin interrupción al combate. Los capitanes daban órdenes á los suyos respectivos, y éstos avanzaban callados (no hubieras dicho que les siguieran á aquéllos tantos hombres con voz en el pecho) y temerosos de sus jefes.",
+        "similitud": 0.8390860807623295
+      }
+    ],
+    "entorno_antes": " Idomeneo, como un dios, entre los cretenses; rodéanle los capitanes de sus tropas. Muchas veces Menelao, caro á Marte, le hospedó en nuestro palacio cuando venía de Creta. Distingo á los demás aqueos de ojos vivos, y me sería fácil reconocerlos y nombrarlos; mas no veo á dos caudillos de hombres, Cástor, domador de caballos, y Pólux, excelente púgil, hermanos carnales que me dió mi madre. ¿Acaso no han venido de la amena Lacedemonia? ¿Ó llegaron en las naves, que atraviesan el ponto, y no quieren entrar en combate para no hacerse partícipes de mi deshonra y múltiples oprobios?»\n\n243 De este modo habló. Á ellos la fértil tierra los tenía ya en su seno, en Lacedemonia, en su misma patria.\n\n245 Los heraldos atravesaban la ciudad con las víctimas para los divinos juramentos, los dos corderos, y el regocijador vino, fruto de la tierra, encerrado en un odre de piel de cabra. El heraldo Ideo llevaba además una reluciente cratera y copas de oro; y acercándose al anciano, invitóle diciendo:\n\n250 «¡Levántate, hijo de Laomedonte! Los próceres de los teucros, domadores de caballos, y de los aqueos, de broncíneas lorigas, te piden que bajes á la llanura y sanciones los fieles juramentos; pues Alejandro y Menelao, caro á Marte, combatirán con luengas lanzas por la esposa: mujer y riquezas serán del que venza, y después de pactar amistad con fieles juramentos, nosotros seguiremos habitando la fértil Troya, y aquéllos volverán á Argos, criador de caballos, y á la Acaya de lindas mujeres.»\n\n",
+    "entorno_despues": "259 Así dijo. Estremecióse el anciano y mandó á los amigos que engancharan los caballos. Obedeciéronle solícitos. Subió Príamo y cogió las riendas; á su lado, en el magnífico carro, se puso Antenor. É inmediatamente guiaron los ligeros corceles hacia la llanura por las puertas Esceas.\n\n264 Cuando hubieron llegado al campo, descendieron del carro al almo suelo y se encaminaron al espacio que mediaba entre los teucros y los aqueos. Levantóse al punto el rey de hombres Agamenón, levantóse también el ingenioso Ulises; y los heraldos conspicuos juntaron las víctimas que debían inmolarse para los sagrados juramentos, mezclaron vinos en la cratera y dieron aguamanos á los reyes. El Atrida, con la daga que llevaba junto á la espada, cortó pelo de la cabeza de los corderos, y los heraldos lo repartieron á los próceres teucros y aquivos. Y, colocándose el Atrida en medio de todos, oró en alta voz con las manos levantadas:\n\n276 «¡Padre Júpiter, que reinas desde el Ida, gloriosísimo, máximo! ¡Sol, que todo lo ves y todo lo oyes! ¡Ríos! ¡Tierra! ¡Y vosotros que en lo profundo castigáis á los muertos que fueron perjuros! Sed todos testigos y guardad los fieles juramentos: Si Alejandro mata á Menelao, sea suya Helena con todas las riquezas y nosotros volvámonos en las naves, que atraviesan el ponto; mas si el rubio Menelao mata á Alejandro, devuélvannos los troyanos á Helena y las riquezas todas, y paguen la indemnización que sea justa para que llegue á conocimiento de los hombres venideros"
+  },
+  "respuesta": {
+    "avisos": [],
+    "notas": []
+  },
+  "informe": {
+    "avisos": [],
+    "notas": [],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}

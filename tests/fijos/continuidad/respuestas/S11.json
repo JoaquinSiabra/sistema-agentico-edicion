@@ -1,0 +1,66 @@
+{
+  "id": "S11",
+  "pasaje": "Y blandía en la diestra la espada guarnecida de argénteos clavos, tan entera y reluciente como cuando salió de su tienda.",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 3,
+    "char": 23315,
+    "hechos": [],
+    "candidatos": {},
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 15,
+        "inicio_char": 16724,
+        "fin_char": 18099,
+        "texto": "El gran Héctor, de tremolante casco, agitaba las suertes volviendo el rostro atrás: pronto saltó la de Paris. Sentáronse los guerreros, sin romper las filas, donde cada uno tenía los briosos corceles y las labradas armas. El divino Alejandro, esposo de Helena, la de hermosa cabellera, vistió una magnífica armadura: púsose en las piernas elegantes grebas ajustadas con broches de plata; protegió el pecho con la coraza de su hermano Licaón, que se le acomodaba bien; colgó del hombro una espada de bronce guarnecida con clavos de plata; embrazó el grande y fuerte escudo; cubrió la robusta cabeza con un hermoso casco, cuyo terrible penacho de crines de caballo ondeaba en la cimera, y asió una fornida lanza que su mano pudiera manejar. De igual manera vistió las armas el aguerrido Menelao.\n\n340 Cuando hubieron acabado de armarse separadamente de la muchedumbre, aparecieron en el lugar que mediaba entre ambos ejércitos, mirándose de un modo terrible; y así los teucros, domadores de caballos, como los aqueos, de hermosas grebas, se quedaron atónitos al contemplarlos. Encontráronse aquéllos en el medido campo, y se detuvieron blandiendo las lanzas y mostrando el odio que recíprocamente se tenían. Alejandro arrojó el primero la luenga lanza y dió un bote en el escudo liso del Atrida, sin que el bronce lo rompiera: la punta se torció al chocar con el fuerte escudo.",
+        "similitud": 0.8096161002149537
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 20,
+        "inicio_char": 22095,
+        "fin_char": 23382,
+        "texto": "Los capitanes daban órdenes á los suyos respectivos, y éstos avanzaban callados (no hubieras dicho que les siguieran á aquéllos tantos hombres con voz en el pecho) y temerosos de sus jefes. En todos relucían las labradas armas de que iban revestidos.—Los teucros avanzaban también, y como muchas ovejas balan sin cesar en el establo de un hombre opulento, cuando al ser ordeñadas oyen la voz de los corderos; de la misma manera elevábase un confuso vocerío en el ejército de aquéllos. No era igual el sonido ni el modo de hablar de todos y las lenguas se mezclaban, porque los guerreros procedían de diferentes países.—Á los unos los excitaba Marte; á los otros, Minerva, la de los brillantes ojos, y á entrambos pueblos, el Terror, la Fuga y la Discordia, insaciable en sus furores y hermana y compañera del homicida Marte, la cual al principio aparece pequeña y luego toca con la cabeza el cielo mientras anda sobre la tierra. Entonces la Discordia, penetrando por la muchedumbre, arrojó en medio de ella el combate funesto para todos y acreció el afán de los guerreros.\n\n446 Cuando los ejércitos llegaron á juntarse, chocaron entre sí los escudos, las lanzas y el valor de los hombres armados de broncíneas corazas, y al aproximarse las abollonadas rodelas se produjo un gran tumulto.",
+        "similitud": 0.7969586374188296
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 5,
+        "inicio_char": 5812,
+        "fin_char": 6953,
+        "texto": "Destapó el carcaj y sacó una flecha nueva, alada, causadora de acerbos dolores; adaptó á la cuerda del arco la amarga saeta, y votó á Apolo Licio sacrificarle una hecatombe perfecta de corderos primogénitos cuando volviera á su patria, la sagrada ciudad de Zelea. Y cogiendo á la vez las plumas y el bovino nervio, tiró hacia su pecho y acercó la punta de hierro al arco. Armado así, rechinó el gran arco circular, crujió la cuerda, y saltó la puntiaguda flecha deseosa de volar sobre la multitud.\n\n127 No se olvidaron de ti, oh Menelao, los felices é inmortales dioses y especialmente la hija de Júpiter, que impera en las batallas; la cual, poniéndose delante, desvió la amarga flecha: apartóla del cuerpo como la madre ahuyenta una mosca de su niño que duerme plácidamente, y la dirigió al lugar donde los anillos de oro sujetaban el cinturón y la coraza era doble. La amarga saeta atravesó el ajustado cinturón, obra de artífice; se clavó en la magnífica coraza, y rompiendo la chapa que el héroe llevaba para proteger el cuerpo contra las flechas y que le defendió mucho, rasguñó la piel y al momento brotó de la herida la negra sangre.",
+        "similitud": 0.7952859049694652
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 25,
+        "inicio_char": 27405,
+        "fin_char": 28373,
+        "texto": "527 Mientras Píroo arremetía, Toante el etolo alanceóle en el pecho, por cima de una tetilla, y el bronce atravesó el pulmón. Acercósele Toante, le arrancó del pecho la ingente lanza, y hundiéndole la aguda espada en medio del vientre, le quitó la vida. Mas no pudo despojarle de la armadura, porque se vió rodeado por los compañeros del muerto, los tracios que dejan crecer la cabellera en lo más alto de la cabeza, quienes le asestaban sus largas picas; y aunque era corpulento, vigoroso é ilustre, fué rechazado y hubo de retroceder. Así cayeron y se juntaron en el polvo el caudillo de los tracios y el de los epeos, de broncíneas lorigas, y á su alrededor murieron otros muchos.\n\n539 Y quien, sin estar herido por flecha ó lanza, hubiera recorrido el campo llevado de la mano y protegido de las saetas por Palas Minerva, no habría reprochado los hechos de armas; pues aquel día gran número de teucros y de aqueos dieron, unos junto á otros, de bruces en el polvo.",
+        "similitud": 0.7924452075427523
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 10,
+        "inicio_char": 11180,
+        "fin_char": 12419,
+        "texto": "220 Mientras se ocupaban en curar á Menelao, valiente en la pelea, llegaron las huestes de los escudados teucros; vistieron aquéllos la armadura, y ya sólo en batallar pensaron.\n\n223 Entonces no hubieras visto que el divino Agamenón se durmiera, temblara ó rehuyera el combate; pues iba presuroso á la lid, donde los varones alcanzan gloria. Dejó los caballos y el carro de broncíneos adornos—Eurimedonte, hijo de Ptolomeo Piraída, se quedó á cierta distancia con los fogosos corceles,—encargó al auriga que no se alejara por si el cansancio se apoderaba de sus miembros, mientras ejercía el mando sobre aquella multitud de hombres, y empezó á recorrer á pie las hileras de guerreros. Á los dánaos, de ágiles corceles, que se apercibían para la pelea, los animaba diciendo:\n\n234 «¡Argivos! No desmaye vuestro impetuoso valor. El padre Júpiter no protegerá á los pérfidos; como han sido los primeros en faltar á lo jurado, sus tiernas carnes serán pasto de buitres y nosotros nos llevaremos en las naves á sus esposas é hijos cuando tomemos la ciudad.»\n\n240 Á los que veía remisos en marchar al odioso combate, los increpaba con iracundas voces:\n\n242 «¡Argivos que sólo con el arco sabéis combatir, hombres vituperables! ¿No os avergonzáis?",
+        "similitud": 0.7922167901863595
+      }
+    ],
+    "entorno_antes": "; sentóse Helena, hija de Júpiter, que lleva la égida, y apartando la vista de su esposo, le increpó con estas palabras:\n\n428 «¡Vienes de la lucha... y hubieras debido perecer á manos del esforzado varón que fué mi anterior marido! Blasonabas de ser superior á Menelao, caro á Marte, en fuerza, en puños y en el manejo de la lanza; pues provócale de nuevo á singular combate. Pero no: te aconsejo que desistas, y no quieras pelear ni contender temerariamente con el rubio Menelao; no sea que en seguida sucumbas, herido por su lanza.»\n\n437 Contestó Paris: «Mujer, no me zahieras con amargos reproches. Hoy ha vencido Menelao con el auxilio de Minerva; otro día le venceré yo, pues también tenemos dioses que nos protegen. Mas, ea, acostémonos y volvamos á ser amigos. Jamás la pasión se apoderó de mi espíritu como ahora; ni cuando, después de robarte, partimos de la amena Lacedemonia en las naves que atraviesan el ponto y llegamos á la isla de Cránae, donde me unió contigo amoroso consorcio: con tal ansia te amo en este momento y tan dulce es el deseo que de mí se apodera.»\n\n447 Dijo, y se encaminó al tálamo; la esposa le siguió, y ambos se acostaron en el torneado lecho.\n\n449 El Atrida se revolvía entre la muchedumbre, como una fiera, buscando al deiforme Alejandro. Pero ningún troyano ni aliado ilustre pudo mostrárselo á Menelao, caro á Marte; que no por amistad le hubiesen ocultado, pues á todos se les había hecho tan odioso como la negra muerte. Y Agamenón, rey de hombres, les dijo:",
+    "entorno_despues": "\n\n456 «¡Oíd, troyanos, dárdanos y aliados! Es evidente que la victoria quedó por Menelao, caro á Marte; entregadnos la argiva Helena con sus riquezas y pagad una indemnización, la que sea justa, para que llegue á conocimiento de los hombres venideros.»\n\n461 Así dijo el Atrida, y los demás aqueos aplaudieron.\n\n"
+  },
+  "respuesta": {
+    "avisos": [],
+    "notas": []
+  },
+  "informe": {
+    "avisos": [],
+    "notas": [],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}

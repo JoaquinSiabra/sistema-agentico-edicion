@@ -1,0 +1,66 @@
+{
+  "id": "C03",
+  "pasaje": "447 Dijo, y se encaminó al tálamo; la esposa le siguió, y ambos se acostaron en el torneado lecho.",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 3,
+    "char": 22896,
+    "hechos": [],
+    "candidatos": {},
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 20,
+        "inicio_char": 22351,
+        "fin_char": 23624,
+        "texto": "437 Contestó Paris: «Mujer, no me zahieras con amargos reproches. Hoy ha vencido Menelao con el auxilio de Minerva; otro día le venceré yo, pues también tenemos dioses que nos protegen. Mas, ea, acostémonos y volvamos á ser amigos. Jamás la pasión se apoderó de mi espíritu como ahora; ni cuando, después de robarte, partimos de la amena Lacedemonia en las naves que atraviesan el ponto y llegamos á la isla de Cránae, donde me unió contigo amoroso consorcio: con tal ansia te amo en este momento y tan dulce es el deseo que de mí se apodera.»\n\n447 Dijo, y se encaminó al tálamo; la esposa le siguió, y ambos se acostaron en el torneado lecho.\n\n449 El Atrida se revolvía entre la muchedumbre, como una fiera, buscando al deiforme Alejandro. Pero ningún troyano ni aliado ilustre pudo mostrárselo á Menelao, caro á Marte; que no por amistad le hubiesen ocultado, pues á todos se les había hecho tan odioso como la negra muerte. Y Agamenón, rey de hombres, les dijo:\n\n456 «¡Oíd, troyanos, dárdanos y aliados! Es evidente que la victoria quedó por Menelao, caro á Marte; entregadnos la argiva Helena con sus riquezas y pagad una indemnización, la que sea justa, para que llegue á conocimiento de los hombres venideros.»\n\n461 Así dijo el Atrida, y los demás aqueos aplaudieron.",
+        "similitud": 0.8331812967902069
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 11,
+        "inicio_char": 12582,
+        "fin_char": 13780,
+        "texto": "243 De este modo habló. Á ellos la fértil tierra los tenía ya en su seno, en Lacedemonia, en su misma patria.\n\n245 Los heraldos atravesaban la ciudad con las víctimas para los divinos juramentos, los dos corderos, y el regocijador vino, fruto de la tierra, encerrado en un odre de piel de cabra. El heraldo Ideo llevaba además una reluciente cratera y copas de oro; y acercándose al anciano, invitóle diciendo:\n\n250 «¡Levántate, hijo de Laomedonte! Los próceres de los teucros, domadores de caballos, y de los aqueos, de broncíneas lorigas, te piden que bajes á la llanura y sanciones los fieles juramentos; pues Alejandro y Menelao, caro á Marte, combatirán con luengas lanzas por la esposa: mujer y riquezas serán del que venza, y después de pactar amistad con fieles juramentos, nosotros seguiremos habitando la fértil Troya, y aquéllos volverán á Argos, criador de caballos, y á la Acaya de lindas mujeres.»\n\n259 Así dijo. Estremecióse el anciano y mandó á los amigos que engancharan los caballos. Obedeciéronle solícitos. Subió Príamo y cogió las riendas; á su lado, en el magnífico carro, se puso Antenor. É inmediatamente guiaron los ligeros corceles hacia la llanura por las puertas Esceas.",
+        "similitud": 0.8289690264752221
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 19,
+        "inicio_char": 21222,
+        "fin_char": 22284,
+        "texto": "411 Mirándole con torva faz, le contestó el fuerte Diomedes: «Calla, amigo; obedece mi consejo. Yo no me enfado porque Agamenón, pastor de hombres, anime á los aqueos, de hermosas grebas, antes del combate. Suya será la gloria, si los aqueos rinden á los teucros y toman la sagrada Ilión; suyo el gran pesar, si los aqueos son vencidos. Ea, pensemos tan sólo en mostrar nuestro impetuoso valor.»\n\n419 Dijo, saltó del carro al suelo sin dejar las armas, y tan terrible fué el resonar del bronce sobre su pecho, que hubiera sentido pavor hasta un hombre muy esforzado.\n\n422 Como las olas impelidas por el Céfiro se suceden en la ribera sonora, y primero se levantan en alta mar, braman después al romperse en la playa y en los promontorios, suben combándose á lo alto y escupen la espuma; así las falanges de los dánaos marchaban sucesivamente y sin interrupción al combate. Los capitanes daban órdenes á los suyos respectivos, y éstos avanzaban callados (no hubieras dicho que les siguieran á aquéllos tantos hombres con voz en el pecho) y temerosos de sus jefes.",
+        "similitud": 0.8252432592285655
+      },
+      {
+        "orden_fragmento": 1,
+        "orden_en_fragmento": 23,
+        "inicio_char": 24688,
+        "fin_char": 25766,
+        "texto": "Terminada la faena y dispuesto el banquete, comieron, y nadie careció de su respectiva porción. Cuando hubieron satisfecho el deseo de comer y de beber, los mancebos llenaron las crateras y distribuyeron el vino á todos los presentes después de haber ofrecido en copas las primicias. Y durante el día los aqueos aplacaron al dios con el canto, entonando un hermoso peán al flechador Apolo, que les oía con el corazón complacido.\n\n475 Cuando el sol se puso y sobrevino la noche, durmieron cabe á las amarras del buque. Mas, así que apareció la hija de la mañana, la Aurora de rosados dedos, hiciéronse á la mar para volver al espacioso campamento aqueo, y el flechador Apolo les envió próspero viento. Izaron el mástil, descogieron las velas, que hinchó el viento, y las purpúreas ondas resonaban en torno de la quilla mientras la nave corría siguiendo su rumbo. Una vez llegados al vasto campamento de los aquivos, sacaron la negra nave á tierra firme y la pusieron en alto sobre la arena, sosteniéndola con grandes maderos. Y luego se dispersaron por las tiendas y los bajeles.",
+        "similitud": 0.8243676073660737
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 7,
+        "inicio_char": 8228,
+        "fin_char": 9479,
+        "texto": "Tales próceres troyanos había en la torre. Cuando vieron á Helena, que hacia ellos se encaminaba, dijéronse unos á otros, hablando quedo, estas aladas palabras:\n\n156 «No es reprensible que los troyanos y los aqueos, de hermosas grebas, sufran prolijos males por una mujer como ésta, cuyo rostro tanto se parece al de las diosas inmortales. Pero, aun siendo así, váyase en las naves, antes de que llegue á convertirse en una plaga para nosotros y para nuestros hijos.»\n\n161 En tales términos hablaban. Príamo llamó á Helena y le dijo: «Ven acá, hija querida; siéntate á mi lado para que veas á tu anterior marido y á sus parientes y amigos—pues á ti no te considero culpable, sino á los dioses que promovieron contra nosotros la luctuosa guerra de los aqueos—y me digas cómo se llama ese ingente varón, quién es ese aqueo gallardo y alto de cuerpo. Otros hay de mayor estatura, pero jamás vieron mis ojos un hombre tan hermoso y venerable. Parece un rey.»\n\n171 Contestó Helena, divina entre las mujeres: «Me inspiras, suegro amado, respeto y temor. ¡Ojalá la muerte me hubiese sido grata cuando vine con tu hijo, dejando á la vez que el tálamo, á mis hermanos, mi hija querida y mis amables compañeras! Pero no sucedió así, y ahora me consumo llorando.",
+        "similitud": 0.8235246889732903
+      }
+    ],
+    "entorno_antes": "»\n\n418 Así habló. Helena, hija de Júpiter, tuvo miedo; y echándose el blanco y espléndido velo, salió en silencio tras de la diosa, sin que ninguna de las troyanas lo advirtiera.\n\n421 Tan pronto como llegaron al magnífico palacio de Alejandro, las esclavas volvieron á sus labores, y la divina entre las mujeres se fué derecha á la cámara nupcial de elevado techo. La risueña Venus colocó una silla delante de Alejandro; sentóse Helena, hija de Júpiter, que lleva la égida, y apartando la vista de su esposo, le increpó con estas palabras:\n\n428 «¡Vienes de la lucha... y hubieras debido perecer á manos del esforzado varón que fué mi anterior marido! Blasonabas de ser superior á Menelao, caro á Marte, en fuerza, en puños y en el manejo de la lanza; pues provócale de nuevo á singular combate. Pero no: te aconsejo que desistas, y no quieras pelear ni contender temerariamente con el rubio Menelao; no sea que en seguida sucumbas, herido por su lanza.»\n\n437 Contestó Paris: «Mujer, no me zahieras con amargos reproches. Hoy ha vencido Menelao con el auxilio de Minerva; otro día le venceré yo, pues también tenemos dioses que nos protegen. Mas, ea, acostémonos y volvamos á ser amigos. Jamás la pasión se apoderó de mi espíritu como ahora; ni cuando, después de robarte, partimos de la amena Lacedemonia en las naves que atraviesan el ponto y llegamos á la isla de Cránae, donde me unió contigo amoroso consorcio: con tal ansia te amo en este momento y tan dulce es el deseo que de mí se apodera.»\n\n",
+    "entorno_despues": "447 Dijo, y se encaminó al tálamo; la esposa le siguió, y ambos se acostaron en el torneado lecho.\n\n449 El Atrida se revolvía entre la muchedumbre, como una fiera, buscando al deiforme Alejandro. Pero ningún troyano ni aliado ilustre pudo mostrárselo á Menelao, caro á Marte; que no por amistad le hubiesen ocultado, pues á todos se les había hecho tan odioso como la negra muerte. Y Agamenón, rey de hombres, les dijo:\n\n456 «¡Oíd, troyanos, dárdanos y aliados! Es evidente que la victoria quedó por Menelao, caro á Marte; entregadnos la argiva Helena con sus riquezas y pagad una indemnización, la que sea justa, para que llegue á conocimiento de los hombres venideros.»\n\n461 Así dijo el Atrida, y los demás aqueos aplaudieron.\n\n"
+  },
+  "respuesta": {
+    "avisos": [],
+    "notas": []
+  },
+  "informe": {
+    "avisos": [],
+    "notas": [],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}
