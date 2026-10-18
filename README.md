@@ -148,6 +148,9 @@ uv run python src/recuperar.py --obra=mi_obra --hasta-fragmento=1 "consulta"
 # Continuidad: qué contradice el canon un pasaje que se insertaría en el
 # carácter 12345 del fragmento 4
 uv run python src/continuidad.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt
+# ... con el buscador híbrido (docs/buscador_hibrido.md) y otro tope
+uv run python src/continuidad.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt \
+    --vias=entidades,entorno,lexica --tope=60
 ```
 
 Cada obra escribe en su propia carpeta, `data/<obra>/exports/`. Si

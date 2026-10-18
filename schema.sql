@@ -102,6 +102,12 @@ CREATE TABLE hechos_canonicos (
 
 CREATE INDEX hechos_posicion_idx ON hechos_canonicos (obra_id, posicion_global);
 
+-- Búsqueda de texto completo sobre los hechos (vía léxica del buscador
+-- híbrido, docs/buscador_hibrido.md). Índice sobre la expresión: la
+-- consulta tiene que usar exactamente to_tsvector('spanish', hecho).
+CREATE INDEX hechos_texto_idx ON hechos_canonicos
+    USING gin (to_tsvector('spanish', hecho));
+
 -- Menciones: coincidencia por término canónico exacto (heurística v1,
 -- no resuelve variantes que el glosario no haya registrado todavía).
 CREATE TABLE fragmento_entidad (

@@ -12,8 +12,9 @@ import pytest
 
 import calibrar_glosario
 import continuidad
-from continuidad import (Contexto, combinar, construir_prompt, consultar_modelo,
-                         detectar_entidades, validar)
+from continuidad import (Contexto, combinar, construir_prompt, consulta_lexica,
+                         consultar_modelo, detectar_entidades, fusionar,
+                         ordenar_por_cercania, parrafo_anterior, validar)
 from recuperar import Hecho, Pasaje
 
 RAIZ = Path(__file__).resolve().parents[1]
@@ -105,14 +106,16 @@ def test_direccion_respecto_al_punto_de_insercion():
     assert [h.direccion for h in hechos] == ["anterior", "mismo_fragmento", "posterior"]
 
 
-def test_con_mas_hechos_que_el_tope_se_omiten_los_de_las_entidades_mas_generales():
+def test_con_mas_hechos_que_el_tope_se_omiten_los_peor_situados_y_se_informa():
+    # Los de una entidad general («aqueos») al fondo de su lista puntúan
+    # poco: entran antes los primeros de cada lista.
     especifica = [hecho(3, i) for i in range(3)]
     general = [hecho(4, i) for i in range(10)]
     hechos, omitidos = combinar({"entidad: aqueos": general,
                                  "entidad: Macaón": especifica}, orden=4, tope=5)
     ids = [h.id for h in hechos]
     assert len(ids) == 5 and omitidos == 8
-    assert {30000, 30001, 30002} <= set(ids)          # la específica, entera
+    assert not {40003, 40004, 40009} & set(ids)        # el fondo de la general, fuera
     ctx = Contexto(obra="iliada", orden=4, char=0, hechos=hechos, candidatos={},
                    hechos_omitidos=omitidos)
     assert validar({}, ctx, "").hechos_omitidos == 8   # y el informe lo dice
@@ -125,7 +128,128 @@ def test_sin_pasar_el_tope_no_se_omite_nada():
 
 def test_via_desconocida():
     with pytest.raises(ValueError, match="Vías desconocidas"):
-        continuidad.reunir_contexto(None, "iliada", "", 1, 0, vias=("lexica",))
+        continuidad.reunir_contexto(None, "iliada", "", 1, 0, vias=("semantica",))
+
+
+# --- Buscador híbrido: fusión por rango recíproco ---------------------------
+
+def test_rrf_un_hecho_en_varias_listas_puntua_mas():
+    comun = hecho(3, 9)
+    ranking = fusionar({"entidad: aqueos": [hecho(4, 1), hecho(4, 2), comun],
+                        "lexica": [hecho(2, 5), comun]})
+    assert ranking[0] == 30009
+    # 1/(60+1) por el primer puesto de cada lista; el común suma dos.
+    hechos, _ = combinar({"a": [hecho(4, 1), comun], "b": [comun]}, orden=4)
+    assert {h.id: h.puesto for h in hechos} == {30009: 1, 40001: 2}
+
+
+def test_rrf_a_igual_puntuacion_en_orden_de_lectura():
+    assert fusionar({"a": [hecho(4, 1)], "b": [hecho(3, 1)]}) == [30001, 40001]
+
+
+def test_el_tope_se_aplica_despues_de_fusionar():
+    # El último de una lista larga entra porque otra vía también lo trae;
+    # sin la fusión, el tope lo dejaría fuera.
+    general = [hecho(4, i) for i in range(20)]
+    hechos, omitidos = combinar({"entidad: aqueos": general,
+                                 "lexica": [hecho(4, 19)]}, orden=4, tope=3)
+    assert [h.id for h in hechos] == [40000, 40001, 40019]
+    assert omitidos == 17
+
+
+def test_el_contexto_sale_en_orden_de_lectura():
+    hechos, _ = combinar({"lexica": [hecho(5, 1), hecho(2, 7), hecho(4, 3)]}, orden=4)
+    assert [h.id for h in hechos] == [20007, 40003, 50001]
+    assert [h.puesto for h in hechos] == [2, 3, 1]
+
+
+def test_las_listas_de_entidades_se_ordenan_por_cercania_al_punto_de_insercion():
+    hechos = [hecho(2, 9), hecho(3, 5), hecho(4, 70), hecho(5, 0), hecho(4, 1)]
+    assert [continuidad.posicion_global(h) for h in ordenar_por_cercania(hechos, 4)] == [
+        40001, 40070, 30005, 50000, 20009]
+
+
+# --- Buscador híbrido: vía de entorno ---------------------------------------
+
+TEXTO = ("CANTO III\n\n1 Avanzaban los teucros.\n\n"
+         "449 El Atrida buscaba a Alejandro. Menelao, caro á Marte, no lo halló.\n"
+         "  \n456 Dijo Agamenón: «¡Oíd!»\n")
+
+
+@pytest.mark.parametrize("punto, esperado", [
+    # Al final de un párrafo (casos tras_verso): ese mismo párrafo.
+    (TEXTO.index("\n  \n456"), "449 El Atrida buscaba a Alejandro. Menelao, caro á Marte, "
+                                "no lo halló."),
+    # Al comienzo de un párrafo (casos de solo verso): el de antes.
+    (TEXTO.index("456"), "449 El Atrida buscaba a Alejandro. Menelao, caro á Marte, "
+                         "no lo halló."),
+    # A mitad de párrafo: lo ya escrito de ese párrafo.
+    (TEXTO.index(" no lo halló"), "449 El Atrida buscaba a Alejandro. Menelao, caro á Marte,"),
+    # Al principio del fragmento: nada.
+    (0, ""),
+    (TEXTO.index("1 Avanzaban"), "CANTO III"),
+])
+def test_parrafo_anterior_al_punto_de_insercion(punto, esperado):
+    assert parrafo_anterior(TEXTO, punto) == esperado
+
+
+def test_parrafo_anterior_sin_lineas_en_blanco():
+    texto = "a" * 2000 + "\n" + "b" * 2000
+    assert parrafo_anterior(texto, len(texto)) == texto[-continuidad.CARACTERES_ENTORNO:]
+    assert parrafo_anterior("Una sola línea.", 15) == "Una sola línea."
+
+
+def test_la_via_de_entorno_no_repite_entidades_del_pasaje(monkeypatch):
+    monkeypatch.setattr(continuidad, "entidades_de_obra", lambda cur, obra: ENTIDADES)
+    monkeypatch.setattr(continuidad, "hechos_de_entidad",
+                        lambda cur, obra, t: [hecho(3, len(t))])
+    texto = "Habló Agamenón en el Ida.\n\n"
+    via = continuidad.via_entorno(None, "iliada", "Y Agamenón calló.", 3, texto, len(texto))
+    assert list(via) == ["entorno: Ida"]
+    assert continuidad.via_entorno(None, "iliada", "Agamenón, en el Ida.", 3, texto,
+                                   len(texto)) == {}
+
+
+# --- Buscador híbrido: vía léxica -------------------------------------------
+
+class CursorFalso:
+    def __init__(self):
+        self.consultas = []
+
+    def execute(self, sql, params):
+        self.consultas.append((sql, params))
+
+    def fetchall(self):
+        return [(3, 45, "La espada se rompió.", "verso 361", "narrador_documental", None)]
+
+
+def test_consulta_lexica_con_las_palabras_del_pasaje_unidas_con_or():
+    assert consulta_lexica("Y blandía la espada, la espada de 3 filos…") == \
+        "y | blandía | la | espada | de | filos"
+    assert consulta_lexica("«Á  Menelao»") == "á | menelao"
+
+
+@pytest.mark.parametrize("pasaje", ["", "  …¡! 123 — «»", "_"])
+def test_un_pasaje_sin_palabras_no_consulta_nada(pasaje):
+    assert consulta_lexica(pasaje) is None
+    cur = CursorFalso()
+    assert continuidad.via_lexica(cur, "iliada", pasaje, 3, "", 0) == {}
+    assert cur.consultas == []
+
+
+def test_la_via_lexica_ordena_por_rango_y_toma_30():
+    cur = CursorFalso()
+    via = continuidad.via_lexica(cur, "iliada", "La espada rota.", 3, "", 0)
+    assert [continuidad.posicion_global(h) for h in via["lexica"]] == [30045]
+    [(sql, params)] = cur.consultas
+    assert params == ("la | espada | rota", "iliada", 30)
+    assert "to_tsquery('spanish', %s)" in sql and "ts_rank_cd" in sql
+    assert "to_tsvector('spanish', h.hecho) @@ q" in sql
+
+
+def test_el_indice_del_texto_de_los_hechos_usa_la_misma_expresion():
+    schema = (RAIZ / "schema.sql").read_text(encoding="utf-8")
+    assert "USING gin (to_tsvector('spanish', hecho))" in schema
 
 
 # --- Prompt ------------------------------------------------------------------

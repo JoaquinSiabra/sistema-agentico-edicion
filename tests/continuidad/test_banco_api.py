@@ -2,7 +2,9 @@
 
     pytest --db --api tests/continuidad
 
-27 llamadas a Claude, una por caso. Escribe en .cache/continuidad/ (o en
+27 llamadas a Claude, una por caso. Con NOVELA_BANCO_SOLO_CAMBIADOS=1,
+solo las de los casos cuyo contexto ha cambiado respecto a su respuesta
+grabada; el informe dice cuántas se hicieron. Escribe en .cache/continuidad/ (o en
 NOVELA_SALIDA_CONTINUIDAD) el informe del banco (banco.json y banco.txt),
 con cada fallo clasificado como del buscador o del agente, y las
 respuestas en bruto (respuestas/<caso>.json). Para que la suite rápida
@@ -22,8 +24,8 @@ import pytest
 from banco import (CON_CONTRADICCION, MAXIMO_AVISOS_EN_LIMPIOS, MINIMO_DETECTADOS, OBRA,
                    SALIDA, SIN_CONTRADICCION, cargar_casos, cobertura, construir_caso,
                    escribir, garantias_incumplidas, grabar_respuesta, obra_del_banco,
-                   puntuar, resumen_banco, resumen_cobertura)
-from continuidad import consultar_modelo, reunir_contexto, texto_fragmento, validar
+                   obtener_respuesta, puntuar, resumen_banco, resumen_cobertura)
+from continuidad import reunir_contexto, texto_fragmento, validar
 
 pytestmark = [pytest.mark.db, pytest.mark.api]
 
@@ -43,14 +45,16 @@ def resultados(bd, modelo, tmp_path_factory) -> list[dict]:
             if caso["categoria"] in CON_CONTRADICCION:
                 fila["cobertura"] = cobertura(caso, pasaje, contexto)
             try:
-                respuesta = consultar_modelo(contexto, pasaje)
+                respuesta, llamada = obtener_respuesta(caso["id"], contexto, pasaje)
             except Exception as e:     # JSON roto o error de la API: se informa
-                filas.append({**fila, "error": repr(e), "resultado": {"avisos": 0},
+                filas.append({**fila, "error": repr(e), "llamada": True,
+                              "resultado": {"avisos": 0},
                               "descartados": 0, "garantias": []})
                 continue
             informe = validar(respuesta, contexto, pasaje)
             grabar_respuesta(caso, pasaje, contexto, respuesta, informe)
-            filas.append({**fila, "resultado": puntuar(caso, contexto, informe),
+            filas.append({**fila, "llamada": llamada,
+                          "resultado": puntuar(caso, contexto, informe),
                           "descartados": len(informe.descartados),
                           "garantias": garantias_incumplidas(informe, contexto, pasaje),
                           "informe": asdict(informe)})

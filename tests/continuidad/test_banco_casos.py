@@ -12,7 +12,8 @@ from pathlib import Path
 import pytest
 
 from banco import (CON_CONTRADICCION, GLOSARIO, GRABADAS, RAIZ, cargar_casos,
-                   construir_caso, esperados, hecho_id, motivo_fallo_buscador, puntuar)
+                   construir_caso, esperados, hecho_id, medir_buscador,
+                   motivo_fallo_buscador, obtener_respuesta, puntuar, tabla_buscador)
 from continuidad import Aviso, Contexto, Informe, combinar, validar
 from recuperar import Hecho
 
@@ -136,3 +137,66 @@ def test_con_respuestas_grabadas_el_informe_se_reproduce_igual(ruta: Path):
 def test_las_categorias_con_contradiccion_esperan_hechos():
     for caso in CASOS:
         assert bool(esperados(caso)) == (caso["categoria"] in CON_CONTRADICCION)
+
+
+# --- NOVELA_BANCO_SOLO_CAMBIADOS (cliente falso) ----------------------------
+
+def grabado(caso_id: str) -> dict:
+    return json.loads((GRABADAS / f"{caso_id}.json").read_text(encoding="utf-8"))
+
+
+@pytest.mark.skipif(not GRABADOS, reason=f"aún no hay respuestas grabadas en {GRABADAS}")
+def test_con_el_mismo_contexto_no_se_llama_a_la_api(api):
+    cliente = api([])
+    g = grabado(GRABADOS[0].stem)
+    contexto = Contexto.desde_dict(g["contexto"])
+    # Mismos hechos aunque cambie el orden o el puesto en la fusión.
+    contexto.hechos = list(reversed(contexto.hechos))
+    respuesta, llamada = obtener_respuesta(g["id"], contexto, g["pasaje"], solo_cambiados=True)
+    assert (respuesta, llamada) == (g["respuesta"], False)
+    assert cliente.peticiones == []
+
+
+@pytest.mark.skipif(not GRABADOS, reason=f"aún no hay respuestas grabadas en {GRABADAS}")
+def test_con_otro_contexto_o_sin_la_opcion_si_se_llama(api):
+    nueva = {"avisos": [], "notas": []}
+    cliente = api([json.dumps(nueva)] * 3)
+    g = next(grabado(r.stem) for r in GRABADOS if grabado(r.stem)["contexto"]["hechos"])
+    distinto = Contexto.desde_dict(g["contexto"])
+    distinto.hechos = distinto.hechos[1:]
+    assert obtener_respuesta(g["id"], distinto, g["pasaje"], solo_cambiados=True) == (nueva, True)
+    igual = Contexto.desde_dict(g["contexto"])
+    assert obtener_respuesta(g["id"], igual, g["pasaje"], solo_cambiados=False) == (nueva, True)
+    # Un caso sin respuesta grabada también llama.
+    assert obtener_respuesta("X99", igual, g["pasaje"], solo_cambiados=True) == (nueva, True)
+    assert len(cliente.peticiones) == 3
+
+
+# --- Informe del buscador ----------------------------------------------------
+
+def test_medida_del_buscador_por_caso():
+    hechos, _ = combinar({"entidad: Menelao": [
+        Hecho(4, 1, "t", "m", "narrador_documental", None),
+        Hecho(4, 30, "t", "m", "narrador_documental", None)]}, orden=4)
+    ctx = Contexto(obra="x", orden=4, char=0, hechos=hechos, candidatos={}, hechos_omitidos=0)
+    assert medir_buscador(S12, ctx) == {"llega": True, "puesto": 2, "hechos": 2}
+    assert medir_buscador(S12, contexto_con())["llega"] is False
+
+
+def test_tabla_del_buscador_con_criterio():
+    casos = [S12, CONTROL]
+    medidas = {
+        "actual": {"S12": {"llega": True, "puesto": 70, "hechos": 100},
+                   CONTROL["id"]: {"llega": False, "puesto": None, "hechos": 90}},
+        "híbrido": {"S12": {"llega": True, "puesto": 3, "hechos": 120},
+                    CONTROL["id"]: {"llega": False, "puesto": None, "hechos": 110}},
+        "híbrido-60": {"S12": {"llega": True, "puesto": 3, "hechos": 60},
+                       CONTROL["id"]: {"llega": False, "puesto": None, "hechos": 60}},
+    }
+    tabla = tabla_buscador(medidas, casos)
+    assert "#70 / 100 h" in tabla and "#3 / 60 h" in tabla
+    assert "cobertura" in tabla and "1/1" in tabla
+    assert "-> CUMPLE" in tabla
+    medidas["híbrido"]["S12"]["puesto"] = 61
+    assert "-> no cumple" in tabla_buscador(medidas, casos)
+
