@@ -120,7 +120,7 @@ Si la evidencia es insuficiente o contradictoria, usa la categoría "incierto" \
 y explica por qué en lugar de forzar una clasificación.
 
 VARIANTES: si el MISMO referente aparece nombrado de más de una forma en el \
-texto (p.ej. un nombre de persona solo vs. con patronímico o epíteto, o el \
+texto (p.ej. un nombre de persona solo vs. con su patronímico, o el \
 nombre corto de un lugar vs. su denominación completa), usa como "termino" \
 la forma más completa que hayas visto y lista las OTRAS formas observadas \
 en "variantes" — sin repetir ahí la que ya pusiste en "termino". No \
@@ -128,6 +128,14 @@ incluyas entidades relacionadas pero DISTINTAS (p.ej. no pongas un lugar \
 como variante de una institución que opera allí: son dos referentes \
 distintos, no dos nombres del mismo). Si solo hay una forma observada, \
 deja "variantes" vacía.
+
+VARIANTES FRENTE A EPÍTETOS: en "variantes" pon SOLO formas que nombran a \
+este referente y a ningún otro (su nombre, su nombre completo, un apellido o \
+patronímico que en esta obra solo lleva él). Las fórmulas descriptivas que \
+podrían aplicarse a otros personajes o entidades (un oficio, una cualidad, \
+un rasgo físico, un parentesco genérico; p.ej. "el de los pies ligeros", \
+"hijo del rey") van en "epitetos", aunque en este texto solo se usen para \
+él. En caso de duda, a "epitetos". No repitas una forma en los dos campos.
 
 Devuelve EXCLUSIVAMENTE un JSON con esta forma, sin texto antes ni después, \
 sin markdown:
@@ -138,6 +146,7 @@ sin markdown:
       "termino": "",
       "categoria": "",
       "variantes": [],
+      "epitetos": [],
       "evidencia": "breve cita o descripción del patrón de uso observado",
       "confianza": "alta | media | baja"
     }
@@ -152,9 +161,11 @@ definitivas; los fragmentos que recibes ahora son NUEVOS. En tu respuesta:
 - NO devuelvas un término ya fijado, salvo que en estos fragmentos aparezca \
 con alguna forma que no esté ya en su lista. En ese caso devuélvelo con \
 "termino" EXACTAMENTE igual a la forma canónica de esta lista y pon en \
-"variantes" solo las formas nuevas.
+"variantes" solo las formas nuevas (y en "epitetos", los epítetos nuevos).
 - Un nombre que ya figura como variante de un término fijado no es un \
 término nuevo: no lo devuelvas.
+- Que un término nuevo comparta un epíteto con uno fijado no los convierte \
+en el mismo referente.
 - Todo lo demás que cumpla los criterios de arriba, devuélvelo como término \
 nuevo con normalidad. No hace falta que se repita en varios fragmentos: \
 basta con que se repita dentro de estos.
@@ -197,6 +208,8 @@ def formatear_registros(registros: dict[str, list[dict]]) -> str:
         for e in entradas:
             formas = sorted(set(e.get("variantes") or []) | set(e.get("alias") or []))
             sufijo = f" (variantes: {', '.join(formas)})" if formas else ""
+            if e.get("epitetos"):
+                sufijo += f" (epítetos: {', '.join(e['epitetos'])})"
             lineas.append(f'- {e["termino"]} [{e["categoria"]}]{sufijo}')
     return PROMPT_INCREMENTAL + "\n".join(lineas)
 
@@ -326,14 +339,23 @@ def reconciliar(resultados: list[dict]) -> tuple[dict[str, dict], list[dict]]:
             for e in entradas
             if e.get("categoria") != categoria_mayoritaria
         ]
+        # Las respuestas anteriores al campo "epitetos" no lo traen: [].
+        # Si una pasada da una forma como variante y otra como epíteto,
+        # gana epíteto: tratar como nombre propio algo que no lo es cuesta
+        # más (atribuye hechos ajenos) que perder una forma de búsqueda.
+        epitetos_unidos = sorted(
+            {v for e in entradas for v in (e.get("epitetos") or []) if v and v != termino}
+        )
         variantes_unidas = sorted(
             {v for e in entradas for v in (e.get("variantes") or []) if v and v != termino}
+            - set(epitetos_unidos)
         )
 
         estables[termino] = {
             **entrada_elegida,
             "categoria": categoria_mayoritaria,
             "variantes": variantes_unidas,
+            "epitetos": epitetos_unidos,
             "pasadas_que_lo_mencionan": len(entradas),
             "pasadas_totales": len(resultados),
             "pasadas_indices": sorted(i + 1 for i in indices),
@@ -418,6 +440,9 @@ def fusionar_alias(entradas: list[dict], permitir_substring: bool = False) -> li
             )
             contenedor["pasadas_indices"] = sorted(indices_unidos)
             contenedor["pasadas_que_lo_mencionan"] = len(indices_unidos)
+            if entrada.get("epitetos"):
+                contenedor["epitetos"] = sorted(
+                    set(contenedor.get("epitetos") or []) | set(entrada["epitetos"]))
         else:
             fusionados.append(entrada)
 
@@ -462,11 +487,101 @@ REGISTROS = {
 }
 
 
-def construir_registros(
+MOTIVO_COMPARTIDA = "forma compartida"
+
+
+def formas_vetadas(discrepancias: list[dict]) -> set[str]:
+    """Formas ya declaradas compartidas en calibraciones anteriores: no
+    pueden volver a ser alias de nadie (si no, la primera entidad que las
+    reclamara en la siguiente calibración se quedaría con ellas)."""
+    return {d["termino"] for d in discrepancias if d.get("motivo") == MOTIVO_COMPARTIDA}
+
+
+def retirar_formas_compartidas(
+    registros: dict[str, list[dict]], vetadas: set[str] = frozenset(),
+) -> tuple[dict[str, list[dict]], list[dict]]:
+    """Red de seguridad determinista: el modelo no siempre separa bien
+    variantes y epítetos. Toda forma asociada a dos o más entidades, en
+    cualquiera de los registros (como término, alias o variante), sale de
+    los alias y variantes de todas ellas y va a discrepancias. Cubre los
+    epítetos genéricos que el modelo dio como variante y los patronímicos
+    ambiguos ("Atrida": Agamenón y Menelao). El término canónico de una
+    entidad nunca se le quita. Los epítetos no cuentan: compartirlos es
+    lo normal. Se compara sin distinguir mayúsculas, como la búsqueda."""
+    duenos: dict[str, set[str]] = {}
+    for entradas in registros.values():
+        for e in entradas:
+            for forma in {e["termino"], *(e.get("alias") or []), *(e.get("variantes") or [])}:
+                duenos.setdefault(forma.casefold(), set()).add(e["termino"])
+    compartidas = {f for f, d in duenos.items() if len(d) > 1}
+    retirar = compartidas | {v.casefold() for v in vetadas}
+
+    nuevos = {}
+    for nombre, entradas in registros.items():
+        nuevos[nombre] = []
+        for e in entradas:
+            e = dict(e)
+            for campo in ("alias", "variantes"):
+                if campo in e:
+                    e[campo] = [f for f in e[campo] or []
+                                if f.casefold() not in retirar or f == e["termino"]]
+            nuevos[nombre].append(e)
+
+    originales = {}  # forma tal como se escribió la primera vez
+    for entradas in registros.values():
+        for e in entradas:
+            for forma in [e["termino"], *(e.get("alias") or []), *(e.get("variantes") or [])]:
+                originales.setdefault(forma.casefold(), forma)
+    discrepancias = [
+        {"termino": originales[f], "motivo": MOTIVO_COMPARTIDA, "entidades": sorted(duenos[f])}
+        for f in sorted(compartidas)
+    ]
+    return nuevos, discrepancias
+
+
+def candidatos_a_epiteto(registros: dict[str, list[dict]]) -> list[dict]:
+    """Alias que parecen fórmulas descriptivas y no nombres: empiezan por
+    minúscula y no contienen ninguna palabra en mayúscula ("domador de
+    caballos", pero no "vástago de Marte"). Es una heurística del
+    castellano (también caen gentilicios en minúscula), así que solo
+    produce una lista para revisar a mano: no se mueve nada."""
+    candidatos = []
+    for nombre, entradas in registros.items():
+        for e in entradas:
+            for forma in sorted(set(e.get("alias") or []) | set(e.get("variantes") or [])):
+                if forma[:1].islower() and not any(p[:1].isupper() for p in forma.split()):
+                    candidatos.append({"termino": e["termino"], "registro": nombre,
+                                       "forma": forma})
+    return candidatos
+
+
+def mover_a_epitetos(
+    registros: dict[str, list[dict]], confirmados: list[dict],
+) -> dict[str, list[dict]]:
+    """Pasa a "epitetos" las formas confirmadas a mano (entradas
+    {"termino", "forma"}, el mismo formato que candidatos_a_epiteto)."""
+    por_termino: dict[str, set[str]] = {}
+    for c in confirmados:
+        por_termino.setdefault(c["termino"], set()).add(c["forma"])
+    nuevos = {}
+    for nombre, entradas in registros.items():
+        nuevos[nombre] = []
+        for e in entradas:
+            formas = por_termino.get(e["termino"], set())
+            if formas:
+                e = dict(e)
+                movidas = formas & (set(e.get("alias") or []) | set(e.get("variantes") or []))
+                for campo in ("alias", "variantes"):
+                    if campo in e:
+                        e[campo] = [f for f in e[campo] or [] if f not in formas]
+                e["epitetos"] = sorted(set(e.get("epitetos") or []) | movidas)
+            nuevos[nombre].append(e)
+    return nuevos
+
+
+def _repartir_y_fusionar(
     estables: dict[str, dict],
 ) -> tuple[dict[str, list[dict]], list[dict]]:
-    """Reparte los términos reconciliados en personajes/lugares/glosario,
-    aparta los ambiguos y fusiona alias dentro de cada registro."""
     personajes, lugares, glosario = repartir({"glosario": list(estables.values())})
     registros, ambiguas = {}, []
     for nombre, entradas, substring in (
@@ -480,16 +595,31 @@ def construir_registros(
     return registros, ambiguas
 
 
+def construir_registros(
+    estables: dict[str, dict], vetadas: set[str] = frozenset(),
+) -> tuple[dict[str, list[dict]], list[dict]]:
+    """Reparte los términos reconciliados en personajes/lugares/glosario,
+    aparta los ambiguos, fusiona alias dentro de cada registro y retira
+    las formas compartidas entre entidades."""
+    registros, ambiguas = _repartir_y_fusionar(estables)
+    registros, compartidas = retirar_formas_compartidas(registros, vetadas)
+    return registros, ambiguas + compartidas
+
+
 def incorporar(
     existentes: dict[str, list[dict]], estables: dict[str, dict],
+    vetadas: set[str] = frozenset(),
 ) -> tuple[dict[str, list[dict]], list[dict]]:
     """Añade al glosario ya fijado lo que trae una calibración incremental.
 
     Garantías (ver tests/SPECS.md):
       - ningún término existente desaparece ni cambia de forma canónica o
         de categoría;
-      - una forma nueva de un término existente se le añade como variante,
-        salvo que ya pertenezca a otra entidad;
+      - una forma nueva de un término existente se le añade como variante;
+      - una forma que acaba en dos entidades no se queda en ninguna: va a
+        discrepancias como forma compartida (retirar_formas_compartidas),
+        en vez de quedársela la primera que la reclamó;
+      - los epítetos se guardan, pero no identifican a ninguna entidad;
       - lo que choca con lo fijado (otra categoría, un nombre que podría
         ser de varias entidades) va a discrepancias, no al glosario.
     """
@@ -516,9 +646,9 @@ def incorporar(
             candidatos = set()
         candidatos |= {v for v in formas[1:] if v in por_termino}
         if not candidatos:
-            # Entidad nueva: sin las formas que ya pertenecen a otras.
-            nuevos[termino] = {**entrada, "variantes": [
-                v for v in entrada.get("variantes") or [] if v not in duenos]}
+            # Entidad nueva. Si alguna de sus formas ya es de otra entidad,
+            # la conserva: retirar_formas_compartidas la quitará de las dos.
+            nuevos[termino] = entrada
             continue
         if len(candidatos) > 1:
             discrepancias.append({
@@ -538,17 +668,21 @@ def incorporar(
                 "evidencia": entrada.get("evidencia"),
             })
         formas_nuevas = {f for f in formas
-                         if f != fijado["termino"] and not duenos.get(f)}
+                         if f != fijado["termino"] and fijado["termino"] not in duenos.get(f, ())}
         if formas_nuevas:
             for campo in ("variantes", "alias"):
                 fijado[campo] = sorted(set(fijado.get(campo) or []) | formas_nuevas)
             for f in formas_nuevas:
-                duenos[f] = {fijado["termino"]}
+                duenos.setdefault(f, set()).add(fijado["termino"])
+        epitetos_nuevos = set(entrada.get("epitetos") or []) - set(fijado.get("epitetos") or [])
+        if epitetos_nuevos:
+            fijado["epitetos"] = sorted(set(fijado.get("epitetos") or []) | epitetos_nuevos)
 
-    nuevos_registros, ambiguas = construir_registros(nuevos)
+    nuevos_registros, ambiguas = _repartir_y_fusionar(nuevos)
     for nombre, entradas in nuevos_registros.items():
         registros.setdefault(nombre, []).extend(entradas)
-    return registros, discrepancias + ambiguas
+    registros, compartidas = retirar_formas_compartidas(registros, vetadas)
+    return registros, discrepancias + ambiguas + compartidas
 
 
 def cargar_registros(directorio: Path) -> dict[str, list[dict]] | None:
@@ -559,40 +693,87 @@ def cargar_registros(directorio: Path) -> dict[str, list[dict]] | None:
             for k, f in REGISTROS.items()}
 
 
-def parsear_args(args: list[str]) -> tuple[str | None, int, bool, list[str]]:
-    obra = None
-    n = 3
-    desde_cero = False
-    rutas = []
+def parsear_args(args: list[str]) -> dict:
+    opciones = {"obra": None, "n": 3, "desde_cero": False, "sanear": False,
+                "epitetos": None, "rutas": []}
     for arg in args:
         if arg.startswith("--obra="):
-            obra = arg.split("=", 1)[1]
+            opciones["obra"] = arg.split("=", 1)[1]
         elif arg.startswith("--n="):
-            n = int(arg.split("=", 1)[1])
+            opciones["n"] = int(arg.split("=", 1)[1])
         elif arg == "--desde-cero":
-            desde_cero = True
+            opciones["desde_cero"] = True
+        elif arg == "--sanear":
+            opciones["sanear"] = True
+        elif arg.startswith("--epitetos="):
+            opciones["epitetos"] = arg.split("=", 1)[1]
         else:
-            rutas.append(arg)
-    return obra, n, desde_cero, rutas
+            opciones["rutas"].append(arg)
+    return opciones
+
+
+def leer_discrepancias(ruta: Path) -> list[dict]:
+    return json.loads(ruta.read_text(encoding="utf-8")) if ruta.exists() else []
+
+
+def sanear(directorio: Path, ruta_epitetos: str | None) -> None:
+    """Sanea un glosario ya fijado sin llamar a la API (y sin cambiar
+    ningún término canónico):
+      --sanear           retira las formas compartidas (a discrepancias) y
+                         escribe candidatos_epiteto.json para revisarlo a mano;
+      --epitetos=<json>  pasa a "epitetos" las formas de esa lista (la de
+                         candidatos, tras quitar a mano las que no lo son).
+    Después hay que recargar las entidades con poblar_almacen.py."""
+    registros = cargar_registros(directorio)
+    if registros is None:
+        print(f"No hay glosario fijado en {directorio}.")
+        sys.exit(1)
+    ruta_discrepancias = directorio / "discrepancias_calibracion.json"
+    anteriores = leer_discrepancias(ruta_discrepancias)
+
+    if ruta_epitetos:
+        confirmados = json.loads(Path(ruta_epitetos).read_text(encoding="utf-8"))
+        registros = mover_a_epitetos(registros, confirmados)
+        print(f"{len(confirmados)} forma(s) pasadas a epítetos.")
+    registros, compartidas = retirar_formas_compartidas(registros, formas_vetadas(anteriores))
+    for nombre, fichero in REGISTROS.items():
+        guardar(registros[nombre], directorio / fichero)
+    if compartidas:
+        guardar(anteriores + [{**d, "lote": "saneado"} for d in compartidas], ruta_discrepancias)
+    print(f"\n{len(compartidas)} forma(s) compartida(s) retiradas:")
+    for d in compartidas:
+        print(f"  {d['termino']}: {', '.join(d['entidades'])}")
+
+    candidatos = candidatos_a_epiteto(registros)
+    guardar(candidatos, directorio / "candidatos_epiteto.json")
+    print(f"\n{len(candidatos)} candidato(s) a epíteto (revisar a mano; no se ha movido nada):")
+    for c in candidatos:
+        print(f"  {c['termino']} [{c['registro']}]: {c['forma']}")
 
 
 def main():
     if len(sys.argv) < 2:
         print(
             "Uso: uv run python src/calibrar_glosario.py --obra=nombre_obra "
-            "[--n=3] [--desde-cero] <fragmento1.txt> [fragmento2.txt ...]"
+            "[--n=3] [--desde-cero] <fragmento1.txt> [fragmento2.txt ...]\n"
+            "     uv run python src/calibrar_glosario.py --obra=nombre_obra "
+            "--sanear [--epitetos=lista.json]"
         )
         sys.exit(1)
 
-    obra, n, desde_cero, rutas = parsear_args(sys.argv[1:])
+    opciones = parsear_args(sys.argv[1:])
+    obra, n, desde_cero, rutas = (opciones[k] for k in ("obra", "n", "desde_cero", "rutas"))
     if not obra:
         print("Falta --obra=nombre_obra (evita mezclar salidas entre novelas).")
         sys.exit(1)
+    directorio_salida = Path("data") / obra / "exports"
+    if opciones["sanear"] or opciones["epitetos"]:
+        sanear(directorio_salida, opciones["epitetos"])
+        return
     if not rutas:
         print("No se ha indicado ningún fragmento.")
         sys.exit(1)
 
-    directorio_salida = Path("data") / obra / "exports"
     existentes = None if desde_cero else cargar_registros(directorio_salida)
 
     if existentes is None:
@@ -613,11 +794,10 @@ def main():
         registros, otras = construir_registros(estables)
         discrepancias += otras
     else:
-        registros, otras = incorporar(existentes, estables)
+        anteriores = leer_discrepancias(ruta_discrepancias)
+        registros, otras = incorporar(existentes, estables, formas_vetadas(anteriores))
         lote = [Path(r).name for r in rutas]
         discrepancias = [{**d, "lote": lote} for d in discrepancias + otras]
-        anteriores = (json.loads(ruta_discrepancias.read_text(encoding="utf-8"))
-                      if ruta_discrepancias.exists() else [])
         discrepancias = anteriores + discrepancias
         nuevos = {k: len(registros[k]) - len(existentes[k]) for k in REGISTROS}
         print(f"\nTérminos nuevos: {nuevos}")

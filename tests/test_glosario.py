@@ -5,13 +5,17 @@ llamada en sí.
 """
 
 from calibrar_glosario import (
-    construir_registros, fusionar_alias, reconciliar, repartir, separar_ambiguos,
+    MOTIVO_COMPARTIDA, candidatos_a_epiteto, construir_registros, fusionar_alias,
+    reconciliar, repartir, retirar_formas_compartidas, separar_ambiguos,
 )
 
 
-def entrada(termino, categoria="persona", variantes=(), confianza="alta"):
-    return {"termino": termino, "categoria": categoria,
-            "variantes": list(variantes), "confianza": confianza}
+def entrada(termino, categoria="persona", variantes=(), confianza="alta", epitetos=None):
+    e = {"termino": termino, "categoria": categoria,
+         "variantes": list(variantes), "confianza": confianza}
+    if epitetos is not None:   # las respuestas grabadas no traen el campo
+        e["epitetos"] = list(epitetos)
+    return e
 
 
 def pasada(*entradas):
@@ -181,3 +185,107 @@ def test_separar_ambiguos_solo_aparta_paraguas():
     assert [e["termino"] for e in limpias] == ["Agamenón", "Menelao"]
     assert ambiguas[0]["termino"] == "Atridas"
     assert ambiguas[0]["entidades"] == ["Agamenón", "Menelao"]
+
+
+# --- variantes frente a epítetos -----------------------------------------------
+
+def test_sin_campo_epitetos_vale_como_lista_vacia():
+    # Las respuestas grabadas antes del cambio de prompt no traen "epitetos".
+    estables, _ = reconciliar([pasada(entrada("Aquiles", variantes=["Pelida"]))])
+    assert estables["Aquiles"]["epitetos"] == []
+    assert estables["Aquiles"]["variantes"] == ["Pelida"]
+
+
+def test_epitetos_se_unen_y_ganan_a_variante():
+    estables, _ = reconciliar([
+        pasada(entrada("Aquiles", variantes=["Pelida", "el de los pies ligeros"])),
+        pasada(entrada("Aquiles", variantes=["Pelida"], epitetos=["el de los pies ligeros"])),
+        pasada(entrada("Aquiles", epitetos=["divino"])),
+    ])
+    aquiles = estables["Aquiles"]
+    assert aquiles["variantes"] == ["Pelida"]
+    assert aquiles["epitetos"] == ["divino", "el de los pies ligeros"]
+
+
+def test_epitetos_no_intervienen_en_la_fusion():
+    estables, _ = reconciliar([pasada(
+        entrada("Héctor", epitetos=["domador de caballos"]),
+        entrada("Cástor", epitetos=["domador de caballos"]),
+    )])
+    registros, discrepancias = construir_registros(estables)
+    personajes = {e["termino"]: e for e in registros["personajes"]}
+    assert set(personajes) == {"Héctor", "Cástor"}
+    assert all(e["alias"] == [] for e in personajes.values())
+    assert all(e["epitetos"] == ["domador de caballos"] for e in personajes.values())
+    assert discrepancias == []
+
+
+# --- red de seguridad: formas compartidas ----------------------------------------
+
+def compartidas(discrepancias):
+    return {d["termino"]: d["entidades"] for d in discrepancias
+            if d["motivo"] == MOTIVO_COMPARTIDA}
+
+
+def test_epiteto_dado_como_variante_de_dos_no_queda_en_ninguno():
+    # El modelo se equivoca y da «domador de caballos» como variante.
+    estables, _ = reconciliar([pasada(
+        entrada("Héctor", variantes=["Héctor Priámida", "domador de caballos"]),
+        entrada("Cástor", variantes=["domador de caballos"]),
+    )])
+    registros, discrepancias = construir_registros(estables)
+    personajes = {e["termino"]: e for e in registros["personajes"]}
+    for e in personajes.values():
+        assert "domador de caballos" not in e["alias"] + e["variantes"]
+    assert personajes["Héctor"]["alias"] == ["Héctor Priámida"]
+    assert compartidas(discrepancias) == {"domador de caballos": ["Cástor", "Héctor"]}
+
+
+def test_patronimico_ambiguo_va_a_discrepancias():
+    estables, _ = reconciliar([pasada(
+        entrada("Agamenón", variantes=["Atrida", "rey de hombres"]),
+        entrada("Menelao", variantes=["Atrida"]),
+    )])
+    registros, discrepancias = construir_registros(estables)
+    for e in registros["personajes"]:
+        assert "Atrida" not in e["alias"] + e["variantes"]
+    assert compartidas(discrepancias) == {"Atrida": ["Agamenón", "Menelao"]}
+
+
+def test_forma_compartida_entre_registros_distintos():
+    # Caso de lo grabado: «el olímpico», alias de Júpiter y también de Olimpo.
+    registros, discrepancias = retirar_formas_compartidas({
+        "personajes": [{"termino": "Júpiter", "alias": ["Cronión", "el Olímpico"],
+                        "variantes": ["Cronión", "el Olímpico"]}],
+        "lugares": [{"termino": "Olimpo", "alias": ["el olímpico"], "variantes": ["el olímpico"]}],
+        "glosario": [],
+    })
+    assert registros["personajes"][0]["alias"] == ["Cronión"]
+    assert registros["lugares"][0]["alias"] == []
+    assert compartidas(discrepancias) == {"el Olímpico": ["Júpiter", "Olimpo"]}
+
+
+def test_el_termino_canonico_nunca_se_retira():
+    registros, discrepancias = retirar_formas_compartidas({"personajes": [
+        {"termino": "Paris", "alias": []},
+        {"termino": "Alejandro", "alias": ["Paris", "Alejandro divino"]},
+    ]})
+    assert [e["alias"] for e in registros["personajes"]] == [[], ["Alejandro divino"]]
+    assert compartidas(discrepancias) == {"Paris": ["Alejandro", "Paris"]}
+
+
+def test_formas_vetadas_se_retiran_sin_nueva_discrepancia():
+    registros, discrepancias = retirar_formas_compartidas(
+        {"personajes": [{"termino": "Menelao", "alias": ["valiente en la pelea"]}]},
+        vetadas={"valiente en la pelea"})
+    assert registros["personajes"][0]["alias"] == [] and discrepancias == []
+
+
+def test_candidatos_a_epiteto():
+    candidatos = candidatos_a_epiteto({"personajes": [
+        {"termino": "Héctor", "alias": ["Héctor Priámida", "domador de caballos",
+                                        "vástago de Príamo"]},
+        {"termino": "Marte", "alias": ["vástago de Marte"], "variantes": ["vástago de Marte"]},
+    ]})
+    assert candidatos == [{"termino": "Héctor", "registro": "personajes",
+                           "forma": "domador de caballos"}]

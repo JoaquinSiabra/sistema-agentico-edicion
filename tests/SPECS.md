@@ -48,7 +48,30 @@ Entrada: fragmentos de la obra. Salida: las N pasadas en bruto,
 | Fusión de alias: por variante reportada siempre; por subcadena (palabra completa) solo en personajes | R |
 | Dos entidades distintas nunca acaban una como alias de la otra (caso Áyax Telamonio / Áyax de Oileo) | R |
 | Un término cuyas variantes son varias entidades distintas (un «Ayax» genérico) no entra en el glosario: va a discrepancias | R |
-| Con las 3 pasadas grabadas de la Ilíada, el resultado es el mismo que el 2026-10-03, salvo la corrección de los dos Áyax | S |
+| Con las 3 pasadas grabadas de la Ilíada, el resultado es el mismo que el 2026-10-03, salvo la corrección de los dos Áyax y las formas compartidas | S |
+
+**Variantes y epítetos.** El modelo separa `variantes` (formas que nombran a
+esa entidad y solo a ella) de `epitetos` (fórmulas descriptivas que podrían
+aplicarse a otras). Los epítetos se guardan, pero no intervienen en la
+fusión, en la identificación de entidades fijadas ni en la búsqueda de hechos.
+
+| Spec | Prueba |
+|---|---|
+| Una respuesta sin el campo `epitetos` vale como `[]` (siguen valiendo las respuestas grabadas) | R, S |
+| Los epítetos de todas las pasadas se unen; si una pasada da una forma como variante y otra como epíteto, gana epíteto | R |
+| Dos entidades que comparten un epíteto no se fusionan ni lo tienen como alias | R |
+| Una calibración real separa al menos un epíteto conocido del Canto I, sin repetirlo como variante | A |
+
+**Formas compartidas** (red de seguridad determinista, por si el modelo se equivoca):
+
+| Spec | Prueba |
+|---|---|
+| Una forma asociada a dos o más entidades, en cualquier registro, sale de los alias y variantes de todas y va a discrepancias como «forma compartida» («domador de caballos» en Héctor y Cástor; «Atrida» en Agamenón y Menelao; «el Olímpico» en Júpiter y Olimpo) | R, S |
+| El término canónico de una entidad nunca se le retira | R |
+| Una forma ya declarada compartida no vuelve a asignarse en calibraciones posteriores | R |
+| `--sanear` aplica la regla a un glosario fijado sin llamar a la API, sin cambiar términos, y es idempotente | R |
+| `--sanear` lista como candidatos a epíteto los alias en minúscula sin nombre propio, sin mover nada | R |
+| `--epitetos=<lista>` mueve a `epitetos` solo las formas confirmadas a mano | R |
 
 **Calibración incremental** (por defecto si la obra ya tiene glosario; `--desde-cero` para recalibrar todo):
 
@@ -60,8 +83,10 @@ Entrada: fragmentos de la obra. Salida: las N pasadas en bruto,
 | Un término nuevo va a su registro (personajes, lugares o glosario) | R, S |
 | Una forma nueva de un término fijado se le añade como variante y alias | R, S |
 | Un nombre que ya es variante de un término fijado no se duplica como término | R |
-| Compartir solo un epíteto con una entidad fijada no la identifica (caso Climene / Juno), ni el epíteto ajeno pasa al término nuevo | R |
-| Una forma que ya pertenece a otra entidad no se reasigna | R |
+| Compartir solo un epíteto con una entidad fijada no la identifica (caso Climene / Juno): el epíteto pasa a forma compartida y no se queda en ninguna | R |
+| Una entidad nueva que trae un epíteto ya usado no se fusiona con la existente | R |
+| Una forma que ya pertenece a otra entidad no se reasigna: si la reclaman dos, va a discrepancias como forma compartida (no gana la primera) | R |
+| Los epítetos nuevos de un término fijado se le añaden, sin identificarlo | R |
 | Una categoría distinta de la fijada, o un nombre de varias entidades, va a discrepancias | R |
 | Las pasadas en bruto y las discrepancias anteriores no se pierden | S |
 
@@ -103,4 +128,6 @@ Entrada: un fragmento, su `--orden` y la calibración de la obra. Salida:
 | Nunca devuelve un hecho posterior; con lectura parcial, el fragmento en curso no aporta hechos | D |
 | El filtro no hace perder resultados permitidos (el índice HNSW los encuentra todos) | D |
 | Una entidad se encuentra por su término, alias o variante | D |
+| Los hechos de una entidad no incluyen los que solo coinciden por un epíteto («domador de caballos» de Héctor; «valiente en la pelea» de Diomedes no sale como hecho de Menelao) | D |
+| Un epíteto no sirve para identificar a una entidad en la búsqueda | D |
 | Cada consulta de referencia de la Ilíada encuentra su canto, con la palabra clave entre los 5 primeros | D |

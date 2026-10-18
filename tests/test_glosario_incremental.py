@@ -14,7 +14,9 @@ from pathlib import Path
 import pytest
 
 import calibrar_glosario
-from calibrar_glosario import REGISTROS, incorporar
+from calibrar_glosario import (
+    MOTIVO_COMPARTIDA, REGISTROS, incorporar, retirar_formas_compartidas,
+)
 
 RAIZ = Path(__file__).resolve().parents[1]
 FIJOS = RAIZ / "tests" / "fijos" / "iliada_cantos_i_ii"
@@ -25,15 +27,27 @@ def leer(ruta: Path):
     return json.loads(ruta.read_text(encoding="utf-8"))
 
 
-@pytest.fixture
-def fijado() -> dict[str, list[dict]]:
+def grabado() -> dict[str, list[dict]]:
     return {k: leer(FIJOS / f) for k, f in REGISTROS.items()}
 
 
-def estable(termino, categoria="persona", variantes=(), evidencia="..."):
+@pytest.fixture
+def fijado() -> dict[str, list[dict]]:
+    """El glosario grabado de los Cantos I-II tal como lo deja hoy la fase
+    0b: sin formas compartidas entre entidades (lo grabado es anterior a
+    esa regla y aún tiene algunas, p.ej. "valiente en la pelea")."""
+    return retirar_formas_compartidas(grabado())[0]
+
+
+def compartidas(discrepancias):
+    return {d["termino"]: d["entidades"] for d in discrepancias
+            if d["motivo"] == MOTIVO_COMPARTIDA}
+
+
+def estable(termino, categoria="persona", variantes=(), evidencia="...", epitetos=()):
     """Una entrada como las que deja reconciliar()."""
     return {"termino": termino, "categoria": categoria, "variantes": list(variantes),
-            "evidencia": evidencia, "confianza": "alta",
+            "epitetos": list(epitetos), "evidencia": evidencia, "confianza": "alta",
             "pasadas_que_lo_mencionan": 3, "pasadas_totales": 3,
             "pasadas_indices": [1, 2, 3], "disenso": []}
 
@@ -128,17 +142,63 @@ def test_compartir_un_epiteto_no_identifica_a_la_entidad(fijado):
     registros, discrepancias = incorporar(fijado, {
         "Climene": estable("Climene", variantes=["Climene la de los grandes ojos",
                                                  "la de los grandes ojos"])})
-    assert discrepancias == []
-    assert buscar(registros, "Juno")[1] == juno
     climene = buscar(registros, "Climene")[1]
-    assert climene["alias"] == ["Climene la de los grandes ojos"]   # sin el epíteto de Juno
+    assert climene["alias"] == ["Climene la de los grandes ojos"]
+    # El epíteto ya no es de nadie: ni Juno se lo queda por haberlo tenido antes.
+    assert "la de los grandes ojos" not in buscar(registros, "Juno")[1]["alias"]
+    assert compartidas(discrepancias) == {"la de los grandes ojos": ["Climene", "Juno"]}
+
+
+def test_entidad_nueva_con_epiteto_ya_usado_no_se_fusiona(fijado):
+    # «domador de caballos»: Cástor ya lo tiene; Héctor llega en un canto nuevo.
+    fijado["personajes"].append({**estable("Cástor"), "alias": ["domador de caballos"],
+                                 "variantes": ["domador de caballos"]})
+    registros, discrepancias = incorporar(fijado, {
+        "Héctor": estable("Héctor", variantes=["domador de caballos"]),
+        "Antenor": estable("Antenor", epitetos=["domador de caballos"])})
+    assert buscar(registros, "Cástor")[1]["alias"] == []
+    assert "domador de caballos" not in buscar(registros, "Héctor")[1]["alias"]
+    assert "Antenor" in terminos(registros)
+    assert compartidas(discrepancias) == {"domador de caballos": ["Cástor", "Héctor"]}
+
+
+def test_epitetos_se_guardan_y_no_identifican(fijado):
+    # Un epíteto de Juno dado como epíteto de un término nuevo no lo funde con ella.
+    registros, discrepancias = incorporar(fijado, {
+        "Juno": estable("Juno", epitetos=["hija de Saturno"]),
+        "Minerva": estable("Minerva", epitetos=["hija de Saturno", "la de los grandes ojos"])})
+    assert discrepancias == []
+    assert buscar(registros, "Juno")[1]["epitetos"] == ["hija de Saturno"]
+    assert buscar(registros, "Minerva")[1]["epitetos"] == ["hija de Saturno",
+                                                          "la de los grandes ojos"]
+    assert "la de los grandes ojos" in buscar(registros, "Juno")[1]["alias"]
 
 
 def test_forma_de_otra_entidad_no_se_reasigna(fijado):
-    # "Pelida" es de Aquiles: no puede pasar a ser alias de Agamenón.
-    registros, _ = incorporar(fijado, {"Agamenón": estable("Agamenón", variantes=["Pelida", "Atrida"])})
+    # "Pelida" es de Aquiles: no pasa a Agamenón. Como ahora la reclaman dos,
+    # no se queda en ninguna y va a revisión (no gana la primera en reclamarla).
+    registros, discrepancias = incorporar(fijado, {"Agamenón": estable("Agamenón", variantes=["Pelida", "Atrida"])})
     assert "Pelida" not in buscar(registros, "Agamenón")[1]["alias"]
-    assert "Pelida" in buscar(registros, "Aquiles")[1]["alias"]
+    assert "Pelida" not in buscar(registros, "Aquiles")[1]["alias"]
+    assert compartidas(discrepancias) == {"Pelida": ["Agamenón", "Aquiles"]}
+
+
+def test_patronimico_compartido_va_a_discrepancias(fijado):
+    # «Atrida» es de Agamenón; el Canto III lo da también para Menelao.
+    registros, discrepancias = incorporar(fijado, {"Menelao": estable("Menelao", variantes=["Atrida"])})
+    assert "Atrida" not in buscar(registros, "Agamenón")[1]["alias"]
+    assert "Atrida" not in buscar(registros, "Menelao")[1]["alias"]
+    assert compartidas(discrepancias) == {"Atrida": ["Agamenón", "Menelao"]}
+
+
+def test_forma_vetada_no_vuelve(fijado):
+    # Declarada compartida en una calibración anterior: aunque ahora la
+    # reclame una sola entidad, no se le asigna.
+    registros, discrepancias = incorporar(
+        fijado, {"Menelao": estable("Menelao", variantes=["valiente en la pelea"])},
+        vetadas={"valiente en la pelea"})
+    assert "valiente en la pelea" not in buscar(registros, "Menelao")[1]["alias"]
+    assert discrepancias == []
 
 
 # --- Lo que choca va a discrepancias -------------------------------------------
@@ -201,11 +261,16 @@ def test_incremental_de_principio_a_fin(api, monkeypatch, obra_calibrada):
     assert [e["termino"] for e in personajes[:len(fijados)]] == [e["termino"] for e in fijados]
     assert personajes[-1]["termino"] == "Alejandro"
     assert "Helena argiva" in next(e for e in personajes if e["termino"] == "Helena")["alias"]
-    assert leer(obra_calibrada / "lugares_obra.json") == leer(FIJOS / "lugares_obra.json")
+    # Lo grabado aún tenía formas compartidas: salen de los registros.
+    saneado, retiradas = retirar_formas_compartidas(grabado())
+    assert leer(obra_calibrada / "lugares_obra.json") == saneado["lugares"]
 
-    # Las discrepancias anteriores se conservan.
+    # Las discrepancias anteriores se conservan; las formas compartidas se añaden.
     discrepancias = leer(obra_calibrada / "discrepancias_calibracion.json")
-    assert discrepancias == leer(FIJOS / "discrepancias_calibracion.json")
+    anteriores = leer(FIJOS / "discrepancias_calibracion.json")
+    assert discrepancias[:len(anteriores)] == anteriores
+    assert compartidas(discrepancias[len(anteriores):]) == compartidas(retiradas)
+    assert all(d["lote"] == ["iliada_canto_iii.txt"] for d in discrepancias[len(anteriores):])
 
 
 def test_desde_cero_ignora_el_glosario_fijado(api, monkeypatch, obra_calibrada):
@@ -218,3 +283,49 @@ def test_desde_cero_ignora_el_glosario_fijado(api, monkeypatch, obra_calibrada):
     assert (obra_calibrada / "calibracion_pasada_1.json").exists()
     assert [e["termino"] for e in leer(obra_calibrada / "personajes_obra.json")] == [
         "Alejandro", "Helena"]
+
+
+# --- Saneado de un glosario ya fijado, sin API -----------------------------------
+
+def ejecutar(monkeypatch, *args):
+    monkeypatch.setattr(sys, "argv", ["calibrar_glosario.py", "--obra=iliada", *args])
+    calibrar_glosario.main()
+
+
+def test_sanear_retira_compartidas_y_lista_candidatos(api, monkeypatch, obra_calibrada):
+    cliente = api([])
+    ejecutar(monkeypatch, "--sanear")
+    assert cliente.peticiones == []
+
+    personajes = leer(obra_calibrada / "personajes_obra.json")
+    assert [e["termino"] for e in personajes] == [e["termino"] for e in leer(FIJOS / "personajes_obra.json")]
+    menelao = next(e for e in personajes if e["termino"] == "Menelao")
+    assert "valiente en la pelea" not in menelao["alias"] + menelao["variantes"]
+    discrepancias = leer(obra_calibrada / "discrepancias_calibracion.json")
+    assert compartidas(discrepancias)["valiente en la pelea"] == ["Diomedes", "Menelao"]
+
+    # Los candidatos solo se listan: nada se mueve hasta confirmarlos.
+    candidatos = leer(obra_calibrada / "candidatos_epiteto.json")
+    assert {"termino": "Héctor", "registro": "personajes", "forma": "matador de hombres"} in candidatos
+    assert not any(c["forma"] == "Héctor Priámida" for c in candidatos)   # mayúscula
+    assert not any(c["forma"] == "hermano de Agamenón" for c in candidatos)  # nombre propio
+    assert all(not e.get("epitetos") for e in personajes)
+
+    # Sanear dos veces no cambia nada ni duplica discrepancias.
+    ejecutar(monkeypatch, "--sanear")
+    assert leer(obra_calibrada / "personajes_obra.json") == personajes
+    assert leer(obra_calibrada / "discrepancias_calibracion.json") == discrepancias
+
+
+def test_epitetos_confirmados_a_mano_se_mueven(api, monkeypatch, obra_calibrada, tmp_path):
+    api([])
+    ejecutar(monkeypatch, "--sanear")
+    confirmados = tmp_path / "confirmados.json"
+    confirmados.write_text(json.dumps([
+        {"termino": "Héctor", "registro": "personajes", "forma": "matador de hombres"}],
+        ensure_ascii=False), encoding="utf-8")
+    ejecutar(monkeypatch, f"--epitetos={confirmados}")
+    hector = next(e for e in leer(obra_calibrada / "personajes_obra.json") if e["termino"] == "Héctor")
+    assert hector["epitetos"] == ["matador de hombres"]
+    assert "matador de hombres" not in hector["alias"] + hector["variantes"]
+    assert "Héctor Priámida" in hector["alias"]
