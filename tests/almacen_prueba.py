@@ -1,4 +1,5 @@
-"""Base de datos de prueba para el nivel 2.
+"""Base de datos de prueba para el nivel 2 (plugin de tests/conftest.py,
+para que lo compartan tests/db/ y tests/continuidad/).
 
 Crea desde cero `almacen_test` (nunca toca `almacen`), aplica schema.sql
 y carga los Cantos I y II de la Ilíada con poblar_almacen.poblar, una sola
@@ -19,6 +20,7 @@ import json
 import os
 import pickle
 import shutil
+from contextlib import contextmanager
 from pathlib import Path
 
 import numpy as np
@@ -27,8 +29,10 @@ import pytest
 
 from poblar_almacen import MODELO_EMBEDDING, cargar_modelo, poblar
 
-RAIZ = Path(__file__).resolve().parents[2]
+RAIZ = Path(__file__).resolve().parents[1]
 FIJOS = RAIZ / "tests" / "fijos" / "iliada_cantos_i_ii"
+FIJOS_III_IV = RAIZ / "tests" / "fijos" / "iliada_cantos_iii_iv"
+CANTOS = {1: "i", 2: "ii", 3: "iii", 4: "iv"}
 TEXTOS = RAIZ / "tests" / "fijos" / "textos"
 NOMBRE_BD = "almacen_test"
 DSN_ADMIN = os.environ.get(
@@ -45,15 +49,19 @@ def dsn_test() -> str:
     return " ".join(f"{k}={v}" for k, v in partes.items())
 
 
-def exports_de_prueba(destino: Path) -> Path:
+def exports_de_prueba(destino: Path, glosario: Path = FIJOS,
+                      canon_de: dict[int, Path] | None = None) -> Path:
     """Monta data/<obra>/exports como lo deja la Fase 1: el glosario fijado
     y un canon/NNNN.json por canto, con las dos claves que añade
-    extraer_canon.py apuntando a los textos de tests/fijos/textos."""
+    extraer_canon.py apuntando a los textos de tests/fijos/textos.
+    Por defecto, los Cantos I-II; `canon_de` dice de qué carpeta sale el
+    canon de cada canto."""
     (destino / "canon").mkdir(parents=True)
     for nombre in ("personajes_obra.json", "lugares_obra.json", "glosario_obra.json"):
-        shutil.copy(FIJOS / nombre, destino)
-    for orden, canto in ((1, "i"), (2, "ii")):
-        canon = json.loads((FIJOS / "respuestas_canon" / f"{orden:04d}.json").read_text(encoding="utf-8"))
+        shutil.copy(glosario / nombre, destino)
+    for orden, fijos in (canon_de or {1: FIJOS, 2: FIJOS}).items():
+        canto = CANTOS[orden]
+        canon = json.loads((fijos / "respuestas_canon" / f"{orden:04d}.json").read_text(encoding="utf-8"))
         canon["orden_fragmento"] = orden
         canon["ruta_fragmento_origen"] = str(TEXTOS / f"iliada_canto_{canto}.txt")
         (destino / "canon" / f"{orden:04d}.json").write_text(
@@ -130,3 +138,20 @@ def cur(bd):
     finally:
         con.rollback()
         con.close()
+
+
+@contextmanager
+def obra_aparte(bd, modelo, slug: str, exports: Path):
+    """Carga otra obra en la base de prueba y la borra al terminar: las
+    pruebas de carga cuentan todo lo que hay en la base."""
+    con = psycopg2.connect(bd)
+    try:
+        poblar(con, modelo, slug, exports)
+        yield con
+    finally:
+        con.rollback()
+        with con.cursor() as cur:
+            cur.execute("DELETE FROM obras WHERE slug = %s", (slug,))
+        con.commit()
+        con.close()
+

@@ -12,6 +12,10 @@ from types import SimpleNamespace
 
 import pytest
 
+# Fixtures de la base de datos de prueba (bd, cur, modelo...), compartidas
+# por tests/db/ y tests/continuidad/.
+pytest_plugins = ["almacen_prueba"]
+
 NIVELES = {
     "db": "necesita Postgres + pgvector (activar con --db)",
     "api": "llama de verdad a la API de Claude, con coste (activar con --api)",
@@ -65,14 +69,15 @@ class ClienteFalso:
 
 @pytest.fixture
 def api(monkeypatch):
-    """api(respuestas) instala un ClienteFalso en los tres scripts."""
+    """api(respuestas) instala un ClienteFalso en los scripts que llaman a Claude."""
     import calibrar_glosario
     import calibrar_taxonomia
+    import continuidad
     import extraer_canon
 
     def instalar(respuestas):
         cliente = ClienteFalso(respuestas)
-        for modulo in (calibrar_glosario, calibrar_taxonomia, extraer_canon):
+        for modulo in (calibrar_glosario, calibrar_taxonomia, extraer_canon, continuidad):
             monkeypatch.setattr(modulo.anthropic, "Anthropic", cliente)
         return cliente
     return instalar
