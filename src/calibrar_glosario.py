@@ -637,7 +637,16 @@ def incorporar(
 
     discrepancias: list[dict] = []
     nuevos: dict[str, dict] = {}
-    for termino, entrada in estables.items():
+    # Primero lo que es de entidades ya fijadas: así sus formas nuevas ya
+    # constan cuando otra pasada da una de ellas como término suelto (una
+    # pasada dio "Minerva alalcomenia" como variante de Minerva y otra como
+    # término propio; procesada antes, acababa como entidad aparte).
+    def es_de_fijada(par):
+        termino, entrada = par
+        return termino in por_termino or any(
+            v in por_termino for v in entrada.get("variantes") or [])
+
+    for termino, entrada in sorted(estables.items(), key=lambda par: not es_de_fijada(par)):
         formas = [termino, *(entrada.get("variantes") or [])]
         # Es una entidad ya fijada si su nombre ya es una forma conocida, o
         # si el modelo da como variante el término canónico de una. Compartir
