@@ -88,7 +88,7 @@ def test_epiteto_o_forma_compartida_no_trae_entidades():
     assert detectar_entidades("Llegó Cástor.", glosario) == ["Cástor"]     # control
 
 
-# --- Unión de vías, origen y tope -------------------------------------------
+# --- Combinación de vías, origen y tope -------------------------------------
 
 def test_cada_hecho_indica_por_que_via_llego():
     comun = hecho(3, 1)

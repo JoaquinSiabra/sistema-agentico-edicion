@@ -493,7 +493,7 @@ def imprimir(informe: Informe) -> None:
     for a in informe.avisos:
         print(f"AVISO ({a.gravedad}, {a.tipo}, hecho {a.direccion}) [{a.hecho}]")
         print(f"  Pasaje: «{a.cita}»")
-        print(f"  Canon ({a.afirmado_por}): {a.texto_hecho}")
+        print(f"  Hecho canónico ({a.afirmado_por}): {a.texto_hecho}")
         print(f"  {a.explicacion}\n")
     for n in informe.notas:
         quien = f" ({n.afirmado_por})" if n.afirmado_por else ""
