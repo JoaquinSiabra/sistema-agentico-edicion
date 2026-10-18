@@ -1,0 +1,1302 @@
+{
+  "id": "S01",
+  "pasaje": "Pándaro, viendo que su flecha había herido en el hombro al rey de hombres Agamenón, se regocijó en su corazón.",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 4,
+    "char": 7327,
+    "hechos": [
+      {
+        "id": 10001,
+        "orden_fragmento": 1,
+        "hecho": "La disputa entre el Atrida Agamenón y el divino Aquiles fue el punto de inicio de la cólera de Aquiles.",
+        "momento_canonico": "verso 1, al inicio del fragmento",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10002,
+        "orden_fragmento": 1,
+        "hecho": "Apolo, hijo de Júpiter y de Latona, airado con el rey Agamenón, suscitó una maligna peste en el ejército aqueo.",
+        "momento_canonico": "verso 8",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10003,
+        "orden_fragmento": 1,
+        "hecho": "Apolo causó la peste a causa del ultraje que Agamenón infiriera al sacerdote Crises.",
+        "momento_canonico": "verso 8",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10005,
+        "orden_fragmento": 1,
+        "hecho": "Crises suplicó a todos los aqueos y particularmente a los dos Atridas que liberaran a su hija y admitieran el rescate.",
+        "momento_canonico": "verso 17, parlamento de Crises",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10007,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón rechazó el rescate de Crises y lo despidió con amenazador lenguaje.",
+        "momento_canonico": "verso 22 y parlamento de Agamenón en versos 26-32",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10008,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón declaró que Criseida envejecería en su casa en Argos, lejos de su patria, trabajando en el telar y compartiendo su lecho.",
+        "momento_canonico": "verso 26, parlamento de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10009,
+        "orden_fragmento": 1,
+        "hecho": "Crises sintió temor, obedeció el mandato de Agamenón y se fue en silencio por la orilla del mar.",
+        "momento_canonico": "verso 33",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10017,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles prometió proteger a Calcas con juramento por Apolo, afirmando que nadie le pondría las manos encima mientras él viviera, aunque hablara de Agamenón.",
+        "momento_canonico": "verso 84, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10018,
+        "orden_fragmento": 1,
+        "hecho": "Calcas reveló que Apolo estaba irritado porque Agamenón había ultrajado al sacerdote Crises, no devolviendo a su hija ni admitiendo el rescate.",
+        "momento_canonico": "verso 92, parlamento de Calcas",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Calcas",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10020,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón se levantó afligido y con las negras entrañas llenas de cólera tras las palabras de Calcas.",
+        "momento_canonico": "verso 101",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10021,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón afirmó preferir a Criseida sobre Clitemnestra, su legítima esposa, porque no le era inferior ni en talle, ni en natural, ni en inteligencia, ni en destreza.",
+        "momento_canonico": "verso 106, parlamento de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10022,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón aceptó devolver a Criseida si los aqueos le preparaban otra recompensa, alegando que no podía quedarse sin la suya.",
+        "momento_canonico": "verso 106, parlamento de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10023,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles respondió que los aqueos no tenían cosas comunes porque el botín de las ciudades ya estaba repartido, y propuso que Agamenón devolviera a la joven y fuera recompensado el triple o cuádruple si se tomaba Troya.",
+        "momento_canonico": "verso 121, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10024,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón amenazó con apropiarse de la recompensa de Aquiles, de Ayax o de Ulises si los aqueos no le daban otra recompensa equivalente.",
+        "momento_canonico": "verso 130, parlamento de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10025,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón ordenó botar una nave al mar, reunir remeros, embarcar víctimas para una hecatombe y a Criseida, con Ayax, Idomeneo, Ulises o Aquiles como capitán.",
+        "momento_canonico": "verso 130, parlamento de Agamenón",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10026,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles declaró que no había venido a pelear por los troyanos, pues los teucros nunca le habían causado daño personal, sino que seguía a Agamenón para vengar a Menelao y a él.",
+        "momento_canonico": "verso 148, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10027,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles amenazó con regresar a Ptía en sus naves cóncavas, negándose a permanecer sin honra para proporcionarle ganancia y riqueza a Agamenón.",
+        "momento_canonico": "verso 148, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10028,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón respondió que Aquiles podía irse, que le era más odioso que ningún otro rey, y le amenazó con enviar su nave con amigos a llevarse a Briseida de la tienda de Aquiles.",
+        "momento_canonico": "verso 172, parlamento de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10029,
+        "orden_fragmento": 1,
+        "hecho": "El corazón de Aquiles discurrió entre dos opciones: matar al Atrida o calmar su cólera.",
+        "momento_canonico": "verso 188",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10035,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles denostó a Agamenón llamándole borracho, cara de perro y corazón de ciervo, y prestó juramento por el cetro de que los aqueos echarían de menos a Aquiles cuando Héctor los hiciera sucumbir.",
+        "momento_canonico": "verso 223, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10038,
+        "orden_fragmento": 1,
+        "hecho": "Néstor afirmó haber tratado en otro tiempo con hombres más esforzados que Aquiles y Agamenón: Pirítoo, Driante, Ceneo, Exadio, Polifemo y Teseo, y haber combatido junto a ellos contra los Centauros.",
+        "momento_canonico": "verso 254, parlamento de Néstor",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Néstor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10039,
+        "orden_fragmento": 1,
+        "hecho": "Néstor pidió a Agamenón que no quitara la moza a Aquiles y a Aquiles que no altercase de igual a igual con el rey, argumentando que Agamenón es más poderoso por reinar sobre mayor número de hombres y que Aquiles es más esforzado porque una diosa lo parió.",
+        "momento_canonico": "verso 254, parlamento de Néstor",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Néstor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10040,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón respondió a Néstor que Aquiles quería sobreponerse a todos y dar órdenes, y cuestionó si los dioses le permitían proferir injurias por haberle hecho belicoso.",
+        "momento_canonico": "verso 285, parlamento de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10041,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles declaró que no combatiría con sus manos por la moza ni con Agamenón ni con otro alguno, y advirtió que si alguien intentaba llevarse lo que tenía junto a su nave, su sangre correría en torno de su lanza.",
+        "momento_canonico": "verso 292, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10044,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón botó al mar una velera nave, escogió veinte remeros, cargó las víctimas de la hecatombe, embarcó a Criseida y puso como capitán al ingenioso Ulises.",
+        "momento_canonico": "verso 304",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10045,
+        "orden_fragmento": 1,
+        "hecho": "El Atrida mandó que los hombres se purificaran; hicieron lustraciones echando impurezas al mar y sacrificaron hecatombes de toros y cabras en honor de Apolo en la playa.",
+        "momento_canonico": "verso 312",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10046,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón envió a sus heraldos Taltibio y Euríbates a la tienda de Aquiles a traer a Briseida.",
+        "momento_canonico": "verso 318",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10049,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles dijo a los heraldos que no eran ellos los culpables sino Agamenón, y ordenó a Patroclo que sacara a Briseida y la entregara.",
+        "momento_canonico": "verso 334, parlamento de Aquiles",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10053,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles relató a Tetis que fueron a Tebas, la sagrada ciudad de Eetión, la saquearon y el botín fue distribuido por los aqueos, separando a Criseida para el Atrida.",
+        "momento_canonico": "verso 364, parlamento de Aquiles a Tetis",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 10062,
+        "orden_fragmento": 1,
+        "hecho": "Ulises dijo a Crises que Agamenón le enviaba a traerle la hija y a ofrecer una sacra hecatombe a Apolo en favor de los dánaos.",
+        "momento_canonico": "verso 442, parlamento de Ulises",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20001,
+        "orden_fragmento": 2,
+        "hecho": "Júpiter decidió enviar un pernicioso Sueño a Agamenón.",
+        "momento_canonico": "al inicio del fragmento (verso 1)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20002,
+        "orden_fragmento": 2,
+        "hecho": "Júpiter ordenó al Sueño que dijera a Agamenón que armara a los aqueos y los lanzara al ataque, pues ahora podría tomar Troya porque los inmortales ya no están discordes tras ser persuadidos por Juno.",
+        "momento_canonico": "discurso de Júpiter al Sueño (versos 8-15)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20003,
+        "orden_fragmento": 2,
+        "hecho": "El Sueño llegó en un instante a las naves aqueas, encontró dormido a Agamenón y se puso sobre su cabeza tomando la figura de Néstor, hijo de Neleo, que era el anciano a quien Agamenón más honraba.",
+        "momento_canonico": "narración tras el discurso de Júpiter (versos 16-22)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20004,
+        "orden_fragmento": 2,
+        "hecho": "El Sueño, transfigurado en Néstor, repitió a Agamenón el mensaje de Júpiter: que armara a los aqueos y los sacara al combate, pues podría tomar Troya porque los inmortales ya no están discordes por haberlos persuadido Juno.",
+        "momento_canonico": "discurso del Sueño a Agamenón (versos 23-34)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Sueño",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20005,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón, al despertar, creyó que iba a tomar la ciudad de Troya ese mismo día, sin saber lo que Júpiter tramaba.",
+        "momento_canonico": "narración tras el discurso del Sueño (versos 35-40)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20006,
+        "orden_fragmento": 2,
+        "hecho": "Al despertar, Agamenón vistió una túnica fina, hermosa y nueva; se echó el gran manto, calzó bellas sandalias, colgó del hombro la espada tachonada con argénteos clavos y tomó el imperecedero cetro de su padre.",
+        "momento_canonico": "narración tras el despertar de Agamenón (versos 41-47)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20007,
+        "orden_fragmento": 2,
+        "hecho": "Cuando la Aurora subía al Olimpo para anunciar el día, Agamenón ordenó que los heraldos convocaran a junta a los aqueos.",
+        "momento_canonico": "narración (versos 48-52)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20009,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón refirió a los próceres el sueño que tuvo, describiendo que el Sueño divino era muy semejante al ilustre Néstor en forma, estatura y natural.",
+        "momento_canonico": "discurso de Agamenón en el consejo (versos 56-75)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20010,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón propuso probar a los aqueos aconsejándoles que huyeran en las naves, mientras los próceres del consejo debían hablarles por todos lados para detenerlos.",
+        "momento_canonico": "discurso de Agamenón en el consejo (versos 73-75)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20011,
+        "orden_fragmento": 2,
+        "hecho": "Néstor se levantó tras Agamenón y avaló el sueño ante los próceres, argumentando que si lo hubiera referido otro lo creerían falso, pero lo dice quien se gloría de ser el más poderoso de los aqueos.",
+        "momento_canonico": "discurso de Néstor en el consejo (versos 79-83)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Néstor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20013,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón empuñaba el cetro que Vulcano fabricó para Júpiter Saturnio; éste lo dio a Mercurio, quien lo regaló al excelente jinete Pélope, quien lo entregó a Atreo, pastor de hombres; Atreo al morir lo legó a Tiestes, rico en ganado, y Tiestes lo dejó a Agamenón para que reinara en muchas islas y en todo el país de Argos.",
+        "momento_canonico": "narración de la junta general (versos 100-109)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20014,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón, en la junta general, afirmó que Júpiter le había prometido destruir Ilión pero que todo fue funesto engaño y ahora le ordena regresar a Argos sin gloria después de haber perdido muchos hombres.",
+        "momento_canonico": "discurso de Agamenón a los argivos (versos 110-141)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20015,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón afirmó que el ejército aqueo es numéricamente muy superior a los troyanos que moran en Ilión, pero que los aliados venidos de muchas ciudades se lo impiden.",
+        "momento_canonico": "discurso de Agamenón a los argivos (versos 119-130)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20016,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón afirmó que llevan ya nueve años de guerra, que los maderos de las naves se han podrido y las cuerdas están deshechas, y que las esposas e hijos aguardan en los palacios.",
+        "momento_canonico": "discurso de Agamenón a los argivos (versos 134-140)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20017,
+        "orden_fragmento": 2,
+        "hecho": "Tras el discurso de Agamenón, la junta se agitó y los guerreros corrieron hacia los bajeles para botarlos al mar, disponiéndose a regresar a la patria.",
+        "momento_canonico": "narración tras el discurso de Agamenón (versos 142-154)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20022,
+        "orden_fragmento": 2,
+        "hecho": "Ulises reconoció la voz de Minerva, tiró su manto (que recogió el heraldo Euríbates de Ítaca, que le acompañaba), corrió hacia Agamenón para que le diera el imperecedero cetro paterno y con éste se dirigió a las naves.",
+        "momento_canonico": "narración (versos 182-187)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20023,
+        "orden_fragmento": 2,
+        "hecho": "Ulises detuvo a reyes y capitanes con suaves palabras, diciéndoles que Agamenón los estaba probando y que pronto castigaría a los que huyeran.",
+        "momento_canonico": "narración e intervenciones de Ulises (versos 188-197)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20026,
+        "orden_fragmento": 2,
+        "hecho": "Tersites zahirió a Agamenón ante la junta, acusándole de acumular botín y mujeres, de causar males a los aqueos, y de haber ofendido a Aquiles arrebatándole su recompensa.",
+        "momento_canonico": "discurso de Tersites en la junta (versos 225-242)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Tersites",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20032,
+        "orden_fragmento": 2,
+        "hecho": "Néstor arengó a los argivos instando a Agamenón a mandar con firme decisión y a agrupar a los hombres por tribus y familias para conocer quiénes son cobardes y quiénes valerosos.",
+        "momento_canonico": "discurso de Néstor a los argivos (versos 337-368)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Néstor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20034,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón respondió a Néstor elogiando sus consejos y afirmando que Aquiles y él pelearon por una muchacha y que él fue el primero en irritarse.",
+        "momento_canonico": "discurso de Agamenón en respuesta a Néstor (versos 369-393)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20035,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón ordenó a los guerreros comer, afilar lanzas, preparar escudos, dar pasto a los caballos e inspeccionar los carros para la batalla, amenazando con dejar a los rezagados a los perros y las aves de rapiña.",
+        "momento_canonico": "discurso de Agamenón (versos 381-393)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20036,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón, rey de hombres, inmoló un pingüe buey de cinco años al prepotente Saturnio, reuniendo en su tienda a los principales caudillos: Néstor, Idomeneo, los dos Ayaces, Diomedes y Ulises; Menelao se presentó espontáneamente.",
+        "momento_canonico": "narración del sacrificio (versos 402-411)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20037,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón oró a Júpiter pidiendo destruir el palacio de Príamo antes de que se pusiera el sol, pegar fuego a las puertas, romper con su lanza la coraza de Héctor y ver a muchos de sus compañeros muertos.",
+        "momento_canonico": "plegaria de Agamenón (versos 412-418)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20038,
+        "orden_fragmento": 2,
+        "hecho": "El Saturnio no accedió a la plegaria de Agamenón y, aceptando los sacrificios, les preparó no envidiable labor.",
+        "momento_canonico": "narración tras la plegaria (verso 419)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20039,
+        "orden_fragmento": 2,
+        "hecho": "Néstor instó a Agamenón a no entretenerse en hablar y a ordenar que los heraldos pregonaran la reunión del ejército cerca de los bajeles.",
+        "momento_canonico": "discurso de Néstor tras el festín (versos 434-440)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Néstor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20040,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón dispuso que los heraldos llamaran a la batalla a los aqueos; Minerva, la de los brillantes ojos, acompañaba a los reyes llevando la preciosa inmortal égida, instigando a los aqueos a salir al campo y poniendo fortaleza en sus corazones.",
+        "momento_canonico": "narración de la reunión del ejército (versos 441-454)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20050,
+        "orden_fragmento": 2,
+        "hecho": "Los de Micenas, Corinto y sus ciudades llegaron en cien naves a las órdenes del rey Agamenón Atrida, quien condujo muchos y valientes varones.",
+        "momento_canonico": "catálogo de las naves (versos 569-580)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20054,
+        "orden_fragmento": 2,
+        "hecho": "Los arcadios llegaron al mando del rey Agapenor, hijo de Anceo, en sesenta naves; el mismo Agamenón les proporcionó las naves porque los arcadios no se cuidaban de las cosas del mar.",
+        "momento_canonico": "catálogo de las naves (versos 603-614)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20075,
+        "orden_fragmento": 2,
+        "hecho": "Aquiles permanecía en las corvas naves irritado contra Agamenón Atrida; su gente se solazaba en la playa tirando discos, venablos o flechas; los corceles comían loto y apio palustre.",
+        "momento_canonico": "cierre del catálogo (versos 771-779)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 20084,
+        "orden_fragmento": 2,
+        "hecho": "Pándaro, hijo ilustre de Licaón, a quien Apolo en persona diera el arco, gobernaba a los ricos teucros de Zelea al pie del Ida que bebían el agua del caudaloso Esepo.",
+        "momento_canonico": "catálogo troyano (versos 824-827)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Pándaro"
+        ]
+      },
+      {
+        "id": 30007,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón ordenó a los argivos que detuvieran el combate porque Héctor quería hablarles.",
+        "momento_canonico": "versos 82-83",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 30013,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón mandó a Taltibio que fuera a las naves por un cordero, y el heraldo obedeció.",
+        "momento_canonico": "versos 118-120",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 30022,
+        "orden_fragmento": 3,
+        "hecho": "Helena identificó a Agamenón como el poderosísimo Agamenón Atrida, buen rey y esforzado combatiente, y dijo que fue cuñado de ella.",
+        "momento_canonico": "versos 178-180",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 30034,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón y Ulises se levantaron, los heraldos juntaron las víctimas, mezclaron vinos en la cratera y dieron aguamanos a los reyes. El Atrida cortó pelo de la cabeza de los corderos con la daga y los heraldos lo repartieron a los próceres teucros y aquivos.",
+        "momento_canonico": "versos 264-275",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 30035,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón oró en voz alta invocando a Júpiter, al Sol, a los ríos, a la Tierra y a los dioses del inframundo como testigos del juramento: si Alejandro mata a Menelao, Helena y las riquezas serían suyas y los aqueos volverían; si Menelao mata a Alejandro, los troyanos devolverán a Helena y las riquezas y pagarán indemnización; si Príamo y sus hijos se niegan, Agamenón seguirá combatiendo.",
+        "momento_canonico": "versos 276-291",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 30036,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón cortó el cuello a los corderos y los puso en el suelo; llenaron las copas en la cratera y derramaron el vino orando a los dioses.",
+        "momento_canonico": "versos 292-297",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 30057,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón declaró ante troyanos, dardanios y aliados que la victoria había quedado por Menelao y exigió que le entregaran a Helena con sus riquezas y pagaran una indemnización justa.",
+        "momento_canonico": "versos 456-460",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 30058,
+        "orden_fragmento": 3,
+        "hecho": "Los demás aqueos aplaudieron las palabras de Agamenón.",
+        "momento_canonico": "verso 461",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40013,
+        "orden_fragmento": 4,
+        "hecho": "Minerva se transfiguró en el varón Laódoco Antenórida, esforzado combatiente, y penetró por el ejército teucro buscando a Pándaro.",
+        "momento_canonico": "verso 85-88",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Pándaro"
+        ]
+      },
+      {
+        "id": 40014,
+        "orden_fragmento": 4,
+        "hecho": "Minerva halló a Pándaro, hijo de Licaón, en medio de las filas de hombres valientes que con él llegaran de las orillas del Esepo.",
+        "momento_canonico": "verso 88-91",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Pándaro"
+        ]
+      },
+      {
+        "id": 40015,
+        "orden_fragmento": 4,
+        "hecho": "Minerva (disfrazada de Laódoco) persuadió a Pándaro para que disparara una flecha contra Menelao, prometiéndole gloria entre los teucros y espléndidos presentes de Alejandro.",
+        "momento_canonico": "verso 93-103, discurso de Minerva disfrazada",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Minerva",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Pándaro"
+        ]
+      },
+      {
+        "id": 40016,
+        "orden_fragmento": 4,
+        "hecho": "Minerva (disfrazada) pidió a Pándaro que votara sacrificar a Apolo Licio una hecatombe perfecta de corderos primogénitos al volver a su patria, la sagrada ciudad de Zelea.",
+        "momento_canonico": "verso 93-103, discurso de Minerva disfrazada",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Minerva",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Pándaro"
+        ]
+      },
+      {
+        "id": 40017,
+        "orden_fragmento": 4,
+        "hecho": "Pándaro se dejó persuadir y asió el pulido arco hecho con las astas de un buco montés al que él mismo había acechado e hirido en el pecho; los cuernos medían dieciséis palmos y fueron adornados con anillos de oro por un artífice.",
+        "momento_canonico": "verso 104-111",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Pándaro"
+        ]
+      },
+      {
+        "id": 40018,
+        "orden_fragmento": 4,
+        "hecho": "Los compañeros de Pándaro le cubrieron con los escudos mientras él tendía el arco, para protegerle de los aqueos hasta que disparara.",
+        "momento_canonico": "verso 113-115",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Pándaro"
+        ]
+      },
+      {
+        "id": 40019,
+        "orden_fragmento": 4,
+        "hecho": "Pándaro votó a Apolo Licio sacrificarle una hecatombe perfecta de corderos primogénitos al volver a Zelea, y luego disparó la flecha contra Menelao.",
+        "momento_canonico": "verso 116-126",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Pándaro"
+        ]
+      },
+      {
+        "id": 40020,
+        "orden_fragmento": 4,
+        "hecho": "Minerva desvió la flecha de Pándaro antes de que hiriera a Menelao mortalmente, apartándola del cuerpo como una madre ahuyenta una mosca de su niño dormido, dirigiéndola a donde los anillos de oro sujetaban el cinturón.",
+        "momento_canonico": "verso 127-138",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Pándaro"
+        ]
+      },
+      {
+        "id": 40023,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón se estremeció al ver la sangre de la herida de Menelao; también Menelao se estremeció, pero recobró el ánimo al advertir que el nervio y las plumas de la flecha quedaban fuera.",
+        "momento_canonico": "verso 148-154",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40024,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón lamentó haber puesto a Menelao a luchar solo con los troyanos en el jurado convenio y le reprochó que los troyanos pisotearon los juramentos al herirle.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40025,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón afirmó que el Olímpico castigará a los troyanos por violar los juramentos, que perecerán la sagrada Ilión, Príamo y su pueblo, y que Jove agitará su égida contra ellos.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40026,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón temió que si Menelao moría, los aqueos abandonarían la empresa, dejarían a Helena en poder de Príamo y los troyanos, y sus huesos se pudrirían en Troya.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40027,
+        "orden_fragmento": 4,
+        "hecho": "Menelao tranquilizó a Agamenón asegurando que la flecha no le hirió mortalmente porque le protegió el cinturón labrado, la faja y la chapa forjada por el broncista.",
+        "momento_canonico": "verso 183-187, discurso de Menelao",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40028,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón ordenó al heraldo Taltibio que llamara a Macaón, hijo de Esculapio, para que reconociera la herida de Menelao.",
+        "momento_canonico": "verso 192-197",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40032,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón dejó los caballos y el carro a cargo de Eurimedonte, hijo de Ptolomeo Piraída, y recorrió a pie las hileras de guerreros para animarlos o increpanrlos antes de la batalla.",
+        "momento_canonico": "verso 223-250",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40033,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón animó a los argivos prometiéndoles que Júpiter no protegerá a los pérfidos teucros que violaron los juramentos, y que tomarán la ciudad llevándose esposas e hijos.",
+        "momento_canonico": "verso 234-239, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40034,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón encontró a Idomeneo en las primeras filas, semejante a un jabalí por su braveza, y a Meriones enardeciendo a los soldados de las últimas falanges.",
+        "momento_canonico": "verso 250-256",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40035,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón declaró a Idomeneo que le honraba de modo especial entre los dánaos tanto en la guerra como en el banquete, donde siempre tenía la copa llena como él mismo.",
+        "momento_canonico": "verso 257-264, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40036,
+        "orden_fragmento": 4,
+        "hecho": "Idomeneo se declaró amigo fiel de Agamenón y exhortó a pelear cuanto antes con los teucros, señalando que la muerte y las calamidades les aguardan por haber roto los pactos.",
+        "momento_canonico": "verso 265-271, discurso de Idomeneo",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Idomeneo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40037,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón encontró a los dos Ayaces armándose, seguidos de una nube de infantes, y los elogió sin necesidad de exhortarles, deseando que todos tuvieran su mismo ánimo para tomar la ciudad de Príamo.",
+        "momento_canonico": "verso 272-291",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40038,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón encontró a Néstor ordenando y animando a los suyos junto con Pelagonte, Alástor, Cromio, Hemón y Biante.",
+        "momento_canonico": "verso 292-302",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40041,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón lamentó que Néstor no tuviera las rodillas ágiles de la juventud, siendo su ánimo el mismo, y que la vejez le agobiara.",
+        "momento_canonico": "verso 313-316, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40043,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón encontró a Menesteo, hijo de Peteo, entre los atenienses, y cerca de ellos a Ulises con las huestes de los cefalenios, que esperaban sin avanzar porque no habían oído el grito de guerra.",
+        "momento_canonico": "verso 326-337",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40044,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón increpó a Menesteo y Ulises por abstenerse de pelear y esperar que otros tomaran la ofensiva, recordándoles que eran los primeros en ser invitados a los banquetes.",
+        "momento_canonico": "verso 338-348, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40046,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón, al ver que Ulises se irritaba, sonrió, se retractó y declaró que no fue su propósito reprenderle en demasía ni darle órdenes, reconociendo que el modo de pensar de Ulises coincide con el suyo.",
+        "momento_canonico": "verso 356-363, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40047,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón encontró a Diomedes de pie entre los corceles y los carros, con Esténelo, hijo de Capaneo, a su lado, y le reprendió por parecer temblar.",
+        "momento_canonico": "verso 364-369",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40048,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón afirmó que Tideo no solía temblar sino que se adelantaba a sus compañeros y peleaba con el enemigo, según refieren quienes le vieron combatir, pues él mismo no lo presenció.",
+        "momento_canonico": "verso 370-374, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40049,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón relató que Tideo estuvo en Micenas como huésped junto con Polínice para reclutar tropas contra los sagrados muros de Tebas, que los ciudadanos querían conceder auxiliares pero Júpiter con funestas señales les hizo cambiar de opinión.",
+        "momento_canonico": "verso 376-381, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40050,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón relató que los aqueos nombraron embajador a Tideo para ir a Tebas; en el palacio de Eteocles se hallaban muchos cadmeos en banquete, y Tideo solo los desafió y venció en toda clase de luchas, siendo protegido por Minerva.",
+        "momento_canonico": "verso 381-390, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40051,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón relató que al retirarse Tideo, los cadmeos pusieron una emboscada de cincuenta jóvenes mandados por Meón Hemónida y Polifonte, hijo de Autófono; Tideo mató a todos menos a Meón, al que perdonó acatando indicaciones divinas.",
+        "momento_canonico": "verso 391-398, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40052,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón concluyó que Tideo fue superior al hijo que engendró (Diomedes) en el combate, aunque Diomedes le supere en las juntas.",
+        "momento_canonico": "verso 399-400, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40053,
+        "orden_fragmento": 4,
+        "hecho": "Esténelo, hijo de Capaneo, replicó a Agamenón afirmando que él y Diomedes son más valientes que sus padres, pues tomaron Tebas de las siete puertas confiando en indicaciones divinas y el auxilio de Júpiter, mientras que los padres perecieron por sus locuras.",
+        "momento_canonico": "verso 404-410, discurso de Esténelo",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Esténelo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      },
+      {
+        "id": 40054,
+        "orden_fragmento": 4,
+        "hecho": "Diomedes mandó callar a Esténelo y declaró que no se enfadaba con Agamenón por animar a los aqueos antes del combate, y que la gloria de la victoria o el pesar de la derrota corresponde al rey.",
+        "momento_canonico": "verso 411-418, discurso de Diomedes",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Diomedes",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Agamenón"
+        ]
+      }
+    ],
+    "candidatos": {
+      "entidad: Agamenón": 92,
+      "entidad: Pándaro": 9
+    },
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 9,
+        "inicio_char": 10108,
+        "fin_char": 11357,
+        "texto": "Y deteniéndose cerca de él, le dirigió estas aladas palabras:\n\n204 «¡Ven, hijo de Esculapio! Te llama el rey Agamenón para que reconozcas al aguerrido Menelao, caudillo de los aqueos, á quien ha flechado hábil arquero troyano ó licio; gloria para él y llanto para nosotros.»\n\n207 Así dijo, y Macaón sintió que en el pecho se le conmovía el ánimo. Atravesaron, hendiendo por la gente, el espacioso campamento de los aqueos; y llegando al lugar donde fué herido el rubio Menelao (éste aparecía como un dios entre los principales caudillos que en torno de él se habían congregado), Macaón arrancó la flecha del ajustado cíngulo; pero al tirar de ella, rompiéronse las plumas, y entonces desató el vistoso cinturón y quitó la faja y la chapa que hiciera el broncista. Tan pronto como vió la herida causada por la cruel saeta, chupó la sangre y aplicó con pericia drogas calmantes que á su padre había dado Quirón en prueba de amistad.\n\n\n\nCual fúlgida estrella, enviada como señal por Júpiter, Minerva se lanzó á la tierra y cayó en medio del campo\n(Canto IV, versos 75 á 79.)\n220 Mientras se ocupaban en curar á Menelao, valiente en la pelea, llegaron las huestes de los escudados teucros; vistieron aquéllos la armadura, y ya sólo en batallar pensaron.",
+        "similitud": 0.8399600482010827
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 6,
+        "inicio_char": 6955,
+        "fin_char": 8170,
+        "texto": "141 Como una mujer meonia ó caria tiñe en púrpura el marfil que ha de adornar el freno de un caballo, muchos jinetes desean llevarlo y aquélla lo guarda en su casa para un rey á fin de que sea ornamento para el caballo y motivo de gloria para el caballero; de la misma manera, oh Menelao, se tiñeron de sangre tus bien formados muslos, las piernas y los hermosos tobillos.\n\n148 Estremecióse el rey de hombres Agamenón, al ver la negra sangre que manaba de la herida. Estremecióse asimismo Menelao, caro á Marte; mas como advirtiera que quedaban fuera el nervio y las plumas, recobró el ánimo en su pecho. Y el rey Agamenón, asiendo de la mano á Menelao, dijo entre hondos suspiros mientras los compañeros gemían:\n\n155 «¡Hermano querido! Para tu muerte celebré el jurado convenio cuando te puse delante de todos á fin de que lucharas por los aqueos, tú solo, con los troyanos. Así te han herido: pisoteando los juramentos de fidelidad. Pero no serán inútiles el pacto, la sangre de los corderos, las libaciones de vino puro y el apretón de manos en que confiábamos. Si el Olímpico no los castiga ahora, lo hará más tarde, y pagarán cuanto hicieron con una gran pena: con sus propias cabezas, sus mujeres y sus hijos.",
+        "similitud": 0.8338515261500179
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 8,
+        "inicio_char": 9276,
+        "fin_char": 10483,
+        "texto": "¡Ojalá la muerte me hubiese sido grata cuando vine con tu hijo, dejando á la vez que el tálamo, á mis hermanos, mi hija querida y mis amables compañeras! Pero no sucedió así, y ahora me consumo llorando. Voy á responder á tu pregunta: Ése es el poderosísimo Agamenón Atrida, buen rey y esforzado combatiente, que fué cuñado de esta desvergonzada, si todo no ha sido un sueño.»\n\n181 Así dijo. El anciano contemplóle con admiración y exclamó: «¡Atrida feliz, nacido con suerte, afortunado! Muchos son los aqueos que te obedecen. En otro tiempo fuí á la Frigia, en viñas abundosa, y vi á muchos de sus naturales—los pueblos de Otreo y de Migdón, igual á un dios—que con los ágiles corceles acampaban á orillas del Sangario. Entre ellos me hallaba á fuer de aliado, el día en que llegaron las varoniles amazonas. Pero no eran tantos como los aqueos de ojos vivos.»\n\n191 Fijando la vista en Ulises, el anciano volvió á preguntar: «Ea, dime también, hija querida, quién es aquél, menor en estatura que Agamenón Atrida, pero más espacioso de espaldas y de pecho. Ha dejado en el fértil suelo las armas y recorre las filas como un carnero. Parece un velloso carnero que atraviesa un gran rebaño de cándidas ovejas.»",
+        "similitud": 0.8315490484237671
+      },
+      {
+        "orden_fragmento": 1,
+        "orden_en_fragmento": 4,
+        "inicio_char": 4170,
+        "fin_char": 5367,
+        "texto": "Un rey es más poderoso que el inferior contra quien se enoja; y si en el mismo día refrena su ira, guarda luego rencor hasta que logra ejecutarlo en el pecho de aquél. Di tú si me salvarás.»\n\n84 Respondióle Aquiles, el de los pies ligeros: «Manifiesta, deponiendo todo temor, el vaticinio que sabes; pues, ¡por Apolo, caro á Júpiter, á quien tú, oh Calcas, invocas siempre que revelas los oráculos á los dánaos!, ninguno de ellos pondrá en ti sus pesadas manos, junto á las cóncavas naves, mientras yo viva y vea la luz acá en la tierra, aunque hablares de Agamenón que al presente blasona de ser el más poderoso de los aqueos todos.»\n\n92 Entonces cobró ánimo y dijo el eximio vate: «No está el dios quejoso con motivo de algún voto ó hecatombe, sino á causa del ultraje que Agamenón ha inferido al sacerdote, á quien no devolvió la hija ni admitió el rescate. Por esto el Flechador nos causó males y todavía nos causará otros. Y no librará á los dánaos de la odiosa peste, hasta que sea restituída á su padre, sin premio ni rescate, la moza de ojos vivos, é inmolemos en Crisa una sacra hecatombe. Cuando así le hayamos aplacado, renacerá nuestra esperanza.»\n\n101 Dichas estas palabras, se sentó.",
+        "similitud": 0.829717660835912
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 8,
+        "inicio_char": 9098,
+        "fin_char": 10200,
+        "texto": "Y cuando esto diga, ábraseme la anchurosa tierra.»\n\n183 Para tranquilizarle, respondió el rubio Menelao: «Ten ánimo y no espantes á los aqueos. La aguda flecha no me ha herido mortalmente, pues me protegió por fuera el labrado cinturón y por dentro la faja y la chapa que forjó el broncista.»\n\n188 Contestó el rey Agamenón: «¡Ojalá sea así, querido Menelao! Un médico reconocerá la herida y le aplicará drogas que calmen los terribles dolores.»\n\n192 Dijo, y en seguida dió esta orden al divino heraldo Taltibio: «¡Taltibio! Llama pronto á Macaón, el hijo del insigne médico Esculapio, para que reconozca al aguerrido Menelao, hijo de Atreo, á quien ha flechado un hábil arquero troyano ó licio; gloria para él y llanto para nosotros.»\n\n198 Tales fueron sus palabras, y el heraldo al oirle no desobedeció. Fuése por entre los aqueos, de broncíneas lorigas, buscó con la vista al héroe Macaón y le halló en medio de las fuertes filas de hombres escudados que le habían seguido desde Trica, criadora de caballos. Y deteniéndose cerca de él, le dirigió estas aladas palabras:\n\n204 «¡Ven, hijo de Esculapio!",
+        "similitud": 0.8280867338180542
+      }
+    ],
+    "entorno_antes": "aj y sacó una flecha nueva, alada, causadora de acerbos dolores; adaptó á la cuerda del arco la amarga saeta, y votó á Apolo Licio sacrificarle una hecatombe perfecta de corderos primogénitos cuando volviera á su patria, la sagrada ciudad de Zelea. Y cogiendo á la vez las plumas y el bovino nervio, tiró hacia su pecho y acercó la punta de hierro al arco. Armado así, rechinó el gran arco circular, crujió la cuerda, y saltó la puntiaguda flecha deseosa de volar sobre la multitud.\n\n127 No se olvidaron de ti, oh Menelao, los felices é inmortales dioses y especialmente la hija de Júpiter, que impera en las batallas; la cual, poniéndose delante, desvió la amarga flecha: apartóla del cuerpo como la madre ahuyenta una mosca de su niño que duerme plácidamente, y la dirigió al lugar donde los anillos de oro sujetaban el cinturón y la coraza era doble. La amarga saeta atravesó el ajustado cinturón, obra de artífice; se clavó en la magnífica coraza, y rompiendo la chapa que el héroe llevaba para proteger el cuerpo contra las flechas y que le defendió mucho, rasguñó la piel y al momento brotó de la herida la negra sangre.\n\n141 Como una mujer meonia ó caria tiñe en púrpura el marfil que ha de adornar el freno de un caballo, muchos jinetes desean llevarlo y aquélla lo guarda en su casa para un rey á fin de que sea ornamento para el caballo y motivo de gloria para el caballero; de la misma manera, oh Menelao, se tiñeron de sangre tus bien formados muslos, las piernas y los hermosos tobillos.",
+    "entorno_despues": "\n\n148 Estremecióse el rey de hombres Agamenón, al ver la negra sangre que manaba de la herida. Estremecióse asimismo Menelao, caro á Marte; mas como advirtiera que quedaban fuera el nervio y las plumas, recobró el ánimo en su pecho. Y el rey Agamenón, asiendo de la mano á Menelao, dijo entre hondos suspiros mientras los compañeros gemían:\n\n155 «¡Hermano querido! Para tu muerte celebré el jurado convenio cuando te puse delante de todos á fin de que lucharas por los aqueos, tú solo, con los troyanos. Así te han herido: pisoteando los juramentos de fidelidad. Pero no serán inútiles el pacto, la sangre de los corderos, las libaciones de vino puro y el apretón de manos en que confiábamos. Si el Olímpico no los castiga ahora, lo hará más tarde, y pagarán cuanto hicieron con una gran pena: con sus propias cabezas, sus mujeres y sus hijos. Bien lo conoce mi inteligencia y lo presiente mi corazón: día vendrá en que perezcan la sagrada Ilión, Príamo y su pueblo armado con lanzas de fresno; el excelso Jove Saturnio, que vive en el éter, irritado por este engaño, agitará contra ellos su égida espantosa. Todo esto ha de suceder irremisiblemente. Pero será grande mi pesar, oh Menelao, si mueres y llegas al término fatal de tu vida, y he de volver con oprobio á la árida Argos; porque los aqueos se acordarán en seguida de su tierra patria, dejaremos como trofeo en poder de Príamo y de los troyanos á la argiva Helena, y tus huesos se pudrirán en Troya á causa de una empresa no llevada á cumpl"
+  },
+  "respuesta": {
+    "avisos": [
+      {
+        "cita": "su flecha había herido en el hombro al rey de hombres Agamenón",
+        "hecho": 40020,
+        "tipo": "hecho",
+        "gravedad": "contradiccion",
+        "direccion": "anterior",
+        "explicacion": "El narrador establece que Minerva desvió la flecha de Pándaro y la dirigió a Menelao (no a Agamenón), hiriéndole en el cinturón y rasguñando la piel de los muslos. El pasaje atribuye la herida a Agamenón y la localiza en el hombro, contradiciendo ambos extremos del canon."
+      }
+    ],
+    "notas": []
+  },
+  "informe": {
+    "avisos": [
+      {
+        "cita": "su flecha había herido en el hombro al rey de hombres Agamenón",
+        "hecho": 40020,
+        "texto_hecho": "Minerva desvió la flecha de Pándaro antes de que hiriera a Menelao mortalmente, apartándola del cuerpo como una madre ahuyenta una mosca de su niño dormido, dirigiéndola a donde los anillos de oro sujetaban el cinturón.",
+        "afirmado_por": "narrador",
+        "tipo": "hecho",
+        "gravedad": "contradiccion",
+        "direccion": "anterior",
+        "explicacion": "El narrador establece que Minerva desvió la flecha de Pándaro y la dirigió a Menelao (no a Agamenón), hiriéndole en el cinturón y rasguñando la piel de los muslos. El pasaje atribuye la herida a Agamenón y la localiza en el hombro, contradiciendo ambos extremos del canon."
+      }
+    ],
+    "notas": [],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}

@@ -1,0 +1,545 @@
+{
+  "id": "S12",
+  "pasaje": "Y la amarga flecha seguía clavada en el cinturón de Menelao, pues nadie se había atrevido á arrancarla.",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 4,
+    "char": 11357,
+    "hechos": [
+      {
+        "id": 10026,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles declaró que no había venido a pelear por los troyanos, pues los teucros nunca le habían causado daño personal, sino que seguía a Agamenón para vengar a Menelao y a él.",
+        "momento_canonico": "verso 148, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 20036,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón, rey de hombres, inmoló un pingüe buey de cinco años al prepotente Saturnio, reuniendo en su tienda a los principales caudillos: Néstor, Idomeneo, los dos Ayaces, Diomedes y Ulises; Menelao se presentó espontáneamente.",
+        "momento_canonico": "narración del sacrificio (versos 402-411)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 20051,
+        "orden_fragmento": 2,
+        "hecho": "Los de Lacedemonia y sus ciudades llegaron en sesenta naves al mando de Menelao, valiente en el combate, impulsado por su propio ardor y deseando vengar la huida y los gemidos de Helena.",
+        "momento_canonico": "catálogo de las naves (versos 581-590)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30002,
+        "orden_fragmento": 3,
+        "hecho": "Menelao se alegró al ver a Alejandro y saltó del carro al suelo sin dejar las armas para enfrentarle.",
+        "momento_canonico": "versos 21-29",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30003,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro, al distinguir a Menelao entre los combatientes, retrocedió atemorizado y desapareció entre los teucros.",
+        "momento_canonico": "versos 30-37",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30005,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro propuso un combate singular entre él y Menelao por Helena y sus riquezas, con el vencedor llevándose mujer y bienes, y con los demás jurando paz y amistad.",
+        "momento_canonico": "versos 58-75",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Alejandro",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30009,
+        "orden_fragmento": 3,
+        "hecho": "Menelao propuso traer un cordero blanco y una cordera negra para la Tierra y el Sol, y otro para Júpiter, y convocar a Príamo para que sancionara los juramentos en persona.",
+        "momento_canonico": "versos 97-110",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30010,
+        "orden_fragmento": 3,
+        "hecho": "Menelao expresó desconfianza en los hijos de Príamo por ser soberbios y fementidos, temiendo que quebraran los juramentos.",
+        "momento_canonico": "versos 105-108",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30016,
+        "orden_fragmento": 3,
+        "hecho": "Iris dijo a Helena que Alejandro y Menelao combatirían por ella con ingentes lanzas y que el vencedor la llamaría su amada esposa.",
+        "momento_canonico": "versos 130-138",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Iris",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30025,
+        "orden_fragmento": 3,
+        "hecho": "Antenor confirmó que Ulises vino como embajador con Menelao por Helena, y que los hospedó en su palacio.",
+        "momento_canonico": "versos 203-205",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30026,
+        "orden_fragmento": 3,
+        "hecho": "Antenor describió que en las reuniones Menelao hablaba de prisa y poco pero claramente, sin apartarse del asunto, mientras Ulises al levantarse permanecía con la vista baja y el cetro inmóvil, pareciendo un ignorante, pero cuando hablaba sus palabras eran tan poderosas que ningún mortal le disputaba.",
+        "momento_canonico": "versos 209-224",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30028,
+        "orden_fragmento": 3,
+        "hecho": "Helena señaló a Idomeneo entre los cretenses rodeado de los capitanes de sus tropas, e indicó que Menelao le hospedó muchas veces en su palacio cuando venía de Creta.",
+        "momento_canonico": "versos 230-233",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30032,
+        "orden_fragmento": 3,
+        "hecho": "El heraldo Ideo invitó a Príamo a bajar a la llanura para sancionar los fieles juramentos del combate singular entre Alejandro y Menelao.",
+        "momento_canonico": "versos 250-258",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30035,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón oró en voz alta invocando a Júpiter, al Sol, a los ríos, a la Tierra y a los dioses del inframundo como testigos del juramento: si Alejandro mata a Menelao, Helena y las riquezas serían suyas y los aqueos volverían; si Menelao mata a Alejandro, los troyanos devolverán a Helena y las riquezas y pagarán indemnización; si Príamo y sus hijos se niegan, Agamenón seguirá combatiendo.",
+        "momento_canonico": "versos 276-291",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30038,
+        "orden_fragmento": 3,
+        "hecho": "Príamo declaró que regresaría a Ilión porque no podía ver a su hijo combatir con Menelao, y que Júpiter y los dioses saben para cuál de ellos tiene el destino preparada la muerte.",
+        "momento_canonico": "versos 304-309",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Príamo",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30042,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro arrojó primero la luenga lanza y dio en el escudo de Menelao sin romperlo; la punta se torció.",
+        "momento_canonico": "versos 346-349",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30043,
+        "orden_fragmento": 3,
+        "hecho": "Menelao oró a Júpiter para que le permitiera castigar a Alejandro que le ofendió primero.",
+        "momento_canonico": "versos 351-354",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30044,
+        "orden_fragmento": 3,
+        "hecho": "La lanza de Menelao atravesó el escudo y la coraza de Alejandro y rasgó la túnica; Alejandro se inclinó y evitó la muerte.",
+        "momento_canonico": "versos 355-360",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30045,
+        "orden_fragmento": 3,
+        "hecho": "Menelao desenvainó la espada y la golpeó contra la cimera del casco de Alejandro, pero la espada se rompió en tres o cuatro pedazos.",
+        "momento_canonico": "versos 361-364",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30046,
+        "orden_fragmento": 3,
+        "hecho": "Menelao cogió a Paris por el casco y lo arrastró hacia los aqueos; Venus rompió la correa del casco y arrebató a Alejandro envolviéndolo en densa niebla, llevándolo a su tálamo.",
+        "momento_canonico": "versos 369-382",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30049,
+        "orden_fragmento": 3,
+        "hecho": "Helena reconoció a Venus por su hermosísimo cuello, sus lindos pechos y sus refulgentes ojos, y se negó a ir con ella, acusándola de venir con engaños porque Menelao había vencido a Alejandro.",
+        "momento_canonico": "versos 395-412",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30052,
+        "orden_fragmento": 3,
+        "hecho": "Venus colocó una silla delante de Alejandro; Helena se sentó y, apartando la vista de su esposo, le reprendió por haber huido del combate en lugar de haber perecido a manos de Menelao.",
+        "momento_canonico": "versos 421-436",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30053,
+        "orden_fragmento": 3,
+        "hecho": "Paris afirmó que Menelao venció ese día con el auxilio de Minerva, pero que otro día él le vencería porque también tienen dioses que los protegen.",
+        "momento_canonico": "versos 437-440",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Alejandro",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30056,
+        "orden_fragmento": 3,
+        "hecho": "Menelao se revolvía entre la muchedumbre buscando a Alejandro, pero ningún troyano ni aliado pudo mostrárselo, no por amistad sino porque a todos se les había hecho odioso como la negra muerte.",
+        "momento_canonico": "versos 449-455",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30057,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón declaró ante troyanos, dardanios y aliados que la victoria había quedado por Menelao y exigió que le entregaran a Helena con sus riquezas y pagaran una indemnización justa.",
+        "momento_canonico": "versos 456-460",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40001,
+        "orden_fragmento": 4,
+        "hecho": "Júpiter intentó zaherir a Juno con mordaces palabras fingidas, señalando que Juno y Minerva solo miraban a Menelao desde lejos, mientras Venus acompañaba constantemente a Alejandro y le libró de las Parcas.",
+        "momento_canonico": "verso 7, discurso de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40002,
+        "orden_fragmento": 4,
+        "hecho": "Júpiter propuso deliberar sobre si promover nuevamente el combate o reconciliar a ambos pueblos, sugiriendo que si agradara a todos, Troya continuaría poblada y Menelao se llevaría a Helena.",
+        "momento_canonico": "verso 7, discurso de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40015,
+        "orden_fragmento": 4,
+        "hecho": "Minerva (disfrazada de Laódoco) persuadió a Pándaro para que disparara una flecha contra Menelao, prometiéndole gloria entre los teucros y espléndidos presentes de Alejandro.",
+        "momento_canonico": "verso 93-103, discurso de Minerva disfrazada",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Minerva",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40019,
+        "orden_fragmento": 4,
+        "hecho": "Pándaro votó a Apolo Licio sacrificarle una hecatombe perfecta de corderos primogénitos al volver a Zelea, y luego disparó la flecha contra Menelao.",
+        "momento_canonico": "verso 116-126",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40020,
+        "orden_fragmento": 4,
+        "hecho": "Minerva desvió la flecha de Pándaro antes de que hiriera a Menelao mortalmente, apartándola del cuerpo como una madre ahuyenta una mosca de su niño dormido, dirigiéndola a donde los anillos de oro sujetaban el cinturón.",
+        "momento_canonico": "verso 127-138",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40021,
+        "orden_fragmento": 4,
+        "hecho": "La flecha atravesó el cinturón, se clavó en la coraza, rompió la chapa protectora y rasguñó la piel de Menelao, brotando sangre negra de la herida.",
+        "momento_canonico": "verso 134-140",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40022,
+        "orden_fragmento": 4,
+        "hecho": "La sangre de Menelao tiñó sus muslos, piernas y tobillos, comparada a la púrpura con que una mujer meonia o caria tiñe el marfil que adorna el freno de un caballo.",
+        "momento_canonico": "verso 141-147",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40023,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón se estremeció al ver la sangre de la herida de Menelao; también Menelao se estremeció, pero recobró el ánimo al advertir que el nervio y las plumas de la flecha quedaban fuera.",
+        "momento_canonico": "verso 148-154",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40024,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón lamentó haber puesto a Menelao a luchar solo con los troyanos en el jurado convenio y le reprochó que los troyanos pisotearon los juramentos al herirle.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40026,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón temió que si Menelao moría, los aqueos abandonarían la empresa, dejarían a Helena en poder de Príamo y los troyanos, y sus huesos se pudrirían en Troya.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40027,
+        "orden_fragmento": 4,
+        "hecho": "Menelao tranquilizó a Agamenón asegurando que la flecha no le hirió mortalmente porque le protegió el cinturón labrado, la faja y la chapa forjada por el broncista.",
+        "momento_canonico": "verso 183-187, discurso de Menelao",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40028,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón ordenó al heraldo Taltibio que llamara a Macaón, hijo de Esculapio, para que reconociera la herida de Menelao.",
+        "momento_canonico": "verso 192-197",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40030,
+        "orden_fragmento": 4,
+        "hecho": "Macaón arrancó la flecha del cíngulo de Menelao, desató el cinturón, quitó la faja y la chapa, chupó la sangre y aplicó drogas calmantes que Quirón había dado a su padre en prueba de amistad.",
+        "momento_canonico": "verso 207-219",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      }
+    ],
+    "candidatos": {
+      "entidad: Menelao": 38
+    },
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 5,
+        "inicio_char": 5812,
+        "fin_char": 6953,
+        "texto": "Destapó el carcaj y sacó una flecha nueva, alada, causadora de acerbos dolores; adaptó á la cuerda del arco la amarga saeta, y votó á Apolo Licio sacrificarle una hecatombe perfecta de corderos primogénitos cuando volviera á su patria, la sagrada ciudad de Zelea. Y cogiendo á la vez las plumas y el bovino nervio, tiró hacia su pecho y acercó la punta de hierro al arco. Armado así, rechinó el gran arco circular, crujió la cuerda, y saltó la puntiaguda flecha deseosa de volar sobre la multitud.\n\n127 No se olvidaron de ti, oh Menelao, los felices é inmortales dioses y especialmente la hija de Júpiter, que impera en las batallas; la cual, poniéndose delante, desvió la amarga flecha: apartóla del cuerpo como la madre ahuyenta una mosca de su niño que duerme plácidamente, y la dirigió al lugar donde los anillos de oro sujetaban el cinturón y la coraza era doble. La amarga saeta atravesó el ajustado cinturón, obra de artífice; se clavó en la magnífica coraza, y rompiendo la chapa que el héroe llevaba para proteger el cuerpo contra las flechas y que le defendió mucho, rasguñó la piel y al momento brotó de la herida la negra sangre.",
+        "similitud": 0.8398887610501804
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 4,
+        "inicio_char": 4686,
+        "fin_char": 5811,
+        "texto": "93 «¿Querrás obedecerme, hijo valeroso de Licaón? ¡Te atrevieras á disparar una veloz flecha contra Menelao! Alcanzarías gloria entre los teucros y te lo agradecerían todos, y particularmente el príncipe Alejandro; éste te haría espléndidos presentes, si viera que al belígero Menelao le subían á la triste pira, muerto por una de tus flechas. Ea, tira una saeta al ínclito Menelao, y vota sacrificar á Apolo Licio, célebre por su arco, una hecatombe perfecta de corderos primogénitos cuando vuelvas á tu patria, la sagrada ciudad de Zelea.»\n\n104 Así dijo Minerva. El insensato se dejó persuadir, y asió en seguida el pulido arco hecho con las astas de un lascivo buco montés, á quien él acechara é hiriera en el pecho cuando saltaba de un peñasco: el animal cayó de espaldas en la roca, y sus cuernos de dieciséis palmos fueron ajustados y pulidos por hábil artífice y adornados con anillos de oro. Pándaro tendió el arco, bajándolo é inclinándolo al suelo, y sus valientes amigos le cubrieron con los escudos, para que los belicosos aqueos no arremetieran contra él antes que Menelao, aguerrido hijo de Atreo, fuese herido.",
+        "similitud": 0.8248141407966614
+      },
+      {
+        "orden_fragmento": 2,
+        "orden_en_fragmento": 18,
+        "inicio_char": 20320,
+        "fin_char": 21628,
+        "texto": "Ni un breve descanso ha de haber siquiera, hasta que la noche obligue á los valientes guerreros á separarse. La correa del escudo que al combatiente cubre, se impregnará de sudor en torno del pecho; el brazo se fatigará con el manejo de la lanza, y sudarán los corceles arrastrando los pulimentados carros. Y aquel que se quede voluntariamente en las corvas naves, lejos de la batalla, como yo le vea, no se librará de los perros y de las aves de rapiña.»\n\n394 Así habló. Los argivos promovían gran clamoreo, como cuando las olas, movidas por el Noto, baten un elevado risco que se adelanta sobre el mar y no lo dejan mientras soplan los vientos en contrarias direcciones. Luego, levantándose, se dispersaron por las naves, encendieron lumbre en las tiendas, tomaron la comida y ofrecieron sacrificios, quiénes á uno, quiénes á otro de los sempiternos dioses, para que los librasen de morir en la batalla. Agamenón, rey de hombres, inmoló un pingüe buey de cinco años al prepotente Saturnio, habiendo llamado á su tienda á los principales caudillos de los aqueos todos: á Néstor y al rey Idomeneo, luego á entrambos Ayaces y al hijo de Tideo, y en sexto lugar á Ulises, igual en prudencia á Júpiter. Espontáneamente se presentó Menelao, valiente en la pelea, porque sabía lo que su hermano estaba preparando.",
+        "similitud": 0.8196443319320679
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 6,
+        "inicio_char": 6955,
+        "fin_char": 8170,
+        "texto": "141 Como una mujer meonia ó caria tiñe en púrpura el marfil que ha de adornar el freno de un caballo, muchos jinetes desean llevarlo y aquélla lo guarda en su casa para un rey á fin de que sea ornamento para el caballo y motivo de gloria para el caballero; de la misma manera, oh Menelao, se tiñeron de sangre tus bien formados muslos, las piernas y los hermosos tobillos.\n\n148 Estremecióse el rey de hombres Agamenón, al ver la negra sangre que manaba de la herida. Estremecióse asimismo Menelao, caro á Marte; mas como advirtiera que quedaban fuera el nervio y las plumas, recobró el ánimo en su pecho. Y el rey Agamenón, asiendo de la mano á Menelao, dijo entre hondos suspiros mientras los compañeros gemían:\n\n155 «¡Hermano querido! Para tu muerte celebré el jurado convenio cuando te puse delante de todos á fin de que lucharas por los aqueos, tú solo, con los troyanos. Así te han herido: pisoteando los juramentos de fidelidad. Pero no serán inútiles el pacto, la sangre de los corderos, las libaciones de vino puro y el apretón de manos en que confiábamos. Si el Olímpico no los castiga ahora, lo hará más tarde, y pagarán cuanto hicieron con una gran pena: con sus propias cabezas, sus mujeres y sus hijos.",
+        "similitud": 0.8180552233424664
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 25,
+        "inicio_char": 27405,
+        "fin_char": 28373,
+        "texto": "527 Mientras Píroo arremetía, Toante el etolo alanceóle en el pecho, por cima de una tetilla, y el bronce atravesó el pulmón. Acercósele Toante, le arrancó del pecho la ingente lanza, y hundiéndole la aguda espada en medio del vientre, le quitó la vida. Mas no pudo despojarle de la armadura, porque se vió rodeado por los compañeros del muerto, los tracios que dejan crecer la cabellera en lo más alto de la cabeza, quienes le asestaban sus largas picas; y aunque era corpulento, vigoroso é ilustre, fué rechazado y hubo de retroceder. Así cayeron y se juntaron en el polvo el caudillo de los tracios y el de los epeos, de broncíneas lorigas, y á su alrededor murieron otros muchos.\n\n539 Y quien, sin estar herido por flecha ó lanza, hubiera recorrido el campo llevado de la mano y protegido de las saetas por Palas Minerva, no habría reprochado los hechos de armas; pues aquel día gran número de teucros y de aqueos dieron, unos junto á otros, de bruces en el polvo.",
+        "similitud": 0.8113057129796929
+      }
+    ],
+    "entorno_antes": "labras, y el heraldo al oirle no desobedeció. Fuése por entre los aqueos, de broncíneas lorigas, buscó con la vista al héroe Macaón y le halló en medio de las fuertes filas de hombres escudados que le habían seguido desde Trica, criadora de caballos. Y deteniéndose cerca de él, le dirigió estas aladas palabras:\n\n204 «¡Ven, hijo de Esculapio! Te llama el rey Agamenón para que reconozcas al aguerrido Menelao, caudillo de los aqueos, á quien ha flechado hábil arquero troyano ó licio; gloria para él y llanto para nosotros.»\n\n207 Así dijo, y Macaón sintió que en el pecho se le conmovía el ánimo. Atravesaron, hendiendo por la gente, el espacioso campamento de los aqueos; y llegando al lugar donde fué herido el rubio Menelao (éste aparecía como un dios entre los principales caudillos que en torno de él se habían congregado), Macaón arrancó la flecha del ajustado cíngulo; pero al tirar de ella, rompiéronse las plumas, y entonces desató el vistoso cinturón y quitó la faja y la chapa que hiciera el broncista. Tan pronto como vió la herida causada por la cruel saeta, chupó la sangre y aplicó con pericia drogas calmantes que á su padre había dado Quirón en prueba de amistad.\n\n\n\nCual fúlgida estrella, enviada como señal por Júpiter, Minerva se lanzó á la tierra y cayó en medio del campo\n(Canto IV, versos 75 á 79.)\n220 Mientras se ocupaban en curar á Menelao, valiente en la pelea, llegaron las huestes de los escudados teucros; vistieron aquéllos la armadura, y ya sólo en batallar pensaron.",
+    "entorno_despues": "\n\n223 Entonces no hubieras visto que el divino Agamenón se durmiera, temblara ó rehuyera el combate; pues iba presuroso á la lid, donde los varones alcanzan gloria. Dejó los caballos y el carro de broncíneos adornos—Eurimedonte, hijo de Ptolomeo Piraída, se quedó á cierta distancia con los fogosos corceles,—encargó al auriga que no se alejara por si el cansancio se apoderaba de sus miembros, mientras ejercía el mando sobre aquella multitud de hombres, y empezó á recorrer á pie las hileras de guerreros. Á los dánaos, de ágiles corceles, que se apercibían para la pelea, los animaba diciendo:\n\n234 «¡Argivos! No desmaye vuestro impetuoso valor. El padre Júpiter no protegerá á los pérfidos; como han sido los primeros en faltar á lo jurado, sus tiernas carnes serán pasto de buitres y nosotros nos llevaremos en las naves á sus esposas é hijos cuando tomemos la ciudad.»\n\n240 Á los que veía remisos en marchar al odioso combate, los increpaba con iracundas voces:\n\n242 «¡Argivos que sólo con el arco sabéis combatir, hombres vituperables! ¿No os avergonzáis? ¿Por qué os encuentro atónitos como cervatos que, habiendo corrido por espacioso campo, se detienen cuando ningún vigor queda en su pecho? Así estáis vosotros: pasmados y sin pelear. ¿Aguardáis acaso que los teucros lleguen á la playa donde tenemos las naves de lindas popas, para ver si el Saturnio extiende su mano sobre vosotros?»\n\n250 De tal suerte revistaba, como generalísimo, las filas de guerreros. Andando por entre la muchedumb"
+  },
+  "respuesta": {
+    "avisos": [
+      {
+        "cita": "la amarga flecha seguía clavada en el cinturón de Menelao, pues nadie se había atrevido á arrancarla",
+        "hecho": 40030,
+        "tipo": "estado",
+        "gravedad": "contradiccion",
+        "direccion": "anterior",
+        "explicacion": "El narrador establece que Macaón ya arrancó la flecha del cíngulo de Menelao antes del punto de inserción. El pasaje nuevo afirma que la flecha seguía clavada y que nadie se había atrevido a arrancarla, lo cual es imposible."
+      }
+    ],
+    "notas": []
+  },
+  "informe": {
+    "avisos": [
+      {
+        "cita": "la amarga flecha seguía clavada en el cinturón de Menelao, pues nadie se había atrevido á arrancarla",
+        "hecho": 40030,
+        "texto_hecho": "Macaón arrancó la flecha del cíngulo de Menelao, desató el cinturón, quitó la faja y la chapa, chupó la sangre y aplicó drogas calmantes que Quirón había dado a su padre en prueba de amistad.",
+        "afirmado_por": "narrador",
+        "tipo": "estado",
+        "gravedad": "contradiccion",
+        "direccion": "anterior",
+        "explicacion": "El narrador establece que Macaón ya arrancó la flecha del cíngulo de Menelao antes del punto de inserción. El pasaje nuevo afirma que la flecha seguía clavada y que nadie se había atrevido a arrancarla, lo cual es imposible."
+      }
+    ],
+    "notas": [],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}

@@ -116,6 +116,23 @@ def buscar_pasajes(
     return [Pasaje(*fila) for fila in cur.fetchall()]
 
 
+def _filtro_entidad(entidad: str) -> tuple[str, list]:
+    """Hechos que mencionan una entidad: cualquier forma registrada suya
+    (término, alias, variantes) que aparezca en el texto del hecho, o que
+    sea quien lo afirma. Lo comparte continuidad.py, sin el límite de
+    posición. Espera los alias `h` (hechos_canonicos) y `o` (obras)."""
+    return (
+        """EXISTS (
+             SELECT 1 FROM entidades e,
+                  unnest(array_append(e.alias || e.variantes, e.termino)) AS forma
+             WHERE e.obra_id = o.id
+               AND (e.termino ILIKE %s OR %s ILIKE ANY (e.alias))
+               AND (h.hecho ILIKE '%%' || forma || '%%'
+                    OR h.atribucion_personaje_id = e.id))""",
+        [entidad, entidad],
+    )
+
+
 def hechos_hasta(
     cur,
     obra: str,
@@ -128,18 +145,9 @@ def hechos_hasta(
     condiciones = ["o.slug = %s", "f.orden_fragmento <= %s"]
     params: list = [obra, ultimo_completo]
     if entidad is not None:
-        # Cualquier forma registrada de la entidad (término, alias,
-        # variantes) que aparezca en el texto del hecho o sea quien lo afirma.
-        condiciones.append(
-            """EXISTS (
-                 SELECT 1 FROM entidades e,
-                      unnest(array_append(e.alias || e.variantes, e.termino)) AS forma
-                 WHERE e.obra_id = o.id
-                   AND (e.termino ILIKE %s OR %s ILIKE ANY (e.alias))
-                   AND (h.hecho ILIKE '%%' || forma || '%%'
-                        OR h.atribucion_personaje_id = e.id))"""
-        )
-        params += [entidad, entidad]
+        filtro, params_entidad = _filtro_entidad(entidad)
+        condiciones.append(filtro)
+        params += params_entidad
     cur.execute(
         f"""SELECT f.orden_fragmento, h.orden_en_fragmento, h.hecho,
                    h.momento_canonico, h.atribucion_tipo, a.termino

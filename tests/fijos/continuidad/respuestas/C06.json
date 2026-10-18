@@ -1,0 +1,175 @@
+{
+  "id": "C06",
+  "pasaje": "527 Mientras Píroo arremetía, Toante el etolo alanceóle en el pecho, por cima de una tetilla, y el bronce atravesó el pulmón. Acercósele Toante, le arrancó del pecho la ingente lanza, y hundiéndole la aguda espada en medio del vientre, le quitó la vida. Mas no pudo despojarle de la armadura, porque se vió rodeado por los compañeros del muerto, los tracios que dejan crecer la cabellera en lo más alto de la cabeza, quienes le asestaban sus largas picas; y aunque era corpulento, vigoroso é ilustre, fué rechazado y hubo de retroceder. Así cayeron y se juntaron en el polvo el caudillo de los tracios y el de los epeos, de broncíneas lorigas, y á su alrededor murieron otros muchos.",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 4,
+    "char": 27405,
+    "hechos": [
+      {
+        "id": 20055,
+        "orden_fragmento": 2,
+        "hecho": "Los de Buprasio y la divina Élide tenían cuatro caudillos: Anfímaco, Talpio, Diores Amarincida y Polixeno; cada uno mandaba diez veleras naves tripuladas por muchos epeos.",
+        "momento_canonico": "catálogo de las naves (versos 615-624)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: epeos"
+        ]
+      },
+      {
+        "id": 20058,
+        "orden_fragmento": 2,
+        "hecho": "Toante, hijo de Andremón, regía a los etolos; el rubio Meleagro ya había muerto y también el magnánimo Eneo; diéronse a Toante todos los poderes para que reinara sobre los etolos. Cuarenta negras naves le seguían.",
+        "momento_canonico": "catálogo de las naves (versos 638-644)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Toante"
+        ]
+      },
+      {
+        "id": 20088,
+        "orden_fragmento": 2,
+        "hecho": "A los tracios que viven a orillas del alborotado Helesponto los regían Acamante y el héroe Píroo.",
+        "momento_canonico": "catálogo troyano (versos 844-845)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Píroo Imbrásida",
+          "entidad: tracios"
+        ]
+      },
+      {
+        "id": 40069,
+        "orden_fragmento": 4,
+        "hecho": "El hado echó los lazos de la muerte a Diores Amarincida: Píroo Imbrásida, caudillo de los tracios llegado de Eno, le hirió con una piedra puntiaguda en el tobillo derecho, rompiéndole ambos tendones y el hueso.",
+        "momento_canonico": "verso 517-523",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Píroo Imbrásida",
+          "entidad: tracios"
+        ]
+      },
+      {
+        "id": 40070,
+        "orden_fragmento": 4,
+        "hecho": "Mientras Diores expiraba tendiendo los brazos a sus camaradas, Píroo le envasó la lanza en el ombligo; se derramaron los intestinos y murió.",
+        "momento_canonico": "verso 523-526",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Píroo Imbrásida"
+        ]
+      },
+      {
+        "id": 40071,
+        "orden_fragmento": 4,
+        "hecho": "Toante el etolo alanceó a Píroo en el pecho por cima de una tetilla, atravesándole el pulmón; luego le arrancó la lanza, le hundió la espada en el vientre y le quitó la vida.",
+        "momento_canonico": "verso 527-531",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Píroo Imbrásida",
+          "entidad: Toante"
+        ]
+      },
+      {
+        "id": 40072,
+        "orden_fragmento": 4,
+        "hecho": "Toante no pudo despojar a Píroo de la armadura porque los tracios de larga cabellera le rodearon con sus largas picas y le rechazaron pese a su corpulencia.",
+        "momento_canonico": "verso 531-535",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Píroo Imbrásida",
+          "entidad: Toante",
+          "entidad: tracios"
+        ]
+      },
+      {
+        "id": 40073,
+        "orden_fragmento": 4,
+        "hecho": "El caudillo de los tracios (Píroo) y el de los epeos (Diores), de broncíneas lorigas, cayeron juntos en el polvo, y a su alrededor murieron otros muchos más.",
+        "momento_canonico": "verso 536-538",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Píroo Imbrásida",
+          "entidad: epeos",
+          "entidad: tracios"
+        ]
+      }
+    ],
+    "candidatos": {
+      "entidad: Píroo Imbrásida": 6,
+      "entidad: Toante": 3,
+      "entidad: epeos": 2,
+      "entidad: tracios": 4
+    },
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 25,
+        "inicio_char": 27405,
+        "fin_char": 28373,
+        "texto": "527 Mientras Píroo arremetía, Toante el etolo alanceóle en el pecho, por cima de una tetilla, y el bronce atravesó el pulmón. Acercósele Toante, le arrancó del pecho la ingente lanza, y hundiéndole la aguda espada en medio del vientre, le quitó la vida. Mas no pudo despojarle de la armadura, porque se vió rodeado por los compañeros del muerto, los tracios que dejan crecer la cabellera en lo más alto de la cabeza, quienes le asestaban sus largas picas; y aunque era corpulento, vigoroso é ilustre, fué rechazado y hubo de retroceder. Así cayeron y se juntaron en el polvo el caudillo de los tracios y el de los epeos, de broncíneas lorigas, y á su alrededor murieron otros muchos.\n\n539 Y quien, sin estar herido por flecha ó lanza, hubiera recorrido el campo llevado de la mano y protegido de las saetas por Palas Minerva, no habría reprochado los hechos de armas; pues aquel día gran número de teucros y de aqueos dieron, unos junto á otros, de bruces en el polvo.",
+        "similitud": 0.9581912209759688
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 24,
+        "inicio_char": 26334,
+        "fin_char": 27530,
+        "texto": "Mas Apolo, que desde Pérgamo lo presenciaba, se indignó y con recios gritos exhortó á los teucros:\n\n509 «¡Acometed, teucros domadores de caballos! No cedáis en la batalla á los argivos, porque sus cuerpos no son de piedra ni de hierro para que puedan resistir, si los herís, el tajante bronce; ni pelea Aquiles, hijo de Tetis, la de hermosa cabellera, que se quedó en las naves y allí rumia la dolorosa cólera.»\n\n514 Así hablaba el terrible dios desde la ciudadela. Á su vez, la hija de Júpiter, la gloriosísima Tritogenia, recorría el ejército aqueo y animaba á los remisos.\n\n517 Fué entonces cuando el hado echó los lazos de la muerte á Diores Amarincida. Herido en el tobillo derecho por puntiaguda piedra que le tiró Píroo Imbrásida, caudillo de los tracios, que había llegado de Eno—la insolente piedra rompióle ambos tendones y el hueso,—cayó de espaldas en el polvo, y expirante tendía los brazos á sus camaradas cuando el mismo Píroo acudió presuroso y le envasó la lanza en el ombligo; derramáronse los intestinos y las tinieblas velaron los ojos del guerrero.\n\n527 Mientras Píroo arremetía, Toante el etolo alanceóle en el pecho, por cima de una tetilla, y el bronce atravesó el pulmón.",
+        "similitud": 0.8640399141264065
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 23,
+        "inicio_char": 25123,
+        "fin_char": 26333,
+        "texto": "Cayó el guerrero en el polvo como el terso álamo nacido en la orilla de una espaciosa laguna y coronado de ramas que corta el carretero con el hierro reluciente para hacer las pinas de un hermoso carro, dejando que el tronco se seque en la ribera; de igual modo, Ayax, del linaje de Jove, despojó á Simoísio Antémida.—Ántifo Priámida, que de labrada coraza iba revestido, lanzó á través de la muchedumbre su agudo dardo contra Ayax y no le tocó; pero hirió en la ingle á Leuco, compañero valiente de Ulises, mientras arrastraba un cadáver: desprendióse éste y el guerrero cayó junto al mismo.—Ulises, muy irritado por tal muerte, atravesó las primeras filas cubierto de fulgente bronce, detúvose cerca del matador, y revolviendo el rostro á todas partes arrojó la reluciente lanza. Al verle, huyeron los teucros. No fué vano el tiro, pues la broncínea lanza perforó las sienes á Democoonte, hijo bastardo de Príamo, que había venido de Abido, país de corredoras yeguas: la obscuridad veló los ojos del guerrero, cayó éste con estrépito y sus armas resonaron.—Arredráronse los combatientes delanteros y el esclarecido Héctor; y los argivos dieron grandes voces, retiraron los muertos y avanzaron un buen trecho.",
+        "similitud": 0.8569378427341172
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 12,
+        "inicio_char": 13385,
+        "fin_char": 14652,
+        "texto": "Á los demás aqueos de larga cabellera se les da su ración; pero tú tienes siempre la copa llena, como yo, y bebes cuanto te place. Corre ahora á la batalla y muestra el denuedo de que te jactas.»\n\n265 Respondióle Idomeneo, caudillo de los cretenses: «¡Atrida! Siempre he de ser tu amigo fiel, como te aseguré y prometí que sería. Pero exhorta á los demás aqueos, de larga cabellera, para que cuanto antes peleemos con los teucros, ya que éstos han roto los pactos. La muerte y toda clase de calamidades les aguardan, por haber sido los primeros en faltar á lo jurado.»\n\n272 Así se expresó, y el Atrida con el corazón alegre pasó adelante. Andando por entre la muchedumbre llegó al sitio donde estaban los Ayaces. Éstos se armaban, y una nube de infantes les seguía. Como el nubarrón, impelido por el céfiro, avanza sobre el mar y se le ve á lo lejos negro como la pez y preñado de tempestad, y el cabrero se estremece al divisarlo desde una altura, y antecogiendo el ganado, lo conduce á una cueva; de igual modo iban al dañoso combate, con los Ayaces, las densas y obscuras falanges de jóvenes ilustres, erizadas de lanzas y escudos. Al verlos, el rey Agamenón se regocijó, y dijo estas aladas palabras:\n\n285 «¡Ayaces, príncipes de los argivos de broncíneas lorigas!",
+        "similitud": 0.8488979935646117
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 21,
+        "inicio_char": 23383,
+        "fin_char": 24623,
+        "texto": "Allí se oían simultáneamente los lamentos de los moribundos y los gritos jactanciosos de los matadores, y la tierra manaba sangre. Como dos torrentes nacidos en grandes manantiales se despeñan por los montes, reunen las fervientes aguas en hondo barranco abierto en el valle y producen un estruendo que oye desde lejos el pastor en la montaña; así eran la gritería y el trabajo de los que vinieron á las manos.\n\n457 Fué Antíloco quien primeramente mató á un teucro, á Equépolo Talisíada, que peleaba valerosamente en la vanguardia: hirióle en la cimera del penachudo casco, y la broncínea lanza, clavándose en la frente, atravesó el hueso, las tinieblas cubrieron los ojos del guerrero y éste cayó como una torre en el duro combate. Al punto asióle de un pie el rey Elefenor Calcodontíada, caudillo de los bravos abantes, y lo arrastraba para ponerlo fuera del alcance de los dardos y quitarle la armadura. Poco duró su intento. Le vió el magnánimo Agenor é hiriéndole con la broncínea lanza en el costado, que al bajarse quedara en descubierto junto al escudo, dejóle sin vigor los miembros. De este modo perdió Elefenor la vida y sobre su cuerpo trabaron enconada pelea teucros y aqueos: como lobos se acometían y unos á otros se mataban.",
+        "similitud": 0.8488606304609415
+      }
+    ],
+    "entorno_antes": "Al verle, huyeron los teucros. No fué vano el tiro, pues la broncínea lanza perforó las sienes á Democoonte, hijo bastardo de Príamo, que había venido de Abido, país de corredoras yeguas: la obscuridad veló los ojos del guerrero, cayó éste con estrépito y sus armas resonaron.—Arredráronse los combatientes delanteros y el esclarecido Héctor; y los argivos dieron grandes voces, retiraron los muertos y avanzaron un buen trecho. Mas Apolo, que desde Pérgamo lo presenciaba, se indignó y con recios gritos exhortó á los teucros:\n\n509 «¡Acometed, teucros domadores de caballos! No cedáis en la batalla á los argivos, porque sus cuerpos no son de piedra ni de hierro para que puedan resistir, si los herís, el tajante bronce; ni pelea Aquiles, hijo de Tetis, la de hermosa cabellera, que se quedó en las naves y allí rumia la dolorosa cólera.»\n\n514 Así hablaba el terrible dios desde la ciudadela. Á su vez, la hija de Júpiter, la gloriosísima Tritogenia, recorría el ejército aqueo y animaba á los remisos.\n\n517 Fué entonces cuando el hado echó los lazos de la muerte á Diores Amarincida. Herido en el tobillo derecho por puntiaguda piedra que le tiró Píroo Imbrásida, caudillo de los tracios, que había llegado de Eno—la insolente piedra rompióle ambos tendones y el hueso,—cayó de espaldas en el polvo, y expirante tendía los brazos á sus camaradas cuando el mismo Píroo acudió presuroso y le envasó la lanza en el ombligo; derramáronse los intestinos y las tinieblas velaron los ojos del guerrero.\n\n",
+    "entorno_despues": "527 Mientras Píroo arremetía, Toante el etolo alanceóle en el pecho, por cima de una tetilla, y el bronce atravesó el pulmón. Acercósele Toante, le arrancó del pecho la ingente lanza, y hundiéndole la aguda espada en medio del vientre, le quitó la vida. Mas no pudo despojarle de la armadura, porque se vió rodeado por los compañeros del muerto, los tracios que dejan crecer la cabellera en lo más alto de la cabeza, quienes le asestaban sus largas picas; y aunque era corpulento, vigoroso é ilustre, fué rechazado y hubo de retroceder. Así cayeron y se juntaron en el polvo el caudillo de los tracios y el de los epeos, de broncíneas lorigas, y á su alrededor murieron otros muchos.\n\n539 Y quien, sin estar herido por flecha ó lanza, hubiera recorrido el campo llevado de la mano y protegido de las saetas por Palas Minerva, no habría reprochado los hechos de armas; pues aquel día gran número de teucros y de aqueos dieron, unos junto á otros, de bruces en el polvo."
+  },
+  "respuesta": {
+    "avisos": [],
+    "notas": []
+  },
+  "informe": {
+    "avisos": [],
+    "notas": [],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}

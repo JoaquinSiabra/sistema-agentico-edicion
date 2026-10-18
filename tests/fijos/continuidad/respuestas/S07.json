@@ -1,0 +1,452 @@
+{
+  "id": "S07",
+  "pasaje": "Leuco, compañero de Ulises, levantóse del polvo y siguió combatiendo junto á su caudillo.",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 4,
+    "char": 26745,
+    "hechos": [
+      {
+        "id": 10024,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón amenazó con apropiarse de la recompensa de Aquiles, de Ayax o de Ulises si los aqueos no le daban otra recompensa equivalente.",
+        "momento_canonico": "verso 130, parlamento de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 10025,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón ordenó botar una nave al mar, reunir remeros, embarcar víctimas para una hecatombe y a Criseida, con Ayax, Idomeneo, Ulises o Aquiles como capitán.",
+        "momento_canonico": "verso 130, parlamento de Agamenón",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 10044,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón botó al mar una velera nave, escogió veinte remeros, cargó las víctimas de la hecatombe, embarcó a Criseida y puso como capitán al ingenioso Ulises.",
+        "momento_canonico": "verso 304",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 10060,
+        "orden_fragmento": 1,
+        "hecho": "Ulises llegó a Crisa con las víctimas para la hecatombe, amainaron velas, abatieron el mástil, llevaron el buque a remos al fondeadero, echaron anclas, ataron amarras y desembarcaron.",
+        "momento_canonico": "verso 430",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 10061,
+        "orden_fragmento": 1,
+        "hecho": "Criseida salió de la nave y el ingenioso Ulises la llevó al altar y la puso en manos de su padre Crises.",
+        "momento_canonico": "verso 430",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 10062,
+        "orden_fragmento": 1,
+        "hecho": "Ulises dijo a Crises que Agamenón le enviaba a traerle la hija y a ofrecer una sacra hecatombe a Apolo en favor de los dánaos.",
+        "momento_canonico": "verso 442, parlamento de Ulises",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20020,
+        "orden_fragmento": 2,
+        "hecho": "Minerva bajó del Olimpo, llegó a las naves aqueas y encontró a Ulises inmóvil junto a su nave negra, sin tocarla, porque el pesar le llegaba al corazón.",
+        "momento_canonico": "narración (versos 166-172)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20021,
+        "orden_fragmento": 2,
+        "hecho": "Minerva, poniéndose al lado de Ulises, le ordenó que fuera al ejército a detener con suaves palabras a cada guerrero y no permitir que botaran los bajeles al mar.",
+        "momento_canonico": "discurso de Minerva a Ulises (versos 173-181)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20022,
+        "orden_fragmento": 2,
+        "hecho": "Ulises reconoció la voz de Minerva, tiró su manto (que recogió el heraldo Euríbates de Ítaca, que le acompañaba), corrió hacia Agamenón para que le diera el imperecedero cetro paterno y con éste se dirigió a las naves.",
+        "momento_canonico": "narración (versos 182-187)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20023,
+        "orden_fragmento": 2,
+        "hecho": "Ulises detuvo a reyes y capitanes con suaves palabras, diciéndoles que Agamenón los estaba probando y que pronto castigaría a los que huyeran.",
+        "momento_canonico": "narración e intervenciones de Ulises (versos 188-197)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20024,
+        "orden_fragmento": 2,
+        "hecho": "Ulises golpeó con el cetro a los hombres del pueblo que encontraba gritando e increpó a los que querían marcharse, diciéndoles que no todos pueden ser reyes y que uno solo debe ser príncipe.",
+        "momento_canonico": "narración (versos 198-206)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20025,
+        "orden_fragmento": 2,
+        "hecho": "Tersites era el hombre más feo que llegó a Troya: bizco, cojo de un pie, con hombros corcovados, cabeza puntiaguda y rala cabellera; Aquiles y Ulises le aborrecían especialmente.",
+        "momento_canonico": "descripción de Tersites en la junta (versos 211-224)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20027,
+        "orden_fragmento": 2,
+        "hecho": "Ulises se detuvo junto a Tersites, le increpó duramente y le amenazó con azotarle y expulsarle de la junta si volvía a zaherir a los reyes.",
+        "momento_canonico": "discurso de Ulises a Tersites (versos 246-264)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20028,
+        "orden_fragmento": 2,
+        "hecho": "Ulises golpeó a Tersites con el cetro en la espalda y los hombros; Tersites lloró y le apareció un cardenal en la espalda; los aqueos rieron.",
+        "momento_canonico": "narración tras el discurso de Ulises (versos 265-271)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20029,
+        "orden_fragmento": 2,
+        "hecho": "Minerva, transfigurada en heraldo y junto a Ulises, impuso silencio para que todos los aqueos oyeran el discurso de Ulises.",
+        "momento_canonico": "narración (versos 278-283)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20030,
+        "orden_fragmento": 2,
+        "hecho": "Ulises recordó ante los aqueos el prodigio ocurrido en Áulide: un dragón devoró ocho polluelos y a la madre (nueve en total) y luego fue transformado en piedra por Júpiter; Calcas vaticinó entonces que combatirían durante nueve años y al décimo tomarían Troya.",
+        "momento_canonico": "discurso de Ulises a los aqueos (versos 299-332)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Ulises",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20031,
+        "orden_fragmento": 2,
+        "hecho": "Ulises afirmó que llevan ya nueve años en Troya y que todo lo vaticinado por Calcas se va cumpliendo, instando a los aqueos a quedarse hasta tomar la gran ciudad de Príamo.",
+        "momento_canonico": "discurso de Ulises a los aqueos (versos 328-332)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Ulises",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20036,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón, rey de hombres, inmoló un pingüe buey de cinco años al prepotente Saturnio, reuniendo en su tienda a los principales caudillos: Néstor, Idomeneo, los dos Ayaces, Diomedes y Ulises; Menelao se presentó espontáneamente.",
+        "momento_canonico": "narración del sacrificio (versos 402-411)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 20057,
+        "orden_fragmento": 2,
+        "hecho": "Ulises acaudillaba a los magnánimos cefalenios de Ítaca y otras islas y territorios; doce naves de rojas proas le seguían.",
+        "momento_canonico": "catálogo de las naves (versos 631-637)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 30024,
+        "orden_fragmento": 3,
+        "hecho": "Helena identificó al aqueo de menor estatura pero más espacioso de espaldas y pecho que recorría las filas como un carnero como el hijo de Laertes, el ingenioso Ulises, criado en la áspera Ítaca, hábil en urdir engaños y dar prudentes consejos.",
+        "momento_canonico": "versos 199-202",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 30025,
+        "orden_fragmento": 3,
+        "hecho": "Antenor confirmó que Ulises vino como embajador con Menelao por Helena, y que los hospedó en su palacio.",
+        "momento_canonico": "versos 203-205",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 30026,
+        "orden_fragmento": 3,
+        "hecho": "Antenor describió que en las reuniones Menelao hablaba de prisa y poco pero claramente, sin apartarse del asunto, mientras Ulises al levantarse permanecía con la vista baja y el cetro inmóvil, pareciendo un ignorante, pero cuando hablaba sus palabras eran tan poderosas que ningún mortal le disputaba.",
+        "momento_canonico": "versos 209-224",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 30034,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón y Ulises se levantaron, los heraldos juntaron las víctimas, mezclaron vinos en la cratera y dieron aguamanos a los reyes. El Atrida cortó pelo de la cabeza de los corderos con la daga y los heraldos lo repartieron a los próceres teucros y aquivos.",
+        "momento_canonico": "versos 264-275",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 30040,
+        "orden_fragmento": 3,
+        "hecho": "Héctor y Ulises midieron el campo y echaron dos suertes en un casco de bronce para decidir quién arrojaría primero la lanza; saltó la suerte de Paris.",
+        "momento_canonico": "versos 314-325",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 40043,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón encontró a Menesteo, hijo de Peteo, entre los atenienses, y cerca de ellos a Ulises con las huestes de los cefalenios, que esperaban sin avanzar porque no habían oído el grito de guerra.",
+        "momento_canonico": "verso 326-337",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 40044,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón increpó a Menesteo y Ulises por abstenerse de pelear y esperar que otros tomaran la ofensiva, recordándoles que eran los primeros en ser invitados a los banquetes.",
+        "momento_canonico": "verso 338-348, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 40045,
+        "orden_fragmento": 4,
+        "hecho": "Ulises respondió con irritación que no eran remisos y prometió que el padre amado de Telémaco penetraría por las primeras filas de los teucros cuando los aqueos excitaran a Marte.",
+        "momento_canonico": "verso 349-355, discurso de Ulises",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Ulises",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 40046,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón, al ver que Ulises se irritaba, sonrió, se retractó y declaró que no fue su propósito reprenderle en demasía ni darle órdenes, reconociendo que el modo de pensar de Ulises coincide con el suyo.",
+        "momento_canonico": "verso 356-363, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 40064,
+        "orden_fragmento": 4,
+        "hecho": "Ántifo Priámida lanzó su dardo contra Ayax pero no le tocó; en cambio hirió en la ingle a Leuco, compañero de Ulises, mientras arrastraba un cadáver, y Leuco cayó muerto junto al cadáver.",
+        "momento_canonico": "verso 489-493",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Leuco",
+          "entidad: Ulises"
+        ]
+      },
+      {
+        "id": 40065,
+        "orden_fragmento": 4,
+        "hecho": "Ulises, muy irritado por la muerte de Leuco, atravesó las primeras filas y lanzó su broncínea lanza que perforó las sienes a Democoonte, hijo bastardo de Príamo, que había venido de Abido.",
+        "momento_canonico": "verso 494-503",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Leuco",
+          "entidad: Ulises"
+        ]
+      }
+    ],
+    "candidatos": {
+      "entidad: Leuco": 2,
+      "entidad: Ulises": 30
+    },
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 23,
+        "inicio_char": 25123,
+        "fin_char": 26333,
+        "texto": "Cayó el guerrero en el polvo como el terso álamo nacido en la orilla de una espaciosa laguna y coronado de ramas que corta el carretero con el hierro reluciente para hacer las pinas de un hermoso carro, dejando que el tronco se seque en la ribera; de igual modo, Ayax, del linaje de Jove, despojó á Simoísio Antémida.—Ántifo Priámida, que de labrada coraza iba revestido, lanzó á través de la muchedumbre su agudo dardo contra Ayax y no le tocó; pero hirió en la ingle á Leuco, compañero valiente de Ulises, mientras arrastraba un cadáver: desprendióse éste y el guerrero cayó junto al mismo.—Ulises, muy irritado por tal muerte, atravesó las primeras filas cubierto de fulgente bronce, detúvose cerca del matador, y revolviendo el rostro á todas partes arrojó la reluciente lanza. Al verle, huyeron los teucros. No fué vano el tiro, pues la broncínea lanza perforó las sienes á Democoonte, hijo bastardo de Príamo, que había venido de Abido, país de corredoras yeguas: la obscuridad veló los ojos del guerrero, cayó éste con estrépito y sus armas resonaron.—Arredráronse los combatientes delanteros y el esclarecido Héctor; y los argivos dieron grandes voces, retiraron los muertos y avanzaron un buen trecho.",
+        "similitud": 0.8468083234543623
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 10,
+        "inicio_char": 11473,
+        "fin_char": 12691,
+        "texto": "Mas tan pronto como salían de su pecho las palabras pronunciadas con voz sonora, como caen en invierno los copos de nieve, ningún mortal hubiese disputado con Ulises. Y entonces ya no admirábamos tanto la figura del héroe.»\n\n225 Reparando la tercera vez en Ayax, dijo el anciano: «¿Quién es esotro aqueo gallardo y alto, que descuella entre los argivos por su cabeza y anchas espaldas?»\n\n228 Respondió Helena, la de largo peplo, divina entre las mujeres: «Ése es el ingente Ayax, antemural de los aqueos. Al otro lado está Idomeneo, como un dios, entre los cretenses; rodéanle los capitanes de sus tropas. Muchas veces Menelao, caro á Marte, le hospedó en nuestro palacio cuando venía de Creta. Distingo á los demás aqueos de ojos vivos, y me sería fácil reconocerlos y nombrarlos; mas no veo á dos caudillos de hombres, Cástor, domador de caballos, y Pólux, excelente púgil, hermanos carnales que me dió mi madre. ¿Acaso no han venido de la amena Lacedemonia? ¿Ó llegaron en las naves, que atraviesan el ponto, y no quieren entrar en combate para no hacerse partícipes de mi deshonra y múltiples oprobios?»\n\n243 De este modo habló. Á ellos la fértil tierra los tenía ya en su seno, en Lacedemonia, en su misma patria.",
+        "similitud": 0.8304070830345154
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 0,
+        "inicio_char": 0,
+        "fin_char": 1176,
+        "texto": "CANTO III\nJURAMENTOS.—DESDE LA MURALLA.—COMBATE SINGULAR DE\nALEJANDRO Y MENELAO\n\n1 Puestos en orden de batalla con sus respectivos jefes, los teucros avanzaban chillando y gritando como aves—así profieren sus voces las grullas en el cielo, cuando, para huir del frío y de las lluvias torrenciales, vuelan gruyendo sobre la corriente del Océano y llevan la ruina y la muerte á los pigmeos, moviéndoles desde el aire cruda guerra—y los aqueos marchaban silenciosos, respirando valor y dispuestos á ayudarse mutuamente.\n\n10 Así como el Noto derrama en las cumbres de un monte la niebla tan poco grata al pastor y más favorable que la noche para el ladrón, y sólo se ve el espacio á que alcanza un tiro de piedra; así también, una densa polvareda se levantaba bajo los pies de los que se ponían en marcha y atravesaban con gran presteza la llanura.\n\n15 Cuando ambos ejércitos se hubieron acercado el uno al otro, apareció en la primera fila de los teucros Alejandro, semejante á un dios, con una piel de leopardo en los hombros, el corvo arco y la espada; y blandiendo dos lanzas de broncínea punta, desafiaba á los más valientes argivos á que con él sostuvieran terrible combate.",
+        "similitud": 0.8298256993293762
+      },
+      {
+        "orden_fragmento": 2,
+        "orden_en_fragmento": 18,
+        "inicio_char": 20320,
+        "fin_char": 21628,
+        "texto": "Ni un breve descanso ha de haber siquiera, hasta que la noche obligue á los valientes guerreros á separarse. La correa del escudo que al combatiente cubre, se impregnará de sudor en torno del pecho; el brazo se fatigará con el manejo de la lanza, y sudarán los corceles arrastrando los pulimentados carros. Y aquel que se quede voluntariamente en las corvas naves, lejos de la batalla, como yo le vea, no se librará de los perros y de las aves de rapiña.»\n\n394 Así habló. Los argivos promovían gran clamoreo, como cuando las olas, movidas por el Noto, baten un elevado risco que se adelanta sobre el mar y no lo dejan mientras soplan los vientos en contrarias direcciones. Luego, levantándose, se dispersaron por las naves, encendieron lumbre en las tiendas, tomaron la comida y ofrecieron sacrificios, quiénes á uno, quiénes á otro de los sempiternos dioses, para que los librasen de morir en la batalla. Agamenón, rey de hombres, inmoló un pingüe buey de cinco años al prepotente Saturnio, habiendo llamado á su tienda á los principales caudillos de los aqueos todos: á Néstor y al rey Idomeneo, luego á entrambos Ayaces y al hijo de Tideo, y en sexto lugar á Ulises, igual en prudencia á Júpiter. Espontáneamente se presentó Menelao, valiente en la pelea, porque sabía lo que su hermano estaba preparando.",
+        "similitud": 0.828751802444458
+      },
+      {
+        "orden_fragmento": 4,
+        "orden_en_fragmento": 25,
+        "inicio_char": 27405,
+        "fin_char": 28373,
+        "texto": "527 Mientras Píroo arremetía, Toante el etolo alanceóle en el pecho, por cima de una tetilla, y el bronce atravesó el pulmón. Acercósele Toante, le arrancó del pecho la ingente lanza, y hundiéndole la aguda espada en medio del vientre, le quitó la vida. Mas no pudo despojarle de la armadura, porque se vió rodeado por los compañeros del muerto, los tracios que dejan crecer la cabellera en lo más alto de la cabeza, quienes le asestaban sus largas picas; y aunque era corpulento, vigoroso é ilustre, fué rechazado y hubo de retroceder. Así cayeron y se juntaron en el polvo el caudillo de los tracios y el de los epeos, de broncíneas lorigas, y á su alrededor murieron otros muchos.\n\n539 Y quien, sin estar herido por flecha ó lanza, hubiera recorrido el campo llevado de la mano y protegido de las saetas por Palas Minerva, no habría reprochado los hechos de armas; pues aquel día gran número de teucros y de aqueos dieron, unos junto á otros, de bruces en el polvo.",
+        "similitud": 0.8286696178514008
+      }
+    ],
+    "entorno_antes": " el carretero con el hierro reluciente para hacer las pinas de un hermoso carro, dejando que el tronco se seque en la ribera; de igual modo, Ayax, del linaje de Jove, despojó á Simoísio Antémida.—Ántifo Priámida, que de labrada coraza iba revestido, lanzó á través de la muchedumbre su agudo dardo contra Ayax y no le tocó; pero hirió en la ingle á Leuco, compañero valiente de Ulises, mientras arrastraba un cadáver: desprendióse éste y el guerrero cayó junto al mismo.—Ulises, muy irritado por tal muerte, atravesó las primeras filas cubierto de fulgente bronce, detúvose cerca del matador, y revolviendo el rostro á todas partes arrojó la reluciente lanza. Al verle, huyeron los teucros. No fué vano el tiro, pues la broncínea lanza perforó las sienes á Democoonte, hijo bastardo de Príamo, que había venido de Abido, país de corredoras yeguas: la obscuridad veló los ojos del guerrero, cayó éste con estrépito y sus armas resonaron.—Arredráronse los combatientes delanteros y el esclarecido Héctor; y los argivos dieron grandes voces, retiraron los muertos y avanzaron un buen trecho. Mas Apolo, que desde Pérgamo lo presenciaba, se indignó y con recios gritos exhortó á los teucros:\n\n509 «¡Acometed, teucros domadores de caballos! No cedáis en la batalla á los argivos, porque sus cuerpos no son de piedra ni de hierro para que puedan resistir, si los herís, el tajante bronce; ni pelea Aquiles, hijo de Tetis, la de hermosa cabellera, que se quedó en las naves y allí rumia la dolorosa cólera.»",
+    "entorno_despues": "\n\n514 Así hablaba el terrible dios desde la ciudadela. Á su vez, la hija de Júpiter, la gloriosísima Tritogenia, recorría el ejército aqueo y animaba á los remisos.\n\n517 Fué entonces cuando el hado echó los lazos de la muerte á Diores Amarincida. Herido en el tobillo derecho por puntiaguda piedra que le tiró Píroo Imbrásida, caudillo de los tracios, que había llegado de Eno—la insolente piedra rompióle ambos tendones y el hueso,—cayó de espaldas en el polvo, y expirante tendía los brazos á sus camaradas cuando el mismo Píroo acudió presuroso y le envasó la lanza en el ombligo; derramáronse los intestinos y las tinieblas velaron los ojos del guerrero.\n\n527 Mientras Píroo arremetía, Toante el etolo alanceóle en el pecho, por cima de una tetilla, y el bronce atravesó el pulmón. Acercósele Toante, le arrancó del pecho la ingente lanza, y hundiéndole la aguda espada en medio del vientre, le quitó la vida. Mas no pudo despojarle de la armadura, porque se vió rodeado por los compañeros del muerto, los tracios que dejan crecer la cabellera en lo más alto de la cabeza, quienes le asestaban sus largas picas; y aunque era corpulento, vigoroso é ilustre, fué rechazado y hubo de retroceder. Así cayeron y se juntaron en el polvo el caudillo de los tracios y el de los epeos, de broncíneas lorigas, y á su alrededor murieron otros muchos.\n\n539 Y quien, sin estar herido por flecha ó lanza, hubiera recorrido el campo llevado de la mano y protegido de las saetas por Palas Minerva, no habría repr"
+  },
+  "respuesta": {
+    "avisos": [
+      {
+        "cita": "Leuco, compañero de Ulises, levantóse del polvo y siguió combatiendo junto á su caudillo.",
+        "hecho": 40064,
+        "tipo": "estado",
+        "gravedad": "contradiccion",
+        "direccion": "anterior",
+        "explicacion": "El narrador establece que Leuco cayó muerto al ser herido en la ingle por Ántifo. El pasaje lo muestra levantándose y continuando el combate, lo cual es imposible según el canon."
+      }
+    ],
+    "notas": []
+  },
+  "informe": {
+    "avisos": [
+      {
+        "cita": "Leuco, compañero de Ulises, levantóse del polvo y siguió combatiendo junto á su caudillo.",
+        "hecho": 40064,
+        "texto_hecho": "Ántifo Priámida lanzó su dardo contra Ayax pero no le tocó; en cambio hirió en la ingle a Leuco, compañero de Ulises, mientras arrastraba un cadáver, y Leuco cayó muerto junto al cadáver.",
+        "afirmado_por": "narrador",
+        "tipo": "estado",
+        "gravedad": "contradiccion",
+        "direccion": "anterior",
+        "explicacion": "El narrador establece que Leuco cayó muerto al ser herido en la ingle por Ántifo. El pasaje lo muestra levantándose y continuando el combate, lo cual es imposible según el canon."
+      }
+    ],
+    "notas": [],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}

@@ -1,0 +1,2359 @@
+{
+  "id": "C02",
+  "pasaje": "369 Dice, y arremetiendo á Paris, cógele por el casco adornado con espesas crines de caballo y le arrastra hacia los aqueos de hermosas grebas, medio ahogado por la bordada correa que, atada por debajo de la barba para asegurar el casco, le apretaba el delicado cuello. Y se lo hubiera llevado, consiguiendo inmensa gloria, si al punto no lo hubiese advertido Venus, hija de Júpiter, que rompió la correa hecha del cuero de un buey degollado: el casco vacío siguió á la robusta mano, el héroe lo volteó y arrojó á los aqueos, de hermosas grebas, y sus fieles compañeros lo recogieron. De nuevo asaltó Menelao á Paris para matarle con la broncínea lanza; pero Venus arrebató á su hijo con gran facilidad, por ser diosa, y llevóle, envuelto en densa niebla, al oloroso y perfumado tálamo. Luego fué á llamar á Helena, hallándola en la alta torre con muchas troyanas; tiró suavemente de su perfumado velo, y tomando la figura de una anciana cardadora que allá en Lacedemonia le preparaba á Helena hermosas lanas y era muy querida de ésta, dijo la diosa Venus:",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 3,
+    "char": 19055,
+    "hechos": [
+      {
+        "id": 10000,
+        "orden_fragmento": 1,
+        "hecho": "La cólera de Aquiles causó infinitos males a los aqueos y precipitó al Orco muchas almas valerosas de héroes.",
+        "momento_canonico": "verso 1, al inicio del fragmento",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10002,
+        "orden_fragmento": 1,
+        "hecho": "Apolo, hijo de Júpiter y de Latona, airado con el rey Agamenón, suscitó una maligna peste en el ejército aqueo.",
+        "momento_canonico": "verso 8",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10005,
+        "orden_fragmento": 1,
+        "hecho": "Crises suplicó a todos los aqueos y particularmente a los dos Atridas que liberaran a su hija y admitieran el rescate.",
+        "momento_canonico": "verso 17, parlamento de Crises",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10006,
+        "orden_fragmento": 1,
+        "hecho": "Todos los aqueos aprobaron en voz alta respetar al sacerdote y admitir el rescate.",
+        "momento_canonico": "verso 22",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10010,
+        "orden_fragmento": 1,
+        "hecho": "Crises dirigió una plegaria al soberano Apolo, hijo de Latona, pidiéndole que los dánaos pagaran sus lágrimas con sus flechas.",
+        "momento_canonico": "verso 37, plegaria de Crises",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10011,
+        "orden_fragmento": 1,
+        "hecho": "Apolo escuchó la plegaria de Crises, descendió del Olimpo con el arco y el carcaj y disparó flechas mortíferas contra los aqueos, primero contra mulos y perros, luego contra hombres.",
+        "momento_canonico": "verso 43",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10013,
+        "orden_fragmento": 1,
+        "hecho": "En el décimo día, Juno puso en el corazón de Aquiles la idea de convocar al pueblo a junta, porque se interesaba por los dánaos a quienes veía morir.",
+        "momento_canonico": "verso 53",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10016,
+        "orden_fragmento": 1,
+        "hecho": "Calcas solicitó protección a Aquiles antes de revelar la causa de la ira de Apolo, alegando que temía irritar a un varón de gran poder entre los argivos.",
+        "momento_canonico": "verso 74, parlamento de Calcas",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Calcas",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10019,
+        "orden_fragmento": 1,
+        "hecho": "Calcas declaró que Apolo no liberaría a los dánaos de la peste hasta que Criseida fuera restituida a su padre sin premio ni rescate y se inmolara una hecatombe en Crisa.",
+        "momento_canonico": "verso 92, parlamento de Calcas",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Calcas",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10022,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón aceptó devolver a Criseida si los aqueos le preparaban otra recompensa, alegando que no podía quedarse sin la suya.",
+        "momento_canonico": "verso 106, parlamento de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10023,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles respondió que los aqueos no tenían cosas comunes porque el botín de las ciudades ya estaba repartido, y propuso que Agamenón devolviera a la joven y fuera recompensado el triple o cuádruple si se tomaba Troya.",
+        "momento_canonico": "verso 121, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10024,
+        "orden_fragmento": 1,
+        "hecho": "Agamenón amenazó con apropiarse de la recompensa de Aquiles, de Ayax o de Ulises si los aqueos no le daban otra recompensa equivalente.",
+        "momento_canonico": "verso 130, parlamento de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10026,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles declaró que no había venido a pelear por los troyanos, pues los teucros nunca le habían causado daño personal, sino que seguía a Agamenón para vengar a Menelao y a él.",
+        "momento_canonico": "verso 148, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 10030,
+        "orden_fragmento": 1,
+        "hecho": "Mientras Aquiles sacaba la espada de la vaina, Minerva bajó del cielo enviada por Juno, que amaba cordialmente a ambos héroes.",
+        "momento_canonico": "verso 188",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 10031,
+        "orden_fragmento": 1,
+        "hecho": "Minerva se apareció solo a Aquiles, tirándole de la blonda cabellera; ninguno de los demás la veía.",
+        "momento_canonico": "verso 188",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 10032,
+        "orden_fragmento": 1,
+        "hecho": "Minerva dijo a Aquiles que venía a apaciguar su cólera enviada por Juno, y que por el ultraje se le ofrecerían un día triples y espléndidos presentes.",
+        "momento_canonico": "verso 206, parlamento de Minerva",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Minerva",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 10033,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles obedeció a Minerva, envainó la espada y no desobedeció su orden.",
+        "momento_canonico": "verso 219",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 10034,
+        "orden_fragmento": 1,
+        "hecho": "Minerva regresó al Olimpo, al palacio donde mora Júpiter, entre las demás deidades.",
+        "momento_canonico": "verso 219",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 10035,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles denostó a Agamenón llamándole borracho, cara de perro y corazón de ciervo, y prestó juramento por el cetro de que los aqueos echarían de menos a Aquiles cuando Héctor los hiciera sucumbir.",
+        "momento_canonico": "verso 223, parlamento de Aquiles",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10053,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles relató a Tetis que fueron a Tebas, la sagrada ciudad de Eetión, la saquearon y el botín fue distribuido por los aqueos, separando a Criseida para el Atrida.",
+        "momento_canonico": "verso 364, parlamento de Aquiles a Tetis",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10054,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles pidió a Tetis que fuera al Olimpo a rogar a Júpiter que honrara a su hijo concediendo la victoria a los teucros hasta que los aqueos dieran satisfacción a Aquiles.",
+        "momento_canonico": "verso 364, parlamento de Aquiles a Tetis",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10055,
+        "orden_fragmento": 1,
+        "hecho": "Aquiles afirmó que Tetis había evitado, ella sola entre los inmortales, una afrentosa desgracia al Saturnio cuando otros dioses olímpicos —Juno, Neptuno y Palas Minerva— quisieron atarle, llamando al espacioso Olimpo al centímano Briáreo.",
+        "momento_canonico": "verso 364, parlamento de Aquiles a Tetis",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Aquiles",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 10056,
+        "orden_fragmento": 1,
+        "hecho": "Tetis respondió a Aquiles lamentando haberle parido de corta vida, y le dijo que iría al nevado Olimpo a hablar con Júpiter.",
+        "momento_canonico": "verso 413, parlamento de Tetis",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Tetis",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10057,
+        "orden_fragmento": 1,
+        "hecho": "Tetis informó a Aquiles de que Júpiter había ido al Océano al país de los probos etíopes para asistir a un banquete y todos los dioses le siguieron, y que volvería al Olimpo en doce días.",
+        "momento_canonico": "verso 413, parlamento de Tetis",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Tetis",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10058,
+        "orden_fragmento": 1,
+        "hecho": "Tetis aconsejó a Aquiles que se quedara en las naves, conservara la cólera contra los aqueos y se abstuviera de combatir.",
+        "momento_canonico": "verso 413, parlamento de Tetis",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Tetis",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10062,
+        "orden_fragmento": 1,
+        "hecho": "Ulises dijo a Crises que Agamenón le enviaba a traerle la hija y a ofrecer una sacra hecatombe a Apolo en favor de los dánaos.",
+        "momento_canonico": "verso 442, parlamento de Ulises",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10064,
+        "orden_fragmento": 1,
+        "hecho": "Crises dirigió una segunda plegaria a Apolo pidiendo que alejara la abominable peste de los dánaos.",
+        "momento_canonico": "verso 451, plegaria de Crises",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10066,
+        "orden_fragmento": 1,
+        "hecho": "Durante el día los aqueos aplacaron a Apolo con el canto entonando un peán, y Apolo los oía con el corazón complacido.",
+        "momento_canonico": "verso 457",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10067,
+        "orden_fragmento": 1,
+        "hecho": "A la mañana siguiente los aqueos se hicieron a la mar para volver al campamento y Apolo les envió próspero viento.",
+        "momento_canonico": "verso 475",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10070,
+        "orden_fragmento": 1,
+        "hecho": "Cuando apareció la duodécima aurora, los sempiternos dioses volvieron al Olimpo con Júpiter a la cabeza.",
+        "momento_canonico": "verso 493",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10071,
+        "orden_fragmento": 1,
+        "hecho": "Tetis salió del mar y subió al Olimpo, halló al longividente Saturnio sentado aparte en la más alta cumbre del monte, abrazó sus rodillas con la mano izquierda y le tocó la barba con la diestra.",
+        "momento_canonico": "verso 493",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10072,
+        "orden_fragmento": 1,
+        "hecho": "Tetis suplicó a Júpiter que honrara a su hijo concediendo la victoria a los teucros hasta que los aqueos dieran satisfacción a Aquiles y le colmaran de honores.",
+        "momento_canonico": "verso 503, parlamento de Tetis",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Tetis",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 10073,
+        "orden_fragmento": 1,
+        "hecho": "Júpiter guardó silencio un buen rato sin responder a Tetis.",
+        "momento_canonico": "verso 511",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10074,
+        "orden_fragmento": 1,
+        "hecho": "Júpiter respondió afligidísimo que acceder a la petición de Tetis haría que Juno le malquisiera y le zahiriera con injuriosas palabras.",
+        "momento_canonico": "verso 517, parlamento de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10075,
+        "orden_fragmento": 1,
+        "hecho": "Júpiter prometió a Tetis su asentimiento con la cabeza, declarando que ese signo es el más seguro, irrevocable y veraz para los inmortales.",
+        "momento_canonico": "verso 517, parlamento de Júpiter",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10076,
+        "orden_fragmento": 1,
+        "hecho": "El Saturnio bajó las negras cejas en señal de asentimiento y los divinos cabellos se agitaron en su cabeza, estremeciendo el dilatado Olimpo.",
+        "momento_canonico": "verso 528",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10077,
+        "orden_fragmento": 1,
+        "hecho": "Tetis saltó al profundo mar desde el Olimpo y Júpiter volvió a su palacio.",
+        "momento_canonico": "verso 531",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10078,
+        "orden_fragmento": 1,
+        "hecho": "Juno, que había visto que Tetis departió con Júpiter, dirigió injuriosas palabras a Jove Saturnio.",
+        "momento_canonico": "verso 531",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10079,
+        "orden_fragmento": 1,
+        "hecho": "Juno sospechó que Tetis había pedido a Júpiter que honrara a Aquiles y causara gran matanza junto a las naves aqueas.",
+        "momento_canonico": "verso 551, parlamento de Juno",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Juno",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10080,
+        "orden_fragmento": 1,
+        "hecho": "Júpiter ordenó a Juno que se sentara en silencio y obedeciese, amenazando con ponerle las invictas manos encima si se acercaba.",
+        "momento_canonico": "verso 560, parlamento de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10081,
+        "orden_fragmento": 1,
+        "hecho": "Juno temió y refrenando su coraje, se sentó en silencio; los dioses celestiales se indignaron en el palacio de Jove.",
+        "momento_canonico": "verso 568",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10082,
+        "orden_fragmento": 1,
+        "hecho": "Vulcano comenzó a arengar a los dioses para consolar a su madre Juno, aconsejándole que obsequiara al padre Júpiter para no turbar el festín.",
+        "momento_canonico": "verso 568, parlamento de Vulcano",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10083,
+        "orden_fragmento": 1,
+        "hecho": "Vulcano afirmó que en otra ocasión que quiso defender a Juno, Júpiter le asió por el pie y le arrojó de los divinos umbrales; que rodó todo el día y a la puesta del sol cayó en Lemnos, donde los sinties le recogieron.",
+        "momento_canonico": "verso 584, parlamento de Vulcano",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Vulcano",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 10087,
+        "orden_fragmento": 1,
+        "hecho": "Cuando el sol se puso, los dioses fueron a recogerse a sus palacios construidos por Vulcano. Júpiter se encaminó al lecho donde acostumbraba dormir y a su lado descansó Juno de áureo trono.",
+        "momento_canonico": "verso 605",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20000,
+        "orden_fragmento": 2,
+        "hecho": "Júpiter no durmió durante la noche porque buscaba el modo de honrar a Aquiles y causar gran matanza junto a las naves aqueas.",
+        "momento_canonico": "al inicio del fragmento (verso 1)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20001,
+        "orden_fragmento": 2,
+        "hecho": "Júpiter decidió enviar un pernicioso Sueño a Agamenón.",
+        "momento_canonico": "al inicio del fragmento (verso 1)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20002,
+        "orden_fragmento": 2,
+        "hecho": "Júpiter ordenó al Sueño que dijera a Agamenón que armara a los aqueos y los lanzara al ataque, pues ahora podría tomar Troya porque los inmortales ya no están discordes tras ser persuadidos por Juno.",
+        "momento_canonico": "discurso de Júpiter al Sueño (versos 8-15)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20004,
+        "orden_fragmento": 2,
+        "hecho": "El Sueño, transfigurado en Néstor, repitió a Agamenón el mensaje de Júpiter: que armara a los aqueos y los sacara al combate, pues podría tomar Troya porque los inmortales ya no están discordes por haberlos persuadido Juno.",
+        "momento_canonico": "discurso del Sueño a Agamenón (versos 23-34)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Sueño",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20005,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón, al despertar, creyó que iba a tomar la ciudad de Troya ese mismo día, sin saber lo que Júpiter tramaba.",
+        "momento_canonico": "narración tras el discurso del Sueño (versos 35-40)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20007,
+        "orden_fragmento": 2,
+        "hecho": "Cuando la Aurora subía al Olimpo para anunciar el día, Agamenón ordenó que los heraldos convocaran a junta a los aqueos.",
+        "momento_canonico": "narración (versos 48-52)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20010,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón propuso probar a los aqueos aconsejándoles que huyeran en las naves, mientras los próceres del consejo debían hablarles por todos lados para detenerlos.",
+        "momento_canonico": "discurso de Agamenón en el consejo (versos 73-75)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20011,
+        "orden_fragmento": 2,
+        "hecho": "Néstor se levantó tras Agamenón y avaló el sueño ante los próceres, argumentando que si lo hubiera referido otro lo creerían falso, pero lo dice quien se gloría de ser el más poderoso de los aqueos.",
+        "momento_canonico": "discurso de Néstor en el consejo (versos 79-83)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Néstor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20012,
+        "orden_fragmento": 2,
+        "hecho": "La Fama, mensajera de Júpiter, instigó a los guerreros a acudir a la junta.",
+        "momento_canonico": "narración de la convocatoria de la junta (versos 84-100)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20013,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón empuñaba el cetro que Vulcano fabricó para Júpiter Saturnio; éste lo dio a Mercurio, quien lo regaló al excelente jinete Pélope, quien lo entregó a Atreo, pastor de hombres; Atreo al morir lo legó a Tiestes, rico en ganado, y Tiestes lo dejó a Agamenón para que reinara en muchas islas y en todo el país de Argos.",
+        "momento_canonico": "narración de la junta general (versos 100-109)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20014,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón, en la junta general, afirmó que Júpiter le había prometido destruir Ilión pero que todo fue funesto engaño y ahora le ordena regresar a Argos sin gloria después de haber perdido muchos hombres.",
+        "momento_canonico": "discurso de Agamenón a los argivos (versos 110-141)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20018,
+        "orden_fragmento": 2,
+        "hecho": "El regreso de los argivos habría ocurrido antes de lo dispuesto por el destino si Juno no hubiera intervenido.",
+        "momento_canonico": "narración (verso 155-156)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20019,
+        "orden_fragmento": 2,
+        "hecho": "Juno ordenó a Minerva que bajara al ejército y detuviera a los guerreros con suaves palabras para que no botaran al mar los corvos bajeles.",
+        "momento_canonico": "discurso de Juno a Minerva (versos 157-165)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 20020,
+        "orden_fragmento": 2,
+        "hecho": "Minerva bajó del Olimpo, llegó a las naves aqueas y encontró a Ulises inmóvil junto a su nave negra, sin tocarla, porque el pesar le llegaba al corazón.",
+        "momento_canonico": "narración (versos 166-172)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 20021,
+        "orden_fragmento": 2,
+        "hecho": "Minerva, poniéndose al lado de Ulises, le ordenó que fuera al ejército a detener con suaves palabras a cada guerrero y no permitir que botaran los bajeles al mar.",
+        "momento_canonico": "discurso de Minerva a Ulises (versos 173-181)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 20022,
+        "orden_fragmento": 2,
+        "hecho": "Ulises reconoció la voz de Minerva, tiró su manto (que recogió el heraldo Euríbates de Ítaca, que le acompañaba), corrió hacia Agamenón para que le diera el imperecedero cetro paterno y con éste se dirigió a las naves.",
+        "momento_canonico": "narración (versos 182-187)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 20026,
+        "orden_fragmento": 2,
+        "hecho": "Tersites zahirió a Agamenón ante la junta, acusándole de acumular botín y mujeres, de causar males a los aqueos, y de haber ofendido a Aquiles arrebatándole su recompensa.",
+        "momento_canonico": "discurso de Tersites en la junta (versos 225-242)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Tersites",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20028,
+        "orden_fragmento": 2,
+        "hecho": "Ulises golpeó a Tersites con el cetro en la espalda y los hombros; Tersites lloró y le apareció un cardenal en la espalda; los aqueos rieron.",
+        "momento_canonico": "narración tras el discurso de Ulises (versos 265-271)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20029,
+        "orden_fragmento": 2,
+        "hecho": "Minerva, transfigurada en heraldo y junto a Ulises, impuso silencio para que todos los aqueos oyeran el discurso de Ulises.",
+        "momento_canonico": "narración (versos 278-283)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20030,
+        "orden_fragmento": 2,
+        "hecho": "Ulises recordó ante los aqueos el prodigio ocurrido en Áulide: un dragón devoró ocho polluelos y a la madre (nueve en total) y luego fue transformado en piedra por Júpiter; Calcas vaticinó entonces que combatirían durante nueve años y al décimo tomarían Troya.",
+        "momento_canonico": "discurso de Ulises a los aqueos (versos 299-332)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Ulises",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20031,
+        "orden_fragmento": 2,
+        "hecho": "Ulises afirmó que llevan ya nueve años en Troya y que todo lo vaticinado por Calcas se va cumpliendo, instando a los aqueos a quedarse hasta tomar la gran ciudad de Príamo.",
+        "momento_canonico": "discurso de Ulises a los aqueos (versos 328-332)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Ulises",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20032,
+        "orden_fragmento": 2,
+        "hecho": "Néstor arengó a los argivos instando a Agamenón a mandar con firme decisión y a agrupar a los hombres por tribus y familias para conocer quiénes son cobardes y quiénes valerosos.",
+        "momento_canonico": "discurso de Néstor a los argivos (versos 337-368)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Néstor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20033,
+        "orden_fragmento": 2,
+        "hecho": "Néstor afirmó que el prepotente Saturnio se mostró propicio a los argivos relampagueando por el diestro lado el día en que se embarcaron para traer a los troyanos la muerte.",
+        "momento_canonico": "discurso de Néstor (versos 353-356)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Néstor",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20036,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón, rey de hombres, inmoló un pingüe buey de cinco años al prepotente Saturnio, reuniendo en su tienda a los principales caudillos: Néstor, Idomeneo, los dos Ayaces, Diomedes y Ulises; Menelao se presentó espontáneamente.",
+        "momento_canonico": "narración del sacrificio (versos 402-411)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 20037,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón oró a Júpiter pidiendo destruir el palacio de Príamo antes de que se pusiera el sol, pegar fuego a las puertas, romper con su lanza la coraza de Héctor y ver a muchos de sus compañeros muertos.",
+        "momento_canonico": "plegaria de Agamenón (versos 412-418)",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20038,
+        "orden_fragmento": 2,
+        "hecho": "El Saturnio no accedió a la plegaria de Agamenón y, aceptando los sacrificios, les preparó no envidiable labor.",
+        "momento_canonico": "narración tras la plegaria (verso 419)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20040,
+        "orden_fragmento": 2,
+        "hecho": "Agamenón dispuso que los heraldos llamaran a la batalla a los aqueos; Minerva, la de los brillantes ojos, acompañaba a los reyes llevando la preciosa inmortal égida, instigando a los aqueos a salir al campo y poniendo fortaleza en sus corazones.",
+        "momento_canonico": "narración de la reunión del ejército (versos 441-454)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Minerva",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20041,
+        "orden_fragmento": 2,
+        "hecho": "El poeta invoca a las Musas para que le digan cuáles eran los caudillos y príncipes de los dánaos, declarando que la muchedumbre no podría enumerarla aunque tuviera diez lenguas.",
+        "momento_canonico": "invocación a las Musas antes del catálogo (versos 484-493)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20045,
+        "orden_fragmento": 2,
+        "hecho": "Los locrenses eran acaudillados por Ayax de Oileo, menor y mucho menor que Ayax Telamonio; era bajo de cuerpo, llevaba coraza de lino y superaba a todos los helenos y aqueos en el manejo de la lanza. Llegaron en cuarenta negras naves.",
+        "momento_canonico": "catálogo de las naves (versos 527-535)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20047,
+        "orden_fragmento": 2,
+        "hecho": "Los atenienses, pueblo del magnánimo Erecteo criado por Minerva hija de Júpiter, tenían por jefe a Menesteo, hijo de Peteo; ningún hombre sabía como él ordenar en batalla a los combatientes en carros y los peones armados, excepto Néstor. Cincuenta negras naves le seguían.",
+        "momento_canonico": "catálogo de las naves (versos 546-556)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 20051,
+        "orden_fragmento": 2,
+        "hecho": "Los de Lacedemonia y sus ciudades llegaron en sesenta naves al mando de Menelao, valiente en el combate, impulsado por su propio ardor y deseando vengar la huida y los gemidos de Helena.",
+        "momento_canonico": "catálogo de las naves (versos 581-590)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Lacedemonia",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 20060,
+        "orden_fragmento": 2,
+        "hecho": "Tlepólemo Heraclida condujo en nueve buques a los fieros rodios; era hijo de Hércules y Astioquía. Mató al anciano tío materno de su padre, Licimnio, y huyó por mar hasta Rodas, donde se estableció con los suyos formando tres tribus. Júpiter les dio abundante riqueza.",
+        "momento_canonico": "catálogo de las naves (versos 653-670)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20061,
+        "orden_fragmento": 2,
+        "hecho": "Nireo condujo desde Sima tres naves bien proporcionadas; era el más hermoso de los dánaos que fueron a Troya, exceptuando al eximio Pelida, pero era tímido y poca la gente que mandaba.",
+        "momento_canonico": "catálogo de las naves (versos 671-675)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20063,
+        "orden_fragmento": 2,
+        "hecho": "Los mirmidones, helenos y aqueos del Argos pelásgico, Ptía y la Hélade tenían por capitán a Aquiles y habían llegado en cincuenta naves; pero no combatían porque Aquiles permanecía en las naves enojado a causa de Briseida.",
+        "momento_canonico": "catálogo de las naves (versos 681-694)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20065,
+        "orden_fragmento": 2,
+        "hecho": "Protesilao acaudilló a los de Fílace y sus ciudades, pero ya estaba muerto cuando se describe el catálogo; fue muerto por un dárdano al saltar de la nave antes que los demás aqueos. En Fílace quedaron su desolada esposa y la casa a medio acabar.",
+        "momento_canonico": "catálogo de las naves (versos 695-710)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20068,
+        "orden_fragmento": 2,
+        "hecho": "Filoctetes, hábil arquero, era capitán de los de Metona y sus ciudades; llegaron en siete naves con cincuenta remeros expertos en el arco en cada una. Pero Filoctetes se hallaba en la isla de Lemnos, donde los aqueos lo dejaron al ser mordido por un reptil ponzoñoso. Lo ordenaba para el combate Medonte, hijo bastardo de Oileo, de quien lo tuvo Rena.",
+        "momento_canonico": "catálogo de las naves (versos 716-728)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20071,
+        "orden_fragmento": 2,
+        "hecho": "Polipetes, hijo de Pirítoo y nieto de Júpiter, era caudillo de los de Argisa y sus ciudades; compartía el mando con Leonteo. Cuarenta negras naves les seguían. Pirítoo engendró a Polipetes el mismo día en que castigó a los hirsutos Centauros, los echó del Pelión y los obligó a retirarse.",
+        "momento_canonico": "catálogo de las naves (versos 738-747)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20074,
+        "orden_fragmento": 2,
+        "hecho": "Entre los caballos de los dánaos sobresalían las yeguas de Eumelo, criadas por Apolo el del arco de plata en Perea; entre los guerreros el más valiente fue Ayax Telamonio mientras duró la cólera de Aquiles, pues éste le superaba mucho.",
+        "momento_canonico": "cierre del catálogo (versos 760-779)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 20076,
+        "orden_fragmento": 2,
+        "hecho": "Júpiter envió a Iris, la de los pies ligeros, como mensajera a los teucros para darles la triste noticia del avance aqueo.",
+        "momento_canonico": "narración tras el catálogo aqueo (versos 786-795)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 20082,
+        "orden_fragmento": 2,
+        "hecho": "A los troyanos los mandaba el gran Héctor Priámida, de tremolante casco, con las tropas más copiosas y valientes.",
+        "momento_canonico": "catálogo troyano (versos 816-818)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Alejandro"
+        ]
+      },
+      {
+        "id": 20083,
+        "orden_fragmento": 2,
+        "hecho": "Eneas, valiente hijo de Anquises y Venus, era caudillo de los dardanios; compartían el mando Arquéloco y Acamante, hijos de Antenor.",
+        "momento_canonico": "catálogo troyano (versos 819-823)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Venus"
+        ]
+      },
+      {
+        "id": 20089,
+        "orden_fragmento": 2,
+        "hecho": "Eufemo, hijo de Treceno Céada, alumno de Júpiter, era capitán de los belicosos cicones.",
+        "momento_canonico": "catálogo troyano (versos 846-847)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 30000,
+        "orden_fragmento": 3,
+        "hecho": "Los teucros avanzaban chillando y gritando, mientras los aqueos marchaban en silencio respirando valor.",
+        "momento_canonico": "al inicio del fragmento, versos 1-9",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30001,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro apareció en la primera fila de los teucros con una piel de leopardo en los hombros, el corvo arco, la espada y dos lanzas de broncínea punta, desafiando a los argivos al combate singular.",
+        "momento_canonico": "versos 15-20",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30002,
+        "orden_fragmento": 3,
+        "hecho": "Menelao se alegró al ver a Alejandro y saltó del carro al suelo sin dejar las armas para enfrentarle.",
+        "momento_canonico": "versos 21-29",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30003,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro, al distinguir a Menelao entre los combatientes, retrocedió atemorizado y desapareció entre los teucros.",
+        "momento_canonico": "versos 30-37",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30004,
+        "orden_fragmento": 3,
+        "hecho": "Héctor reprendió a Alejandro con palabras injuriosas por su cobardía y por haber traído a Helena causando males a Troya.",
+        "momento_canonico": "versos 38-57",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30005,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro propuso un combate singular entre él y Menelao por Helena y sus riquezas, con el vencedor llevándose mujer y bienes, y con los demás jurando paz y amistad.",
+        "momento_canonico": "versos 58-75",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Alejandro",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30007,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón ordenó a los argivos que detuvieran el combate porque Héctor quería hablarles.",
+        "momento_canonico": "versos 82-83",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30008,
+        "orden_fragmento": 3,
+        "hecho": "Héctor transmitió a ambos ejércitos la propuesta de Alejandro de combate singular por Helena y sus riquezas, con juramento de paz.",
+        "momento_canonico": "versos 86-94",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30009,
+        "orden_fragmento": 3,
+        "hecho": "Menelao propuso traer un cordero blanco y una cordera negra para la Tierra y el Sol, y otro para Júpiter, y convocar a Príamo para que sancionara los juramentos en persona.",
+        "momento_canonico": "versos 97-110",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30010,
+        "orden_fragmento": 3,
+        "hecho": "Menelao expresó desconfianza en los hijos de Príamo por ser soberbios y fementidos, temiendo que quebraran los juramentos.",
+        "momento_canonico": "versos 105-108",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30011,
+        "orden_fragmento": 3,
+        "hecho": "Aqueos y teucros se alegraron con la esperanza de que iba a terminar la guerra, detuvieron los corceles, bajaron de los carros y dejaron la armadura en el suelo.",
+        "momento_canonico": "versos 111-115",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30014,
+        "orden_fragmento": 3,
+        "hecho": "Iris fue en busca de Helena tomando la figura de Laódice, mujer del rey Helicaón Antenórida, que era la más hermosa de las hijas de Príamo.",
+        "momento_canonico": "versos 121-124",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30015,
+        "orden_fragmento": 3,
+        "hecho": "Helena estaba en el palacio tejiendo una gran tela doble purpúrea en la que entretejía los trabajos que teucros y aqueos habían padecido por ella.",
+        "momento_canonico": "versos 125-128",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30016,
+        "orden_fragmento": 3,
+        "hecho": "Iris dijo a Helena que Alejandro y Menelao combatirían por ella con ingentes lanzas y que el vencedor la llamaría su amada esposa.",
+        "momento_canonico": "versos 130-138",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Iris",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30017,
+        "orden_fragmento": 3,
+        "hecho": "Iris infundió en el corazón de Helena dulce deseo de su anterior marido, de su ciudad y de sus padres.",
+        "momento_canonico": "verso 139",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30018,
+        "orden_fragmento": 3,
+        "hecho": "Helena salió al momento cubierta con blanco velo y derramando tiernas lágrimas, acompañada de dos doncellas: Etra, hija de Piteo, y Climene, la de los grandes ojos.",
+        "momento_canonico": "versos 141-144",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30020,
+        "orden_fragmento": 3,
+        "hecho": "Los ancianos troyanos en la torre dijeron entre sí que Helena era tan hermosa como una diosa y que no era reprensible que aqueos y troyanos sufrieran males por ella, pero que sería mejor que se fuera en las naves antes de convertirse en una plaga.",
+        "momento_canonico": "versos 156-160",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Príamo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30021,
+        "orden_fragmento": 3,
+        "hecho": "Príamo llamó a Helena para que se sentara a su lado, declaró que no la consideraba culpable sino a los dioses que promovieron la guerra, y le pidió que le dijera quién era el gran aqueo que veía.",
+        "momento_canonico": "versos 161-170",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30022,
+        "orden_fragmento": 3,
+        "hecho": "Helena identificó a Agamenón como el poderosísimo Agamenón Atrida, buen rey y esforzado combatiente, y dijo que fue cuñado de ella.",
+        "momento_canonico": "versos 178-180",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30023,
+        "orden_fragmento": 3,
+        "hecho": "Príamo declaró haber estado en Frigia y haber visto los pueblos de Otreo y de Migdón acampados a orillas del Sangario, y hallarse entre ellos como aliado cuando llegaron las varoniles amazonas, pero que no eran tantos como los aqueos.",
+        "momento_canonico": "versos 184-189",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Príamo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30024,
+        "orden_fragmento": 3,
+        "hecho": "Helena identificó al aqueo de menor estatura pero más espacioso de espaldas y pecho que recorría las filas como un carnero como el hijo de Laertes, el ingenioso Ulises, criado en la áspera Ítaca, hábil en urdir engaños y dar prudentes consejos.",
+        "momento_canonico": "versos 199-202",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30025,
+        "orden_fragmento": 3,
+        "hecho": "Antenor confirmó que Ulises vino como embajador con Menelao por Helena, y que los hospedó en su palacio.",
+        "momento_canonico": "versos 203-205",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30026,
+        "orden_fragmento": 3,
+        "hecho": "Antenor describió que en las reuniones Menelao hablaba de prisa y poco pero claramente, sin apartarse del asunto, mientras Ulises al levantarse permanecía con la vista baja y el cetro inmóvil, pareciendo un ignorante, pero cuando hablaba sus palabras eran tan poderosas que ningún mortal le disputaba.",
+        "momento_canonico": "versos 209-224",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Antenor",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30027,
+        "orden_fragmento": 3,
+        "hecho": "Helena identificó al aqueo alto que descollaba entre los argivos por su cabeza y anchas espaldas como el ingente Ayax Telamonio, antemural de los aqueos.",
+        "momento_canonico": "versos 228-229",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30028,
+        "orden_fragmento": 3,
+        "hecho": "Helena señaló a Idomeneo entre los cretenses rodeado de los capitanes de sus tropas, e indicó que Menelao le hospedó muchas veces en su palacio cuando venía de Creta.",
+        "momento_canonico": "versos 230-233",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30029,
+        "orden_fragmento": 3,
+        "hecho": "Helena no veía a Cástor, domador de caballos, ni a Pólux, excelente púgil, hermanos carnales suyos nacidos de su madre, y especuló con que no habrían venido o no querían entrar en combate para no hacerse partícipes de su deshonra.",
+        "momento_canonico": "versos 236-242",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30030,
+        "orden_fragmento": 3,
+        "hecho": "Cástor y Pólux ya estaban muertos y la fértil tierra los tenía en su seno en Lacedemonia, en su misma patria.",
+        "momento_canonico": "verso 243-244",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Lacedemonia"
+        ]
+      },
+      {
+        "id": 30032,
+        "orden_fragmento": 3,
+        "hecho": "El heraldo Ideo invitó a Príamo a bajar a la llanura para sancionar los fieles juramentos del combate singular entre Alejandro y Menelao.",
+        "momento_canonico": "versos 250-258",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30034,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón y Ulises se levantaron, los heraldos juntaron las víctimas, mezclaron vinos en la cratera y dieron aguamanos a los reyes. El Atrida cortó pelo de la cabeza de los corderos con la daga y los heraldos lo repartieron a los próceres teucros y aquivos.",
+        "momento_canonico": "versos 264-275",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30035,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón oró en voz alta invocando a Júpiter, al Sol, a los ríos, a la Tierra y a los dioses del inframundo como testigos del juramento: si Alejandro mata a Menelao, Helena y las riquezas serían suyas y los aqueos volverían; si Menelao mata a Alejandro, los troyanos devolverán a Helena y las riquezas y pagarán indemnización; si Príamo y sus hijos se niegan, Agamenón seguirá combatiendo.",
+        "momento_canonico": "versos 276-291",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Júpiter",
+          "entidad: Menelao",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30037,
+        "orden_fragmento": 3,
+        "hecho": "Júpiter no ratificó el voto de aqueos y teucros.",
+        "momento_canonico": "verso 302",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30038,
+        "orden_fragmento": 3,
+        "hecho": "Príamo declaró que regresaría a Ilión porque no podía ver a su hijo combatir con Menelao, y que Júpiter y los dioses saben para cuál de ellos tiene el destino preparada la muerte.",
+        "momento_canonico": "versos 304-309",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Príamo",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30040,
+        "orden_fragmento": 3,
+        "hecho": "Héctor y Ulises midieron el campo y echaron dos suertes en un casco de bronce para decidir quién arrojaría primero la lanza; saltó la suerte de Paris.",
+        "momento_canonico": "versos 314-325",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro"
+        ]
+      },
+      {
+        "id": 30041,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro se armó con grebas ajustadas con broches de plata, la coraza de su hermano Licaón, espada de bronce con clavos de plata, escudo grande y fuerte, casco con penacho de crines de caballo y una lanza.",
+        "momento_canonico": "versos 330-338",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro"
+        ]
+      },
+      {
+        "id": 30042,
+        "orden_fragmento": 3,
+        "hecho": "Alejandro arrojó primero la luenga lanza y dio en el escudo de Menelao sin romperlo; la punta se torció.",
+        "momento_canonico": "versos 346-349",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30043,
+        "orden_fragmento": 3,
+        "hecho": "Menelao oró a Júpiter para que le permitiera castigar a Alejandro que le ofendió primero.",
+        "momento_canonico": "versos 351-354",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Júpiter",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30044,
+        "orden_fragmento": 3,
+        "hecho": "La lanza de Menelao atravesó el escudo y la coraza de Alejandro y rasgó la túnica; Alejandro se inclinó y evitó la muerte.",
+        "momento_canonico": "versos 355-360",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30045,
+        "orden_fragmento": 3,
+        "hecho": "Menelao desenvainó la espada y la golpeó contra la cimera del casco de Alejandro, pero la espada se rompió en tres o cuatro pedazos.",
+        "momento_canonico": "versos 361-364",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30046,
+        "orden_fragmento": 3,
+        "hecho": "Menelao cogió a Paris por el casco y lo arrastró hacia los aqueos; Venus rompió la correa del casco y arrebató a Alejandro envolviéndolo en densa niebla, llevándolo a su tálamo.",
+        "momento_canonico": "versos 369-382",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao",
+          "entidad: Venus",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30047,
+        "orden_fragmento": 3,
+        "hecho": "Venus fue a buscar a Helena tomando la figura de una anciana cardadora de Lacedemonia que le preparaba hermosas lanas y era muy querida de Helena.",
+        "momento_canonico": "versos 383-388",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Lacedemonia",
+          "entidad: Venus"
+        ]
+      },
+      {
+        "id": 30048,
+        "orden_fragmento": 3,
+        "hecho": "Venus dijo a Helena que Alejandro la llamaba para que volviera a casa, que se hallaba en el torneado lecho de la cámara nupcial.",
+        "momento_canonico": "versos 390-394",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Venus",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Venus"
+        ]
+      },
+      {
+        "id": 30049,
+        "orden_fragmento": 3,
+        "hecho": "Helena reconoció a Venus por su hermosísimo cuello, sus lindos pechos y sus refulgentes ojos, y se negó a ir con ella, acusándola de venir con engaños porque Menelao había vencido a Alejandro.",
+        "momento_canonico": "versos 395-412",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Helena",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Menelao",
+          "entidad: Venus"
+        ]
+      },
+      {
+        "id": 30050,
+        "orden_fragmento": 3,
+        "hecho": "Venus amenazó a Helena con abandonarla, aborrecerla y poner funestos odios entre teucros y dánaos si no obedecía.",
+        "momento_canonico": "versos 413-417",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Venus",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Venus",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 30051,
+        "orden_fragmento": 3,
+        "hecho": "Helena tuvo miedo y siguió a Venus en silencio sin que ninguna de las troyanas lo advirtiera.",
+        "momento_canonico": "versos 418-420",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Venus"
+        ]
+      },
+      {
+        "id": 30052,
+        "orden_fragmento": 3,
+        "hecho": "Venus colocó una silla delante de Alejandro; Helena se sentó y, apartando la vista de su esposo, le reprendió por haber huido del combate en lugar de haber perecido a manos de Menelao.",
+        "momento_canonico": "versos 421-436",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Menelao",
+          "entidad: Venus"
+        ]
+      },
+      {
+        "id": 30053,
+        "orden_fragmento": 3,
+        "hecho": "Paris afirmó que Menelao venció ese día con el auxilio de Minerva, pero que otro día él le vencería porque también tienen dioses que los protegen.",
+        "momento_canonico": "versos 437-440",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Alejandro",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao",
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 30054,
+        "orden_fragmento": 3,
+        "hecho": "Paris declaró que jamás la pasión se había apoderado de su espíritu como en ese momento, ni cuando partieron de Lacedemonia en las naves y llegaron a la isla de Cránae donde se unió a Helena en amoroso consorcio.",
+        "momento_canonico": "versos 441-446",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Alejandro",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena",
+          "entidad: Lacedemonia"
+        ]
+      },
+      {
+        "id": 30055,
+        "orden_fragmento": 3,
+        "hecho": "Paris y Helena se acostaron juntos en el torneado lecho.",
+        "momento_canonico": "versos 447-448",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Helena"
+        ]
+      },
+      {
+        "id": 30056,
+        "orden_fragmento": 3,
+        "hecho": "Menelao se revolvía entre la muchedumbre buscando a Alejandro, pero ningún troyano ni aliado pudo mostrárselo, no por amistad sino porque a todos se les había hecho odioso como la negra muerte.",
+        "momento_canonico": "versos 449-455",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30057,
+        "orden_fragmento": 3,
+        "hecho": "Agamenón declaró ante troyanos, dardanios y aliados que la victoria había quedado por Menelao y exigió que le entregaran a Helena con sus riquezas y pagaran una indemnización justa.",
+        "momento_canonico": "versos 456-460",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 30058,
+        "orden_fragmento": 3,
+        "hecho": "Los demás aqueos aplaudieron las palabras de Agamenón.",
+        "momento_canonico": "verso 461",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40000,
+        "orden_fragmento": 4,
+        "hecho": "Los dioses celebraban consejo sentados en el áureo pavimento a la vera de Júpiter, mientras Hebe escanciaba néctar y ellos contemplaban la ciudad de Troya.",
+        "momento_canonico": "al inicio del fragmento, verso 1",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40001,
+        "orden_fragmento": 4,
+        "hecho": "Júpiter intentó zaherir a Juno con mordaces palabras fingidas, señalando que Juno y Minerva solo miraban a Menelao desde lejos, mientras Venus acompañaba constantemente a Alejandro y le libró de las Parcas.",
+        "momento_canonico": "verso 7, discurso de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Júpiter",
+          "entidad: Menelao",
+          "entidad: Minerva",
+          "entidad: Venus"
+        ]
+      },
+      {
+        "id": 40002,
+        "orden_fragmento": 4,
+        "hecho": "Júpiter propuso deliberar sobre si promover nuevamente el combate o reconciliar a ambos pueblos, sugiriendo que si agradara a todos, Troya continuaría poblada y Menelao se llevaría a Helena.",
+        "momento_canonico": "verso 7, discurso de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Júpiter",
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40003,
+        "orden_fragmento": 4,
+        "hecho": "Minerva y Juno tenían asientos contiguos y pensaban en causar daño a los teucros; Minerva guardó silencio pese a su cólera, pero Juno no pudo contener la ira.",
+        "momento_canonico": "verso 20",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 40004,
+        "orden_fragmento": 4,
+        "hecho": "Juno reclamó a Júpiter que no hiciera inútil su trabajo y el sudor que le costó reunir el ejército contra Príamo y sus hijos.",
+        "momento_canonico": "verso 25, discurso de Juno",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Juno",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40005,
+        "orden_fragmento": 4,
+        "hecho": "Júpiter declaró que la sagrada Troya era la ciudad más preferida de su corazón entre todas las que habitan los hombres, y que su altar nunca careció de libaciones y víctimas.",
+        "momento_canonico": "verso 30, discurso de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40006,
+        "orden_fragmento": 4,
+        "hecho": "Júpiter concedió a Juno dejar que Troya fuera destruida, a cambio de que Juno no obstaculizara cuando él desee destruir ciudades protegidas por ella.",
+        "momento_canonico": "verso 30, discurso de Júpiter",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Júpiter",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40007,
+        "orden_fragmento": 4,
+        "hecho": "Juno declaró que las tres ciudades que más quiere son Argos, Esparta y Micenas, y que no las defenderá si Júpiter las destruye.",
+        "momento_canonico": "verso 50, discurso de Juno",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Juno",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Lacedemonia"
+        ]
+      },
+      {
+        "id": 40008,
+        "orden_fragmento": 4,
+        "hecho": "Juno se reconoció engendrada por Saturno como la más venerable por su abolengo y por ser esposa de Júpiter.",
+        "momento_canonico": "verso 50, discurso de Juno",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Juno",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40009,
+        "orden_fragmento": 4,
+        "hecho": "Juno pidió a Júpiter que enviara a Minerva al campo de batalla para procurar que los teucros fueran los primeros en violar los juramentos atacando a los aqueos.",
+        "momento_canonico": "verso 50, discurso de Juno",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Juno",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Minerva",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40010,
+        "orden_fragmento": 4,
+        "hecho": "Júpiter ordenó a Minerva que fuera al campo de los teucros y los aqueos y procurara que los teucros empezaran a ofender, contra lo jurado, a los aqueos.",
+        "momento_canonico": "verso 68-70",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Minerva",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40011,
+        "orden_fragmento": 4,
+        "hecho": "Minerva bajó del Olimpo en raudo vuelo y cayó en medio del campo como una fúlgida estrella que despide numerosas chispas.",
+        "momento_canonico": "verso 73-79",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 40012,
+        "orden_fragmento": 4,
+        "hecho": "Al ver a Minerva descender, teucros y aqueos se asombraron y algunos comentaron que o empezaría de nuevo el combate o Júpiter pondría amistad entre ambos pueblos.",
+        "momento_canonico": "verso 79-84",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: Minerva",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40013,
+        "orden_fragmento": 4,
+        "hecho": "Minerva se transfiguró en el varón Laódoco Antenórida, esforzado combatiente, y penetró por el ejército teucro buscando a Pándaro.",
+        "momento_canonico": "verso 85-88",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 40014,
+        "orden_fragmento": 4,
+        "hecho": "Minerva halló a Pándaro, hijo de Licaón, en medio de las filas de hombres valientes que con él llegaran de las orillas del Esepo.",
+        "momento_canonico": "verso 88-91",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 40015,
+        "orden_fragmento": 4,
+        "hecho": "Minerva (disfrazada de Laódoco) persuadió a Pándaro para que disparara una flecha contra Menelao, prometiéndole gloria entre los teucros y espléndidos presentes de Alejandro.",
+        "momento_canonico": "verso 93-103, discurso de Minerva disfrazada",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Minerva",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Alejandro",
+          "entidad: Menelao",
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 40016,
+        "orden_fragmento": 4,
+        "hecho": "Minerva (disfrazada) pidió a Pándaro que votara sacrificar a Apolo Licio una hecatombe perfecta de corderos primogénitos al volver a su patria, la sagrada ciudad de Zelea.",
+        "momento_canonico": "verso 93-103, discurso de Minerva disfrazada",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Minerva",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 40018,
+        "orden_fragmento": 4,
+        "hecho": "Los compañeros de Pándaro le cubrieron con los escudos mientras él tendía el arco, para protegerle de los aqueos hasta que disparara.",
+        "momento_canonico": "verso 113-115",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40019,
+        "orden_fragmento": 4,
+        "hecho": "Pándaro votó a Apolo Licio sacrificarle una hecatombe perfecta de corderos primogénitos al volver a Zelea, y luego disparó la flecha contra Menelao.",
+        "momento_canonico": "verso 116-126",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40020,
+        "orden_fragmento": 4,
+        "hecho": "Minerva desvió la flecha de Pándaro antes de que hiriera a Menelao mortalmente, apartándola del cuerpo como una madre ahuyenta una mosca de su niño dormido, dirigiéndola a donde los anillos de oro sujetaban el cinturón.",
+        "momento_canonico": "verso 127-138",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao",
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 40021,
+        "orden_fragmento": 4,
+        "hecho": "La flecha atravesó el cinturón, se clavó en la coraza, rompió la chapa protectora y rasguñó la piel de Menelao, brotando sangre negra de la herida.",
+        "momento_canonico": "verso 134-140",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40022,
+        "orden_fragmento": 4,
+        "hecho": "La sangre de Menelao tiñó sus muslos, piernas y tobillos, comparada a la púrpura con que una mujer meonia o caria tiñe el marfil que adorna el freno de un caballo.",
+        "momento_canonico": "verso 141-147",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40023,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón se estremeció al ver la sangre de la herida de Menelao; también Menelao se estremeció, pero recobró el ánimo al advertir que el nervio y las plumas de la flecha quedaban fuera.",
+        "momento_canonico": "verso 148-154",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40024,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón lamentó haber puesto a Menelao a luchar solo con los troyanos en el jurado convenio y le reprochó que los troyanos pisotearon los juramentos al herirle.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40025,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón afirmó que el Olímpico castigará a los troyanos por violar los juramentos, que perecerán la sagrada Ilión, Príamo y su pueblo, y que Jove agitará su égida contra ellos.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40026,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón temió que si Menelao moría, los aqueos abandonarían la empresa, dejarían a Helena en poder de Príamo y los troyanos, y sus huesos se pudrirían en Troya.",
+        "momento_canonico": "verso 155-182, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Helena",
+          "entidad: Menelao",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40027,
+        "orden_fragmento": 4,
+        "hecho": "Menelao tranquilizó a Agamenón asegurando que la flecha no le hirió mortalmente porque le protegió el cinturón labrado, la faja y la chapa forjada por el broncista.",
+        "momento_canonico": "verso 183-187, discurso de Menelao",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Menelao",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40028,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón ordenó al heraldo Taltibio que llamara a Macaón, hijo de Esculapio, para que reconociera la herida de Menelao.",
+        "momento_canonico": "verso 192-197",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40030,
+        "orden_fragmento": 4,
+        "hecho": "Macaón arrancó la flecha del cíngulo de Menelao, desató el cinturón, quitó la faja y la chapa, chupó la sangre y aplicó drogas calmantes que Quirón había dado a su padre en prueba de amistad.",
+        "momento_canonico": "verso 207-219",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Menelao"
+        ]
+      },
+      {
+        "id": 40033,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón animó a los argivos prometiéndoles que Júpiter no protegerá a los pérfidos teucros que violaron los juramentos, y que tomarán la ciudad llevándose esposas e hijos.",
+        "momento_canonico": "verso 234-239, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40035,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón declaró a Idomeneo que le honraba de modo especial entre los dánaos tanto en la guerra como en el banquete, donde siempre tenía la copa llena como él mismo.",
+        "momento_canonico": "verso 257-264, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40042,
+        "orden_fragmento": 4,
+        "hecho": "Néstor declaró que habría querido ser como cuando mató al divino Ereutalión, pero que los dioses nunca dieron todo a un mismo tiempo a los hombres, y que siendo joven entonces, ya le llegó la senectud.",
+        "momento_canonico": "verso 317-325, discurso de Néstor",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Néstor",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40045,
+        "orden_fragmento": 4,
+        "hecho": "Ulises respondió con irritación que no eran remisos y prometió que el padre amado de Telémaco penetraría por las primeras filas de los teucros cuando los aqueos excitaran a Marte.",
+        "momento_canonico": "verso 349-355, discurso de Ulises",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Ulises",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40049,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón relató que Tideo estuvo en Micenas como huésped junto con Polínice para reclutar tropas contra los sagrados muros de Tebas, que los ciudadanos querían conceder auxiliares pero Júpiter con funestas señales les hizo cambiar de opinión.",
+        "momento_canonico": "verso 376-381, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40050,
+        "orden_fragmento": 4,
+        "hecho": "Agamenón relató que los aqueos nombraron embajador a Tideo para ir a Tebas; en el palacio de Eteocles se hallaban muchos cadmeos en banquete, y Tideo solo los desafió y venció en toda clase de luchas, siendo protegido por Minerva.",
+        "momento_canonico": "verso 381-390, discurso de Agamenón",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Agamenón",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Minerva",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40053,
+        "orden_fragmento": 4,
+        "hecho": "Esténelo, hijo de Capaneo, replicó a Agamenón afirmando que él y Diomedes son más valientes que sus padres, pues tomaron Tebas de las siete puertas confiando en indicaciones divinas y el auxilio de Júpiter, mientras que los padres perecieron por sus locuras.",
+        "momento_canonico": "verso 404-410, discurso de Esténelo",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Esténelo",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40054,
+        "orden_fragmento": 4,
+        "hecho": "Diomedes mandó callar a Esténelo y declaró que no se enfadaba con Agamenón por animar a los aqueos antes del combate, y que la gloria de la victoria o el pesar de la derrota corresponde al rey.",
+        "momento_canonico": "verso 411-418, discurso de Diomedes",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Diomedes",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40056,
+        "orden_fragmento": 4,
+        "hecho": "Las falanges de los dánaos avanzaban calladas y temerosas de sus jefes, con las armas relucientes. Los teucros avanzaban con confuso vocerío, mezclando lenguas de diferentes países.",
+        "momento_canonico": "verso 422-438",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40057,
+        "orden_fragmento": 4,
+        "hecho": "A los aqueos les excitaba Minerva; a los teucros, Marte; y a ambos pueblos, el Terror, la Fuga y la Discordia, hermana y compañera del homicida Marte, que al principio aparece pequeña y luego toca con la cabeza el cielo.",
+        "momento_canonico": "verso 438-445",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Minerva",
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40061,
+        "orden_fragmento": 4,
+        "hecho": "Sobre el cuerpo de Elefenor trabaron enconada pelea teucros y aqueos.",
+        "momento_canonico": "verso 470-472",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40062,
+        "orden_fragmento": 4,
+        "hecho": "Ayax Telamonio lanzó una lanza a Simoísio Antémida, hijo de Antemión, joven en flor de la juventud. Su madre le había parido a orillas del Símois cuando bajó del Ida con los padres para ver las ovejas, y por eso le llamaron Simoísio.",
+        "momento_canonico": "verso 473-479",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Júpiter"
+        ]
+      },
+      {
+        "id": 40064,
+        "orden_fragmento": 4,
+        "hecho": "Ántifo Priámida lanzó su dardo contra Ayax pero no le tocó; en cambio hirió en la ingle a Leuco, compañero de Ulises, mientras arrastraba un cadáver, y Leuco cayó muerto junto al cadáver.",
+        "momento_canonico": "verso 489-493",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Alejandro"
+        ]
+      },
+      {
+        "id": 40066,
+        "orden_fragmento": 4,
+        "hecho": "Tras la muerte de Democoonte, los combatientes delanteros y Héctor retrocedieron; los argivos dieron voces, retiraron los muertos y avanzaron.",
+        "momento_canonico": "verso 504-508",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40067,
+        "orden_fragmento": 4,
+        "hecho": "Apolo, presenciando la retirada desde Pérgamo, se indignó y exhortó a los teucros a que no cedieran, señalando que los argivos no son de piedra ni de hierro, y que Aquiles, hijo de Tetis, se había quedado en las naves rumiando su cólera.",
+        "momento_canonico": "verso 509-513, discurso de Apolo",
+        "atribucion_tipo": "afirmacion_interesada",
+        "atribuido_a": "Apolo",
+        "direccion": "posterior",
+        "origen": [
+          "entidad: aqueos"
+        ]
+      },
+      {
+        "id": 40068,
+        "orden_fragmento": 4,
+        "hecho": "Tritogenia (Minerva) recorrió el ejército aqueo animando a los remisos.",
+        "momento_canonico": "verso 514-516",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Minerva"
+        ]
+      },
+      {
+        "id": 40074,
+        "orden_fragmento": 4,
+        "hecho": "Quien hubiera recorrido el campo sin estar herido, protegido por Palas Minerva, no habría reprochado los hechos de armas, pues gran número de teucros y aqueos cayeron juntos ese día.",
+        "momento_canonico": "verso 539-542",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "posterior",
+        "origen": [
+          "entidad: Minerva",
+          "entidad: aqueos"
+        ]
+      }
+    ],
+    "candidatos": {
+      "entidad: Alejandro": 27,
+      "entidad: Helena": 29,
+      "entidad: Júpiter": 62,
+      "entidad: Lacedemonia": 5,
+      "entidad: Menelao": 38,
+      "entidad: Minerva": 29,
+      "entidad: Venus": 9,
+      "entidad: aqueos": 71
+    },
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 17,
+        "inicio_char": 18872,
+        "fin_char": 20169,
+        "texto": "365 «¡Padre Júpiter, no hay dios más funesto que tú! Esperaba castigar la perfidia de Alejandro, y la espada se quiebra en mis manos, la lanza resulta inútil y no consigo vencerle.»\n\n369 Dice, y arremetiendo á Paris, cógele por el casco adornado con espesas crines de caballo y le arrastra hacia los aqueos de hermosas grebas, medio ahogado por la bordada correa que, atada por debajo de la barba para asegurar el casco, le apretaba el delicado cuello. Y se lo hubiera llevado, consiguiendo inmensa gloria, si al punto no lo hubiese advertido Venus, hija de Júpiter, que rompió la correa hecha del cuero de un buey degollado: el casco vacío siguió á la robusta mano, el héroe lo volteó y arrojó á los aqueos, de hermosas grebas, y sus fieles compañeros lo recogieron. De nuevo asaltó Menelao á Paris para matarle con la broncínea lanza; pero Venus arrebató á su hijo con gran facilidad, por ser diosa, y llevóle, envuelto en densa niebla, al oloroso y perfumado tálamo. Luego fué á llamar á Helena, hallándola en la alta torre con muchas troyanas; tiró suavemente de su perfumado velo, y tomando la figura de una anciana cardadora que allá en Lacedemonia le preparaba á Helena hermosas lanas y era muy querida de ésta, dijo la diosa Venus:\n\n390 «Ven. Te llama Alejandro para que vuelvas á tu casa.",
+        "similitud": 0.9305628898236655
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 19,
+        "inicio_char": 21221,
+        "fin_char": 22536,
+        "texto": "No sea que, enojándome, te abandone; te aborrezca de modo tan extraordinario como hasta aquí te amé; ponga funestos odios entre teucros y dánaos, y tú perezcas de mala muerte.»\n\n418 Así habló. Helena, hija de Júpiter, tuvo miedo; y echándose el blanco y espléndido velo, salió en silencio tras de la diosa, sin que ninguna de las troyanas lo advirtiera.\n\n421 Tan pronto como llegaron al magnífico palacio de Alejandro, las esclavas volvieron á sus labores, y la divina entre las mujeres se fué derecha á la cámara nupcial de elevado techo. La risueña Venus colocó una silla delante de Alejandro; sentóse Helena, hija de Júpiter, que lleva la égida, y apartando la vista de su esposo, le increpó con estas palabras:\n\n428 «¡Vienes de la lucha... y hubieras debido perecer á manos del esforzado varón que fué mi anterior marido! Blasonabas de ser superior á Menelao, caro á Marte, en fuerza, en puños y en el manejo de la lanza; pues provócale de nuevo á singular combate. Pero no: te aconsejo que desistas, y no quieras pelear ni contender temerariamente con el rubio Menelao; no sea que en seguida sucumbas, herido por su lanza.»\n\n437 Contestó Paris: «Mujer, no me zahieras con amargos reproches. Hoy ha vencido Menelao con el auxilio de Minerva; otro día le venceré yo, pues también tenemos dioses que nos protegen.",
+        "similitud": 0.8726908120285559
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 15,
+        "inicio_char": 16724,
+        "fin_char": 18099,
+        "texto": "El gran Héctor, de tremolante casco, agitaba las suertes volviendo el rostro atrás: pronto saltó la de Paris. Sentáronse los guerreros, sin romper las filas, donde cada uno tenía los briosos corceles y las labradas armas. El divino Alejandro, esposo de Helena, la de hermosa cabellera, vistió una magnífica armadura: púsose en las piernas elegantes grebas ajustadas con broches de plata; protegió el pecho con la coraza de su hermano Licaón, que se le acomodaba bien; colgó del hombro una espada de bronce guarnecida con clavos de plata; embrazó el grande y fuerte escudo; cubrió la robusta cabeza con un hermoso casco, cuyo terrible penacho de crines de caballo ondeaba en la cimera, y asió una fornida lanza que su mano pudiera manejar. De igual manera vistió las armas el aguerrido Menelao.\n\n340 Cuando hubieron acabado de armarse separadamente de la muchedumbre, aparecieron en el lugar que mediaba entre ambos ejércitos, mirándose de un modo terrible; y así los teucros, domadores de caballos, como los aqueos, de hermosas grebas, se quedaron atónitos al contemplarlos. Encontráronse aquéllos en el medido campo, y se detuvieron blandiendo las lanzas y mostrando el odio que recíprocamente se tenían. Alejandro arrojó el primero la luenga lanza y dió un bote en el escudo liso del Atrida, sin que el bronce lo rompiera: la punta se torció al chocar con el fuerte escudo.",
+        "similitud": 0.8699955499177577
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 18,
+        "inicio_char": 20113,
+        "fin_char": 21397,
+        "texto": "390 «Ven. Te llama Alejandro para que vuelvas á tu casa. Hállase, esplendente por su belleza y sus vestidos, en el torneado lecho de la cámara nupcial. No dirías que viene de combatir, sino que va al baile ó que reposa de reciente danza.»\n\n395 En tales términos habló. Helena sintió que en el pecho le palpitaba el corazón; pero al ver el hermosísimo cuello, los lindos pechos y los refulgentes ojos de la diosa, se asombró y dijo:\n\n399 «¡Cruel! ¿Por qué quieres engañarme? ¿Me llevarás acaso más allá, á cualquier populosa ciudad de la Frigia ó de la Meonia amena donde algún hombre dotado de palabra te sea querido? ¿Vienes con engaños porque Menelao ha vencido á Alejandro, y quiere que yo, la odiosa, vuelva á su casa? Ve, siéntate al lado de Paris, deja el camino de las diosas, no te conduzcan tus pies al Olimpo; y llora, y vela por él, hasta que te haga su esposa ó su esclava. No iré allá, ¡vergonzoso fuera!, á compartir su lecho; todas las troyanas me lo vituperarían, y ya son muchos los pesares que conturban mi corazón.»\n\n413 La diosa Venus le respondió colérica: «¡No me irrites, desgraciada! No sea que, enojándome, te abandone; te aborrezca de modo tan extraordinario como hasta aquí te amé; ponga funestos odios entre teucros y dánaos, y tú perezcas de mala muerte.»",
+        "similitud": 0.8692574734823468
+      },
+      {
+        "orden_fragmento": 3,
+        "orden_en_fragmento": 3,
+        "inicio_char": 3455,
+        "fin_char": 4698,
+        "texto": "No me reproches los amables dones de la dorada Venus, que no son despreciables los eximios presentes de los dioses y nadie puede escogerlos á su gusto. Y si ahora quieres que luche y combata, detén á los demás teucros y á los aqueos todos, y dejadnos en medio á Menelao, caro á Marte, y á mí para que peleemos por Helena y sus riquezas: el que venza, por ser más valiente, lleve á su casa mujer y riquezas; y después de jurar paz y amistad, seguid vosotros en la fértil Troya y vuelvan aquéllos á la Argólide, criadora de caballos, y á la Acaya, de lindas mujeres.»\n\n76 Así habló. Oyóle Héctor con intenso placer, y corriendo al centro de ambos ejércitos con la lanza cogida por el medio, detuvo las falanges troyanas, que al momento se quedaron quietas. Los aqueos, de larga cabellera, le arrojaban flechas, dardos y piedras. Pero Agamenón, rey de hombres, gritóles con recias voces:\n\n82 «Deteneos, argivos; no tiréis, jóvenes aqueos; pues Héctor, de tremolante casco, quiere decirnos algo.»\n\n84 Así se expresó. Abstuviéronse de combatir y pronto quedaron silenciosos. Y Héctor, colocándose entre unos y otros, dijo:\n\n86 «Oíd de mis labios, teucros y aqueos, de hermosas grebas, el ofrecimiento de Alejandro por quien se suscitó la contienda.",
+        "similitud": 0.8691168583492271
+      }
+    ],
+    "entorno_antes": "se separadamente de la muchedumbre, aparecieron en el lugar que mediaba entre ambos ejércitos, mirándose de un modo terrible; y así los teucros, domadores de caballos, como los aqueos, de hermosas grebas, se quedaron atónitos al contemplarlos. Encontráronse aquéllos en el medido campo, y se detuvieron blandiendo las lanzas y mostrando el odio que recíprocamente se tenían. Alejandro arrojó el primero la luenga lanza y dió un bote en el escudo liso del Atrida, sin que el bronce lo rompiera: la punta se torció al chocar con el fuerte escudo. Y Menelao Atrida, disponiéndose á acometer con la suya, oró al padre Júpiter:\n\n351 «¡Júpiter soberano! Permíteme castigar al divino Alejandro que me ofendió primero, y hazle sucumbir á mis manos, para que los hombres venideros teman ultrajar á quien los hospedare y les ofreciere su amistad.»\n\n355 Dijo, y blandiendo la luenga lanza, acertó á dar en el escudo liso del Priámida. La ingente lanza atravesó el terso escudo, se clavó en la labrada coraza y rasgó la túnica sobre el ijar. Inclinóse el troyano y evitó la negra muerte. El Atrida desenvainó entonces la espada guarnecida de argénteos clavos; pero al herir al enemigo en la cimera del casco, se le cae de la mano, rota en tres ó cuatro pedazos. Suspira el héroe, y alzando los ojos al anchuroso cielo, exclama:\n\n365 «¡Padre Júpiter, no hay dios más funesto que tú! Esperaba castigar la perfidia de Alejandro, y la espada se quiebra en mis manos, la lanza resulta inútil y no consigo vencerle.»\n\n",
+    "entorno_despues": "369 Dice, y arremetiendo á Paris, cógele por el casco adornado con espesas crines de caballo y le arrastra hacia los aqueos de hermosas grebas, medio ahogado por la bordada correa que, atada por debajo de la barba para asegurar el casco, le apretaba el delicado cuello. Y se lo hubiera llevado, consiguiendo inmensa gloria, si al punto no lo hubiese advertido Venus, hija de Júpiter, que rompió la correa hecha del cuero de un buey degollado: el casco vacío siguió á la robusta mano, el héroe lo volteó y arrojó á los aqueos, de hermosas grebas, y sus fieles compañeros lo recogieron. De nuevo asaltó Menelao á Paris para matarle con la broncínea lanza; pero Venus arrebató á su hijo con gran facilidad, por ser diosa, y llevóle, envuelto en densa niebla, al oloroso y perfumado tálamo. Luego fué á llamar á Helena, hallándola en la alta torre con muchas troyanas; tiró suavemente de su perfumado velo, y tomando la figura de una anciana cardadora que allá en Lacedemonia le preparaba á Helena hermosas lanas y era muy querida de ésta, dijo la diosa Venus:\n\n390 «Ven. Te llama Alejandro para que vuelvas á tu casa. Hállase, esplendente por su belleza y sus vestidos, en el torneado lecho de la cámara nupcial. No dirías que viene de combatir, sino que va al baile ó que reposa de reciente danza.»\n\n395 En tales términos habló. Helena sintió que en el pecho le palpitaba el corazón; pero al ver el hermosísimo cuello, los lindos pechos y los refulgentes ojos de la diosa, se asombró y dijo:\n\n399 «¡Cru"
+  },
+  "respuesta": {
+    "avisos": [],
+    "notas": []
+  },
+  "informe": {
+    "avisos": [],
+    "notas": [],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}

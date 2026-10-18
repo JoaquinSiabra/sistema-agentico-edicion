@@ -57,6 +57,11 @@ todavía no:
    volumen), voz narrativa (Sonnet), estructura y ritmo (Sonnet), y una
    crítica de conjunto que integra lo anterior (Sonnet) — para producir un
    informe de análisis editorial, no texto reescrito.
+   Primera pieza escrita: el **agente de Continuidad** v1
+   (`continuidad.py`, especificación en
+   [`docs/agente_continuidad.md`](docs/agente_continuidad.md)), una
+   herramienta del autor que avisa de lo que un pasaje nuevo contradice
+   del canon; su banco de casos aún no se ha ejecutado.
 
 ## Por qué calibrar antes de extraer
 
@@ -106,8 +111,10 @@ src/
   extraer_canon.py        # Fase 1
   poblar_almacen.py       # Fase 2: carga en Postgres + pgvector
   recuperar.py            # Búsqueda con filtro anti-spoiler
+  continuidad.py          # Agente de Continuidad v1 (docs/agente_continuidad.md)
 tests/
   SPECS.md                # Qué debe cumplir cada fase y qué prueba lo comprueba
+  continuidad/            # Banco de casos del agente de Continuidad
   fijos/                  # Cantos I-III de la Ilíada y respuestas reales de Claude
 data/
   ejemplos/
@@ -137,6 +144,10 @@ uv run python src/poblar_almacen.py --obra=mi_obra --exports=data/mi_obra/export
 
 # Búsqueda: lo que se sabe hasta el final del fragmento 1, sin spoilers
 uv run python src/recuperar.py --obra=mi_obra --hasta-fragmento=1 "consulta"
+
+# Continuidad: qué contradice el canon un pasaje que se insertaría en el
+# carácter 12345 del fragmento 4
+uv run python src/continuidad.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt
 ```
 
 Cada obra escribe en su propia carpeta, `data/<obra>/exports/`. Si
@@ -161,6 +172,9 @@ uv run pytest --db
 
 # Contra la API real (con coste): las mismas specs sobre respuestas nuevas.
 uv run pytest --api tests/api
+
+# Banco del agente de Continuidad (base de datos + API real, 27 llamadas).
+uv run pytest --db --api tests/continuidad
 ```
 
 ## Estado del proyecto
@@ -170,7 +184,9 @@ Exploratorio, documentado tal como es. El pipeline de extracción (Fases 0a,
 anti-spoiler están implementados y cubiertos por pruebas, comprobados con
 los Cantos I-III de la Ilíada. Falta combinar pasajes y hechos en un
 retriever híbrido y el grafo de agentes de evaluación en runtime
-(continuidad, voz, estructura, crítica de conjunto), que siguen en diseño.
+(voz, estructura, crítica de conjunto), que siguen en diseño. El agente
+de Continuidad v1 está escrito y probado en la suite rápida, a falta de
+ejecutar su banco con base de datos y API.
 
 ## Licencia
 

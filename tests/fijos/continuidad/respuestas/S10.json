@@ -1,0 +1,140 @@
+{
+  "id": "S10",
+  "pasaje": "Diores Amarincida, caudillo de los epeos, volvió aquella tarde á las naves al frente de su gente.",
+  "contexto": {
+    "obra": "iliada_continuidad",
+    "orden": 4,
+    "char": 28373,
+    "hechos": [
+      {
+        "id": 20055,
+        "orden_fragmento": 2,
+        "hecho": "Los de Buprasio y la divina Élide tenían cuatro caudillos: Anfímaco, Talpio, Diores Amarincida y Polixeno; cada uno mandaba diez veleras naves tripuladas por muchos epeos.",
+        "momento_canonico": "catálogo de las naves (versos 615-624)",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "anterior",
+        "origen": [
+          "entidad: Diores Amarincida",
+          "entidad: epeos"
+        ]
+      },
+      {
+        "id": 40069,
+        "orden_fragmento": 4,
+        "hecho": "El hado echó los lazos de la muerte a Diores Amarincida: Píroo Imbrásida, caudillo de los tracios llegado de Eno, le hirió con una piedra puntiaguda en el tobillo derecho, rompiéndole ambos tendones y el hueso.",
+        "momento_canonico": "verso 517-523",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Diores Amarincida"
+        ]
+      },
+      {
+        "id": 40070,
+        "orden_fragmento": 4,
+        "hecho": "Mientras Diores expiraba tendiendo los brazos a sus camaradas, Píroo le envasó la lanza en el ombligo; se derramaron los intestinos y murió.",
+        "momento_canonico": "verso 523-526",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Diores Amarincida"
+        ]
+      },
+      {
+        "id": 40073,
+        "orden_fragmento": 4,
+        "hecho": "El caudillo de los tracios (Píroo) y el de los epeos (Diores), de broncíneas lorigas, cayeron juntos en el polvo, y a su alrededor murieron otros muchos más.",
+        "momento_canonico": "verso 536-538",
+        "atribucion_tipo": "narrador_documental",
+        "atribuido_a": null,
+        "direccion": "mismo_fragmento",
+        "origen": [
+          "entidad: Diores Amarincida",
+          "entidad: epeos"
+        ]
+      }
+    ],
+    "candidatos": {
+      "entidad: Diores Amarincida": 4,
+      "entidad: epeos": 2
+    },
+    "hechos_omitidos": 0,
+    "pasajes": [
+      {
+        "orden_fragmento": 2,
+        "orden_en_fragmento": 4,
+        "inicio_char": 4559,
+        "fin_char": 5473,
+        "texto": "Ea, veamos cómo podremos conseguir que los aqueos tomen las armas.»\n\n84 Dichas estas palabras, salió del consejo. Los reyes que llevan cetro se levantaron, obedeciendo al pastor de hombres, y la gente del pueblo acudió presurosa. Como de la hendedura de un peñasco salen sin cesar enjambres copiosos de abejas que vuelan arracimadas sobre las flores primaverales y unas revolotean á este lado y otras á aquel, así las numerosas familias de guerreros marchaban en grupos, por la baja ribera, desde las naves y tiendas á la junta. En medio, la Fama, mensajera de Júpiter, enardecida, les instigaba á que acudieran, y ellos se iban reuniendo. Agitóse la junta, gimió la tierra y se produjo tumulto, mientras los hombres tomaron sitio. Nueve heraldos daban voces para que callaran y oyeran á los reyes, alumnos de Júpiter. Sentáronse al fin, aunque con dificultad, y enmudecieron tan pronto como ocuparon los asientos.",
+        "similitud": 0.8295333981513977
+      },
+      {
+        "orden_fragmento": 1,
+        "orden_en_fragmento": 2,
+        "inicio_char": 2098,
+        "fin_char": 3282,
+        "texto": "Si alguna vez adorné tu gracioso templo ó quemé en tu honor pingües muslos de toros ó de cabras, cúmpleme este voto: ¡Paguen los dánaos mis lágrimas con tus flechas!»\n\n43 Tal fué su plegaria. Oyóla Febo Apolo, é irritado en su corazón, descendió de las cumbres del Olimpo con el arco y el cerrado carcaj en los hombros; las saetas resonaron sobre la espalda del enojado dios, cuando comenzó á moverse. Iba parecido á la noche. Sentóse lejos de las naves, tiró una flecha, y el arco de plata dió un terrible chasquido. Al principio el dios disparaba contra los mulos y los ágiles perros; mas luego dirigió sus mortíferas saetas á los hombres, y continuamente ardían muchas piras de cadáveres.\n\n53 Durante nueve días volaron por el ejército las flechas del dios. En el décimo, Aquiles convocó al pueblo á junta: se lo puso en el corazón Juno, la diosa de los níveos brazos, que se interesaba por los dánaos, á quienes veía morir. Acudieron éstos y, una vez reunidos, Aquiles, el de los pies ligeros, se levantó y dijo:\n\n59 «¡Atrida! Creo que tendremos que volver atrás, yendo otra vez errantes, si escapamos de la muerte; pues si no, la guerra y la peste unidas acabarán con los aqueos.",
+        "similitud": 0.8228949904441833
+      },
+      {
+        "orden_fragmento": 1,
+        "orden_en_fragmento": 23,
+        "inicio_char": 24688,
+        "fin_char": 25766,
+        "texto": "Terminada la faena y dispuesto el banquete, comieron, y nadie careció de su respectiva porción. Cuando hubieron satisfecho el deseo de comer y de beber, los mancebos llenaron las crateras y distribuyeron el vino á todos los presentes después de haber ofrecido en copas las primicias. Y durante el día los aqueos aplacaron al dios con el canto, entonando un hermoso peán al flechador Apolo, que les oía con el corazón complacido.\n\n475 Cuando el sol se puso y sobrevino la noche, durmieron cabe á las amarras del buque. Mas, así que apareció la hija de la mañana, la Aurora de rosados dedos, hiciéronse á la mar para volver al espacioso campamento aqueo, y el flechador Apolo les envió próspero viento. Izaron el mástil, descogieron las velas, que hinchó el viento, y las purpúreas ondas resonaban en torno de la quilla mientras la nave corría siguiendo su rumbo. Una vez llegados al vasto campamento de los aquivos, sacaron la negra nave á tierra firme y la pusieron en alto sobre la arena, sosteniéndola con grandes maderos. Y luego se dispersaron por las tiendas y los bajeles.",
+        "similitud": 0.8192815780639648
+      },
+      {
+        "orden_fragmento": 2,
+        "orden_en_fragmento": 13,
+        "inicio_char": 14444,
+        "fin_char": 15696,
+        "texto": "278 De tal modo hablaba la multitud. Levantóse Ulises, asolador de ciudades, con el cetro en la mano (Minerva, la de los brillantes ojos, que, transfigurada en heraldo, junto á él estaba, impuso silencio para que todos los aqueos, desde los primeros hasta los últimos, oyeran el discurso y meditaran los consejos), y benévolo les arengó diciendo:\n\n284 «¡Atrida! Los aqueos, oh rey, quieren cubrirte de baldón ante todos los mortales de voz articulada y no cumplen lo que te prometieron al venir de la Argólide, criadora de caballos: que no te irías sin destruir la bien murada Ilión. Cual si fuesen niños ó viudas, se lamentan unos con otros y desean regresar á su casa. Y es, en verdad, penoso que hayamos de volver afligidos. Cierto que cualquiera se impacienta al mes de estar separado de su mujer, cuando ve detenida su nave de muchos bancos por las borrascas invernales y el mar alborotado; y nosotros hace ya nueve años, con el presente, que aquí permanecemos. No me enfado, pues, porque los aqueos se impacienten junto á las cóncavas naves; pero sería bochornoso haber estado aquí tanto tiempo y volvernos sin conseguir nuestro propósito. Tened paciencia, amigos, y aguardad un poco más, para que sepamos si fué verídica la predicción de Calcas.",
+        "similitud": 0.8188783742334454
+      },
+      {
+        "orden_fragmento": 2,
+        "orden_en_fragmento": 7,
+        "inicio_char": 7572,
+        "fin_char": 8760,
+        "texto": "Agitóse la junta como las grandes olas que en el mar Icario levantan el Euro y el Noto cayendo impetuosos de las nubes amontonadas por el padre Júpiter. Como el Céfiro mueve con violento soplo un campo de trigo y se cierne sobre las espigas, de igual manera se movió toda la junta. Con gran gritería y levantando nubes de polvo, corren hacia los bajeles; exhórtanse á tirar de ellos para botarlos al mar divino; limpian los canales; quitan los soportes, y el vocerío de los que se disponen á volver á la patria llega hasta el cielo.\n\n155 Y efectuárase entonces, antes de lo dispuesto por el destino, el regreso de los argivos, si Juno no hubiese dicho á Minerva:\n\n157 «¡Oh dioses! ¡Hija de Júpiter, que lleva la égida! ¡Indómita deidad! ¿Huirán los argivos á sus casas, á su tierra por el ancho dorso del mar, y dejarán como trofeo á Príamo y á los troyanos la argiva Helena, por la cual tantos aqueos perecieron en Troya, lejos de su patria? Ve en seguida al ejército de los aqueos, de broncíneas lorigas, detén con suaves palabras á cada guerrero y no permitas que boten al mar los corvos bajeles.»\n\n166 De este modo habló. Minerva, la diosa de los brillantes ojos, no fué desobediente.",
+        "similitud": 0.8174701929092407
+      }
+    ],
+    "entorno_antes": "rcito aqueo y animaba á los remisos.\n\n517 Fué entonces cuando el hado echó los lazos de la muerte á Diores Amarincida. Herido en el tobillo derecho por puntiaguda piedra que le tiró Píroo Imbrásida, caudillo de los tracios, que había llegado de Eno—la insolente piedra rompióle ambos tendones y el hueso,—cayó de espaldas en el polvo, y expirante tendía los brazos á sus camaradas cuando el mismo Píroo acudió presuroso y le envasó la lanza en el ombligo; derramáronse los intestinos y las tinieblas velaron los ojos del guerrero.\n\n527 Mientras Píroo arremetía, Toante el etolo alanceóle en el pecho, por cima de una tetilla, y el bronce atravesó el pulmón. Acercósele Toante, le arrancó del pecho la ingente lanza, y hundiéndole la aguda espada en medio del vientre, le quitó la vida. Mas no pudo despojarle de la armadura, porque se vió rodeado por los compañeros del muerto, los tracios que dejan crecer la cabellera en lo más alto de la cabeza, quienes le asestaban sus largas picas; y aunque era corpulento, vigoroso é ilustre, fué rechazado y hubo de retroceder. Así cayeron y se juntaron en el polvo el caudillo de los tracios y el de los epeos, de broncíneas lorigas, y á su alrededor murieron otros muchos.\n\n539 Y quien, sin estar herido por flecha ó lanza, hubiera recorrido el campo llevado de la mano y protegido de las saetas por Palas Minerva, no habría reprochado los hechos de armas; pues aquel día gran número de teucros y de aqueos dieron, unos junto á otros, de bruces en el polvo.",
+    "entorno_despues": ""
+  },
+  "respuesta": {
+    "avisos": [
+      {
+        "cita": "Diores Amarincida, caudillo de los epeos, volvió aquella tarde á las naves al frente de su gente.",
+        "hecho": 40070,
+        "tipo": "estado",
+        "gravedad": "contradiccion",
+        "direccion": "anterior",
+        "explicacion": "El narrador establece que Diores Amarincida murió en combate antes del punto de inserción, atravesado por la lanza de Píroo en el ombligo. El pasaje lo presenta vivo y en marcha hacia las naves, lo cual es imposible."
+      }
+    ],
+    "notas": []
+  },
+  "informe": {
+    "avisos": [
+      {
+        "cita": "Diores Amarincida, caudillo de los epeos, volvió aquella tarde á las naves al frente de su gente.",
+        "hecho": 40070,
+        "texto_hecho": "Mientras Diores expiraba tendiendo los brazos a sus camaradas, Píroo le envasó la lanza en el ombligo; se derramaron los intestinos y murió.",
+        "afirmado_por": "narrador",
+        "tipo": "estado",
+        "gravedad": "contradiccion",
+        "direccion": "anterior",
+        "explicacion": "El narrador establece que Diores Amarincida murió en combate antes del punto de inserción, atravesado por la lanza de Píroo en el ombligo. El pasaje lo presenta vivo y en marcha hacia las naves, lo cual es imposible."
+      }
+    ],
+    "notas": [],
+    "descartados": [],
+    "hechos_omitidos": 0
+  }
+}
