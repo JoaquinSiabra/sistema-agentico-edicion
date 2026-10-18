@@ -254,6 +254,15 @@ def test_consulta_con_cliente_explicito_y_json_envuelto(api):
     assert consultar_modelo(contexto(), PASAJE, cliente=cliente) == {"avisos": [], "notas": []}
 
 
+@pytest.mark.parametrize("cierre", ["\n```", "\n```\n", ""])
+def test_consulta_con_razonamiento_antes_del_json(api, cierre):
+    # Caso real del banco (S03, C02): prosa primero y el JSON al final.
+    api(["Analizando el pasaje nuevo contra los hechos canónicos:\n\n"
+         "- [40030]: Macaón trató la herida.\n\nNo hay contradicción.\n\n"
+         '```json\n{"avisos": [], "notas": []}' + cierre])
+    assert consultar_modelo(contexto(), PASAJE) == {"avisos": [], "notas": []}
+
+
 def test_consulta_con_json_roto_falla(api):
     api(["{no es json"])
     with pytest.raises(json.JSONDecodeError):

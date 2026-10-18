@@ -375,6 +375,16 @@ def construir_prompt(contexto: Contexto, pasaje: str) -> tuple[str, str]:
     return PROMPT_SISTEMA, "\n\n".join(partes)
 
 
+def extraer_json(texto: str) -> str:
+    """El JSON de la respuesta. En los casos dudosos el modelo a veces
+    razona primero en prosa y deja el JSON al final, en un bloque ```json
+    (pasó en el banco con S03 y C02): se toma el último bloque así."""
+    bloques = re.findall(r"```(?:json)?\s*\n(.*?)(?:\n```|\Z)", texto, re.S)
+    if bloques and not texto.lstrip().startswith("{"):
+        return bloques[-1].strip()
+    return texto.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+
+
 def consultar_modelo(contexto: Contexto, pasaje: str, cliente=None) -> dict:
     cliente = cliente or anthropic.Anthropic()
     sistema, usuario = construir_prompt(contexto, pasaje)
@@ -384,8 +394,7 @@ def consultar_modelo(contexto: Contexto, pasaje: str, cliente=None) -> dict:
         system=sistema,
         messages=[{"role": "user", "content": usuario}],
     )
-    texto = respuesta.content[0].text.strip()
-    texto = texto.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+    texto = extraer_json(respuesta.content[0].text)
     try:
         return json.loads(texto)
     except json.JSONDecodeError as e:
