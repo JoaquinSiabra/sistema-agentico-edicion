@@ -11,7 +11,7 @@ a Claude no dan siempre la misma salida, así que sus specs son
 | Rápido | `uv run pytest` | segundos | nada |
 | Base de datos | `pytest --db` (desde WSL) | ~20 s (4-5 min la 1ª vez) | Postgres + pgvector |
 | API real | `uv run pytest --api tests/api` | ~1-2 min | `ANTHROPIC_API_KEY`; 3 llamadas, con coste |
-| Banco de Continuidad | `pytest --db --api tests/continuidad` (desde WSL, con `WSLENV=ANTHROPIC_API_KEY`) | minutos | Postgres + pgvector y `ANTHROPIC_API_KEY`; 27 llamadas, con coste |
+| Banco de Continuidad | `pytest --db --api tests/continuidad` (desde WSL, con `WSLENV=ANTHROPIC_API_KEY`) | minutos | Postgres + pgvector y `ANTHROPIC_API_KEY`; 27 llamadas, con coste (con `NOVELA_BANCO_SOLO_CAMBIADOS=1`, solo las de los casos cuyo contexto cambió) |
 
 Leyenda de la columna «Prueba»: **R** rápido · **D** base de datos ·
 **A** API real · **S** API simulada con respuestas grabadas (también rápido) ·
@@ -172,8 +172,9 @@ Especificación en [`docs/buscador_hibrido.md`](../docs/buscador_hibrido.md).
 Vías nuevas de `reunir_contexto`: `entorno` (entidades del párrafo anterior
 al punto de inserción que el pasaje no nombra) y `lexica` (texto completo
 de Postgres sobre los hechos). Las listas de cada vía se fusionan por
-rango recíproco y el tope se aplica después. Por defecto siguen solo la
-vía de entidades y el tope de 200.
+rango recíproco y el tope se aplica después. Por defecto, tras la medida
+del banco: entidades y léxica, con un tope de 60 hechos (la v1 usaba solo
+entidades y 200).
 
 | Spec | Prueba | Dónde |
 |---|---|---|

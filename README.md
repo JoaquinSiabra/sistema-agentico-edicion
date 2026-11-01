@@ -46,22 +46,34 @@ todavía no:
      anterior en dos formas — la prosa de la obra troceada en pasajes de
      ~380 tokens y vectorizada (para recuperación semántica) y las fichas
      canónicas de la Fase 1, ambas con su posición en el orden de lectura.
-   - **Retriever** *(implementado en parte)*: búsqueda semántica sobre los
-     pasajes y consulta de hechos canónicos por entidad, las dos con un
-     **filtro anti-spoiler**: dado un punto de lectura, nunca devuelve
-     nada posterior. Falta combinar ambas en una sola respuesta.
-2. **Runtime agéntico** *(no construido, en diseño)*: el grafo de agentes
+   - **Retriever del lector** *(implementado en parte)*: búsqueda
+     semántica sobre los pasajes y consulta de hechos canónicos por
+     entidad, las dos con un **filtro anti-spoiler**: dado un punto de
+     lectura, nunca devuelve nada posterior. Falta combinar ambas en una
+     sola respuesta.
+   - **Buscador híbrido del agente de Continuidad** *(implementado)*:
+     hechos por entidad y búsqueda léxica sobre los hechos (texto completo
+     de Postgres), fusionados por rango recíproco. Sin filtro anti-spoiler,
+     porque trabaja para el autor y le importa también lo que viene
+     después. Su diseño salió del banco del agente: ver
+     [`docs/buscador_hibrido.md`](docs/buscador_hibrido.md).
+2. **Runtime agéntico** *(en construcción)*: el grafo de agentes
    (LangGraph) que consultaría el retriever para producir el análisis
    editorial. Cuatro agentes especializados compartirían ese retriever pero
-   evaluarían ejes distintos — continuidad y coherencia interna (Haiku, por
-   volumen), voz narrativa (Sonnet), estructura y ritmo (Sonnet), y una
-   crítica de conjunto que integra lo anterior (Sonnet) — para producir un
-   informe de análisis editorial, no texto reescrito.
-   Primera pieza escrita: el **agente de Continuidad** v1
-   (`continuidad.py`, especificación en
-   [`docs/agente_continuidad.md`](docs/agente_continuidad.md)), una
-   herramienta del autor que avisa de lo que un pasaje nuevo contradice
-   del canon; su banco de casos aún no se ha ejecutado.
+   evaluarían ejes distintos — continuidad y coherencia interna, voz
+   narrativa, estructura y ritmo, y una crítica de conjunto que integra lo
+   anterior — para producir un informe de análisis editorial, no texto
+   reescrito.
+   - **Continuidad** *(implementado, v1)*: `continuidad.py`, especificación
+     en [`docs/agente_continuidad.md`](docs/agente_continuidad.md). Una
+     herramienta del autor: dado un pasaje que se va a insertar, avisa de lo
+     que contradice el canon, antes o después del punto de inserción. Solo
+     un hecho del narrador puede fundar un aviso; lo que afirma un personaje
+     da, como mucho, una nota. Usa el mismo modelo que el resto de fases.
+     En su banco de 27 casos (Cantos III y IV) detectó 14 de 16
+     contradicciones sin ningún aviso falso.
+   - **Voz narrativa, estructura y ritmo, crítica de conjunto** *(en
+     diseño)*.
 
 ## Por qué calibrar antes de extraer
 
@@ -111,11 +123,14 @@ src/
   extraer_canon.py        # Fase 1
   poblar_almacen.py       # Fase 2: carga en Postgres + pgvector
   recuperar.py            # Búsqueda con filtro anti-spoiler
-  continuidad.py          # Agente de Continuidad v1 (docs/agente_continuidad.md)
+  continuidad.py          # Agente de Continuidad v1 y su buscador híbrido
+docs/
+  agente_continuidad.md   # Especificación del agente de Continuidad
+  buscador_hibrido.md     # Especificación del buscador, con la medida que lo decidió
 tests/
   SPECS.md                # Qué debe cumplir cada fase y qué prueba lo comprueba
   continuidad/            # Banco de casos del agente de Continuidad
-  fijos/                  # Cantos I-III de la Ilíada y respuestas reales de Claude
+  fijos/                  # Cantos I-IV de la Ilíada y respuestas reales de Claude
 data/
   ejemplos/
     iliada-canto-i/       # Salida real de calibración sobre el Canto I
@@ -148,9 +163,10 @@ uv run python src/recuperar.py --obra=mi_obra --hasta-fragmento=1 "consulta"
 # Continuidad: qué contradice el canon un pasaje que se insertaría en el
 # carácter 12345 del fragmento 4
 uv run python src/continuidad.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt
-# ... con el buscador híbrido (docs/buscador_hibrido.md) y otro tope
+# Por defecto busca por entidades y léxica, con un tope de 60 hechos.
+# Se pueden elegir otras vías (docs/buscador_hibrido.md) y otro tope:
 uv run python src/continuidad.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt \
-    --vias=entidades,entorno,lexica --tope=60
+    --vias=entidades,entorno,lexica --tope=200
 ```
 
 Cada obra escribe en su propia carpeta, `data/<obra>/exports/`. Si
@@ -178,6 +194,14 @@ uv run pytest --api tests/api
 
 # Banco del agente de Continuidad (base de datos + API real, 27 llamadas).
 uv run pytest --db --api tests/continuidad
+
+# ... llamando solo en los casos cuyo contexto cambió respecto a la
+# respuesta grabada (al cambiar el buscador).
+NOVELA_BANCO_SOLO_CAMBIADOS=1 uv run pytest --db --api tests/continuidad
+
+# Informe del buscador: cobertura del contexto por combinación de vías,
+# sin API (.cache/continuidad/buscador.txt).
+uv run pytest --db -s tests/continuidad/test_contexto_db.py -k buscador
 ```
 
 ## Estado del proyecto
@@ -185,11 +209,16 @@ uv run pytest --db --api tests/continuidad
 Exploratorio, documentado tal como es. El pipeline de extracción (Fases 0a,
 0b y 1), el almacén Postgres + pgvector y la búsqueda con filtro
 anti-spoiler están implementados y cubiertos por pruebas, comprobados con
-los Cantos I-III de la Ilíada. Falta combinar pasajes y hechos en un
-retriever híbrido y el grafo de agentes de evaluación en runtime
-(voz, estructura, crítica de conjunto), que siguen en diseño. El agente
-de Continuidad v1 está escrito y probado en la suite rápida, a falta de
-ejecutar su banco con base de datos y API.
+los Cantos I-IV de la Ilíada.
+
+El agente de Continuidad v1 funciona: en su banco detectó 14 de 16
+contradicciones sin ningún aviso falso. Su buscador híbrido se eligió
+midiendo la cobertura del contexto sin API, y por defecto usa entidades y
+búsqueda léxica con un tope de 60 hechos. Falta repetir con la API los
+casos del banco cuyo contexto cambió con ese buscador.
+
+Siguen en diseño el retriever del lector que combine pasajes y hechos y
+los otros tres agentes (voz, estructura y ritmo, crítica de conjunto).
 
 ## Licencia
 
