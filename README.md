@@ -46,14 +46,16 @@ discontinuo lo que todavía no:
      anterior en dos formas — la prosa de la obra troceada en pasajes de
      ~380 tokens y vectorizada (para recuperación semántica) y las fichas
      canónicas de la Fase 1, ambas con su posición en el orden de lectura.
-   - **Retriever del lector** *(implementado en parte)*: búsqueda
-     semántica sobre los pasajes y consulta de hechos canónicos por
-     entidad, las dos con un **filtro anti-spoiler**: dado un punto de
-     lectura, nunca devuelve nada posterior. Falta combinar ambas en una
-     sola respuesta.
+   - **Buscador del lector** *(implementado; su banco con base de datos,
+     sin ejecutar)*: `recuperar.consultar` da en una sola respuesta los
+     hechos más relevantes para una consulta y los pasajes más parecidos,
+     con un **filtro anti-spoiler**: dado un punto de lectura, nunca
+     devuelve nada posterior. Especificación en
+     [`docs/buscador_lector.md`](docs/buscador_lector.md).
    - **Buscador híbrido del agente de Continuidad** *(implementado)*:
      hechos por entidad y búsqueda léxica sobre los hechos (texto completo
-     de Postgres), fusionados por rango recíproco. Sin filtro anti-spoiler,
+     de Postgres), fusionados por rango recíproco. Las vías y la fusión
+     están en `buscador.py`, compartidas con el del lector. Sin filtro anti-spoiler,
      porque trabaja para el autor y le importa también lo que viene
      después. Su diseño salió del banco del agente: ver
      [`docs/buscador_hibrido.md`](docs/buscador_hibrido.md).
@@ -131,13 +133,15 @@ src/
   calibrar_glosario.py    # Fase 0b
   extraer_canon.py        # Fase 1
   poblar_almacen.py       # Fase 2: carga en Postgres + pgvector
-  recuperar.py            # Búsqueda con filtro anti-spoiler
+  recuperar.py            # Búsqueda con filtro anti-spoiler (buscador del lector)
+  buscador.py             # Vías de hechos y fusión, comunes a los dos buscadores
   continuidad.py          # Agente de Continuidad v1 y su buscador híbrido
   voz.py                  # Agente de Voz y edición v1 (docs/agente_voz.md)
   revisar.py              # Informe para el autor: Continuidad + Voz y edición
 docs/
   agente_continuidad.md   # Especificación del agente de Continuidad
   buscador_hibrido.md     # Especificación del buscador, con la medida que lo decidió
+  buscador_lector.md      # Especificación del buscador del lector
   agente_voz.md           # Especificación del agente de Voz y edición
 tests/
   SPECS.md                # Qué debe cumplir cada fase y qué prueba lo comprueba
@@ -240,8 +244,9 @@ midiendo la cobertura del contexto sin API, y por defecto usa entidades y
 búsqueda léxica con un tope de 60 hechos. Falta repetir con la API los
 casos del banco cuyo contexto cambió con ese buscador.
 
-Siguen en diseño el retriever del lector que combine pasajes y hechos y
-los otros tres agentes (voz, estructura y ritmo, crítica de conjunto).
+El agente de Voz y edición y el buscador del lector están escritos y
+probados en la suite rápida, a falta de ejecutar sus bancos con API y con
+base de datos. Siguen en diseño Estructura y ritmo y Crítica de conjunto.
 
 ## Licencia
 

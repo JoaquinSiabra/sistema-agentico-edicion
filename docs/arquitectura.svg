@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1130" width="1000" height="1130" font-family="DejaVu Sans, Helvetica, Arial, sans-serif">
   <title>Arquitectura del sistema agéntico de evaluación editorial</title>
-  <desc>Dos bloques. Bootstrapping, construido: la obra pasa por el pipeline de calibración y extracción y se carga en el almacén (pasajes, hechos canónicos y entidades), que consultan dos buscadores: el del lector, con filtro anti-spoiler, y el de Continuidad. Runtime agéntico, en construcción: los agentes de Continuidad y de Voz y edición están construidos y revisar.py reúne sus informes para el autor; Estructura y ritmo, Crítica de conjunto y el grafo LangGraph del informe editorial siguen en diseño.</desc>
+  <desc>Dos bloques. Bootstrapping, construido: la obra pasa por el pipeline de calibración y extracción y se carga en el almacén (pasajes, hechos canónicos y entidades), que consultan dos buscadores con las mismas vías (buscador.py): el del lector, con filtro anti-spoiler, y el de Continuidad, sobre toda la obra. Runtime agéntico, en construcción: los agentes de Continuidad y de Voz y edición están construidos y revisar.py reúne sus informes para el autor; Estructura y ritmo, Crítica de conjunto y el grafo LangGraph del informe editorial siguen en diseño.</desc>
   <defs>
     <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M1 1 L9 5 L1 9" fill="none" stroke="#7a7a7a" stroke-width="1.6"/>
@@ -59,13 +59,13 @@
 
   <rect x="94" y="496" width="392" height="104" rx="8" fill="#ffffff" stroke="#0b6b55"/>
   <text x="290" y="524" class="caja-t" fill="#0b6b55">Buscador del lector · recuperar.py</text>
-  <text x="290" y="546" class="caja-s" fill="#0b6b55">pasajes y hechos, con filtro anti-spoiler</text>
-  <text x="290" y="566" class="caja-s" fill="#0b6b55">(nunca nada posterior al punto de lectura)</text>
-  <text x="290" y="587" class="caja-s" fill="#8a5a12">en parte: falta combinar pasajes y hechos</text>
+  <text x="290" y="546" class="caja-s" fill="#0b6b55">una respuesta: hechos (vías de buscador.py,</text>
+  <text x="290" y="566" class="caja-s" fill="#0b6b55">fusión RRF) y pasajes, con filtro anti-spoiler</text>
+  <text x="290" y="587" class="caja-s" fill="#0b6b55">(nunca nada posterior al punto de lectura)</text>
 
   <rect x="514" y="496" width="392" height="104" rx="8" fill="#ffffff" stroke="#0b6b55"/>
   <text x="710" y="524" class="caja-t" fill="#0b6b55">Buscador de Continuidad</text>
-  <text x="710" y="546" class="caja-s" fill="#0b6b55">hechos por entidad + búsqueda léxica,</text>
+  <text x="710" y="546" class="caja-s" fill="#0b6b55">las mismas vías de buscador.py,</text>
   <text x="710" y="566" class="caja-s" fill="#0b6b55">fusión RRF · toda la obra, sin anti-spoiler</text>
   <text x="710" y="587" class="caja-s" fill="#0b6b55">(trabaja para el autor)</text>
 
@@ -119,6 +119,5 @@
     <text x="40" y="1" class="sub">construido (borde continuo)</text>
     <rect x="250" y="-12" width="30" height="16" rx="3" fill="#ffffff" stroke="#5c5c5c" stroke-dasharray="5 4"/>
     <text x="290" y="1" class="sub">en diseño (borde discontinuo)</text>
-    <text x="520" y="1" class="sub" style="fill: #8a5a12">en parte: anotado en la caja</text>
   </g>
 </svg>

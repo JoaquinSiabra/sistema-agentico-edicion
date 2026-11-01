@@ -9,6 +9,10 @@ devuelve solo lo que el lector ya ha leído.
   (b) hechos_hasta: fichas canónicas de `hechos_canonicos`, opcionalmente
       solo las que mencionan una entidad (término canónico, alias o
       variantes del glosario).
+  (c) consultar: el buscador del lector (docs/buscador_lector.md). Una
+      sola respuesta con los hechos más relevantes para la consulta (las
+      vías de buscador.py con el límite y fusión por rango recíproco) y
+      los pasajes más parecidos, con el mismo filtro que (a) y (b).
 
 PUNTO DE LECTURA = (hasta_fragmento, hasta_char):
   - hasta_char=None  -> el fragmento `hasta_fragmento` está leído entero.
@@ -27,6 +31,8 @@ lo que no se ha leído no sale nunca de la base de datos.
 
 Uso:
     python src/recuperar.py --obra=iliada --hasta-fragmento=1 "consulta"
+    python src/recuperar.py --obra=iliada --hasta-fragmento=3 --hasta-char=5000 \
+        --hechos "¿Quién venció en el combate singular?"
     python src/recuperar.py --obra=iliada --hasta-fragmento=2 --hasta-char=5000 \
         --entidad=Aquiles "consulta"
 """
@@ -34,7 +40,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import TYPE_CHECKING
 
 import psycopg2
@@ -162,6 +168,62 @@ def hechos_hasta(
     return [Hecho(*fila) for fila in cur.fetchall()]
 
 
+@dataclass
+class Respuesta:
+    hechos: list               # buscador.HechoContexto, en orden de lectura
+    pasajes: list[Pasaje]
+    omitidos: int              # hechos que no entraron por el tope
+    candidatos: dict[str, int] = field(default_factory=dict)   # hechos por vía
+
+
+def ultimo_fragmento_leido(hasta_fragmento: int, hasta_char: int | None) -> int:
+    """El último fragmento cuyos hechos se admiten: con lectura parcial, el
+    fragmento en curso no aporta hechos (ver el docstring del módulo)."""
+    return hasta_fragmento if hasta_char is None else hasta_fragmento - 1
+
+
+def consultar(
+    cur,
+    obra: str,
+    consulta: str,
+    hasta_fragmento: int,
+    hasta_char: int | None = None,
+    modelo_embeddings: SentenceTransformer | None = None,
+    vias: tuple[str, ...] | None = None,
+    tope: int | None = None,
+    k_pasajes: int = 5,
+) -> Respuesta:
+    """Lo que el lector ya sabe en el punto de lectura que tiene que ver con
+    la consulta. Sin modelo de embeddings no se buscan pasajes. Las vías y el
+    tope, por defecto los de buscador.py."""
+    # buscador importa de aquí (Hecho, _filtro_entidad): import diferido.
+    import buscador
+
+    vias = buscador.VIAS_V1 if vias is None else vias
+    tope = buscador.TOPE_HECHOS if tope is None else tope
+    desconocidas = set(vias) - set(buscador.VIAS)
+    if desconocidas:
+        raise ValueError(f"Vías desconocidas: {sorted(desconocidas)}; hay {sorted(buscador.VIAS)}.")
+    texto = buscador.texto_fragmento(cur, obra, hasta_fragmento)
+    char = len(texto) if hasta_char is None else hasta_char
+    if not 0 <= char <= len(texto):
+        raise ValueError(f"El fragmento {hasta_fragmento} tiene {len(texto)} caracteres; "
+                         f"hasta_char={hasta_char}.")
+
+    hasta = ultimo_fragmento_leido(hasta_fragmento, hasta_char)
+    por_origen: dict = {}
+    for via in vias:
+        por_origen.update(buscador.VIAS[via](cur, obra, consulta, hasta_fragmento, texto, char,
+                                             hasta=hasta))
+    hechos, omitidos = buscador.combinar(por_origen, hasta_fragmento, tope)
+    pasajes = []
+    if modelo_embeddings is not None:
+        pasajes = buscar_pasajes(cur, modelo_embeddings, obra, consulta, hasta_fragmento,
+                                 hasta_char, k_pasajes)
+    return Respuesta(hechos=hechos, pasajes=pasajes, omitidos=omitidos,
+                     candidatos={o: len(h) for o, h in por_origen.items()})
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[1])
     parser.add_argument("consulta")
@@ -170,6 +232,8 @@ def main() -> None:
     parser.add_argument("--hasta-char", type=int, default=None)
     parser.add_argument("--entidad", default=None,
                         help="si se da, lista también los hechos canónicos de esa entidad")
+    parser.add_argument("--hechos", action="store_true",
+                        help="lista también los hechos más relevantes (buscador del lector)")
     parser.add_argument("-k", type=int, default=5)
     parser.add_argument("--dsn", default=DSN_DEFAULT)
     args = parser.parse_args()
@@ -188,6 +252,12 @@ def main() -> None:
                 quien = f" ({h.atribuido_a})" if h.atribuido_a else ""
                 print(f"  [{h.orden_fragmento}#{h.orden_en_fragmento}] "
                       f"{h.hecho}{quien}")
+        if args.hechos:
+            respuesta = consultar(cur, args.obra, args.consulta, args.hasta_fragmento,
+                                  args.hasta_char)
+            print(f"--- Hechos más relevantes ({respuesta.omitidos} omitidos por el tope):")
+            for h in respuesta.hechos:
+                print(f"  [{h.id}] (#{h.puesto}; {', '.join(h.origen)}) {h.hecho}")
 
 
 if __name__ == "__main__":
