@@ -1,5 +1,5 @@
 {
- "descripcion": "BORRADOR del banco del buscador del lector (docs/buscador_lector.md): preguntas que se haría un lector editorial en un punto de lectura de los Cantos I-IV de la Ilíada (Segalá). 'punto': hasta el final del fragmento 'orden' o, con 'verso', hasta el comienzo de la línea que empieza por ese verso (sin incluirla). 'esperados': hechos (<orden>.<índice>) que deberían llegar; basta con uno. 'fugas': hechos posteriores al punto que no pueden llegar nunca. Cada spoiler (E0n) tiene su control (E0nc): la misma consulta desde un punto posterior. Se fija (y se mueve a tests/fijos/lector/casos.json) cuando se revise la especificación, antes de programar.",
+ "descripcion": "Banco del buscador del lector (docs/buscador_lector.md): preguntas que se haría un lector editorial en un punto de lectura de los Cantos I-IV de la Ilíada (Segalá). 'punto': hasta el final del fragmento 'orden' o, con 'verso', hasta el comienzo de la línea que empieza por ese verso (sin incluirla). 'esperados': hechos (<orden>.<índice>) que deberían llegar; basta con uno. 'fugas': hechos posteriores al punto que no pueden llegar nunca. Cada spoiler (E0n) tiene su control (E0nc): la misma consulta desde un punto posterior. Fijado el 2026-11-01, antes de programar el buscador: no se ajusta a sus resultados.",
  "casos": [
   {
    "id": "M01",
