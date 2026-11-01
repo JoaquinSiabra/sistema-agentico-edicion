@@ -72,8 +72,13 @@ todavía no:
      da, como mucho, una nota. Usa el mismo modelo que el resto de fases.
      En su banco de 27 casos (Cantos III y IV) detectó 14 de 16
      contradicciones sin ningún aviso falso.
-   - **Voz narrativa, estructura y ritmo, crítica de conjunto** *(en
-     diseño)*.
+   - **Voz** *(especificación en borrador)*:
+     [`docs/agente_voz.md`](docs/agente_voz.md). Avisa de lo que se aparta
+     de la voz de la obra, pero solo de lo que se puede medir en ella: las
+     normas de la edición (en la Segalá, «á», «fué», el diálogo entre «»)
+     y las palabras que la obra no usa nunca y que suenan anacrónicas o
+     coloquiales en ella.
+   - **Estructura y ritmo, crítica de conjunto** *(en diseño)*.
 
 ## Por qué calibrar antes de extraer
 

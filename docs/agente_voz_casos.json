@@ -1,0 +1,263 @@
+{
+ "descripcion": "BORRADOR del banco del agente de Voz (docs/agente_voz.md), sobre los Cantos III y IV de la Ilíada (Segalá), con el vocabulario de los Cantos I-IV. Construcción de los casos como en el banco de Continuidad: con 'tras_verso', el pasaje es 'texto' insertado al final del párrafo de ese verso; con solo 'verso', el pasaje es el propio párrafo original, evaluado en su sitio y sin su propio tramo en el vocabulario. Norma: 'formas' son las que deben dar aviso de norma. Léxico: el caso cuenta como detectado si algún aviso léxico cita una de 'palabras'. Se fija (y se mueve a tests/fijos/voz/casos.json) cuando se revise la especificación, antes de programar el agente; después no se ajusta a sus resultados.",
+ "casos": [
+  {
+   "id": "N01",
+   "categoria": "norma",
+   "orden": 4,
+   "tras_verso": 250,
+   "texto": "Agamenón se volvió a sus compañeros y les mandó que aguardasen o se retirasen a las naves.",
+   "esperado": [
+    {
+     "norma": "á/a",
+     "formas": [
+      "a"
+     ]
+    },
+    {
+     "norma": "ó/o",
+     "formas": [
+      "o"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "N02",
+   "categoria": "norma",
+   "orden": 4,
+   "tras_verso": 364,
+   "texto": "Fue Diomedes quien dio la señal, y los argivos avanzaron en silencio.",
+   "esperado": [
+    {
+     "norma": "fué/fue",
+     "formas": [
+      "Fue"
+     ]
+    },
+    {
+     "norma": "dió/dio",
+     "formas": [
+      "dio"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "N03",
+   "categoria": "norma",
+   "orden": 4,
+   "tras_verso": 473,
+   "texto": "—¡Atrás, teucros! —gritó Ayax Telamonio, blandiendo la lanza.",
+   "esperado": [
+    {
+     "norma": "marcas de diálogo",
+     "formas": [
+      "—"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "N04",
+   "categoria": "norma",
+   "orden": 3,
+   "tras_verso": 116,
+   "texto": "Y Héctor les dijo: \"Tened ánimo, troyanos, que hoy la victoria será nuestra.\"",
+   "esperado": [
+    {
+     "norma": "marcas de diálogo",
+     "formas": [
+      "\""
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L01",
+   "categoria": "lexico",
+   "orden": 4,
+   "tras_verso": 250,
+   "texto": "Agamenón pasaba revista á las tropas mirando de cuando en cuando su reloj, pues el tiempo apremiaba.",
+   "esperado": [
+    {
+     "palabras": [
+      "reloj"
+     ],
+     "gravedad": "ruptura"
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "categoria": "lexico",
+   "orden": 4,
+   "tras_verso": 85,
+   "texto": "Los aqueos estaban ya cansados de aquel rollo de juramentos y treguas.",
+   "esperado": [
+    {
+     "palabras": [
+      "rollo"
+     ],
+     "gravedad": "ruptura"
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "categoria": "lexico",
+   "orden": 3,
+   "tras_verso": 449,
+   "texto": "Menelao, todavía con estrés por el combate, apenas podía sostener la lanza.",
+   "esperado": [
+    {
+     "palabras": [
+      "estrés"
+     ],
+     "gravedad": "ruptura"
+    }
+   ]
+  },
+  {
+   "id": "L04",
+   "categoria": "lexico",
+   "orden": 4,
+   "tras_verso": 473,
+   "texto": "El escudo de Ayax resistió el golpe como un blindaje de acero.",
+   "esperado": [
+    {
+     "palabras": [
+      "blindaje",
+      "acero"
+     ],
+     "gravedad": "ruptura"
+    }
+   ]
+  },
+  {
+   "id": "L05",
+   "categoria": "lexico",
+   "orden": 3,
+   "tras_verso": 30,
+   "texto": "Los teucros se retiraron varios kilómetros hacia la ciudad.",
+   "esperado": [
+    {
+     "palabras": [
+      "kilómetros"
+     ],
+     "gravedad": "ruptura"
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "categoria": "lexico",
+   "orden": 3,
+   "tras_verso": 245,
+   "texto": "Al cabo de pocos minutos, los heraldos volvieron con los corderos.",
+   "motivo": "Español de 1908, pero no del mundo del poema: se espera extrañeza, no ruptura (ver dudas de la especificación).",
+   "esperado": [
+    {
+     "palabras": [
+      "minutos"
+     ],
+     "gravedad": "extrañeza"
+    }
+   ]
+  },
+  {
+   "id": "C01",
+   "categoria": "control",
+   "orden": 3,
+   "verso": 264,
+   "esperado": []
+  },
+  {
+   "id": "C02",
+   "categoria": "control",
+   "orden": 3,
+   "verso": 324,
+   "esperado": []
+  },
+  {
+   "id": "C03",
+   "categoria": "control",
+   "orden": 4,
+   "verso": 104,
+   "motivo": "El control con más ruido: 18 candidatos por raíz («bovino», «lascivo», «dieciséis»…).",
+   "esperado": []
+  },
+  {
+   "id": "C04",
+   "categoria": "control",
+   "orden": 4,
+   "verso": 207,
+   "esperado": []
+  },
+  {
+   "id": "C05",
+   "categoria": "control",
+   "orden": 4,
+   "verso": 446,
+   "esperado": []
+  },
+  {
+   "id": "C06",
+   "categoria": "control",
+   "orden": 4,
+   "verso": 517,
+   "esperado": []
+  },
+  {
+   "id": "T01",
+   "categoria": "trampa",
+   "orden": 3,
+   "verso": 369,
+   "motivo": "Presente histórico del narrador («Dice, y arremetiendo á Paris, cógele…»): la obra lo hace.",
+   "esperado": []
+  },
+  {
+   "id": "T02",
+   "categoria": "trampa",
+   "orden": 4,
+   "verso": 127,
+   "motivo": "Apóstrofe del narrador a un personaje («No se olvidaron de ti, oh Menelao»): la obra lo hace.",
+   "esperado": []
+  },
+  {
+   "id": "T03",
+   "categoria": "trampa",
+   "orden": 4,
+   "verso": 223,
+   "motivo": "Segunda persona dirigida al oyente («Entonces no hubieras visto…»): la obra lo hace.",
+   "esperado": []
+  },
+  {
+   "id": "T04",
+   "categoria": "trampa",
+   "orden": 4,
+   "tras_verso": 446,
+   "texto": "Decidme ahora, Musas que poseéis olímpicos palacios, cuál fué el primero de los aqueos que mató á un hombre en la pelea; pues yo no podría saberlo si vosotras no me lo dijerais.",
+   "motivo": "Invocación a las Musas en primera persona, como II 484.",
+   "esperado": []
+  },
+  {
+   "id": "T05",
+   "categoria": "trampa",
+   "orden": 4,
+   "tras_verso": 364,
+   "texto": "Diomedes ciñóse la loriga y se puso el yelmo adornado con crines de caballo.",
+   "motivo": "Palabras de época que no están en la obra («yelmo») y una forma enclítica que el lematizador no reduce («ciñóse»): candidatos que el modelo tiene que dejar pasar.",
+   "esperado": []
+  },
+  {
+   "id": "T06",
+   "categoria": "trampa",
+   "orden": 4,
+   "tras_verso": 422,
+   "texto": "Y Héctor gritó á los suyos: «Yo no temo á los aqueos; mirad cómo huyen hacia las naves.»",
+   "motivo": "Diálogo en presente y primera persona, entre «»: la voz de un personaje no es la del narrador.",
+   "esperado": []
+  }
+ ]
+}
