@@ -118,4 +118,4 @@ uv run python src/recuperar.py --obra=<nombre_obra> --hasta-fragmento=2 --hasta-
 
 ## 11. Pruebas con base de datos
 
-`uv run pytest --db` crea desde cero una base de datos aparte, `almacen_test` (nunca toca `almacen`), y carga en ella los Cantos I y II de la Ilíada de `tests/fijos/`. La primera ejecución calcula los embeddings (unos minutos en CPU) y los guarda en `.cache/`; las siguientes tardan segundos.
+`uv run pytest --db` crea desde cero una base de datos aparte, `almacen_test` (nunca toca `almacen`), y carga en ella los Cantos I y II de la Ilíada de `tests/fijos/`. Las pruebas del agente de Continuidad cargan además los Cantos I-IV como una obra aparte, que borran al terminar. La primera ejecución calcula los embeddings (unos minutos en CPU) y los guarda en `.cache/`; las siguientes tardan segundos.

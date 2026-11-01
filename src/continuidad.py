@@ -24,7 +24,8 @@ resto del agente. Buscador híbrido (docs/buscador_hibrido.md):
     no el pasaje (`entorno: <término>`), para el sujeto implícito;
   - "lexica": texto completo de Postgres sobre los hechos (`lexica`).
 Cada vía da una lista ordenada por origen; las listas se fusionan por rango
-recíproco (RRF) y el tope se aplica después. Por defecto, solo "entidades".
+recíproco (RRF) y el tope se aplica después. Por defecto, "entidades" y
+"lexica" con un tope de 60 hechos (medido en el banco).
 
 ATRIBUCIÓN — solo un hecho del narrador (`narrador_documental`) puede
 fundar un aviso. Lo que afirma un personaje puede ser falso: como mucho da
