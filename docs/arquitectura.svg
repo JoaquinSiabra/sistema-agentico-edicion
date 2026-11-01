@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1130" width="1000" height="1130" font-family="DejaVu Sans, Helvetica, Arial, sans-serif">
+  <title>Arquitectura del sistema agéntico de evaluación editorial</title>
+  <desc>Dos bloques. Bootstrapping, construido: la obra pasa por el pipeline de calibración y extracción y se carga en el almacén (pasajes, hechos canónicos y entidades), que consultan dos buscadores: el del lector, con filtro anti-spoiler, y el de Continuidad. Runtime agéntico, en construcción: los agentes de Continuidad y de Voz y edición están construidos y revisar.py reúne sus informes para el autor; Estructura y ritmo, Crítica de conjunto y el grafo LangGraph del informe editorial siguen en diseño.</desc>
+  <defs>
+    <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1 L9 5 L1 9" fill="none" stroke="#7a7a7a" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <style>
+    .titulo { font-size: 17px; fill: #1f1f1f; }
+    .sub { font-size: 13px; fill: #5c5c5c; }
+    .caja-t { font-size: 15px; text-anchor: middle; }
+    .caja-s { font-size: 12.5px; text-anchor: middle; }
+    .flecha { stroke: #7a7a7a; stroke-width: 1.6; fill: none; marker-end: url(#flecha); }
+    .flecha.diseno { stroke-dasharray: 5 4; }
+    .etiqueta { font-size: 12.5px; fill: #5c5c5c; }
+  </style>
+
+  <rect width="1000" height="1130" fill="#ffffff"/>
+
+  <!-- Bootstrapping -->
+  <rect x="40" y="24" width="920" height="606" rx="18" fill="#fafaf8" stroke="#9a9a9a" stroke-width="1.2"/>
+  <text x="66" y="58" class="titulo">Bootstrapping</text>
+  <text x="66" y="80" class="sub">determinista, no agente · construido</text>
+
+  <rect x="270" y="100" width="460" height="62" rx="8" fill="#f1efe9" stroke="#8a8a8a"/>
+  <text x="500" y="126" class="caja-t" fill="#333">Obra</text>
+  <text x="500" y="148" class="caja-s" fill="#5c5c5c">un .txt por fragmento (canto, capítulo)</text>
+
+  <path d="M500 162 V198" class="flecha"/>
+  <text x="512" y="185" class="etiqueta">fragmento a fragmento</text>
+
+  <rect x="270" y="200" width="460" height="66" rx="8" fill="#fbece6" stroke="#8a2d12"/>
+  <text x="500" y="227" class="caja-t" fill="#7a2410">Pipeline 0a · 0b · 1</text>
+  <text x="500" y="249" class="caja-s" fill="#8a2d12">taxonomía · glosario incremental · hechos con atribución</text>
+
+  <path d="M500 266 V302" class="flecha"/>
+  <text x="512" y="289" class="etiqueta">poblar_almacen.py</text>
+
+  <rect x="70" y="304" width="860" height="150" rx="14" fill="#fafaf8" stroke="#0b6b55" stroke-width="1.1"/>
+  <text x="94" y="334" class="titulo" fill="#0b4f40">Almacén — Postgres + pgvector</text>
+  <text x="94" y="354" class="sub">todo con su posición de lectura</text>
+  <g>
+    <rect x="94" y="370" width="256" height="64" rx="8" fill="#ffffff" stroke="#0b6b55"/>
+    <text x="222" y="397" class="caja-t" fill="#0b6b55">Pasajes</text>
+    <text x="222" y="418" class="caja-s" fill="#0b6b55">~380 tokens, con embedding</text>
+    <rect x="372" y="370" width="256" height="64" rx="8" fill="#ffffff" stroke="#0b6b55"/>
+    <text x="500" y="397" class="caja-t" fill="#0b6b55">Hechos canónicos</text>
+    <text x="500" y="418" class="caja-s" fill="#0b6b55">quién los afirma (atribución)</text>
+    <rect x="650" y="370" width="256" height="64" rx="8" fill="#ffffff" stroke="#0b6b55"/>
+    <text x="778" y="397" class="caja-t" fill="#0b6b55">Entidades</text>
+    <text x="778" y="418" class="caja-s" fill="#0b6b55">glosario: términos, alias, variantes</text>
+  </g>
+
+  <path d="M290 454 V494" class="flecha"/>
+  <path d="M710 454 V494" class="flecha"/>
+  <text x="302" y="479" class="etiqueta">consulta</text>
+  <text x="722" y="479" class="etiqueta">consulta</text>
+
+  <rect x="94" y="496" width="392" height="104" rx="8" fill="#ffffff" stroke="#0b6b55"/>
+  <text x="290" y="524" class="caja-t" fill="#0b6b55">Buscador del lector · recuperar.py</text>
+  <text x="290" y="546" class="caja-s" fill="#0b6b55">pasajes y hechos, con filtro anti-spoiler</text>
+  <text x="290" y="566" class="caja-s" fill="#0b6b55">(nunca nada posterior al punto de lectura)</text>
+  <text x="290" y="587" class="caja-s" fill="#8a5a12">en parte: falta combinar pasajes y hechos</text>
+
+  <rect x="514" y="496" width="392" height="104" rx="8" fill="#ffffff" stroke="#0b6b55"/>
+  <text x="710" y="524" class="caja-t" fill="#0b6b55">Buscador de Continuidad</text>
+  <text x="710" y="546" class="caja-s" fill="#0b6b55">hechos por entidad + búsqueda léxica,</text>
+  <text x="710" y="566" class="caja-s" fill="#0b6b55">fusión RRF · toda la obra, sin anti-spoiler</text>
+  <text x="710" y="587" class="caja-s" fill="#0b6b55">(trabaja para el autor)</text>
+
+  <!-- Runtime -->
+  <path d="M500 630 V668" class="flecha"/>
+  <text x="512" y="654" class="etiqueta">consultan</text>
+
+  <rect x="40" y="670" width="920" height="380" rx="18" fill="#ffffff" stroke="#4b3fa0" stroke-width="1.4"/>
+  <text x="66" y="704" class="titulo" fill="#33297a">Runtime agéntico</text>
+  <text x="66" y="726" class="sub" fill="#4b3fa0">en construcción · cada agente con su banco de casos fijado antes del código</text>
+
+  <g>
+    <rect x="70" y="750" width="200" height="96" rx="8" fill="#f3f1fb" stroke="#4b3fa0" stroke-width="1.2"/>
+    <text x="170" y="780" class="caja-t" fill="#33297a">Continuidad</text>
+    <text x="170" y="802" class="caja-s" fill="#4b3fa0">contradicciones con</text>
+    <text x="170" y="820" class="caja-s" fill="#4b3fa0">el canon · v1</text>
+
+    <rect x="290" y="750" width="200" height="96" rx="8" fill="#f3f1fb" stroke="#4b3fa0" stroke-width="1.2"/>
+    <text x="390" y="780" class="caja-t" fill="#33297a">Voz y edición</text>
+    <text x="390" y="802" class="caja-s" fill="#4b3fa0">normas de la edición</text>
+    <text x="390" y="820" class="caja-s" fill="#4b3fa0">y léxico ajeno · v1</text>
+
+    <rect x="510" y="750" width="200" height="96" rx="8" fill="#ffffff" stroke="#6f64b8" stroke-dasharray="5 4"/>
+    <text x="610" y="780" class="caja-t" fill="#4b3fa0">Estructura y ritmo</text>
+    <text x="610" y="802" class="caja-s" fill="#6f64b8">en diseño</text>
+
+    <rect x="730" y="750" width="200" height="96" rx="8" fill="#ffffff" stroke="#6f64b8" stroke-dasharray="5 4"/>
+    <text x="830" y="780" class="caja-t" fill="#4b3fa0">Crítica de conjunto</text>
+    <text x="830" y="802" class="caja-s" fill="#6f64b8">integra lo anterior</text>
+    <text x="830" y="820" class="caja-s" fill="#6f64b8">en diseño</text>
+  </g>
+
+  <path d="M280 846 V922" class="flecha"/>
+  <text x="292" y="888" class="etiqueta">un pasaje nuevo y su posición</text>
+  <path d="M720 846 V922" class="flecha diseno"/>
+  <text x="732" y="888" class="etiqueta">un punto de lectura</text>
+
+  <rect x="110" y="924" width="340" height="80" rx="8" fill="#f3f1fb" stroke="#4b3fa0" stroke-width="1.2"/>
+  <text x="280" y="954" class="caja-t" fill="#33297a">revisar.py</text>
+  <text x="280" y="976" class="caja-s" fill="#4b3fa0">informe para el autor</text>
+  <text x="280" y="994" class="caja-s" fill="#4b3fa0">(Continuidad + Voz y edición)</text>
+
+  <rect x="550" y="924" width="340" height="80" rx="8" fill="#ffffff" stroke="#6f64b8" stroke-dasharray="5 4"/>
+  <text x="720" y="954" class="caja-t" fill="#4b3fa0">Grafo LangGraph</text>
+  <text x="720" y="976" class="caja-s" fill="#6f64b8">informe de análisis editorial</text>
+  <text x="720" y="994" class="caja-s" fill="#6f64b8">en diseño</text>
+
+  <!-- Leyenda -->
+  <g transform="translate(40 1078)">
+    <rect x="0" y="-12" width="30" height="16" rx="3" fill="#ffffff" stroke="#5c5c5c"/>
+    <text x="40" y="1" class="sub">construido (borde continuo)</text>
+    <rect x="250" y="-12" width="30" height="16" rx="3" fill="#ffffff" stroke="#5c5c5c" stroke-dasharray="5 4"/>
+    <text x="290" y="1" class="sub">en diseño (borde discontinuo)</text>
+    <text x="520" y="1" class="sub" style="fill: #8a5a12">en parte: anotado en la caja</text>
+  </g>
+</svg>

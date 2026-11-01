@@ -360,6 +360,9 @@ def combinar(
     """Une los hechos de todas las vías, sin repetir, con su dirección, su
     origen y su puesto en la fusión. Entran los `tope` mejores de la fusión.
     Devuelve los hechos, en orden de lectura, y cuántos se omitieron."""
+    if tope < 0:
+        # Con un tope negativo, el corte de la lista dejaría pasar casi todo.
+        raise ValueError(f"El tope no puede ser negativo: {tope}.")
     origenes: dict[int, list[str]] = {}
     unicos: dict[int, Hecho] = {}
     for origen, hechos in por_origen.items():
@@ -611,6 +614,8 @@ def main() -> None:
     parser.add_argument("--json", action="store_true", help="imprimir el informe en JSON")
     parser.add_argument("--dsn", default=DSN_DEFAULT)
     args = parser.parse_args()
+    if args.tope < 0:
+        parser.error(f"--tope no puede ser negativo ({args.tope})")
 
     pasaje = Path(args.fichero).read_text(encoding="utf-8")
     modelo = cargar_modelo()

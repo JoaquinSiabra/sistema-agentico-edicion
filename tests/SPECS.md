@@ -213,3 +213,18 @@ decide cuáles son anacrónicas, coloquiales o técnicas).
 | Con respuestas grabadas del banco, el informe se reproduce igual | S (se salta mientras no haya respuestas en `tests/fijos/voz/respuestas/`) | [voz/test_banco_voz_casos.py](voz/test_banco_voz_casos.py) |
 | El perfil de la obra cargada en el almacén es el mismo que el de sus textos | D | [voz/test_voz_perfil_db.py](voz/test_voz_perfil_db.py) |
 | Banco: léxico ≥ 5/6, ≤ 1 aviso léxico en controles y trampas, todos los avisos cumplen las garantías; cada fallo clasificado como del filtro o del agente | A | [voz/test_banco_voz_api.py](voz/test_banco_voz_api.py) (puntuación también en R: [voz/test_banco_voz_casos.py](voz/test_banco_voz_casos.py)) |
+
+## Informe para el autor — revisar.py
+
+Pasa un pasaje nuevo por los agentes que trabajan para el autor
+(Continuidad y Voz y edición) y reúne sus informes. No añade criterio
+propio.
+
+| Spec | Prueba | Dónde |
+|---|---|---|
+| Cada agente recibe el pasaje y su posición, y los informes salen en orden | R | [test_revisar.py](test_revisar.py) |
+| `--agentes` elige cuáles se ejecutan; un agente desconocido es un error | R | [test_revisar.py](test_revisar.py) |
+| Si un agente falla por la API o por el JSON de la respuesta, el informe lo dice y los demás siguen | R | [test_revisar.py](test_revisar.py) |
+| Una posición mal dada no se oculta: es un error de la petición | R | [test_revisar.py](test_revisar.py) |
+| El informe sale impreso o en JSON, con el total de avisos y los agentes que no se pudieron evaluar | R | [test_revisar.py](test_revisar.py) |
+
