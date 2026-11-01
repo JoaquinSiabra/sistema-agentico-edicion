@@ -1,8 +1,7 @@
-# Buscador del lector — especificación v1 (borrador)
+# Buscador del lector — especificación v1
 
-> **Borrador para revisar.** El banco (`docs/buscador_lector_casos.json`)
-> tampoco está fijado: se fija, y se mueve a `tests/fijos/lector/casos.json`,
-> cuando esta especificación se dé por buena y antes de programar.
+Banco fijado el 2026-11-01, antes de programar: `tests/fijos/lector/casos.json`.
+No se modifica para que el buscador lo pase.
 
 El buscador que usarán los agentes que evalúan **desde un punto de
 lectura** (Estructura y ritmo, Crítica de conjunto): lo que el lector ya
@@ -33,7 +32,7 @@ bancos sustituyen o amplían a este, y el buscador se vuelve a medir.
 | Orden de cada vía | Del hecho más cercano al punto de lectura hacia atrás |
 | Tope | 60 hechos, como en Continuidad; 5 pasajes |
 | Lectura parcial | La regla de hoy: el fragmento en curso no aporta hechos (los hechos no tienen posición en caracteres); sí aporta los pasajes que terminan antes de `hasta_char` |
-| Código | Las vías y la fusión pasan de `continuidad.py` a un módulo común, `src/buscador.py`, con un parámetro `limite` (ninguno para Continuidad, el punto de lectura para el lector). Ver dudas |
+| Código | Las vías y la fusión pasan de `continuidad.py` a un módulo común, `src/buscador.py`, con un parámetro `limite` (ninguno para Continuidad, el punto de lectura para el lector). Ver decisiones |
 
 ## Interfaz
 
@@ -53,8 +52,7 @@ anti-spoiler y la línea de comandos.
 
 ## Cómo se mide
 
-Banco en borrador, `docs/buscador_lector_casos.json`: 16 preguntas sobre
-los Cantos I-IV.
+Banco: `tests/fijos/lector/casos.json`, 16 preguntas sobre los Cantos I-IV.
 
 | Categoría | Casos | Qué se espera |
 |---|---|---|
@@ -110,18 +108,20 @@ Todo se mide sin API: el buscador no llama al modelo.
 - **Semántica sobre hechos** (embeddings por hecho): solo si la cobertura
   con entidades y léxica no llega al umbral.
 
-## Dudas para decidir antes de fijar
+## Decisiones (2026-11-01)
 
-1. **Módulo común o duplicar.** Llevar las vías y la fusión de
-   `continuidad.py` a `src/buscador.py` evita mantener dos copias, pero toca
-   Continuidad, que ya funciona. La alternativa es que `recuperar.py`
-   importe las vías de `continuidad.py` y les pase el límite, sin mover nada.
-2. **Orden por cercanía.** Para el lector lo más reciente suele pesar más,
-   pero en M02 («¿Por qué Aquiles no combate?») la respuesta está en el
-   Canto I, lo más lejano. La fusión lo compensa si llega por dos vías.
-   ¿Cercanía o solo relevancia?
-3. **Umbral 10 de 10** en memoria y controles: el banco es pequeño y cada
-   caso pesa mucho. ¿Exigir todos o dejar margen de 1?
-4. **¿Esperar a los agentes?** Se puede fijar ya este banco provisional, o
-   especificar primero Estructura y ritmo y que sea su banco el que mida
-   el buscador, como en Continuidad.
+1. **Módulo común.** Las vías, la fusión y el tope pasan de `continuidad.py`
+   a `src/buscador.py`, en un commit que solo mueve código, sin cambiar
+   comportamiento: lo comprueban las pruebas de Continuidad. Así una mejora
+   de una vía sirve a los dos buscadores.
+2. **Orden por cercanía**, como en Continuidad. Un hecho lejano que llega
+   por dos vías (M02: «Aquiles» por entidad, «combate» por léxica) sube en
+   la fusión. Si la medida con base de datos lo deja por debajo del tope,
+   se revisa con el dato delante.
+3. **Umbral: 10 de 10** en memoria y controles, y **ninguna fuga**. Son
+   preguntas sencillas con la respuesta nombrada en el canon: un fallo se
+   mira, no se tolera. P02 queda informativo.
+4. **Se fija ya este banco provisional.** Da dos datos que valen solos: que
+   no hay fugas y cuánto cuesta no tener la posición de los hechos dentro
+   del canto. Cuando exista el banco de Estructura y ritmo, se añade y se
+   vuelve a medir.
