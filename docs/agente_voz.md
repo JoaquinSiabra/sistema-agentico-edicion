@@ -26,8 +26,8 @@ regla de la v1, que hace el papel de «solo el narrador funda un aviso»:
 medido sobre la propia obra.** Hay dos clases:
 
 1. **Normas de la edición** (deterministas, sin modelo): formas que la obra
-   escribe siempre de una manera. En la Segalá: «á» 661 veces y «a» ninguna;
-   «ó» 47 y «o» ninguna; «fué» 31 y «fue» ninguna; el diálogo se abre
+   escribe siempre de una manera. En la Segalá: «á» 653 veces y «a» ninguna;
+   «ó» 46 y «o» ninguna; «fué» 31 y «fue» ninguna; el diálogo se abre
    siempre con «», nunca con raya ni comillas inglesas (la raya aparece 53
    veces, siempre pegada a la palabra, como inciso o en los títulos).
 2. **Léxico ajeno a la obra** (modelo, con un filtro determinista previo):
@@ -81,14 +81,14 @@ párrafo cortado por una ilustración (en el Canto III, el del verso 111).
 - **Normas ortográficas.** Para cada par de formas variables de la lista
   fija (`á/a`, `ó/o`, `é/e`, `fué/fue`, `dió/dio`, `vió/vio`), como
   palabras completas y sin distinguir mayúsculas: si el par aparece al
-  menos 20 veces en la obra y una forma supera el 99 %, la otra es una
+  menos 10 veces en la obra y una forma supera el 99 %, la otra es una
   norma rota. La lista es de pares, no de respuestas: en una novela
   moderna la norma sale al revés y el aviso sería para «fué». Con la
-  Segalá, `vió/vio` no llega a 20 apariciones y no da norma.
+  Segalá, `vió/vio` no llega a 10 apariciones y no da norma.
 - **Marcas de diálogo.** Cuántas veces la obra abre un parlamento con «,
   con raya de diálogo (una raya al comienzo de línea o precedida de
   espacio) y con comillas inglesas (" o “). Si una marca supera el 99 % y
-  hay al menos 20 parlamentos, las otras dos son normas rotas.
+  hay al menos 10 parlamentos, las otras dos son normas rotas.
 - **Vocabulario.** Las raíces de todas las palabras de la obra, con
   Snowball para el español en Python (`snowballstemmer`): el mismo
   algoritmo que la configuración `spanish` de Postgres que usa la vía
@@ -106,7 +106,7 @@ ninguna de sus palabras sería nueva y los controles no medirían nada.
 
 - **Normas rotas**: cada aparición en el pasaje de una forma o marca que
   la obra no usa es un aviso de **norma**, gravedad ruptura, con la
-  evidencia («la obra escribe «á» 661 veces y «a» ninguna»). Sin modelo.
+  evidencia («la obra usa «á» 653 veces y «a» 0»). Sin modelo.
 - **Candidatos léxicos**: las palabras del pasaje cuya raíz no está en el
   vocabulario de la obra. Se ignoran las formas de las normas (ya tienen
   su aviso) y las palabras en mayúscula que no van a comienzo de frase
@@ -239,7 +239,7 @@ verbal antigua, «rompiéronse», «cógele»), no el prompt.
 | Spec | Prueba |
 |---|---|
 | El perfil ignora números de verso, títulos y pies de ilustración | R |
-| Una norma ortográfica sale de la obra, en la dirección que la obra usa, y solo con 20 apariciones y más del 99 % | R |
+| Una norma ortográfica sale de la obra, en la dirección que la obra usa, y solo con 10 apariciones y más del 99 % | R |
 | La raya pegada a la palabra (inciso) no cuenta como marca de diálogo | R |
 | Normas del banco: 4/4 y ninguna en controles y trampas | R (con `tests/fijos/textos/`) |
 | Los candidatos se comparan por raíz, sin nombres propios ni formas de norma | R |
@@ -269,9 +269,13 @@ verbal antigua, «rompiéronse», «cógele»), no el prompt.
 
 Resueltas las dudas del primer borrador:
 
-1. **Umbrales de las normas**: 20 apariciones y más del 99 %. Con la
-   Segalá dan normas limpias para «á», «ó», «é», «fué» y «dió»; `vió/vio`
-   (3 apariciones) no cuenta.
+1. **Umbrales de las normas**: 10 apariciones y más del 99 %. Con la
+   Segalá dan normas para «á», «ó», «é», «fué» y «dió»; `vió/vio` (3
+   apariciones) no cuenta. El primer borrador proponía 20, en la creencia
+   de que «dió» llegaba; al medir con el perfil (sin títulos ni pies de
+   ilustración), «dió/dio» aparece 13 veces, y con 20 el caso N02 no
+   habría podido avisar de «dio». Se bajó a 10 antes de ejecutar nada
+   del agente.
 2. **Raíz en Python** (`snowballstemmer`), no en Postgres: todo lo
    determinista (normas, candidatos, cobertura y ruido) entra en la suite
    rápida y en la CI. Al implementarlo, `snowballstemmer` se añade a

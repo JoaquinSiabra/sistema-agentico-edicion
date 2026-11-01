@@ -72,7 +72,7 @@ todavía no:
      da, como mucho, una nota. Usa el mismo modelo que el resto de fases.
      En su banco de 27 casos (Cantos III y IV) detectó 14 de 16
      contradicciones sin ningún aviso falso.
-   - **Voz y edición** *(implementado, v1; banco sin ejecutar)*:
+   - **Voz y edición** *(implementado, v1; banco con API sin ejecutar)*:
      [`docs/agente_voz.md`](docs/agente_voz.md). Avisa de lo que se aparta
      de la voz de la obra, pero solo de lo que se puede medir en ella: las
      normas de la edición (en la Segalá, «á», «fué», el diálogo entre «»)
@@ -129,12 +129,15 @@ src/
   poblar_almacen.py       # Fase 2: carga en Postgres + pgvector
   recuperar.py            # Búsqueda con filtro anti-spoiler
   continuidad.py          # Agente de Continuidad v1 y su buscador híbrido
+  voz.py                  # Agente de Voz y edición v1 (docs/agente_voz.md)
 docs/
   agente_continuidad.md   # Especificación del agente de Continuidad
   buscador_hibrido.md     # Especificación del buscador, con la medida que lo decidió
+  agente_voz.md           # Especificación del agente de Voz y edición
 tests/
   SPECS.md                # Qué debe cumplir cada fase y qué prueba lo comprueba
   continuidad/            # Banco de casos del agente de Continuidad
+  voz/                    # Banco de casos del agente de Voz y edición
   fijos/                  # Cantos I-IV de la Ilíada y respuestas reales de Claude
 data/
   ejemplos/
@@ -172,6 +175,9 @@ uv run python src/continuidad.py --obra=mi_obra --orden=4 --char=12345 --fichero
 # Se pueden elegir otras vías (docs/buscador_hibrido.md) y otro tope:
 uv run python src/continuidad.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt \
     --vias=entidades,entorno,lexica --tope=200
+
+# Voz y edición: normas de la edición y palabras ajenas a la obra
+uv run python src/voz.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt
 ```
 
 Cada obra escribe en su propia carpeta, `data/<obra>/exports/`. Si
@@ -204,6 +210,9 @@ uv run pytest --db --api tests/continuidad
 # ... llamando solo en los casos cuyo contexto cambió respecto a la
 # respuesta grabada (al cambiar el buscador).
 NOVELA_BANCO_SOLO_CAMBIADOS=1 uv run pytest --db --api tests/continuidad
+
+# Banco del agente de Voz y edición (solo API, sin base de datos).
+uv run pytest --api tests/voz
 
 # Informe del buscador: cobertura del contexto por combinación de vías,
 # sin API (.cache/continuidad/buscador.txt).

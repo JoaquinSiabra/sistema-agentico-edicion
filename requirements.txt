@@ -1,3 +1,4 @@
 anthropic
 psycopg2-binary
 sentence-transformers
+snowballstemmer

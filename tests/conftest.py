@@ -74,10 +74,11 @@ def api(monkeypatch):
     import calibrar_taxonomia
     import continuidad
     import extraer_canon
+    import voz
 
     def instalar(respuestas):
         cliente = ClienteFalso(respuestas)
-        for modulo in (calibrar_glosario, calibrar_taxonomia, extraer_canon, continuidad):
+        for modulo in (calibrar_glosario, calibrar_taxonomia, extraer_canon, continuidad, voz):
             monkeypatch.setattr(modulo.anthropic, "Anthropic", cliente)
         return cliente
     return instalar

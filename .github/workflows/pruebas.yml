@@ -26,6 +26,6 @@ jobs:
       # Sin sentence-transformers (arrastra torch, varios GB): la suite
       # rápida no lo importa nunca, solo el nivel --db.
       - name: Dependencias
-        run: python -m pip install pytest anthropic psycopg2-binary numpy
+        run: python -m pip install pytest anthropic psycopg2-binary numpy snowballstemmer
       - name: Suite rápida
         run: python -m pytest -q
