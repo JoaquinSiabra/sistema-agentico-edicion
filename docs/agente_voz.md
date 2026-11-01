@@ -1,4 +1,4 @@
-# Agente de Voz — especificación v1 (borrador)
+# Agente de Voz y edición — especificación v1 (borrador)
 
 > **Borrador para revisar.** El banco (`docs/agente_voz_casos.json`) tampoco
 > está fijado: se fija, y se mueve a `tests/fijos/voz/casos.json`, cuando
@@ -90,9 +90,12 @@ párrafo cortado por una ilustración (en el Canto III, el del verso 111).
   con raya de diálogo (una raya al comienzo de línea o precedida de
   espacio) y con comillas inglesas (" o “). Si una marca supera el 99 % y
   hay al menos 20 parlamentos, las otras dos son normas rotas.
-- **Vocabulario.** Las raíces de todas las palabras de la obra, con el
-  mismo lematizador que la vía léxica del buscador: la configuración
-  `spanish` de Postgres (Snowball). Por raíz y no por forma: por forma,
+- **Vocabulario.** Las raíces de todas las palabras de la obra, con
+  Snowball para el español en Python (`snowballstemmer`): el mismo
+  algoritmo que la configuración `spanish` de Postgres que usa la vía
+  léxica del buscador. En Python y no en Postgres para que el perfil, la
+  medida y la validación se prueben en la suite rápida; la base de datos
+  solo aporta los textos de la obra. Por raíz y no por forma: por forma,
   los párrafos originales tienen de 12 a 35 palabras que no aparecen en el
   resto de la obra (flexiones y hápax); por raíz, de 4 a 20.
 
@@ -260,16 +263,23 @@ verbal antigua, «rompiéronse», «cógele»), no el prompt.
 - **La voz de cada personaje** (caracterización) queda fuera, como en
   Continuidad.
 
-## Dudas para decidir antes de fijar
+## Decisiones (2026-11-01)
 
-1. **Umbrales de las normas** (20 apariciones, 99 %): elegidos para que la
-   Segalá dé normas limpias y `vió/vio` (3 apariciones) no cuente. ¿Valen
-   para una novela propia?
-2. **Raíz con Postgres o en Python.** La especificación usa la de Postgres
-   (la vía léxica ya depende de ella), pero entonces el perfil necesita la
-   base de datos. Con `snowballstemmer` en Python, todo lo determinista
-   correría en la suite rápida; añade una dependencia pequeña.
-3. **«minutos» como extrañeza**: es español de 1908, pero no del mundo del
-   poema. ¿Extrañeza o ruptura?
-4. **Nombre**: «Voz» se queda corto si la v1 no evalúa persona ni tiempo.
-   Alternativas: «Registro» o «Voz y edición».
+Resueltas las dudas del primer borrador:
+
+1. **Umbrales de las normas**: 20 apariciones y más del 99 %. Con la
+   Segalá dan normas limpias para «á», «ó», «é», «fué» y «dió»; `vió/vio`
+   (3 apariciones) no cuenta.
+2. **Raíz en Python** (`snowballstemmer`), no en Postgres: todo lo
+   determinista (normas, candidatos, cobertura y ruido) entra en la suite
+   rápida y en la CI. Al implementarlo, `snowballstemmer` se añade a
+   `requirements.txt` y a las dependencias del workflow de pruebas.
+3. **«minutos» (L06) es extrañeza**: español de 1908, pero no del mundo
+   del poema. Para el umbral cuenta igual que una ruptura; la gravedad se
+   informa aparte.
+4. **Nombre: «Voz y edición»**, porque la v1 evalúa las normas de la
+   edición y la voz medible de la obra, no persona ni tiempo. El módulo
+   sigue siendo `src/voz.py`.
+
+Pendiente: revisar el banco y fijarlo (moverlo a `tests/fijos/voz/casos.json`)
+antes de programar.
