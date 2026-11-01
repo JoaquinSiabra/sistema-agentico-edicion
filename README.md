@@ -72,7 +72,7 @@ todavía no:
      da, como mucho, una nota. Usa el mismo modelo que el resto de fases.
      En su banco de 27 casos (Cantos III y IV) detectó 14 de 16
      contradicciones sin ningún aviso falso.
-   - **Voz y edición** *(especificación en borrador)*:
+   - **Voz y edición** *(implementado, v1; banco sin ejecutar)*:
      [`docs/agente_voz.md`](docs/agente_voz.md). Avisa de lo que se aparta
      de la voz de la obra, pero solo de lo que se puede medir en ella: las
      normas de la edición (en la Segalá, «á», «fué», el diálogo entre «»)

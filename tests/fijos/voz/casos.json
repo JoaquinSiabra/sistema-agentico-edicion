@@ -1,5 +1,5 @@
 {
- "descripcion": "BORRADOR del banco del agente de Voz y edición (docs/agente_voz.md), sobre los Cantos III y IV de la Ilíada (Segalá), con el vocabulario de los Cantos I-IV. Construcción de los casos como en el banco de Continuidad: con 'tras_verso', el pasaje es 'texto' insertado al final del párrafo de ese verso; con solo 'verso', el pasaje es el propio párrafo original, evaluado en su sitio y sin su propio tramo en el vocabulario. Norma: 'formas' son las que deben dar aviso de norma. Léxico: el caso cuenta como detectado si algún aviso léxico cita una de 'palabras'. Se fija (y se mueve a tests/fijos/voz/casos.json) cuando se revise la especificación, antes de programar el agente; después no se ajusta a sus resultados.",
+ "descripcion": "Banco de casos del agente de Voz y edición (docs/agente_voz.md) sobre los Cantos III y IV de la Ilíada (Segalá), con el vocabulario de los Cantos I-IV. Con 'tras_verso', el pasaje es 'texto' insertado al final del párrafo de ese verso; con solo 'verso', el pasaje es el propio párrafo original, evaluado en su sitio y sin su propio tramo en el vocabulario. Norma: 'formas' son las que deben dar aviso de norma. Léxico: el caso cuenta como detectado si algún aviso léxico cita una de 'palabras'. Fijado el 2026-11-01, antes de programar el agente: no se ajusta a sus resultados.",
  "casos": [
   {
    "id": "N01",

@@ -1,8 +1,7 @@
-# Agente de Voz y edición — especificación v1 (borrador)
+# Agente de Voz y edición — especificación v1
 
-> **Borrador para revisar.** El banco (`docs/agente_voz_casos.json`) tampoco
-> está fijado: se fija, y se mueve a `tests/fijos/voz/casos.json`, cuando
-> esta especificación se dé por buena y **antes** de programar el agente.
+Banco fijado el 2026-11-01, antes de programar el agente:
+`tests/fijos/voz/casos.json`. No se modifica para que el agente lo pase.
 
 Herramienta del **autor**, como el agente de Continuidad: dado un pasaje que
 se va a insertar en la obra, avisa de dónde se aparta de la voz de la obra.
@@ -187,8 +186,10 @@ python src/voz.py --obra=iliada --orden=4 --char=12345 --fichero=pasaje.txt
 
 ## Cómo se mide
 
-Banco: `docs/agente_voz_casos.json` (borrador), 22 casos sobre los Cantos
-III y IV, con el vocabulario de los Cantos I-IV.
+Banco: `tests/fijos/voz/casos.json`, 22 casos sobre los Cantos III y IV,
+con el vocabulario de los Cantos I-IV. El agente solo necesita de la obra
+sus textos, así que el banco toma el perfil de `tests/fijos/textos/` y no
+necesita base de datos: solo la API.
 
 | Categoría | Casos | Qué se espera |
 |---|---|---|
@@ -247,7 +248,8 @@ verbal antigua, «rompiéronse», «cógele»), no el prompt.
 | Un aviso con cita no literal, con una palabra fuera de los candidatos o sobre una forma de norma se descarta | R |
 | Cobertura y ruido del filtro en el banco (informativo) | R |
 | Con respuestas grabadas del banco, el informe se reproduce igual | S |
-| Banco: léxico ≥ 5/6, ≤ 1 aviso léxico en controles y trampas | A + D |
+| El perfil de la obra cargada en el almacén es el mismo que el de sus textos | D |
+| Banco: léxico ≥ 5/6, ≤ 1 aviso léxico en controles y trampas; cada fallo clasificado como del filtro o del agente | A |
 
 ## Límites conocidos
 
@@ -281,5 +283,4 @@ Resueltas las dudas del primer borrador:
    edición y la voz medible de la obra, no persona ni tiempo. El módulo
    sigue siendo `src/voz.py`.
 
-Pendiente: revisar el banco y fijarlo (moverlo a `tests/fijos/voz/casos.json`)
-antes de programar.
+El banco se fijó con estas decisiones, en `tests/fijos/voz/casos.json`.
