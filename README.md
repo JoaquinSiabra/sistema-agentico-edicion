@@ -17,11 +17,11 @@ que el modelo recuerde a bulto del contexto.
 
 La arquitectura tiene dos partes bien separadas — el diagrama las agrupa en
 dos cajas para que se distingan a simple vista: **Bootstrapping**
-(determinista) y **Runtime agéntico** (en diseño). Dentro de esas cajas, el
-borde sólido marca lo que ya está construido y el discontinuo lo que
-todavía no:
+(determinista, construido) y **Runtime agéntico** (en construcción). Dentro
+de esas cajas, el borde continuo marca lo que ya está construido y el
+discontinuo lo que todavía no:
 
-![Arquitectura del sistema agéntico de evaluación editorial](docs/arquitectura.png)
+![Arquitectura del sistema agéntico de evaluación editorial](docs/arquitectura.svg)
 
 1. **Bootstrapping** (determinista, no agente): todo lo que correría una
    sola vez sobre la obra (y después, fragmento a fragmento, a medida que
