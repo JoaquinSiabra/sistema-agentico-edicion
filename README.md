@@ -50,7 +50,8 @@ discontinuo lo que todavía no:
      semántica sobre los pasajes y consulta de hechos canónicos por
      entidad, las dos con un **filtro anti-spoiler**: dado un punto de
      lectura, nunca devuelve nada posterior. Falta combinar ambas en una
-     sola respuesta.
+     sola respuesta: especificación en borrador en
+     [`docs/buscador_lector.md`](docs/buscador_lector.md).
    - **Buscador híbrido del agente de Continuidad** *(implementado)*:
      hechos por entidad y búsqueda léxica sobre los hechos (texto completo
      de Postgres), fusionados por rango recíproco. Sin filtro anti-spoiler,

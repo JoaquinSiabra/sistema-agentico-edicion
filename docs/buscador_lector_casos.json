@@ -1,0 +1,216 @@
+{
+ "descripcion": "BORRADOR del banco del buscador del lector (docs/buscador_lector.md): preguntas que se haría un lector editorial en un punto de lectura de los Cantos I-IV de la Ilíada (Segalá). 'punto': hasta el final del fragmento 'orden' o, con 'verso', hasta el comienzo de la línea que empieza por ese verso (sin incluirla). 'esperados': hechos (<orden>.<índice>) que deberían llegar; basta con uno. 'fugas': hechos posteriores al punto que no pueden llegar nunca. Cada spoiler (E0n) tiene su control (E0nc): la misma consulta desde un punto posterior. Se fija (y se mueve a tests/fijos/lector/casos.json) cuando se revise la especificación, antes de programar.",
+ "casos": [
+  {
+   "id": "M01",
+   "categoria": "memoria",
+   "punto": {
+    "orden": 1
+   },
+   "consulta": "¿Por qué Apolo envió la peste al ejército de los aqueos?",
+   "esperados": [
+    "1.2",
+    "1.3"
+   ]
+  },
+  {
+   "id": "M02",
+   "categoria": "memoria",
+   "punto": {
+    "orden": 4
+   },
+   "consulta": "¿Por qué Aquiles no combate junto a los aqueos?",
+   "esperados": [
+    "1.69",
+    "2.75"
+   ]
+  },
+  {
+   "id": "M03",
+   "categoria": "memoria",
+   "punto": {
+    "orden": 2
+   },
+   "consulta": "¿Quién es Tersites y qué le pasó en la junta?",
+   "esperados": [
+    "2.25",
+    "2.28"
+   ]
+  },
+  {
+   "id": "M04",
+   "categoria": "memoria",
+   "punto": {
+    "orden": 4
+   },
+   "consulta": "¿Cuántas naves trajo Menelao y de dónde venían?",
+   "esperados": [
+    "2.51"
+   ]
+  },
+  {
+   "id": "M05",
+   "categoria": "memoria",
+   "punto": {
+    "orden": 1
+   },
+   "consulta": "¿Qué prometió Júpiter a Tetis?",
+   "esperados": [
+    "1.75",
+    "1.76"
+   ]
+  },
+  {
+   "id": "M06",
+   "categoria": "memoria",
+   "punto": {
+    "orden": 3
+   },
+   "consulta": "¿Dónde están Cástor y Pólux, los hermanos de Helena?",
+   "esperados": [
+    "3.30"
+   ]
+  },
+  {
+   "id": "P01",
+   "categoria": "parcial",
+   "punto": {
+    "orden": 4,
+    "verso": 207
+   },
+   "consulta": "¿Quién es Macaón?",
+   "esperados": [
+    "2.69"
+   ],
+   "motivo": "A mitad del Canto IV: lo que el lector sabe de Macaón por el Canto II tiene que llegar aunque el canto en curso no aporte hechos."
+  },
+  {
+   "id": "P02",
+   "categoria": "parcial",
+   "punto": {
+    "orden": 3,
+    "verso": 340
+   },
+   "consulta": "¿Qué propuso Alejandro para terminar la guerra?",
+   "esperados": [
+    "3.5",
+    "3.8"
+   ],
+   "motivo": "La respuesta está en el canto en curso, antes del punto. Con la regla actual (el canto en curso no aporta hechos) no puede llegar como hecho: mide cuánto cuesta esa regla."
+  },
+  {
+   "id": "E01",
+   "categoria": "spoiler",
+   "punto": {
+    "orden": 3,
+    "verso": 340
+   },
+   "consulta": "¿Quién venció en el combate singular entre Menelao y Alejandro?",
+   "esperados": [],
+   "fugas": [
+    "3.44",
+    "3.45",
+    "3.46",
+    "3.53",
+    "3.57"
+   ]
+  },
+  {
+   "id": "E01c",
+   "categoria": "control",
+   "punto": {
+    "orden": 3
+   },
+   "consulta": "¿Quién venció en el combate singular entre Menelao y Alejandro?",
+   "esperados": [
+    "3.44",
+    "3.46",
+    "3.57"
+   ],
+   "motivo": "Control de E01: con el canto leído entero, la misma consulta sí encuentra el desenlace."
+  },
+  {
+   "id": "E02",
+   "categoria": "spoiler",
+   "punto": {
+    "orden": 4,
+    "verso": 1
+   },
+   "consulta": "¿Quién rompió los juramentos de la tregua?",
+   "esperados": [],
+   "fugas": [
+    "4.10",
+    "4.19",
+    "4.25",
+    "4.33"
+   ]
+  },
+  {
+   "id": "E02c",
+   "categoria": "control",
+   "punto": {
+    "orden": 4
+   },
+   "consulta": "¿Quién rompió los juramentos de la tregua?",
+   "esperados": [
+    "4.10",
+    "4.19"
+   ],
+   "motivo": "Control de E02."
+  },
+  {
+   "id": "E03",
+   "categoria": "spoiler",
+   "punto": {
+    "orden": 4,
+    "verso": 1
+   },
+   "consulta": "¿Está herido Menelao?",
+   "esperados": [],
+   "fugas": [
+    "4.20",
+    "4.21",
+    "4.23",
+    "4.30"
+   ]
+  },
+  {
+   "id": "E03c",
+   "categoria": "control",
+   "punto": {
+    "orden": 4
+   },
+   "consulta": "¿Está herido Menelao?",
+   "esperados": [
+    "4.21",
+    "4.30"
+   ],
+   "motivo": "Control de E03."
+  },
+  {
+   "id": "E04",
+   "categoria": "spoiler",
+   "punto": {
+    "orden": 2,
+    "verso": 484
+   },
+   "consulta": "¿Quiénes mandaban a los beocios y cuántas naves trajeron?",
+   "esperados": [],
+   "fugas": [
+    "2.42"
+   ]
+  },
+  {
+   "id": "E04c",
+   "categoria": "control",
+   "punto": {
+    "orden": 2
+   },
+   "consulta": "¿Quiénes mandaban a los beocios y cuántas naves trajeron?",
+   "esperados": [
+    "2.42"
+   ],
+   "motivo": "Control de E04."
+  }
+ ]
+}
