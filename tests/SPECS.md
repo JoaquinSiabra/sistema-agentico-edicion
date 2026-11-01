@@ -228,3 +228,21 @@ propio.
 | Una posición mal dada no se oculta: es un error de la petición | R | [test_revisar.py](test_revisar.py) |
 | El informe sale impreso o en JSON, con el total de avisos y los agentes que no se pudieron evaluar | R | [test_revisar.py](test_revisar.py) |
 
+## Buscador del lector — recuperar.consultar
+
+Especificación en [`docs/buscador_lector.md`](../docs/buscador_lector.md).
+Una sola respuesta con hechos (las vías de `buscador.py`, con el límite,
+fusionadas por rango recíproco) y pasajes, sin nada posterior al punto de
+lectura.
+
+| Spec | Prueba | Dónde |
+|---|---|---|
+| Con un límite, cada vía filtra en el `WHERE` (la consulta lleva la condición de posición) | R (cursor falso) | [test_buscador_lector.py](test_buscador_lector.py) |
+| Sin límite, las consultas de las vías son las de siempre (las de Continuidad) | R | [test_buscador_lector.py](test_buscador_lector.py) |
+| Con lectura parcial, el fragmento en curso no aporta hechos; los pasajes llegan hasta el carácter | R | [test_buscador_lector.py](test_buscador_lector.py) |
+| Una sola respuesta: hechos fusionados en orden de lectura, tope después de fusionar, pasajes solo con modelo | R | [test_buscador_lector.py](test_buscador_lector.py) |
+| Construcción de los casos (punto por verso), referencias que existen y coherencia del banco (esperados antes del punto, fugas después, un control por spoiler) | R | [lector/test_banco_lector_casos.py](lector/test_banco_lector_casos.py) |
+| Ningún hecho ni pasaje del banco es posterior a su punto de lectura | D | [lector/test_buscador_lector_db.py](lector/test_buscador_lector_db.py) |
+| Ninguna fuga en los spoilers, y su control sí las encuentra | D | [lector/test_buscador_lector_db.py](lector/test_buscador_lector_db.py) |
+| Cobertura de memoria y controles 10/10, con el informe por caso (`.cache/lector/buscador.txt`) | D | [lector/test_buscador_lector_db.py](lector/test_buscador_lector_db.py) |
+

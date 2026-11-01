@@ -210,7 +210,7 @@ def test_la_via_de_entorno_no_repite_entidades_del_pasaje(monkeypatch):
     # Las vías viven en buscador.py: es ahí donde buscan estas funciones.
     monkeypatch.setattr(buscador, "entidades_de_obra", lambda cur, obra: ENTIDADES)
     monkeypatch.setattr(buscador, "hechos_de_entidad",
-                        lambda cur, obra, t: [hecho(3, len(t))])
+                        lambda cur, obra, t, hasta=None: [hecho(3, len(t))])
     texto = "Habló Agamenón en el Ida.\n\n"
     via = continuidad.via_entorno(None, "iliada", "Y Agamenón calló.", 3, texto, len(texto))
     assert list(via) == ["entorno: Ida"]

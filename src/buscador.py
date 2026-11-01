@@ -14,6 +14,11 @@ Vías (docs/buscador_hibrido.md):
   - "lexica": texto completo de Postgres sobre los hechos (`lexica`).
 Cada vía da una lista ordenada por origen; las listas se fusionan por rango
 recíproco (RRF) y el tope se aplica después.
+
+LÍMITE — cada vía acepta `hasta`: el último fragmento cuyos hechos se
+admiten. Sin él (Continuidad) entra todo el canon; con él (el lector) la
+condición va en el WHERE de la consulta, nunca como filtro posterior: lo
+que no se ha leído no sale nunca de la base de datos.
 """
 
 from __future__ import annotations
@@ -82,9 +87,16 @@ def entidades_de_obra(cur, obra: str) -> list[dict]:
     return [{"termino": t, "alias": a, "variantes": v} for t, a, v in cur.fetchall()]
 
 
-def hechos_de_entidad(cur, obra: str, entidad: str) -> list[Hecho]:
-    """Como recuperar.hechos_hasta(entidad=...), pero en todo el canon."""
+def _limite(hasta: int | None) -> tuple[str, list]:
+    if hasta is None:
+        return "", []
+    return " AND f.orden_fragmento <= %s", [hasta]
+
+
+def hechos_de_entidad(cur, obra: str, entidad: str, hasta: int | None = None) -> list[Hecho]:
+    """Como recuperar.hechos_hasta(entidad=...): sin `hasta`, en todo el canon."""
     filtro, params = _filtro_entidad(entidad)
+    limite, params_limite = _limite(hasta)
     cur.execute(
         f"""SELECT f.orden_fragmento, h.orden_en_fragmento, h.hecho,
                    h.momento_canonico, h.atribucion_tipo, a.termino
@@ -92,9 +104,9 @@ def hechos_de_entidad(cur, obra: str, entidad: str) -> list[Hecho]:
             JOIN fragmentos f ON f.id = h.fragmento_id
             JOIN obras o ON o.id = h.obra_id
             LEFT JOIN entidades a ON a.id = h.atribucion_personaje_id
-            WHERE o.slug = %s AND {filtro}
+            WHERE o.slug = %s AND {filtro}{limite}
             ORDER BY h.posicion_global""",
-        [obra, *params],
+        [obra, *params, *params_limite],
     )
     return [Hecho(*fila) for fila in cur.fetchall()]
 
@@ -112,8 +124,8 @@ def ordenar_por_cercania(hechos: list[Hecho], orden: int) -> list[Hecho]:
 
 
 def hechos_de_entidades(cur, obra: str, terminos: list[str], prefijo: str,
-                        orden: int) -> dict[str, list[Hecho]]:
-    return {f"{prefijo}: {t}": ordenar_por_cercania(hechos_de_entidad(cur, obra, t), orden)
+                        orden: int, hasta: int | None = None) -> dict[str, list[Hecho]]:
+    return {f"{prefijo}: {t}": ordenar_por_cercania(hechos_de_entidad(cur, obra, t, hasta), orden)
             for t in terminos}
 
 
@@ -139,46 +151,47 @@ def consulta_lexica(pasaje: str) -> str | None:
 
 
 def via_entidades(cur, obra: str, pasaje: str, orden: int, texto: str,
-                  char: int) -> dict[str, list[Hecho]]:
+                  char: int, hasta: int | None = None) -> dict[str, list[Hecho]]:
     detectadas = detectar_entidades(pasaje, entidades_de_obra(cur, obra))
-    return hechos_de_entidades(cur, obra, detectadas, "entidad", orden)
+    return hechos_de_entidades(cur, obra, detectadas, "entidad", orden, hasta)
 
 
 def via_entorno(cur, obra: str, pasaje: str, orden: int, texto: str,
-                char: int) -> dict[str, list[Hecho]]:
+                char: int, hasta: int | None = None) -> dict[str, list[Hecho]]:
     """Entidades del párrafo anterior que el pasaje no nombra: el sujeto
     implícito («Y blandía la espada…» tras un párrafo sobre Menelao)."""
     entidades = entidades_de_obra(cur, obra)
     en_pasaje = set(detectar_entidades(pasaje, entidades))
     en_entorno = [t for t in detectar_entidades(parrafo_anterior(texto, char), entidades)
                   if t not in en_pasaje]
-    return hechos_de_entidades(cur, obra, en_entorno, "entorno", orden)
+    return hechos_de_entidades(cur, obra, en_entorno, "entorno", orden, hasta)
 
 
 def via_lexica(cur, obra: str, pasaje: str, orden: int, texto: str,
-               char: int) -> dict[str, list[Hecho]]:
+               char: int, hasta: int | None = None) -> dict[str, list[Hecho]]:
     consulta = consulta_lexica(pasaje)
     if consulta is None:
         return {}
+    limite, params_limite = _limite(hasta)
     # Misma expresión que el índice GIN de schema.sql (hechos_texto_idx).
     cur.execute(
-        """SELECT f.orden_fragmento, h.orden_en_fragmento, h.hecho,
+        f"""SELECT f.orden_fragmento, h.orden_en_fragmento, h.hecho,
                   h.momento_canonico, h.atribucion_tipo, a.termino
            FROM hechos_canonicos h
            JOIN fragmentos f ON f.id = h.fragmento_id
            JOIN obras o ON o.id = h.obra_id
            LEFT JOIN entidades a ON a.id = h.atribucion_personaje_id,
                 to_tsquery('spanish', %s) AS q
-           WHERE o.slug = %s AND to_tsvector('spanish', h.hecho) @@ q
+           WHERE o.slug = %s AND to_tsvector('spanish', h.hecho) @@ q{limite}
            ORDER BY ts_rank_cd(to_tsvector('spanish', h.hecho), q) DESC, h.posicion_global
            LIMIT %s""",
-        (consulta, obra, MAXIMO_LEXICA),
+        (consulta, obra, *params_limite, MAXIMO_LEXICA),
     )
     return {"lexica": [Hecho(*fila) for fila in cur.fetchall()]}
 
 
-# Cada vía: (cur, obra, pasaje, orden, texto del fragmento, char) ->
-# {origen: hechos, en orden de relevancia}.
+# Cada vía: (cur, obra, pasaje, orden, texto del fragmento, char, hasta=None)
+# -> {origen: hechos, en orden de relevancia}.
 VIAS = {"entidades": via_entidades, "entorno": via_entorno, "lexica": via_lexica}
 # Por defecto, entidades + léxica: en el banco cubre 16/16 con el hecho
 # esperado como mucho en el puesto 13; la vía de entorno mete ruido
