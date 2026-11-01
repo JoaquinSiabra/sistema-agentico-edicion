@@ -10,6 +10,7 @@ from pathlib import Path
 
 import pytest
 
+import buscador
 import calibrar_glosario
 import continuidad
 from continuidad import (Contexto, combinar, construir_prompt, consulta_lexica,
@@ -206,8 +207,9 @@ def test_parrafo_anterior_sin_lineas_en_blanco():
 
 
 def test_la_via_de_entorno_no_repite_entidades_del_pasaje(monkeypatch):
-    monkeypatch.setattr(continuidad, "entidades_de_obra", lambda cur, obra: ENTIDADES)
-    monkeypatch.setattr(continuidad, "hechos_de_entidad",
+    # Las vías viven en buscador.py: es ahí donde buscan estas funciones.
+    monkeypatch.setattr(buscador, "entidades_de_obra", lambda cur, obra: ENTIDADES)
+    monkeypatch.setattr(buscador, "hechos_de_entidad",
                         lambda cur, obra, t: [hecho(3, len(t))])
     texto = "Habló Agamenón en el Ida.\n\n"
     via = continuidad.via_entorno(None, "iliada", "Y Agamenón calló.", 3, texto, len(texto))
