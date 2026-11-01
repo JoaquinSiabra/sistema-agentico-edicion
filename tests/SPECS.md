@@ -12,6 +12,7 @@ a Claude no dan siempre la misma salida, así que sus specs son
 | Base de datos | `pytest --db` (desde WSL) | ~20 s (4-5 min la 1ª vez) | Postgres + pgvector |
 | API real | `uv run pytest --api tests/api` | ~1-2 min | `ANTHROPIC_API_KEY`; 3 llamadas, con coste |
 | Banco de Continuidad | `pytest --db --api tests/continuidad` (desde WSL, con `WSLENV=ANTHROPIC_API_KEY`) | minutos | Postgres + pgvector y `ANTHROPIC_API_KEY`; 27 llamadas, con coste (con `NOVELA_BANCO_SOLO_CAMBIADOS=1`, solo las de los casos cuyo contexto cambió) |
+| Banco de Voz y edición | `pytest --api tests/voz` | ~1 min | `ANTHROPIC_API_KEY` (sin base de datos); una llamada por caso con candidatos léxicos, con coste |
 
 Leyenda de la columna «Prueba»: **R** rápido · **D** base de datos ·
 **A** API real · **S** API simulada con respuestas grabadas (también rápido) ·
@@ -189,3 +190,26 @@ entidades y 200).
 | Informe del buscador: cobertura, puesto y tamaño por caso y combinación (`.cache/continuidad/buscador.txt`), con el criterio para pasar a híbrido-60 | R (tabla), D | [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py), [continuidad/test_contexto_db.py](continuidad/test_contexto_db.py) |
 | Con `NOVELA_BANCO_SOLO_CAMBIADOS=1`, un caso con el mismo contexto no llama a la API | R (con el cliente falso) | [continuidad/test_banco_casos.py](continuidad/test_banco_casos.py) |
 
+## Agente de Voz y edición — voz.py
+
+Especificación completa en [`docs/agente_voz.md`](../docs/agente_voz.md).
+Entrada: un pasaje nuevo y su posición. Solo funda un aviso lo que la obra
+hace siempre o no hace nunca, medido sobre ella: normas de la edición
+(deterministas) y palabras cuya raíz no aparece en la obra (el modelo
+decide cuáles son anacrónicas, coloquiales o técnicas).
+
+| Spec | Prueba | Dónde |
+|---|---|---|
+| El perfil ignora números de verso, títulos y pies de ilustración; una obra sin numeración se deja tal cual | R | [test_voz.py](test_voz.py) |
+| Una norma ortográfica sale de la obra, en la dirección que la obra usa, y solo con 10 apariciones y más del 99 % | R | [test_voz.py](test_voz.py) |
+| La raya pegada a la palabra (inciso) no cuenta como marca de diálogo; las comillas rectas cuentan una vez por parlamento | R | [test_voz.py](test_voz.py) |
+| Cada forma de norma rota en el pasaje es un aviso de ruptura, con su evidencia | R | [test_voz.py](test_voz.py) |
+| Normas del banco: 4/4 y ninguna en controles y trampas | R | [voz/test_banco_voz_casos.py](voz/test_banco_voz_casos.py) |
+| Los candidatos se comparan por raíz, sin nombres propios a mitad de frase ni formas de norma | R | [test_voz.py](test_voz.py) |
+| Un pasaje que ya está en la obra se mide sin su propio tramo en el vocabulario | R | [test_voz.py](test_voz.py) |
+| Sin candidatos no se llama al modelo; con candidatos, una llamada con el modelo del resto de fases | R, S | [test_voz.py](test_voz.py) |
+| Un aviso con cita no literal, con una palabra fuera de los candidatos o fuera de su cita, sobre una forma de norma o con valores no permitidos se descarta; dos sobre la misma palabra se quedan en el más grave | R | [test_voz.py](test_voz.py) |
+| Cobertura y ruido del filtro en el banco (informativo, `.cache/voz/filtro.txt`) | R | [voz/test_banco_voz_casos.py](voz/test_banco_voz_casos.py) |
+| Con respuestas grabadas del banco, el informe se reproduce igual | S (se salta mientras no haya respuestas en `tests/fijos/voz/respuestas/`) | [voz/test_banco_voz_casos.py](voz/test_banco_voz_casos.py) |
+| El perfil de la obra cargada en el almacén es el mismo que el de sus textos | D | [voz/test_voz_perfil_db.py](voz/test_voz_perfil_db.py) |
+| Banco: léxico ≥ 5/6, ≤ 1 aviso léxico en controles y trampas, todos los avisos cumplen las garantías; cada fallo clasificado como del filtro o del agente | A | [voz/test_banco_voz_api.py](voz/test_banco_voz_api.py) (puntuación también en R: [voz/test_banco_voz_casos.py](voz/test_banco_voz_casos.py)) |

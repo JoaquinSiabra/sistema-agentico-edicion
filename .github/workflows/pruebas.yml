@@ -1,0 +1,31 @@
+# Suite rápida en cada PR y en cada push a main: sin base de datos ni API
+# (las pruebas --db y --api se saltan solas). Ver tests/SPECS.md.
+name: Pruebas
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  rapida:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # La mínima que pide el README y la más reciente probada.
+        python: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      # Sin sentence-transformers (arrastra torch, varios GB): la suite
+      # rápida no lo importa nunca, solo el nivel --db.
+      - name: Dependencias
+        run: python -m pip install pytest anthropic psycopg2-binary numpy snowballstemmer
+      - name: Suite rápida
+        run: python -m pytest -q
