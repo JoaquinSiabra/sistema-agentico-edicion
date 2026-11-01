@@ -121,6 +121,12 @@ def test_con_mas_hechos_que_el_tope_se_omiten_los_peor_situados_y_se_informa():
     assert validar({}, ctx, "").hechos_omitidos == 8   # y el informe lo dice
 
 
+@pytest.mark.parametrize("tope", [-1, -60])
+def test_un_tope_negativo_es_un_error(tope):
+    with pytest.raises(ValueError, match="negativo"):
+        combinar({"entidad: X": [hecho(3, i) for i in range(5)]}, orden=4, tope=tope)
+
+
 def test_sin_pasar_el_tope_no_se_omite_nada():
     hechos, omitidos = combinar({"entidad: X": [hecho(3, i) for i in range(5)]}, orden=4, tope=5)
     assert len(hechos) == 5 and omitidos == 0
