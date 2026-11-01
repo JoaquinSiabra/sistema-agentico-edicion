@@ -101,4 +101,4 @@ def test_informe_en_json(llamadas):
     datos = json.loads(json.dumps(revisar.revisar("cur", "iliada", "P.", 4, 0).a_dict()))
     assert datos["informes"]["continuidad"]["avisos"][0]["hecho"] == 40030
     assert datos["informes"]["voz"]["avisos"][0]["palabra"] == "reloj"
-    assert datos["errores"] == {}
+    assert datos["errores"] == {} and datos["avisos"] == 2

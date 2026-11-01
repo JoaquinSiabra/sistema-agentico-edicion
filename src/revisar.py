@@ -43,7 +43,8 @@ class Revision:
         return sum(len(i.avisos) for i in self.informes.values())
 
     def a_dict(self) -> dict:
-        return {"informes": {a: asdict(i) for a, i in self.informes.items()},
+        return {"avisos": self.avisos,
+                "informes": {a: asdict(i) for a, i in self.informes.items()},
                 "errores": self.errores}
 
 
