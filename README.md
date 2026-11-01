@@ -176,7 +176,8 @@ extrae igualmente, sin esa ayuda.
 ## Pruebas
 
 Tres niveles, de más rápido a más caro (detalle en
-[`tests/SPECS.md`](tests/SPECS.md)):
+[`tests/SPECS.md`](tests/SPECS.md)). La suite rápida se ejecuta en cada PR
+y en cada push a `main` (GitHub Actions, Python 3.11 y 3.13):
 
 ```bash
 uv pip install -r requirements-dev.txt
