@@ -78,6 +78,10 @@ todavía no:
      normas de la edición (en la Segalá, «á», «fué», el diálogo entre «»)
      y las palabras que la obra no usa nunca y que suenan anacrónicas o
      coloquiales en ella.
+   - **Informe para el autor** *(implementado)*: `revisar.py` pasa un
+     pasaje nuevo por Continuidad y por Voz y edición y reúne sus informes.
+     No añade criterio propio; si un agente falla, el informe lo dice y el
+     otro sigue.
    - **Estructura y ritmo, crítica de conjunto** *(en diseño)*.
 
 ## Por qué calibrar antes de extraer
@@ -130,6 +134,7 @@ src/
   recuperar.py            # Búsqueda con filtro anti-spoiler
   continuidad.py          # Agente de Continuidad v1 y su buscador híbrido
   voz.py                  # Agente de Voz y edición v1 (docs/agente_voz.md)
+  revisar.py              # Informe para el autor: Continuidad + Voz y edición
 docs/
   agente_continuidad.md   # Especificación del agente de Continuidad
   buscador_hibrido.md     # Especificación del buscador, con la medida que lo decidió
@@ -175,6 +180,9 @@ uv run python src/continuidad.py --obra=mi_obra --orden=4 --char=12345 --fichero
 # Se pueden elegir otras vías (docs/buscador_hibrido.md) y otro tope:
 uv run python src/continuidad.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt \
     --vias=entidades,entorno,lexica --tope=200
+
+# Las dos revisiones del autor juntas (o solo algunas, con --agentes=voz)
+uv run python src/revisar.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt
 
 # Voz y edición: normas de la edición y palabras ajenas a la obra
 uv run python src/voz.py --obra=mi_obra --orden=4 --char=12345 --fichero=pasaje.txt
